@@ -6,8 +6,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
-  title: 'Moder Web Solutions | Modern Web, SEO, and Marketing',
-  description: 'We create modern websites and mobile applications. We help with effective SEO and online marketing to grow your business.',
+  title: 'Moder Web Solutions | Tvorba web stránok, E-shopy a SEO',
+  description: 'Tvoríme moderné webové stránky a e-shopy na mieru. Zabezpečíme pre vás efektívne SEO a online marketing pre rast vášho podnikania na Slovensku.',
+  keywords: "tvorba web stránok, tvorba e-shopov, seo, online marketing, webdizajn, slovensko, next.js, react",
 };
 
 export default function RootLayout({

@@ -173,9 +173,12 @@ export default function Home() {
 
         <section id="technologies" className="py-16 md:py-24 bg-secondary/30">
             <div className="container mx-auto px-4">
-                <h2 className="font-headline text-3xl md:text-5xl font-bold text-center mb-12">
-                  Naše Technológie
-                </h2>
+                <div className="flex justify-center items-center gap-4 mb-12">
+                    <Layers className="w-10 h-10 text-primary" />
+                    <h2 className="font-headline text-3xl md:text-5xl font-bold text-center">
+                      Naše Technológie
+                    </h2>
+                </div>
                 <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
                     {technologies.map(tech => (
                         <div key={tech.name} className="text-center" title={tech.name}>
