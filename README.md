@@ -1,5 +1,11 @@
-# Firebase Studio
+# Moder Web Solutions
 
-This is a NextJS starter in Firebase Studio.
+This is a Next.js website for Moder, a modern web agency. It's built with Next.js, TypeScript, and Tailwind CSS, featuring a GenAI-powered proposal generator.
 
-To get started, take a look at src/app/page.tsx.
+To get started, run the development server:
+
+```bash
+npm run dev
+```
+
+The main page is `src/app/page.tsx`.
