@@ -12,9 +12,9 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "O nás" },
   { href: "/services", label: "Služby" },
+  { href: "/custom-programming", label: "Programovanie na mieru" },
   { href: "/portfolio", label: "Referencie" },
   { href: "/blog", label: "Blog" },
-  { href: "/proposal-generator", label: "Proposal Generator"},
   { href: "/contact", label: "Kontakt" },
 ];
 
