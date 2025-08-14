@@ -14,6 +14,7 @@ const navLinks = [
   { href: "/services", label: "Služby" },
   { href: "/portfolio", label: "Referencie" },
   { href: "/blog", label: "Blog" },
+  { href: "/proposal-generator", label: "Proposal Generator"},
   { href: "/contact", label: "Kontakt" },
 ];
 
@@ -34,7 +35,7 @@ export function Header() {
               href={href}
               className={cn(
                 "transition-colors hover:text-primary",
-                pathname === href ? "text-primary font-semibold" : "text-muted-foreground"
+                pathname === href || (href.startsWith('/blog') && pathname.startsWith('/blog')) ? "text-primary font-semibold" : "text-muted-foreground"
               )}
             >
               {label}
