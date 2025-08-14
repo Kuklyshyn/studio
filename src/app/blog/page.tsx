@@ -6,50 +6,50 @@ import Link from "next/link";
 
 const blogPosts = [
   {
-    title: "5 trendov vo web dizajne na rok 2024",
-    description: "Pozrite sa na najnovšie trendy, ktoré budú formovať webový dizajn v nasledujúcom roku.",
+    title: "5 Web Design Trends for 2024",
+    description: "Discover the latest trends that will shape web design in the upcoming year.",
     image: "https://placehold.co/600x400.png",
     hint: "abstract design",
-    date: "15. jún 2024",
-    author: "Jana Nováková",
+    date: "June 15, 2024",
+    author: "Jane Doe",
   },
   {
-    title: "Prečo je SEO kľúčové pre váš biznis?",
-    description: "Zistite, ako môže optimalizácia pre vyhľadávače (SEO) dramaticky zvýšiť vašu online viditeľnosť a prilákať nových zákazníkov.",
+    title: "Why SEO is Crucial for Your Business",
+    description: "Learn how Search Engine Optimization (SEO) can dramatically boost your online visibility and attract new customers.",
     image: "https://placehold.co/600x400.png",
     hint: "analytics graph",
-    date: "10. jún 2024",
-    author: "Peter Malý",
+    date: "June 10, 2024",
+    author: "John Smith",
   },
   {
-    title: "Ako si vybrať správnu eCommerce platformu",
-    description: "Porovnanie najpopulárnejších platforiem pre internetové obchody, ktoré vám pomôže urobiť správne rozhodnutie.",
+    title: "Choosing the Right eCommerce Platform",
+    description: "A comparison of the most popular eCommerce platforms to help you make an informed decision for your online store.",
     image: "https://placehold.co/600x400.png",
     hint: "online store",
-    date: "5. jún 2024",
-    author: "Jana Nováková",
+    date: "June 5, 2024",
+    author: "Jane Doe",
   },
 ];
 
 export default function BlogPage() {
   return (
     <>
-      <section className="py-20 md:py-32 bg-white">
+      <section className="py-20 md:py-32">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="font-headline text-4xl md:text-6xl font-bold text-gray-900 mb-4">
-            Náš Blog
+          <h1 className="font-headline text-4xl md:text-6xl font-bold mb-4">
+            Our Blog
           </h1>
-          <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-600">
-            Zostaňte v obraze s najnovšími trendmi a tipmi z oblasti webu a marketingu.
+          <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
+            Stay updated with the latest trends and tips in web and marketing.
           </p>
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post, index) => (
-              <Card key={index} className="flex flex-col shadow-lg">
+              <Card key={index} className="flex flex-col">
                 <CardHeader className="p-0">
                   <Image
                     src={post.image}
@@ -62,15 +62,15 @@ export default function BlogPage() {
                 </CardHeader>
                 <div className="p-6 flex flex-col flex-grow">
                     <CardTitle className="font-headline text-xl font-bold mb-2">{post.title}</CardTitle>
-                    <CardDescription>{post.description}</CardDescription>
-                    <div className="text-sm text-gray-500 mt-4">
+                    <CardDescription className="text-muted-foreground">{post.description}</CardDescription>
+                    <div className="text-sm text-muted-foreground mt-4">
                         <span>{post.date}</span> &bull; <span>{post.author}</span>
                     </div>
                 </div>
                 <CardFooter>
                     <Button asChild variant="link" className="p-0">
                         <Link href="#">
-                            Čítať viac <ArrowRight className="ml-2 h-4 w-4" />
+                            Read More <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>
                     </Button>
                 </CardFooter>

@@ -6,6 +6,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Mountain } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { ThemeSwitcher } from "../theme-switcher";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -39,7 +40,8 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <div className="flex flex-1 items-center justify-end space-x-4">
+        <div className="flex flex-1 items-center justify-end space-x-2">
+          <ThemeSwitcher />
           <Button asChild className="hidden md:inline-flex">
             <Link href="/contact">Požiadať o cenovú ponuku</Link>
           </Button>
