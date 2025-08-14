@@ -32,6 +32,7 @@ export function Footer() {
               <li><Link href="/" className="text-gray-600 hover:text-primary">Home</Link></li>
               <li><Link href="/about" className="text-gray-600 hover:text-primary">O nás</Link></li>
               <li><Link href="/services" className="text-gray-600 hover:text-primary">Služby</Link></li>
+              <li><Link href="/portfolio" className="text-gray-600 hover:text-primary">Portfolio</Link></li>
               <li><Link href="/blog" className="text-gray-600 hover:text-primary">Blog</Link></li>
               <li><Link href="/contact" className="text-gray-600 hover:text-primary">Kontakt</Link></li>
             </ul>

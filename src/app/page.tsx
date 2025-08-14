@@ -167,6 +167,13 @@ export default function Home() {
                 </Card>
               ))}
             </div>
+            <div className="text-center mt-12">
+              <Button asChild size="lg">
+                <Link href="/portfolio">
+                  View Full Portfolio <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+            </div>
           </div>
         </section>
 
