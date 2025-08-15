@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Code, LayoutTemplate, PenTool, Rocket, Search, ShoppingCart, Smartphone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Card } from "@/components/ui/card";
+import { portfolioProjects } from "../portfolio/projects";
 
 
 const idealFor = [
@@ -22,6 +25,8 @@ const servicesList = [
     "SEO optimalizácia pre vyhľadávače",
     "Integrácie s externými systémami (API)",
 ]
+
+const projectCategories = ["Webstránky", "E-shopy", "Mobilné Aplikácie", "SaaS"];
 
 
 export default function ServicesPage() {
@@ -85,19 +90,36 @@ export default function ServicesPage() {
             <section className="py-16 md:py-24">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
-                        <h2 className="font-headline text-3xl md:text-5xl font-bold">Pre koho sú naše služby ideálne?</h2>
-                        <p className="text-muted-foreground mt-4 text-lg max-w-2xl mx-auto">Naše riešenia sú flexibilné a prispôsobené pre širokú škálu klientov a projektov.</p>
+                        <h2 className="font-headline text-3xl md:text-5xl font-bold">Vyberte si projekt</h2>
+                        <p className="text-muted-foreground mt-4 text-lg max-w-2xl mx-auto">Pozrite si naše práce a inšpirujte sa pre váš ďalší projekt.</p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {idealFor.map((item, index) => (
-                            <div key={index} className="bg-secondary/50 p-6 rounded-lg text-center border border-border/50 hover:border-primary/50 transition-colors">
-                                <div className="mx-auto bg-primary/10 rounded-lg w-16 h-16 flex items-center justify-center mb-4">
-                                    {item.icon}
+                    <Tabs defaultValue={projectCategories[0]} className="w-full">
+                        <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8 h-auto">
+                            {projectCategories.map(category => (
+                                <TabsTrigger key={category} value={category} className="py-2.5 text-base">{category}</TabsTrigger>
+                            ))}
+                        </TabsList>
+                        {projectCategories.map(category => (
+                            <TabsContent key={category} value={category}>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                                    {portfolioProjects.filter(p => p.category === category).map(project => (
+                                        <Link key={project.slug} href={`/portfolio/${project.slug}`} className="group">
+                                            <Card className="overflow-hidden">
+                                                <Image src={project.image} alt={project.title} width={600} height={400} data-ai-hint={project.hint} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                                                <div className="p-4">
+                                                    <h3 className="font-bold text-lg group-hover:text-primary transition-colors">{project.title}</h3>
+                                                </div>
+                                            </Card>
+                                        </Link>
+                                    ))}
                                 </div>
-                                <h3 className="font-headline text-xl font-bold mb-2">{item.title}</h3>
-                                <p className="text-muted-foreground text-sm">{item.description}</p>
-                            </div>
+                            </TabsContent>
                         ))}
+                    </Tabs>
+                    <div className="text-center mt-12">
+                         <Button asChild size="lg">
+                            <Link href="/portfolio">Všetky projekty</Link>
+                        </Button>
                     </div>
                 </div>
             </section>
@@ -163,5 +185,4 @@ export default function ServicesPage() {
             </section>
         </>
     );
-
-    
+}
