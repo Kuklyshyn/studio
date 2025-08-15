@@ -23,9 +23,9 @@ const services = [
 ];
 
 const portfolio = [
-  { src: "https://placehold.co/600x800.png", alt: "Project 1", hint: "modern website design" },
-  { src: "https://placehold.co/600x800.png", alt: "Project 2", hint: "e-commerce dashboard" },
-  { src: "https://placehold.co/600x800.png", alt: "Project 3", hint: "mobile application interface" },
+  { src: "https://placehold.co/600x800.png", alt: "Project 1", hint: "website design abstract" },
+  { src: "https://placehold.co/600x800.png", alt: "Project 2", hint: "dashboard analytics dark" },
+  { src: "https://placehold.co/600x800.png", alt: "Project 3", hint: "mobile app finance" },
 ];
 
 const processSteps = [
@@ -54,8 +54,8 @@ const technologies = [
 ];
 
 const testimonials = [
-    { name: "Martin Š.", role: "CEO, Firma.sk", quote: "Spolupráca s Moder bola naozaj skvelá. Vytvorili nám presne taký web, aký sme chceli. Rýchlo, profesionálne a za rozumnú cenu. Odporúčam!", avatar: "https://placehold.co/100x100.png", hint: "man portrait" },
-    { name: "Jana N.", role: "Marketing Manager", quote: "Oceňujem proaktívny prístup a kreatívne nápady. Náš nový e-shop prekonal všetky očakávania a predaje nám stúpli o 40%.", avatar: "https://placehold.co/100x100.png", hint: "woman portrait" },
+    { name: "Martin Š.", role: "CEO, Firma.sk", quote: "Spolupráca s Moder bola naozaj skvelá. Vytvorili nám presne taký web, aký sme chceli. Rýchlo, profesionálne a za rozumnú cenu. Odporúčam!", avatar: "https://placehold.co/100x100.png", hint: "man portrait professional" },
+    { name: "Jana N.", role: "Marketing Manager", quote: "Oceňujem proaktívny prístup a kreatívne nápady. Náš nový e-shop prekonal všetky očakávania a predaje nám stúpli o 40%.", avatar: "https://placehold.co/100x100.png", hint: "woman portrait smiling" },
 ];
 
 
@@ -165,7 +165,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div>
-                        <Image src="https://placehold.co/800x800.png" alt="Why us" width={800} height={800} className="rounded-lg shadow-2xl" data-ai-hint="team working on laptops" />
+                        <Image src="https://placehold.co/800x800.png" alt="Why us" width={800} height={800} className="rounded-lg shadow-2xl" data-ai-hint="team collaborating modern" />
                     </div>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from '@/components/theme-provider';
+import { GdprBanner } from '@/components/layout/gdpr-banner';
 
 export const metadata: Metadata = {
   title: 'Moder Web Solutions | Tvorba web stránok, E-shopy a SEO',
@@ -33,6 +34,7 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
           <Toaster />
+          <GdprBanner />
         </ThemeProvider>
       </body>
     </html>

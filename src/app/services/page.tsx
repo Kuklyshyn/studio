@@ -62,7 +62,7 @@ export default function ServicesPage() {
                             </p>
                         </div>
                         <div>
-                             <Image src="https://placehold.co/800x600.png" alt="Moderné webové stránky" width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="modern website interface" />
+                             <Image src="https://placehold.co/800x600.png" alt="Moderné webové stránky" width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="website interface design" />
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ export default function ServicesPage() {
                             </p>
                         </div>
                         <div className="order-2 md:order-1">
-                             <Image src="https://placehold.co/800x600.png" alt="E-shopy ktoré predávajú" width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="e-commerce product page" />
+                             <Image src="https://placehold.co/800x600.png" alt="E-shopy ktoré predávajú" width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="online shopping checkout" />
                         </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@ export default function ServicesPage() {
                             </div>
                         </div>
                         <div className="flex justify-center">
-                             <Image src="https://placehold.co/600x600.png" alt="Výhody" width={500} height={500} className="rounded-lg shadow-2xl" data-ai-hint="glowing cube abstract" />
+                             <Image src="https://placehold.co/600x600.png" alt="Výhody" width={500} height={500} className="rounded-lg shadow-2xl" data-ai-hint="glowing cube technology" />
                         </div>
                     </div>
                 </div>

@@ -65,7 +65,7 @@ export default function CustomProgrammingPage() {
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
-                            <Image src="https://placehold.co/800x600.png" alt="Programovanie na mieru" width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="developer coding on computer" />
+                            <Image src="https://placehold.co/800x600.png" alt="Programovanie na mieru" width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="code on screen" />
                         </div>
                         <div>
                             <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">Od vízie k realite</h2>

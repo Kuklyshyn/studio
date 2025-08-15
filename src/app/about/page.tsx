@@ -35,7 +35,7 @@ export default function AboutPage() {
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
-                            <Image src="https://placehold.co/800x600.png" alt="Our Story" width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="people discussing work" />
+                            <Image src="https://placehold.co/800x600.png" alt="Our Story" width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="team collaborating office" />
                         </div>
                         <div>
                             <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">Náš príbeh</h2>
@@ -65,7 +65,7 @@ export default function AboutPage() {
                             </div>
                         </div>
                         <div className="order-1 md:order-2">
-                             <Image src="https://placehold.co/800x600.png" alt="Our Values" width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="abstract shapes" />
+                             <Image src="https://placehold.co/800x600.png" alt="Our Values" width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="glowing core abstract" />
                         </div>
                     </div>
                 </div>
