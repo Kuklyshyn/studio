@@ -49,7 +49,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-border/50 pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Moder Web Solutions. Všetky práva vyhradené.</p>
+          <p>&copy; {new Date().getFullYear()} Moder Web Solutions. Všetky práva vyhradené. | <Link href="/privacy-policy" className="hover:text-primary transition-colors">Zásady ochrany osobných údajov</Link></p>
         </div>
       </div>
     </footer>

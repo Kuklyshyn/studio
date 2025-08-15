@@ -1,4 +1,14 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 export default function PrivacyPolicyPage() {
+    const [currentDate, setCurrentDate] = useState('');
+
+    useEffect(() => {
+        setCurrentDate(new Date().toLocaleDateString('sk-SK', { year: 'numeric', month: 'long', day: 'numeric' }));
+    }, []);
+
     return (
         <div className="container mx-auto px-4 py-16 md:py-24">
             <div className="max-w-4xl mx-auto prose prose-invert lg:prose-xl text-foreground/90">
@@ -76,7 +86,7 @@ export default function PrivacyPolicyPage() {
                 <p>
                     Vyhradzujeme si právo tieto zásady kedykoľvek aktualizovať. O významných zmenách vás budeme informovať na tejto stránke. Odporúčame vám pravidelne kontrolovať tieto zásady.
                 </p>
-                <p>Posledná aktualizácia: {new Date().toLocaleDateString('sk-SK', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+                <p>Posledná aktualizácia: {currentDate}</p>
             </div>
         </div>
     );
