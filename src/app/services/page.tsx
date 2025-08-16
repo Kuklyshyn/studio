@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Code, LayoutTemplate, PenTool, Rocket, Search, ShoppingCart, Smartphone } from "lucide-react";
 import Image from "next/image";
@@ -26,7 +27,7 @@ const servicesList = [
     "Integrácie s externými systémami (API)",
 ]
 
-const projectCategories = ["Webstránky", "E-shopy", "Mobilné Aplikácie", "SaaS"];
+const projectCategories = [...new Set(portfolioProjects.map(p => p.category))];
 
 
 export default function ServicesPage() {
@@ -104,8 +105,10 @@ export default function ServicesPage() {
                                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                                     {portfolioProjects.filter(p => p.category === category).map(project => (
                                         <Link key={project.slug} href={`/portfolio/${project.slug}`} className="group">
-                                            <Card className="overflow-hidden">
-                                                <Image src={project.image} alt={project.title} width={600} height={400} data-ai-hint={project.hint} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                                            <Card className="overflow-hidden bg-secondary/50 border-border/50 hover:border-primary/50 transition-all">
+                                                <div className="overflow-hidden">
+                                                    <Image src={project.image} alt={project.title} width={600} height={400} data-ai-hint={project.hint} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                                                </div>
                                                 <div className="p-4">
                                                     <h3 className="font-bold text-lg group-hover:text-primary transition-colors">{project.title}</h3>
                                                 </div>
@@ -117,7 +120,7 @@ export default function ServicesPage() {
                         ))}
                     </Tabs>
                     <div className="text-center mt-12">
-                         <Button asChild size="lg">
+                         <Button asChild size="lg" className="rounded-full font-bold">
                             <Link href="/portfolio">Všetky projekty</Link>
                         </Button>
                     </div>
@@ -175,7 +178,7 @@ export default function ServicesPage() {
                         ))}
                     </div>
                      <div className="text-center mt-12">
-                        <Button asChild size="lg" variant="outline" className="rounded-full font-semibold border-2">
+                        <Button asChild size="lg" variant="outline" className="rounded-full font-semibold border-2 border-border/50 hover:bg-primary/10 hover:border-primary/50">
                            <Link href="/custom-programming">
                               Viac o programovaní na mieru <ArrowRight className="ml-2 h-5 w-5" />
                            </Link>
