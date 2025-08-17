@@ -1,15 +1,11 @@
-import type {NextConfig} from 'next';
+import type { NextConfig } from 'next';
+import createNextIntlPlugin from 'next-intl/plugin';
 
-const withNextIntl = require('next-intl/plugin')();
+const withNextIntl = createNextIntlPlugin(); // без шляху — за замовчуванням шукає i18n.ts
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  typescript: { ignoreBuildErrors: true },
+  eslint: { ignoreDuringBuilds: true },
   images: {
     remotePatterns: [
       {
