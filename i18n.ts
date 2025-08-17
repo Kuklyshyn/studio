@@ -1,7 +1,7 @@
-import {Pathnames} from 'next-intl/navigation';
-import {getRequestConfig} from 'next-intl/server';
- 
-export const locales = ['en', 'sk'] as const;
+import { Pathnames, createLocalizedPathnamesNavigation } from 'next-intl/navigation';
+import { getRequestConfig } from 'next-intl/server';
+
+export const locales = ['en', 'sk'];
 export const localePrefix = 'always';
 
 export const pathnames = {
@@ -22,15 +22,21 @@ export const pathnames = {
     sk: '/portfolio/[slug]',
   },
 } satisfies Pathnames<typeof locales>;
- 
-export default getRequestConfig(async ({locale}) => {
-  // Validate that the incoming `locale` parameter is valid
+
+export default getRequestConfig(async ({ locale }) => {
   if (!locales.includes(locale as any)) {
-      const {notFound} = await import('next/navigation');
-      notFound();
-  };
- 
+    const { notFound } = await import('next/navigation');
+    notFound();
+  }
+
   return {
-    messages: (await import(`./messages/${locale}.json`)).default
+    messages: (await import(`./messages/${locale}.json`)).default,
   };
 });
+
+export const { Link, redirect, usePathname, useRouter } =
+  createLocalizedPathnamesNavigation({
+    locales,
+    pathnames,
+    localePrefix,
+  });
