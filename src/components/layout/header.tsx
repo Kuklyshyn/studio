@@ -1,12 +1,12 @@
 "use client";
 
-import Link from "next/link";
+import {Link, usePathname} from '@/navigation';
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Mountain } from "lucide-react";
-import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { ThemeSwitcher } from "../theme-switcher";
+import { LanguageSwitcher } from './language-switcher';
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -43,6 +43,7 @@ export function Header() {
           ))}
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-2">
+          <LanguageSwitcher />
           <ThemeSwitcher />
           <Button asChild className="hidden md:inline-flex rounded-full">
             <Link href="/contact">Kontaktujte nás</Link>

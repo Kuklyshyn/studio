@@ -1,0 +1,12 @@
+{
+    "Header": {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Services",
+        "custom-programming": "Custom Programming",
+        "portfolio": "References",
+        "blog": "Blog",
+        "contact": "Contact",
+        "contact-us": "Contact Us"
+    }
+}
