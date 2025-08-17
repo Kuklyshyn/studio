@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Code, Database, Layers, Rocket, ShieldCheck, Zap } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n";
 
 const features = [
     {

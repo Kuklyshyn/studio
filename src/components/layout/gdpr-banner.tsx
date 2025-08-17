@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import Link from 'next/link';
+import { Link } from '@/i18n';
 import { Cookie } from 'lucide-react';
 
 export function GdprBanner() {
