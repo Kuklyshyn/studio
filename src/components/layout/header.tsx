@@ -1,25 +1,27 @@
 "use client";
 
-import {Link, usePathname} from '@/navigation';
+import { usePathname, Link } from "@/navigation";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Mountain } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ThemeSwitcher } from "../theme-switcher";
 import { LanguageSwitcher } from './language-switcher';
-
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "O nás" },
-  { href: "/services", label: "Služby" },
-  { href: "/custom-programming", label: "Programovanie na mieru" },
-  { href: "/portfolio", label: "Referencie" },
-  { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Kontakt" },
-];
+import { useTranslations } from 'next-intl';
 
 export function Header() {
   const pathname = usePathname();
+  const t = useTranslations('Header');
+
+  const navLinks = [
+    { href: "/", label: t('home') },
+    { href: "/about", label: t('about') },
+    { href: "/services", label: t('services') },
+    { href: "/custom-programming", label: t('custom-programming') },
+    { href: "/portfolio", label: t('portfolio') },
+    { href: "/blog", label: t('blog') },
+    { href: "/contact", label: t('contact') },
+  ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -46,7 +48,7 @@ export function Header() {
           <LanguageSwitcher />
           <ThemeSwitcher />
           <Button asChild className="hidden md:inline-flex rounded-full">
-            <Link href="/contact">Kontaktujte nás</Link>
+            <Link href="/contact">{t('contact-us')}</Link>
           </Button>
           <Sheet>
             <SheetTrigger asChild>
@@ -77,7 +79,7 @@ export function Header() {
                   </Link>
                 ))}
                 <Button asChild className="mt-4 rounded-full">
-                  <Link href="/contact">Kontaktujte nás</Link>
+                  <Link href="/contact">{t('contact-us')}</Link>
                 </Button>
               </nav>
             </SheetContent>
