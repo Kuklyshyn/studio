@@ -1,7 +1,4 @@
-import {
-  createLocalizedPathnamesNavigation,
-  Pathnames,
-} from 'next-intl/navigation';
+import {Pathnames} from 'next-intl/navigation';
 
 export const locales = ['en', 'sk'] as const;
 export const localePrefix = 'always';
@@ -24,10 +21,3 @@ export const pathnames = {
     sk: '/portfolio/[slug]',
   },
 } satisfies Pathnames<typeof locales>;
-
-export const {Link, redirect, usePathname, useRouter} =
-  createLocalizedPathnamesNavigation({
-    locales,
-    pathnames,
-    localePrefix,
-  });

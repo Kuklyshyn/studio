@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname, Link } from "@/navigation";
+import { usePathname, Link } from "@/i18n";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Mountain } from "lucide-react";
