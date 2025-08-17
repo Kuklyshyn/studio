@@ -1,12 +1,270 @@
+
 {
     "Header": {
         "home": "Home",
         "about": "About Us",
         "services": "Services",
         "custom-programming": "Custom Programming",
-        "portfolio": "References",
+        "portfolio": "Portfolio",
         "blog": "Blog",
         "contact": "Contact",
         "contact-us": "Contact Us"
+    },
+    "Footer": {
+        "description": "We create modern web solutions that move your business forward. We focus on quality, speed, and client satisfaction.",
+        "quick-links": "Quick Links",
+        "follow-us": "Follow Us",
+        "copyright": "All rights reserved.",
+        "privacy-policy": "Privacy Policy"
+    },
+    "Gdpr": {
+        "text": "We use cookies to provide you with the best experience on our website. By continuing to browse, you agree to our",
+        "privacy-policy": "privacy policy",
+        "agree": "I Agree"
+    },
+    "HomePage": {
+        "heroTitle": "Website and E-shop Development",
+        "heroSubtitle": "We will create a modern and profitable website or e-shop for you that will set you apart from the competition.",
+        "heroCta": "Get a Free Quote",
+        "servicesTitle": "Our Services",
+        "services": [
+            {
+                "title": "Website Development",
+                "description": "We will create a modern and responsive website for you that will attract and sell."
+            },
+            {
+                "title": "E-shop Development",
+                "description": "We will develop a custom e-shop for you that will be fast, secure, and ready for your business."
+            },
+            {
+                "title": "Digital Marketing",
+                "description": "We will make your brand visible online and bring you new customers through effective strategies."
+            }
+        ],
+        "portfolioTitle": "Our Portfolio",
+        "portfolioSubtitle": "Check out examples of our work.",
+        "portfolioCta": "View All Projects",
+        "processTitle": "Our Process",
+        "processSubtitle": "A quality website is the result of a well-planned process.",
+        "processSteps": [
+            {
+                "title": "Consultation & Analysis",
+                "description": "At the beginning, it's important to understand your goals and needs. We will analyze your competition and propose a strategy."
+            },
+            {
+                "title": "Proposal & Design",
+                "description": "We will create a modern and engaging design that will represent your brand and appeal to your target audience."
+            },
+            {
+                "title": "Development & Testing",
+                "description": "Our team of experienced programmers will turn the design into a fully functional and responsive website. We test everything thoroughly."
+            },
+            {
+                "title": "Launch & Support",
+                "description": "After your approval, we will launch the website. But our work doesn't end there. We also provide subsequent support and maintenance."
+            }
+        ],
+        "whyUsTitle": "Why Choose Us?",
+        "whyUsSubtitle": "We are a team of enthusiasts who love what they do. Every project is unique to us, and we approach it with maximum commitment.",
+        "whyUsReasons": [
+            "Individual approach",
+            "Modern technologies",
+            "We meet deadlines",
+            "Fair prices",
+            "Support and advice",
+            "Focus on results"
+        ],
+        "technologiesTitle": "Our Technologies",
+        "testimonialsTitle": "What Our Clients Say",
+        "testimonials": [
+            {
+                "quote": "The collaboration with Moder was really great. They created exactly the kind of website we wanted. Fast, professional, and at a reasonable price. I recommend them!",
+                "name": "Martin Š.",
+                "role": "CEO, Firma.sk"
+            },
+            {
+                "quote": "I appreciate the proactive approach and creative ideas. Our new e-shop exceeded all expectations, and our sales increased by 40%.",
+                "name": "Jana N.",
+                "role": "Marketing Manager"
+            }
+        ],
+        "ctaTitle": "Interested in our services?",
+        "ctaSubtitle": "Don't hesitate to contact us. We will be happy to prepare a non-binding custom quote for you.",
+        "ctaButton": "Contact Us"
+    },
+    "AboutPage": {
+        "heroTitle": "Who We Are?",
+        "heroSubtitle": "We are a team of creative professionals united by a passion for modern technology and a sense for detail.",
+        "storyTitle": "Our Story",
+        "storyText1": "Our journey began in 2020 with a simple vision: to create websites that not only look good but, more importantly, deliver results. We believe that a successful website is a combination of engaging design, flawless code, and a well-thought-out marketing strategy.",
+        "storyText2": "Today, we are proud to have helped dozens of clients launch or advance their online businesses. Every project is a new challenge for us, which we approach with enthusiasm and determination.",
+        "valuesTitle": "Our Values",
+        "values": [
+            "Quality and precision",
+            "Innovation and modern technologies",
+            "Fair and transparent approach",
+            "Client satisfaction first",
+            "Long-term partnerships",
+            "Passion for the digital world"
+        ],
+        "teamTitle": "Our Team",
+        "teamMembers": [
+            {
+                "name": "John Doe",
+                "role": "CEO & Founder"
+            },
+            {
+                "name": "Jane Smith",
+                "role": "Lead Designer"
+            },
+            {
+                "name": "Mike Johnson",
+                "role": "Lead Developer"
+            }
+        ]
+    },
+    "ServicesPage": {
+        "heroTitle": "Website and E-shop Development",
+        "heroSubtitle": "We specialize in creating modern, fast, and secure web solutions built on the most popular technologies.",
+        "heroCta": "Get a Quote",
+        "websitesTitle": "Modern Websites",
+        "websitesText1": "We create websites that not only look great but are also highly functional and user-friendly. We use modern technologies like Next.js and React, which guarantee speed, security, and scalability. Each website is designed from the ground up with your goals and your customers' needs in mind.",
+        "websitesText2": "Our goal is to create a digital business card that will represent you with dignity and help you grow.",
+        "eshopsTitle": "E-shops That Sell",
+        "eshopsText1": "For your online business, we will create a custom e-shop that is ready for success. With platforms like WooCommerce and Shopify, we create robust and easily manageable online stores. We focus on a great user experience, a seamless purchasing process, and optimization for mobile devices.",
+        "eshopsText2": "From product import to payment gateway integration – we take care of everything so you can focus on selling.",
+        "projectsTitle": "Choose a Project",
+        "projectsSubtitle": "Browse our work and get inspired for your next project.",
+        "allProjects": "All Projects",
+        "benefitsTitle": "Benefits of Our Solutions",
+        "benefits": [
+            {
+                "title": "Flexibility and Scalability",
+                "description": "The open ecosystem allows for almost unlimited possibilities for customization and adding new features."
+            },
+            {
+                "title": "Responsive Design",
+                "description": "All our websites are fully responsive and look great on all devices – from mobile phones to large monitors."
+            },
+            {
+                "title": "SEO-Friendly",
+                "description": "We emphasize technical SEO optimization so that customers can easily find you in search engines."
+            }
+        ],
+        "servicesListTitle": "Our Services in This Area",
+        "servicesListSubtitle": "We provide comprehensive services from design to long-term support and development of your website.",
+        "services": [
+            "Custom website development",
+            "E-shop development with WooCommerce",
+            "Coding designs into WordPress themes",
+            "Custom plugin programming",
+            "Speed and performance optimization",
+            "Website security and protection",
+            "Regular maintenance and updates",
+            "SEO for search engines",
+            "Integrations with external systems (API)"
+        ],
+        "customCta": "More about custom programming"
+    },
+    "PortfolioPage": {
+        "heroTitle": "Our Portfolio",
+        "heroSubtitle": "Check out the projects we are proud of and that have helped our clients succeed.",
+        "viewProject": "View Project"
+    },
+    "PortfolioDetailsPage": {
+        "back": "Back to Portfolio"
+    },
+    "CustomProgrammingPage": {
+        "heroTitle": "Custom Programming",
+        "heroSubtitle": "We transform your unique ideas into functional and robust web applications, systems, and solutions tailored to your requirements.",
+        "visionTitle": "From Vision to Reality",
+        "visionText1": "Do you have specific requirements that standard 'off-the-shelf' solutions don't meet? Do you need an internal system, a client portal, or a complex web application? Our custom programming services are here for you.",
+        "visionText2": "We focus on a detailed understanding of your processes and goals to create software that not only works but also genuinely simplifies your work and brings measurable results.",
+        "whyCustomTitle": "Why Choose a Custom Solution?",
+        "whyCustomSubtitle": "Investing in custom software is an investment in the future and efficiency of your business.",
+        "features": [
+            {
+                "title": "Speed and Efficiency",
+                "description": "We optimize code for maximum performance and fast application response."
+            },
+            {
+                "title": "Security First",
+                "description": "We implement the latest security standards to protect your data."
+            },
+            {
+                "title": "Scalability",
+                "description": "Our solutions are designed to grow with your business."
+            },
+            {
+                "title": "Clean and Maintainable Code",
+                "description": "We write code that is easy to read, extend, and maintain for the future."
+            }
+        ],
+        "processTitle": "Our Development Process",
+        "processSubtitle": "A transparent and proven procedure for successful project delivery.",
+        "processSteps": [
+            {
+                "title": "Requirement Analysis",
+                "description": "We deeply analyze your needs and goals to design the optimal solution."
+            },
+            {
+                "title": "Architecture and Design",
+                "description": "We will design a robust architecture and UX/UI design that ensures a great user experience."
+            },
+            {
+                "title": "Development and Implementation",
+                "description": "Our team of experts will program your solution with an emphasis on quality and performance."
+            },
+            {
+                "title": "Testing and QA",
+                "description": "We thoroughly test every aspect of the application to ensure its flawless operation."
+            },
+            {
+                "title": "Deployment and Launch",
+                "description": "We will ensure a smooth deployment to production and the launch of your application."
+            },
+            {
+                "title": "Support and Maintenance",
+                "description": "We provide long-term support, monitoring, and maintenance for hassle-free operation."
+            }
+        ],
+        "techTitle": "Technologies Used",
+        "ctaTitle": "Ready to start your project?",
+        "ctaSubtitle": "Contact us for a non-binding consultation and a quote for your custom solution.",
+        "ctaButton": "Contact Us"
+    },
+    "BlogPage": {
+        "heroTitle": "Our Blog",
+        "heroSubtitle": "Stay updated with the latest trends and tips in web and marketing.",
+        "readMore": "Read More"
+    },
+    "BlogPostPage": {
+        "back": "Back to Blog",
+        "by": "By"
+    },
+    "ContactPage": {
+        "heroTitle": "Contact Us",
+        "heroSubtitle": "Have a project or an idea? Write to us, and together we will turn it into reality.",
+        "formTitle": "Write to us",
+        "nameLabel": "Your Name",
+        "namePlaceholder": "John Doe",
+        "emailLabel": "Your Email",
+        "emailPlaceholder": "john.doe@example.com",
+        "subjectLabel": "Subject",
+        "subjectPlaceholder": "e.g., Quote for a website",
+        "messageLabel": "Your message",
+        "messagePlaceholder": "Hello, I would be interested in...",
+        "submitButton": "Send Message",
+        "contactInfoTitle": "Contact Info",
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address"
+    },
+    "PrivacyPolicyPage": {
+        "title": "Privacy Policy",
+        "lead": "Your privacy is important to us. In this privacy policy, we explain how we collect, use, and protect your personal data.",
+        "lastUpdated": "Last updated:"
     }
 }
+
+    

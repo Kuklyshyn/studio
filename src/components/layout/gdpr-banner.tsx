@@ -1,11 +1,14 @@
+
 "use client";
 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n';
 import { Cookie } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export function GdprBanner() {
+    const t = useTranslations("Gdpr");
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
@@ -30,12 +33,14 @@ export function GdprBanner() {
                 <div className="flex items-center gap-3">
                     <Cookie className="h-8 w-8 text-primary flex-shrink-0" />
                     <p className="text-sm text-muted-foreground">
-                        Používame cookies, aby sme vám poskytli tú najlepšiu skúsenosť na našom webe. 
-                        Pokračovaním v prehliadaní súhlasíte s našimi <Link href="/privacy-policy" className="underline hover:text-primary">zásadami ochrany osobných údajov</Link>.
+                        {t('text')}{' '}
+                        <Link href="/privacy-policy" className="underline hover:text-primary">{t('privacy-policy')}</Link>.
                     </p>
                 </div>
-                <Button onClick={handleAccept} className="rounded-full font-semibold">Súhlasím</Button>
+                <Button onClick={handleAccept} className="rounded-full font-semibold">{t('agree')}</Button>
             </div>
         </div>
     );
 }
+
+    

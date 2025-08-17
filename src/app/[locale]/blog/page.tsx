@@ -1,21 +1,25 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Link } from '@/i18n';
 import { blogPosts } from "./posts";
+import { useTranslations } from "next-intl";
 
 
 export default function BlogPage() {
+  const t = useTranslations("BlogPage");
+
   return (
     <>
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-headline text-4xl md:text-6xl font-bold mb-4">
-            Our Blog
+            {t('heroTitle')}
           </h1>
           <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-            Stay updated with the latest trends and tips in web and marketing.
+            {t('heroSubtitle')}
           </p>
         </div>
       </section>
@@ -45,7 +49,7 @@ export default function BlogPage() {
                   </div>
                   <CardFooter>
                       <span className="flex items-center text-primary font-semibold">
-                          Read More <ArrowRight className="ml-2 h-4 w-4" />
+                          {t('readMore')} <ArrowRight className="ml-2 h-4 w-4" />
                       </span>
                   </CardFooter>
                 </Link>
@@ -57,3 +61,5 @@ export default function BlogPage() {
     </>
   );
 }
+
+    

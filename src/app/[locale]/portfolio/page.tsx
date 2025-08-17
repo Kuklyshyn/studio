@@ -1,4 +1,5 @@
 
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,18 +7,21 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Link } from '@/i18n';
 import { portfolioProjects } from "./projects";
+import { useTranslations } from "next-intl";
 
 
 export default function PortfolioPage() {
+  const t = useTranslations("PortfolioPage");
+
   return (
     <>
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-headline text-4xl md:text-6xl font-bold mb-4">
-            Naše Portfólio
+            {t('heroTitle')}
           </h1>
           <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-            Pozrite si projekty, na ktoré sme hrdí a ktoré pomohli našim klientom uspieť.
+            {t('heroSubtitle')}
           </p>
         </div>
       </section>
@@ -49,7 +53,7 @@ export default function PortfolioPage() {
                   </div>
                   <CardFooter>
                       <span className="flex items-center text-primary font-semibold">
-                          Zobraziť projekt <ArrowRight className="ml-2 h-4 w-4" />
+                          {t('viewProject')} <ArrowRight className="ml-2 h-4 w-4" />
                       </span>
                   </CardFooter>
                 </Link>
@@ -61,3 +65,5 @@ export default function PortfolioPage() {
     </>
   );
 }
+
+    

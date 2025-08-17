@@ -1,9 +1,11 @@
+
 import { blogPosts } from '../posts';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 import { Link } from '@/i18n';
 import { ArrowLeft } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({
@@ -12,6 +14,7 @@ export async function generateStaticParams() {
 }
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
+  const t = useTranslations("BlogPostPage");
   const post = blogPosts.find((p) => p.slug === params.slug);
 
   if (!post) {
@@ -23,11 +26,11 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       <div className="max-w-4xl mx-auto">
         <Link href="/blog" className="inline-flex items-center gap-2 text-primary hover:underline mb-8">
             <ArrowLeft className="w-4 h-4" />
-            <span>Back to Blog</span>
+            <span>{t('back')}</span>
         </Link>
         <h1 className="font-headline text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>
         <div className="flex items-center space-x-4 text-muted-foreground mb-8">
-          <span>By {post.author}</span>
+          <span>{t('by')} {post.author}</span>
           <span>&bull;</span>
           <span>{post.date}</span>
         </div>
@@ -89,3 +92,5 @@ const styles = `
 `;
 
 export const Head = () => <style>{styles}</style>;
+
+    

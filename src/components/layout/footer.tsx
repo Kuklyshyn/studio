@@ -1,8 +1,13 @@
+
 import { Link } from "@/i18n";
 import { Mountain, Twitter, Linkedin, Facebook } from "lucide-react";
 import { Button } from "../ui/button";
+import { useTranslations } from "next-intl";
 
 export function Footer() {
+  const t = useTranslations("Footer");
+  const tHeader = useTranslations("Header");
+
   return (
     <footer className="bg-secondary/30 border-t border-border/50">
       <div className="container mx-auto px-4 py-12">
@@ -13,22 +18,22 @@ export function Footer() {
               <span className="font-bold font-headline text-2xl">Moder</span>
             </Link>
             <p className="text-muted-foreground max-w-md">
-              Tvoríme moderné webové riešenia, ktoré posúvajú vaše podnikanie vpred. Zameriavame sa na kvalitu, rýchlosť a spokojnosť klienta.
+              {t('description')}
             </p>
           </div>
           
           <div>
-            <h3 className="font-headline font-semibold text-lg mb-4">Rýchle odkazy</h3>
+            <h3 className="font-headline font-semibold text-lg mb-4">{t('quick-links')}</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
-              <li><Link href="/about" className="hover:text-primary transition-colors">O nás</Link></li>
-              <li><Link href="/services" className="hover:text-primary transition-colors">Služby</Link></li>
-              <li><Link href="/portfolio" className="hover:text-primary transition-colors">Referencie</Link></li>
-              <li><Link href="/contact" className="hover:text-primary transition-colors">Kontakt</Link></li>
+              <li><Link href="/" className="hover:text-primary transition-colors">{tHeader('home')}</Link></li>
+              <li><Link href="/about" className="hover:text-primary transition-colors">{tHeader('about')}</Link></li>
+              <li><Link href="/services" className="hover:text-primary transition-colors">{tHeader('services')}</Link></li>
+              <li><Link href="/portfolio" className="hover:text-primary transition-colors">{tHeader('portfolio')}</Link></li>
+              <li><Link href="/contact" className="hover:text-primary transition-colors">{tHeader('contact')}</Link></li>
             </ul>
           </div>
           <div>
-            <h3 className="font-headline font-semibold text-lg mb-4">Sledujte nás</h3>
+            <h3 className="font-headline font-semibold text-lg mb-4">{t('follow-us')}</h3>
              <div className="flex space-x-2">
               <Button asChild variant="ghost" size="icon">
                 <Link href="#" aria-label="Twitter">
@@ -49,9 +54,11 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-border/50 pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Moder Web Solutions. Všetky práva vyhradené. | <Link href="/privacy-policy" className="hover:text-primary transition-colors">Zásady ochrany osobných údajov</Link></p>
+          <p>&copy; {new Date().getFullYear()} Moder Web Solutions. {t('copyright')} | <Link href="/privacy-policy" className="hover:text-primary transition-colors">{t('privacy-policy')}</Link></p>
         </div>
       </div>
     </footer>
   );
 }
+
+    

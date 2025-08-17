@@ -1,9 +1,11 @@
+
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 import { Link } from '@/i18n';
 import { ArrowLeft } from 'lucide-react';
 import { portfolioProjects } from '../projects';
+import { useTranslations } from 'next-intl';
 
 export async function generateStaticParams() {
   return portfolioProjects.map((project) => ({
@@ -12,6 +14,7 @@ export async function generateStaticParams() {
 }
 
 export default function PortfolioProjectPage({ params }: { params: { slug: string } }) {
+  const t = useTranslations("PortfolioDetailsPage");
   const project = portfolioProjects.find((p) => p.slug === params.slug);
 
   if (!project) {
@@ -23,7 +26,7 @@ export default function PortfolioProjectPage({ params }: { params: { slug: strin
       <div className="max-w-4xl mx-auto">
         <Link href="/portfolio" className="inline-flex items-center gap-2 text-primary hover:underline mb-8">
             <ArrowLeft className="w-4 h-4" />
-            <span>Back to Portfolio</span>
+            <span>{t('back')}</span>
         </Link>
         <h1 className="font-headline text-4xl md:text-5xl font-bold mb-4">{project.title}</h1>
         
@@ -49,3 +52,5 @@ export default function PortfolioProjectPage({ params }: { params: { slug: strin
     </div>
   );
 }
+
+    

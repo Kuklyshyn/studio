@@ -1,3 +1,4 @@
+
 {
     "Header": {
         "home": "Home",
@@ -8,5 +9,262 @@
         "blog": "Blog",
         "contact": "Kontakt",
         "contact-us": "Kontaktujte nás"
+    },
+    "Footer": {
+        "description": "Tvoríme moderné webové riešenia, ktoré posúvajú vaše podnikanie vpred. Zameriavame sa na kvalitu, rýchlosť a spokojnosť klienta.",
+        "quick-links": "Rýchle odkazy",
+        "follow-us": "Sledujte nás",
+        "copyright": "Všetky práva vyhradené.",
+        "privacy-policy": "Zásady ochrany osobných údajov"
+    },
+    "Gdpr": {
+        "text": "Používame cookies, aby sme vám poskytli tú najlepšiu skúsenosť na našom webe. Pokračovaním v prehliadaní súhlasíte s našimi",
+        "privacy-policy": "zásadami ochrany osobných údajov",
+        "agree": "Súhlasím"
+    },
+    "HomePage": {
+        "heroTitle": "Tvorba web stránok a e-shopov",
+        "heroSubtitle": "Vytvoríme vám modernú a ziskovú web stránku alebo e-shop, ktorý vás odlíši od konkurencie.",
+        "heroCta": "Nezáväzná cenová ponuka",
+        "servicesTitle": "Naše Služby",
+        "services": [
+            {
+                "title": "Tvorba web stránok",
+                "description": "Vytvoríme vám modernú a responzívnu webovú stránku, ktorá zaujme a predá."
+            },
+            {
+                "title": "Tvorba E-shopov",
+                "description": "Vyvinieme vám e-shop na mieru, ktorý bude rýchly, bezpečný a pripravený na vaše podnikanie."
+            },
+            {
+                "title": "Digitálny Marketing",
+                "description": "Zviditeľníme vašu značku online a privedieme vám nových zákazníkov vďaka efektívnym stratégiám."
+            }
+        ],
+        "portfolioTitle": "Naše Referencie",
+        "portfolioSubtitle": "Pozrite si ukážky našich prác.",
+        "portfolioCta": "Zobraziť všetky projekty",
+        "processTitle": "Náš Postup",
+        "processSubtitle": "Kvalitný web je výsledkom dobre naplánovaného procesu.",
+        "processSteps": [
+            {
+                "title": "Konzultácia & Analýza",
+                "description": "Na začiatku je dôležité pochopiť vaše ciele a potreby. Zanalyzujeme vašu konkurenciu a navrhneme stratégiu."
+            },
+            {
+                "title": "Návrh & Dizajn",
+                "description": "Vytvoríme moderný a pútavý dizajn, ktorý bude reprezentovať vašu značku a osloví vašu cieľovú skupinu."
+            },
+            {
+                "title": "Vývoj & Testovanie",
+                "description": "Náš tím skúsených programátorov premení dizajn na plne funkčný a responzívny web. Všetko dôkladne otestujeme."
+            },
+            {
+                "title": "Spustenie & Podpora",
+                "description": "Po vašom schválení web spustíme. Tým sa ale naša práca nekončí. Poskytujeme aj následnú podporu a údržbu."
+            }
+        ],
+        "whyUsTitle": "Prečo si vybrať nás?",
+        "whyUsSubtitle": "Sme tím nadšencov, ktorí milujú to, čo robia. Každý projekt je pre nás jedinečný a pristupujeme k nemu s maximálnym nasadením.",
+        "whyUsReasons": [
+            "Individuálny prístup",
+            "Moderné technológie",
+            "Dodržiavame termíny",
+            "Férové ceny",
+            "Podpora a poradenstvo",
+            "Zameranie na výsledky"
+        ],
+        "technologiesTitle": "Naše Technológie",
+        "testimonialsTitle": "Čo o nás hovoria klienti",
+        "testimonials": [
+            {
+                "quote": "Spolupráca s Moder bola naozaj skvelá. Vytvorili nám presne taký web, aký sme chceli. Rýchlo, profesionálne a za rozumnú cenu. Odporúčam!",
+                "name": "Martin Š.",
+                "role": "CEO, Firma.sk"
+            },
+            {
+                "quote": "Oceňujem proaktívny prístup a kreatívne nápady. Náš nový e-shop prekonal všetky očakávania a predaje nám stúpli o 40%.",
+                "name": "Jana N.",
+                "role": "Marketing Manager"
+            }
+        ],
+        "ctaTitle": "Máte záujem o naše služby?",
+        "ctaSubtitle": "Neváhajte nás kontaktovať. Radi vám pripravíme nezáväznú cenovú ponuku na mieru.",
+        "ctaButton": "Kontaktujte nás"
+    },
+    "AboutPage": {
+        "heroTitle": "Kto sme?",
+        "heroSubtitle": "Sme tím kreatívnych profesionálov, ktorých spája vášeň pre moderné technológie a zmysel pre detail.",
+        "storyTitle": "Náš príbeh",
+        "storyText1": "Naša cesta začala v roku 2020 s jednoduchou víziou: tvoriť weby, ktoré nielen dobre vyzerajú, ale hlavne prinášajú výsledky. Veríme, že úspešný web je kombináciou pútavého dizajnu, bezchybného kódu a premyslenej marketingovej stratégie.",
+        "storyText2": "Dnes sme hrdí na to, že sme pomohli desiatkam klientov naštartovať alebo posunúť ich online podnikanie. Každý projekt je pre nás novou výzvou, ku ktorej pristupujeme s nadšením a odhodlaním.",
+        "valuesTitle": "Naše hodnoty",
+        "values": [
+            "Kvalita a precíznosť",
+            "Inovácie a moderné technológie",
+            "Férový a transparentný prístup",
+            "Spokojnosť klienta na prvom mieste",
+            "Dlhodobé partnerstvá",
+            "Vášeň pre digitálny svet"
+        ],
+        "teamTitle": "Náš tím",
+        "teamMembers": [
+            {
+                "name": "Ján Mrkvička",
+                "role": "CEO & Zakladateľ"
+            },
+            {
+                "name": "Jana Nováková",
+                "role": "Hlavná dizajnérka"
+            },
+            {
+                "name": "Peter Kováč",
+                "role": "Hlavný vývojár"
+            }
+        ]
+    },
+    "ServicesPage": {
+        "heroTitle": "Tvorba webov a e-shopov",
+        "heroSubtitle": "Špecializujeme sa na tvorbu moderných, rýchlych a bezpečných webových riešení postavených na najpopulárnejších technológiách.",
+        "heroCta": "Získať cenovú ponuku",
+        "websitesTitle": "Moderné webové stránky",
+        "websitesText1": "Tvoríme webové stránky, ktoré nielen skvele vyzerajú, ale sú aj vysoko funkčné a používateľsky prívetivé. Používame moderné technológie ako Next.js a React, ktoré zaručujú rýchlosť, bezpečnosť a škálovateľnosť. Každý web je od základu navrhnutý s ohľadom na vaše ciele a potreby vašich zákazníkov.",
+        "websitesText2": "Našim cieľom je vytvoriť digitálnu vizitku, ktorá vás bude dôstojne reprezentovať a pomôže vám rásť.",
+        "eshopsTitle": "E-shopy, ktoré predávajú",
+        "eshopsText1": "Pre vaše online podnikanie vytvoríme e-shop na mieru, ktorý je pripravený na úspech. S platformami ako WooCommerce a Shopify vytvárame robustné a ľahko spravovateľné online obchody. Zameriavame sa na skvelý používateľský zážitok, bezproblémový nákupný proces a optimalizáciu pre mobilné zariadenia.",
+        "eshopsText2": "Od importu produktov až po integráciu platobných brán – postaráme sa o všetko, aby ste sa vy mohli sústrediť na predaj.",
+        "projectsTitle": "Vyberte si projekt",
+        "projectsSubtitle": "Pozrite si naše práce a inšpirujte sa pre váš ďalší projekt.",
+        "allProjects": "Všetky projekty",
+        "benefitsTitle": "Výhody našich riešení",
+        "benefits": [
+            {
+                "title": "Flexibilita a rozšíriteľnosť",
+                "description": "Otvorený ekosystém umožňuje takmer neobmedzené možnosti prispôsobenia a pridávania nových funkcií."
+            },
+            {
+                "title": "Responzívny dizajn",
+                "description": "Všetky naše weby sú plne responzívne a vyzerajú skvele na všetkých zariadeniach – od mobilov po veľké monitory."
+            },
+            {
+                "title": "SEO-Friendly",
+                "description": "Kladieme dôraz na technickú SEO optimalizáciu, aby vás zákazníci ľahko našli vo vyhľadávačoch."
+            }
+        ],
+        "servicesListTitle": "Naše služby v tejto oblasti",
+        "servicesListSubtitle": "Poskytujeme komplexné služby od návrhu až po dlhodobú podporu a rozvoj vášho webu.",
+        "services": [
+            "Tvorba webových stránok na mieru",
+            "Tvorba e-shopov s WooCommerce",
+            "Kódovanie dizajnov na WordPress šablóny",
+            "Programovanie pluginov na mieru",
+            "Optimalizácia rýchlosti a výkonu",
+            "Zabezpečenie a ochrana webu",
+            "Pravidelná údržba a aktualizácie",
+            "SEO optimalizácia pre vyhľadávače",
+            "Integrácie s externými systémami (API)"
+        ],
+        "customCta": "Viac o programovaní na mieru"
+    },
+    "PortfolioPage": {
+        "heroTitle": "Naše Portfólio",
+        "heroSubtitle": "Pozrite si projekty, na ktoré sme hrdí a ktoré pomohli našim klientom uspieť.",
+        "viewProject": "Zobraziť projekt"
+    },
+     "PortfolioDetailsPage": {
+        "back": "Späť na portfólio"
+    },
+    "CustomProgrammingPage": {
+        "heroTitle": "Programovanie na Mieru",
+        "heroSubtitle": "Premeníme vaše unikátne nápady na funkčné a robustné webové aplikácie, systémy a riešenia presne podľa vašich požiadaviek.",
+        "visionTitle": "Od vízie k realite",
+        "visionText1": "Máte špecifické požiadavky, ktoré nespĺňajú bežné \"krabicové\" riešenia? Potrebujete interný systém, portál pre klientov, alebo komplexnú webovú aplikáciu? Naše služby programovania na mieru sú tu presne pre vás.",
+        "visionText2": "Sústredíme sa na detailné pochopenie vašich procesov a cieľov, aby sme vytvorili softvér, ktorý nielen funguje, ale vám aj reálne zjednodušuje prácu a prináša merateľné výsledky.",
+        "whyCustomTitle": "Prečo si vybrať riešenie na mieru?",
+        "whyCustomSubtitle": "Investícia do softvéru na mieru je investíciou do budúcnosti a efektivity vášho podnikania.",
+        "features": [
+            {
+                "title": "Rýchlosť a Efektivita",
+                "description": "Optimalizujeme kód pre maximálny výkon a rýchlu odozvu aplikácie."
+            },
+            {
+                "title": "Bezpečnosť na Prvom Mieste",
+                "description": "Implementujeme najnovšie bezpečnostné štandardy na ochranu vašich dát."
+            },
+            {
+                "title": "Škálovateľnosť",
+                "description": "Naše riešenia sú navrhnuté tak, aby rástli spolu s vaším podnikaním."
+            },
+            {
+                "title": "Čistý a Udržateľný Kód",
+                "description": "Píšeme kód, ktorý je ľahko čitateľný, rozšíriteľný a udržiavateľný do budúcna."
+            }
+        ],
+        "processTitle": "Náš Proces Vývoja",
+        "processSubtitle": "Transparentný a osvedčený postup pre úspešné dodanie projektu.",
+        "processSteps": [
+            {
+                "title": "Analýza požiadaviek",
+                "description": "Hĺbkovo analyzujeme vaše potreby a ciele, aby sme navrhli optimálne riešenie."
+            },
+            {
+                "title": "Architektúra a Dizajn",
+                "description": "Navrhneme robustnú architektúru a UX/UI dizajn, ktorý zabezpečí skvelý používateľský zážitok."
+            },
+            {
+                "title": "Vývoj a Implementácia",
+                "description": "Náš tím expertov naprogramuje vaše riešenie s dôrazom na kvalitu a výkon."
+            },
+            {
+                "title": "Testovanie a QA",
+                "description": "Dôkladne testujeme každý aspekt aplikácie, aby sme zaručili jej bezchybný chod."
+            },
+            {
+                "title": "Nasadenie a Spustenie",
+                "description": "Zabezpečíme plynulé nasadenie do produkcie a spustenie vašej aplikácie."
+            },
+            {
+                "title": "Podpora a Údržba",
+                "description": "Poskytujeme dlhodobú podporu, monitoring a údržbu pre bezproblémovú prevádzku."
+            }
+        ],
+        "techTitle": "Používané Technológie",
+        "ctaTitle": "Pripravení začať váš projekt?",
+        "ctaSubtitle": "Kontaktujte nás pre nezáväznú konzultáciu a cenovú ponuku pre vaše riešenie na mieru.",
+        "ctaButton": "Kontaktujte nás"
+    },
+    "BlogPage": {
+        "heroTitle": "Náš Blog",
+        "heroSubtitle": "Zostaňte v obraze s najnovšími trendmi a tipmi z oblasti webu a marketingu.",
+        "readMore": "Čítať viac"
+    },
+    "BlogPostPage": {
+        "back": "Späť na Blog",
+        "by": ""
+    },
+    "ContactPage": {
+        "heroTitle": "Kontaktujte nás",
+        "heroSubtitle": "Máte projekt alebo nápad? Napíšte nám a spoločne ho premeníme na realitu.",
+        "formTitle": "Napíšte nám",
+        "nameLabel": "Vaše Meno",
+        "namePlaceholder": "Ján Mrkvička",
+        "emailLabel": "Váš Email",
+        "emailPlaceholder": "jan.mrvicka@example.com",
+        "subjectLabel": "Predmet správy",
+        "subjectPlaceholder": "Napr. Cenová ponuka na web",
+        "messageLabel": "Vaša správa",
+        "messagePlaceholder": "Dobrý deň, mal by som záujem o...",
+        "submitButton": "Odoslať správu",
+        "contactInfoTitle": "Kontaktné info",
+        "email": "Email",
+        "phone": "Telefón",
+        "address": "Adresa"
+    },
+    "PrivacyPolicyPage": {
+        "title": "Zásady ochrany osobných údajov",
+        "lead": "Vaše súkromie je pre nás dôležité. V týchto zásadách ochrany osobných údajov vám vysvetlíme, ako zhromažďujeme, používame a chránime vaše osobné údaje.",
+        "lastUpdated": "Posledná aktualizácia:"
     }
 }
+
+    
