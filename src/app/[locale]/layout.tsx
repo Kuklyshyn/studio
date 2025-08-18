@@ -30,7 +30,7 @@ export default async function LocaleLayout({children, params: {locale}}: Props) 
 
   return (
     <html lang={locale} className={`${spaceGrotesk.variable} ${ptSans.variable}`} suppressHydrationWarning>
-      <body className="font-body antialiased bg-background">
+      <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider
             attribute="class"

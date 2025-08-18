@@ -1,18 +1,37 @@
-import { Pathnames, createLocalizedPathnamesNavigation } from 'next-intl/navigation';
 import { getRequestConfig } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { createLocalizedPathnamesNavigation, Pathnames } from 'next-intl/navigation';
 
 export const locales = ['en', 'sk'] as const;
 export const localePrefix = 'always';
 
 export const pathnames = {
   '/': '/',
-  '/about': '/about',
+  '/about': {
+    en: '/about',
+    sk: '/o-nas'
+  },
   '/blog': '/blog',
-  '/contact': '/contact',
-  '/custom-programming': '/custom-programming',
-  '/portfolio': '/portfolio',
-  '/privacy-policy': '/privacy-policy',
-  '/services': '/services',
+  '/contact': {
+    en: '/contact',
+    sk: '/kontakt'
+  },
+  '/custom-programming': {
+    en: '/custom-programming',
+    sk: '/programovanie-na-mieru'
+  },
+  '/portfolio': {
+    en: '/portfolio',
+    sk: '/portfolio'
+  },
+  '/privacy-policy': {
+    en: '/privacy-policy',
+    sk: '/ochrana-osobnych-udajov'
+  },
+  '/services': {
+    en: '/services',
+    sk: '/sluzby'
+  },
   '/blog/[slug]': {
     en: '/blog/[slug]',
     sk: '/blog/[slug]',
@@ -25,7 +44,6 @@ export const pathnames = {
 
 export default getRequestConfig(async ({ locale }) => {
   if (!locales.includes(locale as any)) {
-    const { notFound } = await import('next/navigation');
     notFound();
   }
 
