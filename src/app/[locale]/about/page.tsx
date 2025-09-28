@@ -1,7 +1,7 @@
 
 import { Check } from "lucide-react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 const teamMemberHints = ["man portrait professional", "woman smiling", "man glasses"];
 
@@ -27,7 +27,8 @@ const values_sk = [
 export default function AboutPage() {
     const t = useTranslations("AboutPage");
     const tHeader = useTranslations("Header");
-    const locale = useTranslations()('Header.locale');
+
+    const locale = useLocale();
 
     const teamMembers = t.raw('teamMembers');
     const values = locale === 'en' ? values_en : values_sk;
@@ -50,7 +51,7 @@ export default function AboutPage() {
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
-                            <Image src="https://placehold.co/800x600.png" alt="Our Story" width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="team collaborating office" />
+                            <Image src="https://supermykola.sirv.com/omni/Wavy_Bus-20_Single-04.jpg" alt="Our Story" width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="team collaborating office" />
                         </div>
                         <div>
                             <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">{t('storyTitle')}</h2>
@@ -80,7 +81,7 @@ export default function AboutPage() {
                             </div>
                         </div>
                         <div className="order-1 md:order-2">
-                             <Image src="https://placehold.co/800x600.png" alt="Our Values" width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="glowing core abstract" />
+                             <Image src="https://supermykola.sirv.com/omni/6671227.jpg" alt="Our Values" width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="glowing core abstract" />
                         </div>
                     </div>
                 </div>
@@ -94,9 +95,9 @@ export default function AboutPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
                         {teamMembers.map((member: any, index: number) => (
                             <div key={index} className="text-center group">
-                                <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-lg">
+                                {/* <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-lg">
                                     <Image src="https://placehold.co/400x400.png" alt={member.name} width={400} height={400} data-ai-hint={teamMemberHints[index]} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-                                </div>
+                                </div> */}
                                 <h3 className="font-bold text-xl">{member.name}</h3>
                                 <p className="text-primary">{member.role}</p>
                             </div>

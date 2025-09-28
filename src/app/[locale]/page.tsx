@@ -5,21 +5,25 @@ import { ArrowRight, Check, Code2, Layers, Megaphone, MoveRight, Palette, Rocket
 import Image from "next/image";
 import { Link } from "@/i18n";
 import { useTranslations } from "next-intl";
-
-const portfolio = [
-  { src: "https://placehold.co/600x800.png", alt: "Project 1", hint: "website design abstract" },
-  { src: "https://placehold.co/600x800.png", alt: "Project 2", hint: "dashboard analytics dark" },
-  { src: "https://placehold.co/600x800.png", alt: "Project 3", hint: "mobile app finance" },
-];
+import { Icon } from "@iconify/react";
 
 const technologies = [
-    { name: "Next.js", src: "https://placehold.co/100x100.png", hint: "nextjs logo" },
-    { name: "React", src: "https://placehold.co/100x100.png", hint: "react logo" },
-    { name: "TypeScript", src: "https://placehold.co/100x100.png", hint: "typescript logo" },
-    { name: "Tailwind CSS", src: "https://placehold.co/100x100.png", hint: "tailwind css logo" },
-    { name: "Firebase", src: "https://placehold.co/100x100.png", hint: "firebase logo" },
-    { name: "Node.js", src: "https://placehold.co/100x100.png", hint: "nodejs logo" },
+    { name: "Next.js", icon: "logos:nextjs-icon", hint: "nextjs logo" },
+    { name: "React", icon: "logos:react", hint: "react logo" },
+    { name: "TypeScript", icon: "logos:typescript-icon", hint: "typescript logo" },
+    { name: "Node.js", icon: "logos:nodejs-icon", hint: "nodejs logo" },
+    { name: "Firebase", icon: "logos:firebase-icon", hint: "firebase logo" },
+    { name: "PostgreSQL", icon: "logos:postgresql-icon", hint: "postgresql logo" },
+    { name: "Docker", icon: "logos:docker-icon", hint: "docker logo" },
+    { name: "GraphQL", icon: "logos:graphql-icon", hint: "graphql logo" },
 ];
+
+const portfolio = [
+  { src: "https://supermykola.sirv.com/omni/1.png", alt: "Project 1", hint: "website design abstract" },
+  { src: "https://supermykola.sirv.com/omni/2.png", alt: "Project 2", hint: "dashboard analytics dark" },
+  { src: "https://supermykola.sirv.com/omni/3.png", alt: "Project 3", hint: "mobile app finance" },
+];
+
 
 const serviceIcons = [<Palette className="w-8 h-8 text-primary" />, <Code2 className="w-8 h-8 text-primary" />, <Megaphone className="w-8 h-8 text-primary" />];
 const testimonialAvatars = ["https://placehold.co/100x100.png", "https://placehold.co/100x100.png"];
@@ -137,7 +141,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div>
-                        <Image src="https://placehold.co/800x800.png" alt={t('whyUsTitle')} width={800} height={800} className="rounded-lg shadow-2xl" data-ai-hint="team collaborating modern" />
+                        <Image src="https://supermykola.sirv.com/omni/9.jpg" alt={t('whyUsTitle')} width={800} height={800} className="rounded-lg shadow-2xl" data-ai-hint="team collaborating modern" />
                     </div>
                 </div>
             </div>
@@ -154,7 +158,7 @@ export default function Home() {
                 <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
                     {technologies.map(tech => (
                         <div key={tech.name} className="text-center" title={tech.name}>
-                             <Image src={tech.src} alt={tech.name} width={64} height={64} data-ai-hint={tech.hint} className="w-16 h-16 grayscale hover:grayscale-0 transition-all duration-300" />
+                             <Icon icon={tech.icon} className="w-16 h-16 grayscale hover:grayscale-0 transition-all duration-300" />
                         </div>
                     ))}
                 </div>
@@ -171,7 +175,7 @@ export default function Home() {
                   <Card key={index} className="bg-secondary/50 border-border/50 p-6">
                     <p className="text-muted-foreground italic mb-6">"{testimonial.quote}"</p>
                     <div className="flex items-center">
-                      <Image className="w-12 h-12 rounded-full" src={testimonialAvatars[index]} alt={testimonial.name} width={100} height={100} data-ai-hint={testimonialHints[index]}/>
+                      {/* <Image className="w-12 h-12 rounded-full" src={testimonialAvatars[index]} alt={testimonial.name} width={100} height={100} data-ai-hint={testimonialHints[index]}/> */}
                       <div className="ml-4">
                         <p className="font-bold">{testimonial.name}</p>
                         <p className="text-sm text-muted-foreground">{testimonial.role}</p>

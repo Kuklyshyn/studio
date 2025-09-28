@@ -1,11 +1,30 @@
 
 export const portfolioProjects = [
   {
+    slug: "vinnaalej-sk-slovakian-developer-real-estate-site",
+    title: "Vinnaalej.sk: Slovakian developer real-estate site",
+    category: "Website",
+    description: "Obnovil som stránku. Opravil som chyby predchádzajúceho vývojára.",
+    image: "https://supermykola.sirv.com/omni/vinna.png",
+    hint: "real-estate website",
+    tags: ["Wordpress", "WooCommerce", "PHP", "JavaScript", "E-commerce"],
+    content: `
+      <h3>Platform Development</h3>
+      <p>The project involved a full-cycle development of a WordPress-based real-estate solution. I was responsible for:</p>
+      <ul>
+        <li>Developing a custom WordPress theme from scratch based on the client's designs.</li>
+        <li>Integrating and customizing the WordPress plugin for real-estate management and online sales.</li>
+        <li>Using Advanced Custom Fields (ACF) to create flexible and easy-to-manage content sections.</li>
+        <li>Writing custom PHP and JavaScript to implement unique features and ensure a smooth real-estate experience.</li>
+      </ul>
+    `,
+  },
+  {
     slug: "versace-ecommerce-excellence",
     title: "Versace: A High-Fashion E-commerce Experience",
     category: "E-shopy",
     description: "As a Front-End Developer at Astound Commerce, I contributed to the digital presence of Versace, one of the world's most iconic luxury fashion brands. My role involved developing and refining the user interface to ensure it met the highest standards of design and performance, reflecting the brand's commitment to excellence.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://supermykola.sirv.com/omni/5.png",
     hint: "luxury fashion website",
     tags: ["SFCC", "JavaScript", "HTML5/PUG", "CSS/SCSS", "E-commerce"],
     content: `
@@ -20,7 +39,7 @@ export const portfolioProjects = [
     title: "Halfords: Innovating Automotive Service Bookings",
     category: "Webstránky",
     description: "During my time at Astound Commerce, I played a key role in enhancing the online platform for Halfords, a leading UK automotive service and parts retailer. I was instrumental in developing a user-friendly vehicle registration number (VRN) lookup and a custom booking calendar.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://supermykola.sirv.com/omni/3.png",
     hint: "car service website",
     tags: ["SFCC", "JavaScript", "Custom Calendar", "UI/UX"],
     content: `
@@ -38,7 +57,7 @@ export const portfolioProjects = [
     title: "London Drugs: Canadian Retail Pharmacy Website",
     category: "E-shopy",
     description: "I contributed to the front-end development for London Drugs, a major Canadian retail and pharmacy chain. The project involved creating a robust and accessible online shopping experience on the Salesforce Commerce Cloud platform, serving thousands of customers daily.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://supermykola.sirv.com/omni/8.png",
     hint: "pharmacy online store",
     tags: ["SFCC", "JavaScript", "HTML5/PUG", "CSS/SCSS", "Retail"],
     content: `
@@ -52,7 +71,7 @@ export const portfolioProjects = [
     title: "Experts.Sirv: Interactive Professional Search Platform",
     category: "SaaS",
     description: "I was a key developer for Experts.sirv.com, a unique platform for discovering and connecting with professionals. My primary achievement was implementing a highly interactive expert map with advanced geolocation-based filtering, built with Vue.js and Nuxt.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://supermykola.sirv.com/omni/2.png",
     hint: "interactive map platform",
     tags: ["Vue.js", "Nuxt", "Google Maps API", "JavaScript"],
     content: `
@@ -70,7 +89,7 @@ export const portfolioProjects = [
     title: "Carma.no: Norwegian Fashion E-commerce Store",
     category: "E-shopy",
     description: "As a developer at ThinkMobiles, I built Carma.no, a stylish online fashion store. The project was developed on WordPress and WooCommerce, featuring a custom theme and advanced functionalities to meet the client's needs in the competitive fashion market.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://supermykola.sirv.com/omni/1.png",
     hint: "fashion boutique website",
     tags: ["Wordpress", "WooCommerce", "PHP", "JavaScript", "E-commerce"],
     content: `
@@ -89,7 +108,7 @@ export const portfolioProjects = [
     title: "Weltou: Global Wellness Connection Platform",
     category: "SaaS",
     description: "At Foxtrapp, I worked on Weltou, a bilingual digital platform connecting wellness experts with clients worldwide. I utilized React and Socket.IO to enable secure, real-time online consultations, bridging the gap between experts and those seeking their help.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://supermykola.sirv.com/omni/6.jpeg",
     hint: "wellness online platform",
     tags: ["React", "Socket.io", "ExpressJS", "JavaScript", "Real-time"],
     content: `
@@ -107,7 +126,7 @@ export const portfolioProjects = [
     title: "Internal CRM System for Simplaq",
     category: "Mobilné Aplikácie",
     description: "At Simplaq, I led the development of a comprehensive internal CRM system. This project was built from the ground up using Vue 3 and Vuetify to streamline company operations, manage client relationships, and improve overall efficiency.",
-    image: "https://placehold.co/600x400.png",
+    image: "https://supermykola.sirv.com/omni/7.png",
     hint: "crm dashboard interface",
     tags: ["Vue 3", "Vuetify", "JavaScript", "Google Maps API"],
     content: `

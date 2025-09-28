@@ -83,9 +83,9 @@
                 "role": "CEO, Firma.sk"
             },
             {
-                "quote": "I appreciate the proactive approach and creative ideas. Our new e-shop exceeded all expectations, and our sales increased by 40%.",
-                "name": "Jana N.",
-                "role": "Marketing Manager"
+                "quote": "Quickly corrected the mistakes of past programmers and made the site operational and secure.",
+                "name": "Oleksandr Kapitan",
+                "role": "CEO, AAAA Kapitan s. r. o."
             }
         ],
         "ctaTitle": "Interested in our services?",
@@ -110,16 +110,16 @@
         "teamTitle": "Our Team",
         "teamMembers": [
             {
-                "name": "John Doe",
-                "role": "CEO & Founder"
+                "name": "Mykola Kuklyshyn",
+                "role": "CEO & Founder & Full Stack Developer"
             },
             {
-                "name": "Jane Smith",
-                "role": "Lead Designer"
+                "name": "Oleksandr Kuklyshyn",
+                "role": "Full Stack Developer"
             },
             {
-                "name": "Mike Johnson",
-                "role": "Lead Developer"
+                "name": "Olena Kuklyshyn",
+                "role": "Designer"
             }
         ]
     },

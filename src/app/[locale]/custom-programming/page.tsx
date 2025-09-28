@@ -4,16 +4,17 @@ import { ArrowRight, Check, Code, Database, Layers, Rocket, ShieldCheck, Zap } f
 import Image from "next/image";
 import { Link } from "@/i18n";
 import { useTranslations } from "next-intl";
+import { Icon } from "@iconify/react";
 
 const technologies = [
-    { name: "Next.js", src: "https://placehold.co/100x100.png", hint: "nextjs logo" },
-    { name: "React", src: "https://placehold.co/100x100.png", hint: "react logo" },
-    { name: "TypeScript", src: "https://placehold.co/100x100.png", hint: "typescript logo" },
-    { name: "Node.js", src: "https://placehold.co/100x100.png", hint: "nodejs logo" },
-    { name: "Firebase", src: "https://placehold.co/100x100.png", hint: "firebase logo" },
-    { name: "PostgreSQL", src: "https://placehold.co/100x100.png", hint: "postgresql logo" },
-    { name: "Docker", src: "https://placehold.co/100x100.png", hint: "docker logo" },
-    { name: "GraphQL", src: "https://placehold.co/100x100.png", hint: "graphql logo" },
+    { name: "Next.js", icon: "logos:nextjs-icon", hint: "nextjs logo" },
+    { name: "React", icon: "logos:react", hint: "react logo" },
+    { name: "TypeScript", icon: "logos:typescript-icon", hint: "typescript logo" },
+    { name: "Node.js", icon: "logos:nodejs-icon", hint: "nodejs logo" },
+    { name: "Firebase", icon: "logos:firebase-icon", hint: "firebase logo" },
+    { name: "PostgreSQL", icon: "logos:postgresql-icon", hint: "postgresql logo" },
+    { name: "Docker", icon: "logos:docker-icon", hint: "docker logo" },
+    { name: "GraphQL", icon: "logos:graphql-icon", hint: "graphql logo" },
 ];
 
 const featureIcons = [
@@ -46,7 +47,7 @@ export default function CustomProgrammingPage() {
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
-                            <Image src="https://placehold.co/800x600.png" alt={t('heroTitle')} width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="code on screen" />
+                            <Image src="https://supermykola.sirv.com/omni/13.jpg" alt={t('heroTitle')} width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="code on screen" />
                         </div>
                         <div>
                             <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">{t('visionTitle')}</h2>
@@ -117,7 +118,7 @@ export default function CustomProgrammingPage() {
                     <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
                         {technologies.map(tech => (
                             <div key={tech.name} className="text-center" title={tech.name}>
-                                 <Image src={tech.src} alt={tech.name} width={64} height={64} data-ai-hint={tech.hint} className="w-16 h-16 grayscale hover:grayscale-0 transition-all duration-300" />
+                                 <Icon icon={tech.icon} className="w-16 h-16 grayscale hover:grayscale-0 transition-all duration-300" />
                             </div>
                         ))}
                     </div>

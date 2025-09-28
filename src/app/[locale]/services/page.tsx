@@ -50,7 +50,7 @@ export default function ServicesPage() {
                             </p>
                         </div>
                         <div>
-                             <Image src="https://placehold.co/800x600.png" alt={t('websitesTitle')} width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="website interface design" />
+                             <Image src="https://supermykola.sirv.com/omni/9.jpg" alt={t('websitesTitle')} width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="website interface design" />
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ export default function ServicesPage() {
                             </p>
                         </div>
                         <div className="order-2 md:order-1">
-                             <Image src="https://placehold.co/800x600.png" alt={t('eshopsTitle')} width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="online shopping checkout" />
+                             <Image src="https://supermykola.sirv.com/omni/12.jpg" alt={t('eshopsTitle')} width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="online shopping checkout" />
                         </div>
                     </div>
                 </div>
@@ -132,7 +132,7 @@ export default function ServicesPage() {
                             </div>
                         </div>
                         <div className="flex justify-center">
-                             <Image src="https://placehold.co/600x600.png" alt={t('benefitsTitle')} width={500} height={500} className="rounded-lg shadow-2xl" data-ai-hint="glowing cube technology" />
+                             <Image src="https://supermykola.sirv.com/omni/11.jpg" alt={t('benefitsTitle')} width={500} height={500} className="rounded-lg shadow-2xl" data-ai-hint="glowing cube technology" />
                         </div>
                     </div>
                 </div>
