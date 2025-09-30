@@ -9,7 +9,7 @@ import { getTranslations } from 'next-intl/server';
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  const locales = ['en', 'uk']; // додайте ваші локалі
+  const locales = ['en', 'sk']; // додайте ваші локалі
   
   return locales.flatMap((locale) =>
     portfolioProjects.map((project) => ({

@@ -6,14 +6,15 @@ import { Badge } from '@/components/ui/badge';
 import { Link } from '@/i18n';
 import { ArrowLeft } from 'lucide-react';
 import { getTranslations } from 'next-intl/server';
+import { useLocale } from 'next-intl';
 
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  const locales = ['en', 'uk']; // додайте ваші локалі
+  const locales = ['en', 'sk']; // додайте ваші локалі
   
   return locales.flatMap((locale) =>
-    blogPosts.map((blogPost) => ({
+    blogPosts[locale as keyof typeof blogPosts].map((blogPost: any) => ({
       locale,
       slug: blogPost.slug,
     }))
@@ -23,7 +24,7 @@ export async function generateStaticParams() {
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string; locale: string }> }) {
   const { slug, locale } = await params;
   const t = await getTranslations({ locale, namespace: 'BlogPostPage' });
-  const post = blogPosts.find((p) => p.slug === slug);
+  const post = blogPosts[locale as keyof typeof blogPosts].find((p: any) => p.slug === slug);
 
   if (!post) {
     notFound();

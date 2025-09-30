@@ -6,10 +6,12 @@ import Image from "next/image";
 import { Link } from '@/i18n';
 import { blogPosts } from "./posts";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
 
 export default function BlogPage() {
   const t = useTranslations("BlogPage");
+  const locale = useLocale();
 
   return (
     <>
@@ -27,7 +29,7 @@ export default function BlogPage() {
       <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post) => (
+            {blogPosts[locale as keyof typeof blogPosts].map((post: any) => (
               <Card key={post.slug} className="flex flex-col bg-secondary/50 border-border/50 hover:border-primary/50 transition-all duration-300 group">
                 <Link href={`/blog/${post.slug}`} className="flex flex-col flex-grow">
                   <CardHeader className="p-0">

@@ -31,6 +31,9 @@ export function Header() {
     { href: "/contact", label: t("contact") },
   ];
 
+  const isBlogDetail = /^\/blog\/[^/]+$/.test(pathname as string);
+  const isPortfolioDetail = /^\/portfolio\/[^/]+$/.test(pathname as string);
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center px-4">
@@ -66,7 +69,7 @@ export function Header() {
           })}
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <LanguageSwitcher />
+          {!isBlogDetail && !isPortfolioDetail && <LanguageSwitcher />} {/* <-- тут ховаємо */}
           {/* <ThemeSwitcher /> */}
           <Button asChild className="hidden md:inline-flex rounded-full">
             <Link href="/contact">{t("contact-us")}</Link>
