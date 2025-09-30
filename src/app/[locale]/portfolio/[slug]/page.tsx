@@ -5,7 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { Link } from '@/i18n';
 import { ArrowLeft } from 'lucide-react';
 import { portfolioProjects } from '../projects';
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 
 export async function generateStaticParams() {
   return portfolioProjects.map((project) => ({
@@ -13,9 +13,10 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function PortfolioProjectPage({ params }: { params: { slug: string } }) {
-  const t = useTranslations("PortfolioDetailsPage");
-  const project = portfolioProjects.find((p) => p.slug === params.slug);
+export default async function PortfolioProjectPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const t = await getTranslations('PortfolioDetailsPage');
+  const project = portfolioProjects.find((p) => p.slug === slug);
 
   if (!project) {
     notFound();
