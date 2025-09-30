@@ -7,15 +7,17 @@ import { ArrowLeft } from 'lucide-react';
 import { portfolioProjects } from '../projects';
 import { getTranslations } from 'next-intl/server';
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return portfolioProjects.map((project) => ({
     slug: project.slug,
   }));
 }
 
-export default async function PortfolioProjectPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const t = await getTranslations('PortfolioDetailsPage');
+export default async function PortfolioProjectPage({ params }: { params: Promise<{ slug: string, locale: string }> }) {
+  const { slug, locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'PortfolioDetailsPage' });
   const project = portfolioProjects.find((p) => p.slug === slug);
 
   if (!project) {
