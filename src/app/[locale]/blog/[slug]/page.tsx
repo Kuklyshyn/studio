@@ -5,17 +5,25 @@ import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 import { Link } from '@/i18n';
 import { ArrowLeft } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
+
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  return blogPosts.map((post) => ({
-    slug: post.slug,
-  }));
+  const locales = ['en', 'uk']; // додайте ваші локалі
+  
+  return locales.flatMap((locale) =>
+    blogPosts.map((blogPost) => ({
+      locale,
+      slug: blogPost.slug,
+    }))
+  );
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const t = useTranslations("BlogPostPage");
-  const post = blogPosts.find((p) => p.slug === params.slug);
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string; locale: string }> }) {
+  const { slug, locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'BlogPostPage' });
+  const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) {
     notFound();

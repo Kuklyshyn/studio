@@ -20,7 +20,7 @@ export function Header() {
     { href: "/services", label: t('services') },
     { href: "/custom-programming", label: t('custom-programming') },
     { href: "/portfolio", label: t('portfolio') },
-    // { href: "/blog", label: t('blog') },
+    { href: "/blog", label: t('blog') },
     { href: "/contact", label: t('contact') },
   ];
 
