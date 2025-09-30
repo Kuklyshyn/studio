@@ -1,9 +1,11 @@
 import { MetadataRoute } from 'next'
 import { blogPosts } from './blog/posts'
 import { portfolioProjects } from './portfolio/projects'
+import { getLocale } from 'next-intl/server'
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = 'https://example.com' // Replace with your actual domain
+export default async function sitemap(): Promise<MetadataRoute.Sitemap>  {
+  const locale = await getLocale()
+  const siteUrl = `https://omnichannel.com/${locale}` // Replace with your actual domain
 
   const staticPages = [
     { url: `${siteUrl}/`, lastModified: new Date() },
