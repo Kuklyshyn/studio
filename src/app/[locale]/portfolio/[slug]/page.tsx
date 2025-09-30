@@ -1,4 +1,3 @@
-
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
@@ -10,12 +9,21 @@ import { getTranslations } from 'next-intl/server';
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  return portfolioProjects.map((project) => ({
-    slug: project.slug,
-  }));
+  const locales = ['en', 'uk']; // додайте ваші локалі
+  
+  return locales.flatMap((locale) =>
+    portfolioProjects.map((project) => ({
+      locale,
+      slug: project.slug,
+    }))
+  );
 }
 
-export default async function PortfolioProjectPage({ params }: { params: Promise<{ slug: string, locale: string }> }) {
+export default async function PortfolioProjectPage({ 
+  params 
+}: { 
+  params: Promise<{ slug: string; locale: string }> 
+}) {
   const { slug, locale } = await params;
   const t = await getTranslations({ locale, namespace: 'PortfolioDetailsPage' });
   const project = portfolioProjects.find((p) => p.slug === slug);
@@ -41,12 +49,12 @@ export default async function PortfolioProjectPage({ params }: { params: Promise
             <Image
                 src={project.image}
                 alt={project.title}
-                layout="fill"
-                objectFit="cover"
+                fill
+                className="object-cover"
                 data-ai-hint={project.hint}
             />
         </div>
-
+        
         <div className="prose prose-invert lg:prose-xl max-w-none mx-auto text-foreground/90">
           <p className="lead text-xl text-muted-foreground mb-8">{project.description}</p>
           <div dangerouslySetInnerHTML={{ __html: project.content }} />
@@ -55,5 +63,3 @@ export default async function PortfolioProjectPage({ params }: { params: Promise
     </div>
   );
 }
-
-    
