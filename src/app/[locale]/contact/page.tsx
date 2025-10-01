@@ -1,12 +1,54 @@
+"use client";
+
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 export default function ContactPage() {
+  const pathname = usePathname(); // наприклад "/sk/contact"
+  const locale = pathname.split("/")[1]; // "sk" або "en"
   const t = useTranslations("ContactPage");
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState<string | null>(null);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setLoading(true);
+    setStatus(null);
+
+    const form = e.currentTarget;
+    const data = {
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      subject: (form.elements.namedItem("subject") as HTMLInputElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement)
+        .value,
+    };
+
+    try {
+      const res = await fetch(`/api/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        setStatus("✅ Successfully sent!");
+        form.reset();
+      } else {
+        setStatus("❌ Error sending message");
+      }
+    } catch (err) {
+      setStatus("⚠️ Server problem");
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
     <>
@@ -29,13 +71,15 @@ export default function ContactPage() {
               <h2 className="font-headline text-3xl font-bold mb-6">
                 {t("formTitle")}
               </h2>
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="name">{t("nameLabel")}</Label>
                     <Input
                       id="name"
+                      name="name"
                       placeholder={t("namePlaceholder")}
+                      required
                       className="bg-secondary/50 border-border/50"
                     />
                   </div>
@@ -43,8 +87,10 @@ export default function ContactPage() {
                     <Label htmlFor="email">{t("emailLabel")}</Label>
                     <Input
                       id="email"
+                      name="email"
                       type="email"
                       placeholder={t("emailPlaceholder")}
+                      required
                       className="bg-secondary/50 border-border/50"
                     />
                   </div>
@@ -53,6 +99,7 @@ export default function ContactPage() {
                   <Label htmlFor="subject">{t("subjectLabel")}</Label>
                   <Input
                     id="subject"
+                    name="subject"
                     placeholder={t("subjectPlaceholder")}
                     className="bg-secondary/50 border-border/50"
                   />
@@ -61,8 +108,10 @@ export default function ContactPage() {
                   <Label htmlFor="message">{t("messageLabel")}</Label>
                   <Textarea
                     id="message"
+                    name="message"
                     placeholder={t("messagePlaceholder")}
                     rows={5}
+                    required
                     className="bg-secondary/50 border-border/50"
                   />
                 </div>
@@ -70,9 +119,11 @@ export default function ContactPage() {
                   type="submit"
                   size="lg"
                   className="rounded-full font-semibold"
+                  disabled={loading}
                 >
-                  {t("submitButton")}
+                  {loading ? "⏳ Відправка..." : t("submitButton")}
                 </Button>
+                {status && <p className="text-sm mt-2">{status}</p>}
               </form>
             </div>
             <div className="space-y-8 bg-secondary/30 p-8 rounded-lg">
@@ -85,8 +136,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold">{t("email")}</h3>
                     <a
-                      href="mailto:kuklyshynpro@gmail.com
-"
+                      href="mailto:kuklyshynpro@gmail.com"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       kuklyshynpro@gmail.com
@@ -98,7 +148,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold">{t("phone")}</h3>
                     <a
-                      href="tel:+421123456789"
+                      href="tel:+421950371355"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       +421 950 371 355
@@ -110,7 +160,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold">{t("address")}</h3>
                     <p className="text-muted-foreground">
-                    Doležalova 3424/15C, 821 04 Bratislava-Ružinov, Slovensko
+                      Doležalova 3424/15C, 821 04 Bratislava-Ružinov, Slovensko
                     </p>
                   </div>
                 </div>
