@@ -17,7 +17,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap>  {
     { url: `${siteUrl}/contact`, lastModified: new Date() },
   ]
 
-  const blogPostPages = blogPosts.map(post => ({
+  const blogPostPages = blogPosts[locale as keyof typeof blogPosts].map((post: any) => ({
     url: `${siteUrl}/blog/${post.slug}`,
     lastModified: new Date(),
   }));
