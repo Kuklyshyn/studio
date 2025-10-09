@@ -143,7 +143,7 @@ export default function ContactPage() {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
+                {/* <div className="flex items-start gap-4">
                   <Phone className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold">{t("phone")}</h3>
@@ -154,7 +154,7 @@ export default function ContactPage() {
                       +421 950 371 355
                     </a>
                   </div>
-                </div>
+                </div> */}
                 <div className="flex items-start gap-4">
                   <MapPin className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                   <div>
