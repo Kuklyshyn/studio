@@ -7,9 +7,8 @@ import { Footer } from "@/components/layout/footer";
 import { Toaster } from "@/components/ui/toaster";
 import { GdprBanner } from "@/components/layout/gdpr-banner";
 import { Space_Grotesk, PT_Sans } from "next/font/google";
-import { GoogleAnalytics } from '@next/third-parties/google'
-import { SpeedInsights } from "@vercel/speed-insights/next"
-
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -55,6 +54,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         </NextIntlClientProvider>
       </body>
       <GoogleAnalytics gaId="G-F9C2WLQZPG" />
+      <GoogleAnalytics gaId="AW-17671979388" />
     </html>
   );
 }
