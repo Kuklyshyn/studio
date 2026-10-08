@@ -57,15 +57,15 @@
             },
             {
                 "title": "Development & Testing",
-                "description": "Our team of experienced programmers will turn the design into a fully functional and responsive website. We test everything thoroughly."
+                "description": "As an experienced developer, I will turn the design into a fully functional and responsive website. I test everything thoroughly."
             },
             {
                 "title": "Launch & Support",
-                "description": "After your approval, we will launch the website. But our work doesn't end there. We also provide subsequent support and maintenance."
+                "description": "After your approval, I will launch the website. But it doesn't end there: I also provide support and maintenance afterwards."
             }
         ],
         "whyUsTitle": "Why Choose Us?",
-        "whyUsSubtitle": "We are a team of enthusiasts who love what they do. Every project is unique to us, and we approach it with maximum commitment.",
+        "whyUsSubtitle": "I build websites I'm proud of. Every project is unique to me, and I approach it with maximum commitment.",
         "whyUsReasons": [
             "Consultation and analysis at the start of every project",
             "Built with Next.js, React and TypeScript",
@@ -86,10 +86,10 @@
     },
     "AboutPage": {
         "heroTitle": "Who We Are?",
-        "heroSubtitle": "We are a team of creative professionals united by a passion for modern technology and a sense for detail.",
+        "heroSubtitle": "I am a web developer from Bratislava, driven by a passion for modern technology and a sense for detail.",
         "storyTitle": "Our Story",
-        "storyText1": "Our journey began in 2020 with a simple vision: to create websites that not only look good but, more importantly, deliver results. We believe that a successful website is a combination of engaging design, flawless code, and a well-thought-out marketing strategy.",
-        "storyText2": "Today, we are proud to have helped dozens of clients launch or advance their online businesses. Every project is a new challenge for us, which we approach with enthusiasm and determination.",
+        "storyText1": "Omnicode started with a simple vision: to create websites that not only look good but, more importantly, deliver results. We believe that a successful website is a combination of engaging design, flawless code, and a well-thought-out marketing strategy.",
+        "storyText2": "Today I help clients launch or grow their online businesses. Every project is a new challenge for me, which I approach with enthusiasm and determination.",
         "valuesTitle": "Our Values",
         "values": [
             "Quality and precision",
@@ -99,19 +99,11 @@
             "Long-term partnerships",
             "Passion for the digital world"
         ],
-        "teamTitle": "Our Team",
+        "teamTitle": "Who builds your website",
         "teamMembers": [
             {
                 "name": "Mykola Kuklyshyn",
-                "role": "CEO & Founder & Full Stack Developer"
-            },
-            {
-                "name": "Oleksandr Kuklyshyn",
-                "role": "Full Stack Developer"
-            },
-            {
-                "name": "Olena Kuklyshyn",
-                "role": "Designer"
+                "role": "Senior Web Developer and founder"
             }
         ]
     },
@@ -218,7 +210,7 @@
             },
             {
                 "title": "Development and Implementation",
-                "description": "Our team of experts will program your solution with an emphasis on quality and performance."
+                "description": "As an expert developer, I will program your solution with an emphasis on quality and performance."
             },
             {
                 "title": "Testing and QA",
@@ -310,7 +302,7 @@
         },
         "contact": {
             "title": "Contact Us and Get a Free Quote",
-            "description": "Tell us about your project and get a free, non-binding quote for your website or e-shop from our team in Bratislava."
+            "description": "Tell us about your project and get a free, non-binding quote for your website or e-shop from a developer in Bratislava."
         },
         "privacyPolicy": {
             "title": "Privacy Policy",

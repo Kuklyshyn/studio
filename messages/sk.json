@@ -57,15 +57,15 @@
       },
       {
         "title": "Vývoj & Testovanie",
-        "description": "Náš tím skúsených programátorov premení dizajn na plne funkčný a responzívny web. Všetko dôkladne otestujeme."
+        "description": "Ako vývojár premením dizajn na plne funkčný a responzívny web. Všetko dôkladne otestujem."
       },
       {
         "title": "Spustenie & Podpora",
-        "description": "Po vašom schválení web spustíme. Tým sa ale naša práca nekončí. Poskytujeme aj následnú podporu a údržbu."
+        "description": "Po vašom schválení web spustím. Ani vtedy to nekončí: ponúkam aj následnú podporu a údržbu."
       }
     ],
     "whyUsTitle": "Prečo si vybrať nás?",
-    "whyUsSubtitle": "Sme tím nadšencov, ktorí milujú to, čo robia. Každý projekt je pre nás jedinečný a pristupujeme k nemu s maximálnym nasadením.",
+    "whyUsSubtitle": "Robím weby, ktoré mám rád. Každý projekt je pre mňa jedinečný a pristupujem k nemu s maximálnym nasadením.",
     "whyUsReasons": [
       "Konzultácia a analýza na začiatku každého projektu",
       "Stavame na Next.js, React a TypeScript",
@@ -86,10 +86,10 @@
   },
   "AboutPage": {
     "heroTitle": "Kto sme?",
-    "heroSubtitle": "Sme tím kreatívnych profesionálov, ktorých spája vášeň pre moderné technológie a zmysel pre detail.",
+    "heroSubtitle": "Som webový vývojár z Bratislavy. Spája ma vášeň pre moderné technológie a zmysel pre detail.",
     "storyTitle": "Náš príbeh",
-    "storyText1": "Naša cesta začala v roku 2020 s jednoduchou víziou: tvoriť weby, ktoré nielen dobre vyzerajú, ale hlavne prinášajú výsledky. Veríme, že úspešný web je kombináciou pútavého dizajnu, bezchybného kódu a premyslenej marketingovej stratégie.",
-    "storyText2": "Dnes sme hrdí na to, že sme pomohli desiatkam klientov naštartovať alebo posunúť ich online podnikanie. Každý projekt je pre nás novou výzvou, ku ktorej pristupujeme s nadšením a odhodlaním.",
+    "storyText1": "Omnicode začalo s jednoduchou víziou: tvoriť weby, ktoré nielen dobre vyzerajú, ale hlavne prinášajú výsledky. Veríme, že úspešný web je kombináciou pútavého dizajnu, bezchybného kódu a premyslenej marketingovej stratégie.",
+    "storyText2": "Dnes pomáham klientom naštartovať alebo posunúť ich online podnikanie. Každý projekt je pre mňa novou výzvou, ku ktorej pristupujem s nadšením a odhodlaním.",
     "valuesTitle": "Naše hodnoty",
     "values": [
       "Kvalita a precíznosť",
@@ -99,19 +99,11 @@
       "Dlhodobé partnerstvá",
       "Vášeň pre digitálny svet"
     ],
-    "teamTitle": "Náš tím",
+    "teamTitle": "Kto stojí za webom",
     "teamMembers": [
       {
         "name": "Mykola Kuklyshyn",
-        "role": "CEO & Founder & Full Stack Developer"
-      },
-      {
-        "name": "Oleksandr Kuklyshyn",
-        "role": "Full Stack Developer"
-      },
-      {
-        "name": "Olena Kuklyshyn",
-        "role": "Designer"
+        "role": "Senior Web Developer a zakladateľ"
       }
     ]
   },
@@ -218,7 +210,7 @@
       },
       {
         "title": "Vývoj a Implementácia",
-        "description": "Náš tím expertov naprogramuje vaše riešenie s dôrazom na kvalitu a výkon."
+        "description": "Ako vývojár naprogramujem vaše riešenie s dôrazom na kvalitu a výkon."
       },
       {
         "title": "Testovanie a QA",
@@ -290,7 +282,7 @@
     },
     "about": {
       "title": "O nás",
-      "description": "Spoznajte tím Omnicode: dizajnérov a vývojárov z Bratislavy, ktorí tvoria weby, čo dobre vyzerajú a prinášajú výsledky pre klientov."
+      "description": "Spoznajte Omnicode: webového vývojára z Bratislavy, ktorý tvorí weby, čo dobre vyzerajú a prinášajú výsledky pre klientov."
     },
     "services": {
       "title": "Tvorba webov a e-shopov",
@@ -310,7 +302,7 @@
     },
     "contact": {
       "title": "Kontaktujte nás a získajte ponuku zadarmo",
-      "description": "Napíšte nám o vašom projekte a získajte nezáväznú ponuku na web alebo e-shop od nášho tímu z Bratislavy."
+      "description": "Napíšte nám o vašom projekte a získajte nezáväznú ponuku na web alebo e-shop od vývojára z Bratislavy."
     },
     "privacyPolicy": {
       "title": "Zásady ochrany osobných údajov",
