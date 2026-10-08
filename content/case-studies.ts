@@ -57,16 +57,13 @@ export const portfolioProjects: PortfolioProject[] = [
     `,
     },
     industry: { en: "Real estate", sk: "Reality" },
-    problem: {
-      en: "Renewal of an existing real-estate website and fixing issues left by a previous developer.",
-      sk: "Obnova existujúceho realitného webu a oprava chýb po predchádzajúcom vývojárovi.",
-    },
+    problem: null, // The old text repeated the lead paragraph word for word. Add the owner's own problem statement here.
     results: null,
     quote: null,
     liveUrl: null,
     image: "/portfolio/real-estate-website-developer.webp",
     hint: "real-estate website",
-    tags: ["WordPress", "WooCommerce", "PHP", "JavaScript", "E-commerce"],
+    tags: ["WordPress", "PHP", "JavaScript"], // WooCommerce and E-commerce removed until the owner confirms them.
   },
   {
     slug: "fashion-eshop-salesforce",

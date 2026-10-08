@@ -1,13 +1,13 @@
 {
   "Header": {
-    "home": "Home",
+    "home": "Domov",
     "about": "O nás",
     "services": "Služby",
     "custom-programming": "Programovanie na mieru",
     "portfolio": "Referencie",
     "blog": "Blog",
     "contact": "Kontakt",
-    "contact-us": "Kontaktujte nás",
+    "contact-us": "Dohodnúť si hovor",
     "switchLanguage": "Zmeniť jazyk"
   },
   "Footer": {
@@ -22,10 +22,10 @@
   },
   "HomePage": {
     "heroTitle": "Weby a e-shopy pre slovenské firmy, ktoré chcú predávať",
-    "heroSubtitle": "Vytvoríme vám modernú a ziskovú web stránku alebo e-shop, ktorý vás odlíši od konkurencie.",
+    "heroSubtitle": "Vytvoríme web alebo e-shop, ktorý predstaví vašu firmu a pomôže získať nových zákazníkov.",
     "heroCta": "Dohodnúť si hovor",
     "heroSecondaryCta": "Pozrieť referencie",
-    "servicesTitle": "Naše Služby",
+    "servicesTitle": "Naše služby",
     "services": [
       {
         "title": "Tvorba web stránok",
@@ -40,12 +40,13 @@
         "description": "Zviditeľníme vašu značku online a privedieme vám nových zákazníkov vďaka efektívnym stratégiám."
       }
     ],
-    "portfolioTitle": "Naše Referencie",
+    "portfolioTitle": "Naše referencie",
     "portfolioSubtitle": "Pozrite si ukážky našich prác.",
     "portfolioCta": "Zobraziť všetky projekty",
-    "processTitle": "Náš Postup",
+    "processTitle": "Náš postup",
     "processSubtitle": "Kvalitný web je výsledkom dobre naplánovaného procesu.",
     "stepLabel": "Krok {number}",
+    "projectBadge": "Projekt pod NDA",
     "processSteps": [
       {
         "title": "Konzultácia & Analýza",
@@ -65,16 +66,21 @@
       }
     ],
     "whyUsTitle": "Prečo si vybrať nás?",
-    "whyUsSubtitle": "Sme tím nadšencov, ktorí milujú to, čo robia. Každý projekt je pre nás jedinečný a pristupujeme k nemu s maximálnym nasadením.",
+    "whyUsSubtitle": "Sme tím, ktorý sa venuje webom a e-shopom. Každý projekt začíname konzultáciou a analýzou.",
     "whyUsReasons": [
       "Konzultácia a analýza na začiatku každého projektu",
       "Stavame na Next.js, React a TypeScript",
       "Podpora a údržba aj po spustení webu"
     ],
-    "technologiesTitle": "Naše Technológie",
+    "technologiesTitle": "Naše technológie",
     "ctaTitle": "Máte záujem o naše služby?",
     "ctaSubtitle": "Neváhajte nás kontaktovať. Radi vám pripravíme nezáväznú cenovú ponuku na mieru.",
     "ctaButton": "Kontaktujte nás"
+  },
+  "CtaBand": {
+    "title": "Máte záujem o spoluprácu?",
+    "subtitle": "Ozvite sa nám. Prejdeme si váš projekt a navrhneme ďalší postup.",
+    "button": "Dohodnúť si hovor"
   },
   "Pricing": {
     "title": "Orientačné ceny",
@@ -88,8 +94,8 @@
     "heroTitle": "Kto sme?",
     "heroSubtitle": "Sme tím kreatívnych profesionálov, ktorých spája vášeň pre moderné technológie a zmysel pre detail.",
     "storyTitle": "Náš príbeh",
-    "storyText1": "Naša cesta začala v roku 2020 s jednoduchou víziou: tvoriť weby, ktoré nielen dobre vyzerajú, ale hlavne prinášajú výsledky. Veríme, že úspešný web je kombináciou pútavého dizajnu, bezchybného kódu a premyslenej marketingovej stratégie.",
-    "storyText2": "Dnes sme hrdí na to, že sme pomohli desiatkam klientov naštartovať alebo posunúť ich online podnikanie. Každý projekt je pre nás novou výzvou, ku ktorej pristupujeme s nadšením a odhodlaním.",
+    "storyText1": "Naša cesta začala s jednoduchou víziou: tvoriť weby, ktoré nielen dobre vyzerajú, ale hlavne prinášajú výsledky. Veríme, že úspešný web je kombináciou pútavého dizajnu, bezchybného kódu a premyslenej marketingovej stratégie.",
+    "storyText2": "V našom portfóliu nájdete 8 projektov: weby, e-shopy, SaaS platformy a interné systémy. Každý projekt je pre nás novou výzvou, ku ktorej pristupujeme s nadšením a odhodlaním.",
     "valuesTitle": "Naše hodnoty",
     "values": [
       "Kvalita a precíznosť",
@@ -118,7 +124,7 @@
   "ServicesPage": {
     "heroTitle": "Tvorba webov a e-shopov",
     "heroSubtitle": "Špecializujeme sa na tvorbu moderných, rýchlych a bezpečných webových riešení postavených na najpopulárnejších technológiách.",
-    "heroCta": "Získať cenovú ponuku",
+    "heroCta": "Dohodnúť si hovor",
     "websitesTitle": "Moderné webové stránky",
     "websitesText1": "Tvoríme webové stránky, ktoré nielen skvele vyzerajú, ale sú aj vysoko funkčné a používateľsky prívetivé. Používame moderné technológie ako Next.js a React, ktoré zaručujú rýchlosť, bezpečnosť a škálovateľnosť. Každý web je od základu navrhnutý s ohľadom na vaše ciele a potreby vašich zákazníkov.",
     "websitesText2": "Našim cieľom je vytvoriť digitálnu vizitku, ktorá vás bude dôstojne reprezentovať a pomôže vám rásť.",
@@ -157,7 +163,9 @@
       "Integrácie s externými systémami (API)"
     ],
     "customCta": "Viac o programovaní na mieru",
+    "projectBadge": "Projekt pod NDA",
     "categories": {
+      "all": "Všetky",
       "websites": "Webstránky",
       "eshops": "E-shopy",
       "saas": "SaaS",
@@ -165,21 +173,22 @@
     }
   },
   "PortfolioPage": {
-    "heroTitle": "Naše Portfólio",
+    "heroTitle": "Naše portfólio",
     "heroSubtitle": "Pozrite si projekty, na ktoré sme hrdí a ktoré pomohli našim klientom uspieť.",
-    "viewProject": "Zobraziť projekt"
+    "viewProject": "Zobraziť projekt",
+    "projectBadge": "Projekt pod NDA"
   },
   "PortfolioDetailsPage": {
     "back": "Späť na portfólio",
     "industry": "Odvetvie",
     "problem": "Problém",
     "solution": "Riešenie",
-    "results": "Výsledky",
+    "results": "Výsledok",
     "technologies": "Technológie",
     "liveSite": "Zobraziť živý web"
   },
   "CustomProgrammingPage": {
-    "heroTitle": "Programovanie na Mieru",
+    "heroTitle": "Programovanie na mieru",
     "heroSubtitle": "Premeníme vaše unikátne nápady na funkčné a robustné webové aplikácie, systémy a riešenia presne podľa vašich požiadaviek.",
     "visionTitle": "Od vízie k realite",
     "visionText1": "Máte špecifické požiadavky, ktoré nespĺňajú bežné \"krabicové\" riešenia? Potrebujete interný systém, portál pre klientov, alebo komplexnú webovú aplikáciu? Naše služby programovania na mieru sú tu presne pre vás.",
@@ -204,7 +213,7 @@
         "description": "Píšeme kód, ktorý je ľahko čitateľný, rozšíriteľný a udržiavateľný do budúcna."
       }
     ],
-    "processTitle": "Náš Proces Vývoja",
+    "processTitle": "Náš proces vývoja",
     "processSubtitle": "Transparentný a osvedčený postup pre úspešné dodanie projektu.",
     "stepLabel": "Krok {number}",
     "processSteps": [
@@ -233,13 +242,13 @@
         "description": "Poskytujeme dlhodobú podporu, monitoring a údržbu pre bezproblémovú prevádzku."
       }
     ],
-    "techTitle": "Používané Technológie",
+    "techTitle": "Používané technológie",
     "ctaTitle": "Pripravení začať váš projekt?",
     "ctaSubtitle": "Kontaktujte nás pre nezáväznú konzultáciu a cenovú ponuku pre vaše riešenie na mieru.",
-    "ctaButton": "Kontaktujte nás"
+    "ctaButton": "Dohodnúť si hovor"
   },
   "BlogPage": {
-    "heroTitle": "Náš Blog",
+    "heroTitle": "Náš blog",
     "heroSubtitle": "Zostaňte v obraze s najnovšími trendmi a tipmi z oblasti webu a marketingu.",
     "readMore": "Čítať viac"
   },
@@ -285,7 +294,7 @@
   },
   "Seo": {
     "home": {
-      "title": "Tvorba web stránok a e-shopov",
+      "title": "Weby a e-shopy pre slovenské firmy",
       "description": "Omnicode je webové štúdio v Bratislave. Tvoríme rýchle a moderné weby a e-shopy a pomáhame im aj s digitálnym marketingom. Vyžiadajte si ponuku zadarmo."
     },
     "about": {

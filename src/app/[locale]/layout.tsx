@@ -15,13 +15,13 @@ import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 import { LOCALES, SITE_NAME, SITE_URL, isLocale } from "@/lib/site";
 
 const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-space-grotesk",
 });
 
 const ptSans = PT_Sans({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   weight: ["400", "700"],
   variable: "--font-pt-sans",
 });

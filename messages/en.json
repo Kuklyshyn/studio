@@ -7,7 +7,7 @@
         "portfolio": "Portfolio",
         "blog": "Blog",
         "contact": "Contact",
-        "contact-us": "Contact Us",
+        "contact-us": "Arrange a call",
         "switchLanguage": "Change language"
     },
     "Footer": {
@@ -46,6 +46,7 @@
         "processTitle": "Our Process",
         "processSubtitle": "A quality website is the result of a well-planned process.",
         "stepLabel": "Step {number}",
+        "projectBadge": "NDA project",
         "processSteps": [
             {
                 "title": "Consultation & Analysis",
@@ -65,7 +66,7 @@
             }
         ],
         "whyUsTitle": "Why Choose Us?",
-        "whyUsSubtitle": "We are a team of enthusiasts who love what they do. Every project is unique to us, and we approach it with maximum commitment.",
+        "whyUsSubtitle": "We are a team that works on websites and e-shops. We start every project with consultation and analysis.",
         "whyUsReasons": [
             "Consultation and analysis at the start of every project",
             "Built with Next.js, React and TypeScript",
@@ -75,6 +76,11 @@
         "ctaTitle": "Interested in our services?",
         "ctaSubtitle": "Don't hesitate to contact us. We will be happy to prepare a non-binding custom quote for you.",
         "ctaButton": "Contact Us"
+    },
+    "CtaBand": {
+        "title": "Interested in working together?",
+        "subtitle": "Get in touch. We will go through your project and suggest the next steps.",
+        "button": "Arrange a call"
     },
     "Pricing": {
         "title": "Indicative prices",
@@ -118,7 +124,7 @@
     "ServicesPage": {
         "heroTitle": "Website and E-shop Development",
         "heroSubtitle": "We specialize in creating modern, fast, and secure web solutions built on the most popular technologies.",
-        "heroCta": "Get a Quote",
+        "heroCta": "Arrange a call",
         "websitesTitle": "Modern Websites",
         "websitesText1": "We create websites that not only look great but are also highly functional and user-friendly. We use modern technologies like Next.js and React, which guarantee speed, security, and scalability. Each website is designed from the ground up with your goals and your customers' needs in mind.",
         "websitesText2": "Our goal is to create a digital business card that will represent you with dignity and help you grow.",
@@ -157,7 +163,9 @@
             "Integrations with external systems (API)"
         ],
         "customCta": "More about custom programming",
+        "projectBadge": "NDA project",
         "categories": {
+            "all": "All",
             "websites": "Websites",
             "eshops": "E-shops",
             "saas": "SaaS",
@@ -167,14 +175,15 @@
     "PortfolioPage": {
         "heroTitle": "Our Portfolio",
         "heroSubtitle": "Check out the projects we are proud of and that have helped our clients succeed.",
-        "viewProject": "View Project"
+        "viewProject": "View Project",
+        "projectBadge": "NDA project"
     },
     "PortfolioDetailsPage": {
         "back": "Back to Portfolio",
         "industry": "Industry",
         "problem": "Problem",
         "solution": "Solution",
-        "results": "Results",
+        "results": "Result",
         "technologies": "Technologies",
         "liveSite": "View live site"
     },
@@ -236,7 +245,7 @@
         "techTitle": "Technologies Used",
         "ctaTitle": "Ready to start your project?",
         "ctaSubtitle": "Contact us for a non-binding consultation and a quote for your custom solution.",
-        "ctaButton": "Contact Us"
+        "ctaButton": "Arrange a call"
     },
     "BlogPage": {
         "heroTitle": "Our Blog",
@@ -285,7 +294,7 @@
     },
     "Seo": {
         "home": {
-            "title": "Website and E-shop Development",
+            "title": "Websites and e-shops for Slovak businesses",
             "description": "Omnicode is a web studio in Bratislava. We build fast, modern websites and e-shops and support them with digital marketing. Request a free quote."
         },
         "about": {
