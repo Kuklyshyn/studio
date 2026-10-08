@@ -18,7 +18,8 @@ export function LanguageSwitcher() {
   const pathname = usePathname();
 
   const onSelectChange = (value: string) => {
-    router.replace(pathname, {locale: value});
+    // pathname is a known app route; the cast only narrows the type for next-intl.
+    router.replace(pathname as Parameters<typeof router.replace>[0], {locale: value});
   };
 
   return (

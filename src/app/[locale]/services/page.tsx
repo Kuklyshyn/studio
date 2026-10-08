@@ -102,7 +102,7 @@ export default function ServicesPage() {
                             <TabsContent key={category} value={category}>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                                     {projects.filter((project) => project.category === category).map((project) => (
-                                        <Link key={project.slug} href={`/portfolio/${project.slug}`} className="group">
+                                        <Link key={project.slug} href={{ pathname: "/portfolio/[slug]", params: { slug: project.slug } }} className="group">
                                             <Card className="overflow-hidden bg-secondary/50 border-border/50 hover:border-primary/50 transition-all">
                                                 <div className="overflow-hidden">
                                                     <Image src={project.image} alt={project.title} width={600} height={400} data-ai-hint={project.hint} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />

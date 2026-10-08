@@ -29,7 +29,7 @@ export function Header() {
     { href: "/portfolio", label: t("portfolio") },
     { href: "/blog", label: t("blog") },
     { href: "/contact", label: t("contact") },
-  ];
+  ] as const;
 
   const isBlogDetail = /^\/blog\/[^/]+$/.test(pathname as string);
   const isPortfolioDetail = /^\/portfolio\/[^/]+$/.test(pathname as string);

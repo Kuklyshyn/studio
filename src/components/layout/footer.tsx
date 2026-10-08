@@ -80,14 +80,14 @@ export function Footer() {
                 </Link>
               </Button> */}
               <Button asChild variant="ghost" size="icon">
-                <Link href="https://www.linkedin.com/company/105907699/" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/company/105907699/" aria-label="LinkedIn">
                   <Linkedin className="h-5 w-5" />
-                </Link>
+                </a>
               </Button>
               <Button asChild variant="ghost" size="icon">
-                <Link href="https://www.facebook.com/profile.php?id=61573524654723" aria-label="Facebook">
+                <a href="https://www.facebook.com/profile.php?id=61573524654723" aria-label="Facebook">
                   <Facebook className="h-5 w-5" />
-                </Link>
+                </a>
               </Button>
             </div>
           </div>
