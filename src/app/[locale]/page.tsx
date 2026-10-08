@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, Check, Code2, Layers, Megaphone, MoveRight, Palette, Rocket, Users } from "lucide-react";
+import { ArrowRight, Check, Code2, Layers, Megaphone, MessagesSquare, MoveRight, Palette, PenTool, Rocket, Users } from "lucide-react";
 import Image from "next/image";
 import { Link } from "@/i18n";
 import { useLocale, useTranslations } from "next-intl";
@@ -30,6 +30,8 @@ const portfolio = [
 
 
 const serviceIcons = [<Palette className="w-8 h-8 text-primary" />, <Code2 className="w-8 h-8 text-primary" />, <Megaphone className="w-8 h-8 text-primary" />];
+
+const processIcons = [<MessagesSquare className="w-6 h-6" />, <PenTool className="w-6 h-6" />, <Code2 className="w-6 h-6" />, <Rocket className="w-6 h-6" />];
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -122,19 +124,31 @@ export default function Home() {
 
         <section id="process" className="py-16 md:py-24 bg-secondary/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-                <h2 className="font-headline text-3xl md:text-5xl font-bold">{t('processTitle')}</h2>
-                <p className="text-muted-foreground mt-4 text-lg">{t('processSubtitle')}</p>
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="font-headline text-3xl md:text-5xl font-bold">{t('processTitle')}</h2>
+              <p className="text-muted-foreground mt-4 text-lg">{t('processSubtitle')}</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                {processSteps.map((step: any, index: number) => (
-                    <div key={index} className="relative pl-8">
-                        <div className="absolute left-0 top-1 text-primary font-bold text-3xl font-headline">0{index + 1}.</div>
-                        <h3 className="font-headline text-xl font-bold mb-2">{step.title}</h3>
-                        <p className="text-muted-foreground">{step.description}</p>
+            <ol className="relative mx-auto grid max-w-3xl lg:max-w-none lg:grid-cols-4 lg:gap-8 before:absolute before:left-[12.5%] before:right-[12.5%] before:top-7 before:hidden before:h-px before:bg-gradient-to-r before:from-primary/20 before:via-primary/60 before:to-primary/20 before:content-[''] lg:before:block">
+              {processSteps.map((step: { title: string; description: string }, index: number) => (
+                <li
+                  key={index}
+                  className="group relative flex gap-6 pb-12 last:pb-0 before:absolute before:bottom-0 before:left-7 before:top-14 before:w-px before:bg-primary/30 before:content-[''] last:before:hidden lg:flex-col lg:items-center lg:gap-0 lg:pb-0 lg:text-center lg:before:hidden"
+                >
+                  <div className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-background transition-transform duration-300 group-hover:scale-110">
+                    <div className="flex h-full w-full items-center justify-center rounded-full border border-primary/40 bg-primary/10 text-primary">
+                      {processIcons[index]}
                     </div>
-                ))}
-            </div>
+                  </div>
+                  <div className="pt-1 lg:mt-6 lg:w-full lg:pt-0">
+                    <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+                      {t('stepLabel', { number: String(index + 1).padStart(2, '0') })}
+                    </p>
+                    <h3 className="mt-1 font-headline text-xl font-bold">{step.title}</h3>
+                    <p className="mt-3 leading-relaxed text-muted-foreground">{step.description}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
           </div>
         </section>
 

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from "next/script";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n";
 
@@ -63,7 +64,14 @@ export function CookieConsent() {
       {consent === "granted" && (
         <>
           <GoogleAnalytics gaId="G-F9C2WLQZPG" />
-          <GoogleAnalytics gaId="AW-17671979388" />
+          {/* Ads runs on the gtag.js loaded above. A second GoogleAnalytics here would be skipped by next/script, because it reuses the same script ids. */}
+          <Script
+            id="google-ads-config"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer = window.dataLayer || []; function gtag(){window.dataLayer.push(arguments);} gtag('config', 'AW-17671979388');`,
+            }}
+          />
           <SpeedInsights />
         </>
       )}

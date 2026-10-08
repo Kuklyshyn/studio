@@ -55,9 +55,10 @@ export async function POST(request: Request) {
     });
 
     return NextResponse.json({ ok: true });
-  } catch {
-    // Log only that sending failed. Never log credentials or the message content.
-    console.error("Contact form: email could not be sent");
+  } catch (error) {
+    // Log only the SMTP error code. Never log credentials or the message content.
+    const { code, responseCode } = (error ?? {}) as { code?: string; responseCode?: number };
+    console.error("Contact form: email could not be sent", { code, responseCode });
     return NextResponse.json({ error: "send_failed" }, { status: 500 });
   }
 }

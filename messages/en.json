@@ -42,6 +42,7 @@
         "portfolioCta": "View All Projects",
         "processTitle": "Our Process",
         "processSubtitle": "A quality website is the result of a well-planned process.",
+        "stepLabel": "Step {number}",
         "processSteps": [
             {
                 "title": "Consultation & Analysis",
@@ -191,6 +192,7 @@
         ],
         "processTitle": "Our Development Process",
         "processSubtitle": "A transparent and proven procedure for successful project delivery.",
+        "stepLabel": "Step {number}",
         "processSteps": [
             {
                 "title": "Requirement Analysis",

@@ -42,6 +42,7 @@
     "portfolioCta": "Zobraziť všetky projekty",
     "processTitle": "Náš Postup",
     "processSubtitle": "Kvalitný web je výsledkom dobre naplánovaného procesu.",
+    "stepLabel": "Krok {number}",
     "processSteps": [
       {
         "title": "Konzultácia & Analýza",
@@ -191,6 +192,7 @@
     ],
     "processTitle": "Náš Proces Vývoja",
     "processSubtitle": "Transparentný a osvedčený postup pre úspešné dodanie projektu.",
+    "stepLabel": "Krok {number}",
     "processSteps": [
       {
         "title": "Analýza požiadaviek",

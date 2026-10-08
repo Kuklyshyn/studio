@@ -50,7 +50,7 @@ export function Header() {
             const isActive =
               mounted &&
               (pathname === href ||
-                (href.startsWith("/blog") && pathname.startsWith("/blog")));
+                (href.startsWith("/blog") && (pathname as string).startsWith("/blog")));
 
             return (
               <Link

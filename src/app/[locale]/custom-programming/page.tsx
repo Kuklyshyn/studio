@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Check, Code, Database, Layers, Rocket, ShieldCheck, Zap } from "lucide-react";
+import { ArrowRight, Check, Code, Database, FlaskConical, Layers, LifeBuoy, PenTool, Rocket, Search, ShieldCheck, Zap } from "lucide-react";
 import Image from "next/image";
 import { Link } from "@/i18n";
 import { useTranslations } from "next-intl";
@@ -25,6 +25,15 @@ const featureIcons = [
     <ShieldCheck className="w-8 h-8 text-primary" />,
     <Layers className="w-8 h-8 text-primary" />,
     <Code className="w-8 h-8 text-primary" />
+];
+
+const processIcons = [
+    <Search className="w-6 h-6" />,
+    <PenTool className="w-6 h-6" />,
+    <Code className="w-6 h-6" />,
+    <FlaskConical className="w-6 h-6" />,
+    <Rocket className="w-6 h-6" />,
+    <LifeBuoy className="w-6 h-6" />
 ];
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -98,22 +107,27 @@ export default function CustomProgrammingPage() {
                         <h2 className="font-headline text-3xl md:text-5xl font-bold">{t('processTitle')}</h2>
                         <p className="text-muted-foreground mt-4 text-lg">{t('processSubtitle')}</p>
                     </div>
-                    <div className="max-w-4xl mx-auto">
-                        {processSteps.map((step: any, index: number) => (
-                            <div key={index} className="flex gap-6 mb-8 relative">
-                                <div className="flex flex-col items-center">
-                                    <div className="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center font-bold text-xl z-10">
-                                        {index + 1}
+                    <ol className="mx-auto max-w-3xl">
+                        {processSteps.map((step: { title: string; description: string }, index: number) => (
+                            <li
+                                key={index}
+                                className="group relative flex gap-6 pb-12 last:pb-0 before:absolute before:bottom-0 before:left-7 before:top-14 before:w-px before:bg-primary/30 before:content-[''] last:before:hidden"
+                            >
+                                <div className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-background transition-transform duration-300 group-hover:scale-110">
+                                    <div className="flex h-full w-full items-center justify-center rounded-full border border-primary/40 bg-primary/10 text-primary">
+                                        {processIcons[index]}
                                     </div>
-                                    {index < processSteps.length - 1 && <div className="w-px h-full bg-border/50"></div>}
                                 </div>
-                                <div className="pt-2">
-                                    <h3 className="font-headline text-xl font-bold mb-1">{step.title}</h3>
-                                    <p className="text-muted-foreground">{step.description}</p>
+                                <div className="pt-1">
+                                    <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+                                        {t('stepLabel', { number: String(index + 1).padStart(2, '0') })}
+                                    </p>
+                                    <h3 className="mt-1 font-headline text-xl font-bold">{step.title}</h3>
+                                    <p className="mt-3 leading-relaxed text-muted-foreground">{step.description}</p>
                                 </div>
-                            </div>
+                            </li>
                         ))}
-                    </div>
+                    </ol>
                 </div>
             </section>
 
