@@ -10,6 +10,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { pageMetadata, type Locale } from "@/lib/seo";
 import { localizeProject, portfolioProjects } from "./portfolio/projects";
+import { PricingPlans } from "@/components/pricing-plans";
 
 const portfolio = [
   { slug: "fashion-eshop-woocommerce", hint: "fashion boutique website" },
@@ -88,6 +89,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             </div>
           </div>
         </section>
+
+        <PricingPlans locale={locale} />
 
         <section id="portfolio" className="py-16 md:py-24">
           <div className="container mx-auto px-4">

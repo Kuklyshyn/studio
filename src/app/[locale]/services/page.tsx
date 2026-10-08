@@ -9,6 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
 import { localizeProject, portfolioProjects, type PortfolioCategory } from "../portfolio/projects";
 import { pageMetadata, type Locale } from "@/lib/seo";
+import { PricingPlans } from "@/components/pricing-plans";
 
 const categoryOrder: PortfolioCategory[] = ["websites", "eshops", "saas", "apps"];
 
@@ -148,6 +149,8 @@ export default function ServicesPage() {
                     </div>
                 </div>
             </section>
+
+             <PricingPlans locale={locale} />
 
              <section className="py-16 md:py-24">
                 <div className="container mx-auto px-4 max-w-4xl">

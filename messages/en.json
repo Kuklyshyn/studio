@@ -75,6 +75,14 @@
         "ctaSubtitle": "Don't hesitate to contact us. We will be happy to prepare a non-binding custom quote for you.",
         "ctaButton": "Contact Us"
     },
+    "Pricing": {
+        "title": "Indicative prices",
+        "subtitle": "Indicative amounts for typical projects. We confirm the exact price in the offer.",
+        "from": "from",
+        "includes": "Includes",
+        "excludes": "Not included",
+        "timeline": "Indicative timeline"
+    },
     "AboutPage": {
         "heroTitle": "Who We Are?",
         "heroSubtitle": "We are a team of creative professionals united by a passion for modern technology and a sense for detail.",

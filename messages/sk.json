@@ -75,6 +75,14 @@
     "ctaSubtitle": "Neváhajte nás kontaktovať. Radi vám pripravíme nezáväznú cenovú ponuku na mieru.",
     "ctaButton": "Kontaktujte nás"
   },
+  "Pricing": {
+    "title": "Orientačné ceny",
+    "subtitle": "Orientačné sumy pre typické projekty. Presnú cenu potvrdíme v ponuke.",
+    "from": "od",
+    "includes": "Obsahuje",
+    "excludes": "Neobsahuje",
+    "timeline": "Orientačný termín"
+  },
   "AboutPage": {
     "heroTitle": "Kto sme?",
     "heroSubtitle": "Sme tím kreatívnych profesionálov, ktorých spája vášeň pre moderné technológie a zmysel pre detail.",
