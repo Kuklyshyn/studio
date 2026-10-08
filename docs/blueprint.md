@@ -1,4 +1,4 @@
-# **App Name**: Moder Web Solutions
+# **App Name**: Omnicode
 
 ## Core Features:
 

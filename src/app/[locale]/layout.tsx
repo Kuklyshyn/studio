@@ -1,14 +1,17 @@
 import "./globals.css";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { Toaster } from "@/components/ui/toaster";
-import { GdprBanner } from "@/components/layout/gdpr-banner";
+import { CookieConsent } from "@/components/layout/cookie-consent";
 import { Space_Grotesk, PT_Sans } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { JsonLd } from "@/components/json-ld";
+import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
+import { SITE_NAME, SITE_URL, isLocale } from "@/lib/site";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -27,8 +30,25 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
+// Site-wide defaults. Each page overrides the title and description with its own metadata.
+export async function generateMetadata({ params }: Pick<Props, "params">): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) notFound();
+
+  const t = await getTranslations({ locale, namespace: "Seo.home" });
+
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: { default: SITE_NAME, template: `%s | ${SITE_NAME}` },
+    description: t("description"),
+  };
+}
+
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
+  // Unknown language prefixes such as /robots.txt or /xyz must return 404, not a page.
+  if (!isLocale(locale)) notFound();
+
   const messages = await getMessages();
 
   return (
@@ -38,6 +58,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       suppressHydrationWarning
     >
       <body>
+        <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider
             attribute="class"
@@ -48,13 +69,10 @@ export default async function LocaleLayout({ children, params }: Props) {
             <main>{children}</main>
             <Footer />
             <Toaster />
-            <GdprBanner />
-            <SpeedInsights />
+            <CookieConsent />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
-      <GoogleAnalytics gaId="G-F9C2WLQZPG" />
-      <GoogleAnalytics gaId="AW-17671979388" />
     </html>
   );
 }

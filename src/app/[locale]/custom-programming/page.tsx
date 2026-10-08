@@ -5,6 +5,9 @@ import Image from "next/image";
 import { Link } from "@/i18n";
 import { useTranslations } from "next-intl";
 import { Icon } from "@iconify/react";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { pageMetadata, type Locale } from "@/lib/seo";
 
 const technologies = [
     { name: "Next.js", icon: "logos:nextjs-icon", hint: "nextjs logo" },
@@ -23,6 +26,13 @@ const featureIcons = [
     <Layers className="w-8 h-8 text-primary" />,
     <Code className="w-8 h-8 text-primary" />
 ];
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: "Seo.customProgramming" });
+
+    return pageMetadata({ locale: locale as Locale, path: "/custom-programming", title: t("title"), description: t("description") });
+}
 
 export default function CustomProgrammingPage() {
     const t = useTranslations("CustomProgrammingPage");

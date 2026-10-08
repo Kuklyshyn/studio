@@ -4,8 +4,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Check, Code2, Layers, Megaphone, MoveRight, Palette, Rocket, Users } from "lucide-react";
 import Image from "next/image";
 import { Link } from "@/i18n";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Icon } from "@iconify/react";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { pageMetadata, type Locale } from "@/lib/seo";
+import { localizeProject, portfolioProjects } from "./portfolio/projects";
 
 const technologies = [
     { name: "Next.js", icon: "logos:nextjs-icon", hint: "nextjs logo" },
@@ -19,22 +23,31 @@ const technologies = [
 ];
 
 const portfolio = [
-  { src: "https://supermykola.sirv.com/omni/1.png", alt: "Project 1", hint: "website design abstract" },
-  { src: "https://supermykola.sirv.com/omni/2.png", alt: "Project 2", hint: "dashboard analytics dark" },
-  { src: "https://supermykola.sirv.com/omni/3.png", alt: "Project 3", hint: "mobile app finance" },
+  { slug: "fashion-eshop-woocommerce", hint: "fashion boutique website" },
+  { slug: "interactive-expert-map-platform", hint: "interactive map platform" },
+  { slug: "car-service-booking-system", hint: "car service website" },
 ];
 
 
 const serviceIcons = [<Palette className="w-8 h-8 text-primary" />, <Code2 className="w-8 h-8 text-primary" />, <Megaphone className="w-8 h-8 text-primary" />];
-const testimonialAvatars = ["https://placehold.co/100x100.png", "https://placehold.co/100x100.png"];
-const testimonialHints = ["man portrait professional", "woman portrait smiling"];
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Seo.home" });
+
+  return pageMetadata({ locale: locale as Locale, path: "", title: t("title"), description: t("description") });
+}
 
 export default function Home() {
   const t = useTranslations("HomePage");
+  const locale = useLocale();
+  const portfolioItems = portfolio.map((item) => {
+    const project = localizeProject(portfolioProjects.find((p) => p.slug === item.slug)!, locale);
+    return { src: project.image, alt: project.title, hint: item.hint };
+  });
   const services = t.raw("services");
   const processSteps = t.raw("processSteps");
   const whyUs = t.raw("whyUsReasons");
-  const testimonials = t.raw("testimonials");
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -84,7 +97,7 @@ export default function Home() {
                 <p className="text-muted-foreground mt-4 text-lg">{t('portfolioSubtitle')}</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {portfolio.map((item, index) => (
+              {portfolioItems.map((item, index) => (
                 <div key={index} className="overflow-hidden group rounded-lg">
                   <Image
                     src={item.src}
@@ -165,27 +178,6 @@ export default function Home() {
             </div>
         </section>
 
-        <section id="testimonials" className="py-16 md:py-24">
-          <div className="container mx-auto px-4">
-            <h2 className="font-headline text-3xl md:text-5xl font-bold text-center mb-12">
-              {t('testimonialsTitle')}
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                {testimonials.map((testimonial: any, index: number) => (
-                  <Card key={index} className="bg-secondary/50 border-border/50 p-6">
-                    <p className="text-muted-foreground italic mb-6">"{testimonial.quote}"</p>
-                    <div className="flex items-center">
-                      {/* <Image className="w-12 h-12 rounded-full" src={testimonialAvatars[index]} alt={testimonial.name} width={100} height={100} data-ai-hint={testimonialHints[index]}/> */}
-                      <div className="ml-4">
-                        <p className="font-bold">{testimonial.name}</p>
-                        <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                      </div>
-                    </div>
-                  </Card>
-                ))}
-            </div>
-          </div>
-        </section>
 
         <section className="bg-primary/90 py-16 md:py-24">
             <div className="container mx-auto px-4 text-center">

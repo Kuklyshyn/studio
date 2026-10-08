@@ -14,12 +14,9 @@
     "quick-links": "Rýchle odkazy",
     "follow-us": "Sledujte nás",
     "copyright": "Všetky práva vyhradené.",
-    "privacy-policy": "Zásady ochrany osobných údajov"
-  },
-  "Gdpr": {
-    "text": "Používame cookies, aby sme vám poskytli tú najlepšiu skúsenosť na našom webe. Pokračovaním v prehliadaní súhlasíte s našimi",
-    "privacy-policy": "zásadami ochrany osobných údajov",
-    "agree": "Súhlasím"
+    "privacy-policy": "Zásady ochrany osobných údajov",
+    "imprint": "Informácie o prevádzkovateľovi",
+    "cookie-settings": "Nastavenia cookies"
   },
   "HomePage": {
     "heroTitle": "Tvorba web stránok a e-shopov",
@@ -74,19 +71,6 @@
       "Zameranie na výsledky"
     ],
     "technologiesTitle": "Naše Technológie",
-    "testimonialsTitle": "Čo o nás hovoria klienti",
-    "testimonials": [
-      {
-        "quote": "Spolupráca s Moder bola naozaj skvelá. Vytvorili nám presne taký web, aký sme chceli. Rýchlo, profesionálne a za rozumnú cenu. Odporúčam!",
-        "name": "Martin Š.",
-        "role": "CEO, Firma.sk"
-      },
-      {
-        "quote": "Rýchlo opravil chyby predchádzajúcich programátorov a zabezpečil prevádzku a bezpečnosť stránky.",
-        "name": "Oleksandr Kapitan",
-        "role": "CEO, AAAA Kapitan s. r. o."
-      }
-    ],
     "ctaTitle": "Máte záujem o naše služby?",
     "ctaSubtitle": "Neváhajte nás kontaktovať. Radi vám pripravíme nezáväznú cenovú ponuku na mieru.",
     "ctaButton": "Kontaktujte nás"
@@ -163,7 +147,13 @@
       "SEO optimalizácia pre vyhľadávače",
       "Integrácie s externými systémami (API)"
     ],
-    "customCta": "Viac o programovaní na mieru"
+    "customCta": "Viac o programovaní na mieru",
+    "categories": {
+      "websites": "Webstránky",
+      "eshops": "E-shopy",
+      "saas": "SaaS",
+      "apps": "Aplikácie"
+    }
   },
   "PortfolioPage": {
     "heroTitle": "Naše Portfólio",
@@ -257,11 +247,58 @@
     "contactInfoTitle": "Kontaktné info",
     "email": "Email",
     "phone": "Telefón",
-    "address": "Adresa"
+    "address": "Adresa",
+    "privacyNote": "Odoslaním správy beriete na vedomie, že vaše údaje spracúvame na odpoveď na váš dopyt. Podrobnosti nájdete v",
+    "privacyLink": "zásadách ochrany osobných údajov."
   },
   "PrivacyPolicyPage": {
     "title": "Zásady ochrany osobných údajov",
     "lead": "Vaše súkromie je pre nás dôležité. V týchto zásadách ochrany osobných údajov vám vysvetlíme, ako zhromažďujeme, používame a chránime vaše osobné údaje.",
     "lastUpdated": "Posledná aktualizácia:"
+  },
+  "Seo": {
+    "home": {
+      "title": "Tvorba web stránok a e-shopov",
+      "description": "Omnicode je webové štúdio v Bratislave. Tvoríme rýchle a moderné weby a e-shopy a pomáhame im aj s digitálnym marketingom. Vyžiadajte si ponuku zadarmo."
+    },
+    "about": {
+      "title": "O nás",
+      "description": "Spoznajte tím Omnicode: dizajnérov a vývojárov z Bratislavy, ktorí tvoria weby, čo dobre vyzerajú a prinášajú výsledky pre klientov."
+    },
+    "services": {
+      "title": "Tvorba webov a e-shopov",
+      "description": "Tvorba webových stránok a e-shopov s Next.js, Reactom a WooCommerce. Rýchle, bezpečné a responzívne riešenia s SEO optimalizáciou a podporou."
+    },
+    "customProgramming": {
+      "title": "Programovanie webových aplikácií na mieru",
+      "description": "Webové aplikácie, interné systémy a klientske portály na mieru podľa vašich požiadaviek, s čistým kódom, vysokou bezpečnosťou a možnosťou rozvoja."
+    },
+    "portfolio": {
+      "title": "Referencie: weby a e-shopy",
+      "description": "Vybrané projekty, na ktoré sme hrdí: weby, e-shopy, SaaS platformy a webové aplikácie pre reálne podniky."
+    },
+    "blog": {
+      "title": "Blog: webdizajn, SEO a IT trendy",
+      "description": "Články o webdizajne, SEO, AI a IT produktoch pre ľudí, ktorí tvoria weby a digitálne produkty. Vychádzajú v slovenčine a angličtine."
+    },
+    "contact": {
+      "title": "Kontaktujte nás a získajte ponuku zadarmo",
+      "description": "Napíšte nám o vašom projekte a získajte nezáväznú ponuku na web alebo e-shop od nášho tímu z Bratislavy."
+    },
+    "privacyPolicy": {
+      "title": "Zásady ochrany osobných údajov",
+      "description": "Ako Omnicode zbiera, používa a chráni osobné údaje na tejto webovej stránke vrátane kontaktného formulára, cookies a vašich práv podľa GDPR."
+    },
+    "imprint": {
+      "title": "Informácie o prevádzkovateľovi",
+      "description": "Identifikačné a právne údaje prevádzkovateľa webového štúdia Omnicode: obchodné meno, IČO a miesto podnikania."
+    }
+  },
+  "Cookies": {
+    "title": "Nastavenia cookies",
+    "text": "Analytické a reklamné cookies používame len s vaším súhlasom. Vašu voľbu ukladáme do svojho prehliadača. Viac v",
+    "privacyLink": "zásadách ochrany osobných údajov.",
+    "accept": "Prijať",
+    "reject": "Odmietnuť"
   }
 }

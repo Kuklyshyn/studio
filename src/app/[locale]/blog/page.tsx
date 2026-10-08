@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
@@ -7,7 +6,16 @@ import { Link } from '@/i18n';
 import { blogPosts } from "./posts";
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
+import { pageMetadata, type Locale } from "@/lib/seo";
 
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Seo.blog" });
+
+  return pageMetadata({ locale: locale as Locale, path: "/blog", title: t("title"), description: t("description") });
+}
 
 export default function BlogPage() {
   const t = useTranslations("BlogPage");
@@ -63,5 +71,3 @@ export default function BlogPage() {
     </>
   );
 }
-
-    

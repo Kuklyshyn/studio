@@ -1,4 +1,3 @@
-
 import { blogPosts } from '../posts';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -6,32 +5,78 @@ import { Badge } from '@/components/ui/badge';
 import { Link } from '@/i18n';
 import { ArrowLeft } from 'lucide-react';
 import { getTranslations } from 'next-intl/server';
-import { useLocale } from 'next-intl';
+import type { Metadata } from 'next';
+import { absoluteUrl, blogPostingJsonLd, breadcrumbJsonLd, pageMetadata, type Locale } from '@/lib/seo';
+import { LOCALES, isLocale } from '@/lib/site';
+import { JsonLd } from '@/components/json-ld';
+import { ProseStyles } from '@/components/prose-styles';
 
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  const locales = ['en', 'sk']; // додайте ваші локалі
-  
-  return locales.flatMap((locale) =>
-    blogPosts[locale as keyof typeof blogPosts].map((blogPost: any) => ({
+  return LOCALES.flatMap((locale) =>
+    blogPosts[locale].map((blogPost) => ({
       locale,
       slug: blogPost.slug,
     }))
   );
 }
 
+function findPost(locale: string, slug: string) {
+  if (!isLocale(locale)) return undefined;
+  return blogPosts[locale].find((post) => post.slug === slug);
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string; locale: string }> }): Promise<Metadata> {
+  const { slug, locale } = await params;
+  const post = findPost(locale, slug);
+
+  if (!post) {
+    return {};
+  }
+
+  return pageMetadata({
+    locale: locale as Locale,
+    path: `/blog/${slug}`,
+    title: post.seoTitle,
+    description: post.description,
+    image: post.image,
+    publishedTime: post.isoDate,
+  });
+}
+
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string; locale: string }> }) {
   const { slug, locale } = await params;
   const t = await getTranslations({ locale, namespace: 'BlogPostPage' });
-  const post = blogPosts[locale as keyof typeof blogPosts].find((p: any) => p.slug === slug);
+  const tHeader = await getTranslations({ locale, namespace: 'Header' });
+  const post = findPost(locale, slug);
 
   if (!post) {
     notFound();
   }
 
+  const url = absoluteUrl(`/${locale}/blog/${slug}`);
+
   return (
     <div className="container mx-auto px-4 py-16 md:py-24">
+      <ProseStyles />
+      <JsonLd
+        data={[
+          blogPostingJsonLd({
+            locale: locale as Locale,
+            url,
+            headline: post.title,
+            description: post.description,
+            image: post.image,
+            publishedAt: post.isoDate,
+          }),
+          breadcrumbJsonLd([
+            { name: tHeader('home'), url: absoluteUrl(`/${locale}`) },
+            { name: tHeader('blog'), url: absoluteUrl(`/${locale}/blog`) },
+            { name: post.title, url },
+          ]),
+        ]}
+      />
       <div className="max-w-4xl mx-auto">
         <Link href="/blog" className="inline-flex items-center gap-2 text-primary hover:underline mb-8">
             <ArrowLeft className="w-4 h-4" />
@@ -43,13 +88,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <span>&bull;</span>
           <span>{post.date}</span>
         </div>
-        
+
         <div className="relative w-full h-96 mb-8 rounded-lg overflow-hidden">
             <Image
                 src={post.image}
                 alt={post.title}
-                layout="fill"
-                objectFit="cover"
+                fill
+                sizes="(min-width: 896px) 896px, 100vw"
+                className="object-cover"
                 data-ai-hint={post.hint}
             />
         </div>
@@ -62,44 +108,3 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     </div>
   );
 }
-
-// Add some basic styling for the prose content
-const styles = `
-.prose h2 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 700;
-  margin-top: 2.5em;
-  margin-bottom: 1em;
-}
-.prose h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 700;
-    margin-top: 2em;
-    margin-bottom: 1em;
-}
-.prose p {
-  line-height: 1.75;
-  margin-bottom: 1.25em;
-}
-.prose a {
-  color: hsl(var(--primary));
-  text-decoration: none;
-}
-.prose a:hover {
-    text-decoration: underline;
-}
-.prose ul {
-    list-style-type: disc;
-    padding-left: 1.5em;
-    margin-bottom: 1.25em;
-}
-.prose li {
-    margin-bottom: 0.5em;
-}
-`;
-
-export const Head = () => <style>{styles}</style>;
-
-    

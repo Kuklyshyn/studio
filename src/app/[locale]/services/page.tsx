@@ -1,22 +1,33 @@
-
-
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Check, Code, LayoutTemplate, PenTool, Rocket, Search, ShoppingCart, Smartphone } from "lucide-react";
+import { ArrowRight, Check, Code, Smartphone, Search } from "lucide-react";
 import Image from "next/image";
 import { Link } from "@/i18n";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
-import { portfolioProjects } from "../portfolio/projects";
-import { useTranslations } from "next-intl";
+import { localizeProject, portfolioProjects, type PortfolioCategory } from "../portfolio/projects";
+import { pageMetadata, type Locale } from "@/lib/seo";
 
-const projectCategories = [...new Set(portfolioProjects.map(p => p.category))];
+const categoryOrder: PortfolioCategory[] = ["websites", "eshops", "saas", "apps"];
 
 const benefitIcons = [<Code className="w-7 h-7 text-primary flex-shrink-0 mt-1" />, <Smartphone className="w-7 h-7 text-primary flex-shrink-0 mt-1" />, <Search className="w-7 h-7 text-primary flex-shrink-0 mt-1" />];
 
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: "Seo.services" });
+
+    return pageMetadata({ locale: locale as Locale, path: "/services", title: t("title"), description: t("description") });
+}
+
 export default function ServicesPage() {
     const t = useTranslations("ServicesPage");
+    const locale = useLocale();
     const benefits = t.raw('benefits');
     const services = t.raw('services');
+    const projects = portfolioProjects.map((project) => localizeProject(project, locale));
+    const projectCategories = categoryOrder.filter((category) => projects.some((project) => project.category === category));
 
     return (
         <>
@@ -83,14 +94,14 @@ export default function ServicesPage() {
                     </div>
                     <Tabs defaultValue={projectCategories[0]} className="w-full">
                         <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8 h-auto">
-                            {projectCategories.map(category => (
-                                <TabsTrigger key={category} value={category} className="py-2.5 text-base">{category}</TabsTrigger>
+                            {projectCategories.map((category) => (
+                                <TabsTrigger key={category} value={category} className="py-2.5 text-base">{t(`categories.${category}`)}</TabsTrigger>
                             ))}
                         </TabsList>
-                        {projectCategories.map(category => (
+                        {projectCategories.map((category) => (
                             <TabsContent key={category} value={category}>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                                    {portfolioProjects.filter(p => p.category === category).map(project => (
+                                    {projects.filter((project) => project.category === category).map((project) => (
                                         <Link key={project.slug} href={`/portfolio/${project.slug}`} className="group">
                                             <Card className="overflow-hidden bg-secondary/50 border-border/50 hover:border-primary/50 transition-all">
                                                 <div className="overflow-hidden">
@@ -164,5 +175,3 @@ export default function ServicesPage() {
         </>
     );
 }
-
-    

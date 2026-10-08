@@ -40,7 +40,7 @@ export function Header() {
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Image
             src="/img/logo-white.png"
-            alt="Omnichannel"
+            alt="Omnicode"
             width={100}
             height={34}
           />
@@ -89,11 +89,11 @@ export function Header() {
                 >
                   <Image
                     src="/img/logo-white.png"
-                    alt="Omnichannel"
+                    alt="Omnicode"
                     width={100}
                     height={34}
                   />
-                  <span className="font-headline">Omnichannel</span>
+                  <span className="font-headline">Omnicode</span>
                 </Link>
                 {navLinks.map(({ href, label }) => {
                   const isActive = mounted && pathname === href;

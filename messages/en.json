@@ -1,4 +1,3 @@
-
 {
     "Header": {
         "home": "Home",
@@ -15,12 +14,9 @@
         "quick-links": "Quick Links",
         "follow-us": "Follow Us",
         "copyright": "All rights reserved.",
-        "privacy-policy": "Privacy Policy"
-    },
-    "Gdpr": {
-        "text": "We use cookies to provide you with the best experience on our website. By continuing to browse, you agree to our",
-        "privacy-policy": "privacy policy",
-        "agree": "I Agree"
+        "privacy-policy": "Privacy Policy",
+        "imprint": "Legal notice",
+        "cookie-settings": "Cookie settings"
     },
     "HomePage": {
         "heroTitle": "Website and E-shop Development",
@@ -75,19 +71,6 @@
             "Focus on results"
         ],
         "technologiesTitle": "Our Technologies",
-        "testimonialsTitle": "What Our Clients Say",
-        "testimonials": [
-            {
-                "quote": "The collaboration with Moder was really great. They created exactly the kind of website we wanted. Fast, professional, and at a reasonable price. I recommend them!",
-                "name": "Martin Š.",
-                "role": "CEO, Firma.sk"
-            },
-            {
-                "quote": "Quickly corrected the mistakes of past programmers and made the site operational and secure.",
-                "name": "Oleksandr Kapitan",
-                "role": "CEO, AAAA Kapitan s. r. o."
-            }
-        ],
         "ctaTitle": "Interested in our services?",
         "ctaSubtitle": "Don't hesitate to contact us. We will be happy to prepare a non-binding custom quote for you.",
         "ctaButton": "Contact Us"
@@ -164,7 +147,13 @@
             "SEO for search engines",
             "Integrations with external systems (API)"
         ],
-        "customCta": "More about custom programming"
+        "customCta": "More about custom programming",
+        "categories": {
+            "websites": "Websites",
+            "eshops": "E-shops",
+            "saas": "SaaS",
+            "apps": "Applications"
+        }
     },
     "PortfolioPage": {
         "heroTitle": "Our Portfolio",
@@ -258,13 +247,58 @@
         "contactInfoTitle": "Contact Info",
         "email": "Email",
         "phone": "Phone",
-        "address": "Address"
+        "address": "Address",
+        "privacyNote": "By sending this message you agree that we process your data to reply to your inquiry. Details are in our",
+        "privacyLink": "privacy policy."
     },
     "PrivacyPolicyPage": {
         "title": "Privacy Policy",
         "lead": "Your privacy is important to us. In this privacy policy, we explain how we collect, use, and protect your personal data.",
         "lastUpdated": "Last updated:"
+    },
+    "Seo": {
+        "home": {
+            "title": "Website and E-shop Development",
+            "description": "Omnicode is a web studio in Bratislava. We build fast, modern websites and e-shops and support them with digital marketing. Request a free quote."
+        },
+        "about": {
+            "title": "About Us",
+            "description": "Meet the Omnicode team: designers and developers from Bratislava who build websites that look good and bring results for their clients."
+        },
+        "services": {
+            "title": "Web Design and E-shop Services",
+            "description": "Website and e-shop development with Next.js, React and WooCommerce. Fast, secure and responsive solutions with SEO optimization and support."
+        },
+        "customProgramming": {
+            "title": "Custom Programming and Web Applications",
+            "description": "Custom web applications, internal systems and client portals, built to your requirements with clean code, strong security and room to grow."
+        },
+        "portfolio": {
+            "title": "Portfolio: Websites and E-shops",
+            "description": "Selected projects we are proud of: websites, e-shops, SaaS platforms and web applications built for real businesses."
+        },
+        "blog": {
+            "title": "Blog: Web Design, SEO and IT Trends",
+            "description": "Articles on web design, SEO, AI and IT products for people who build websites and digital products. Published in English and Slovak."
+        },
+        "contact": {
+            "title": "Contact Us and Get a Free Quote",
+            "description": "Tell us about your project and get a free, non-binding quote for your website or e-shop from our team in Bratislava."
+        },
+        "privacyPolicy": {
+            "title": "Privacy Policy",
+            "description": "How Omnicode collects, uses and protects personal data on this website, including contact forms, cookies and your rights under GDPR."
+        },
+        "imprint": {
+            "title": "Legal Notice",
+            "description": "Identification and legal details of the operator of the Omnicode web studio: business name, company ID and business address."
+        }
+    },
+    "Cookies": {
+        "title": "Cookie settings",
+        "text": "We use analytics and advertising cookies only with your consent. Your choice is saved in your browser. Learn more in our",
+        "privacyLink": "privacy policy.",
+        "accept": "Accept",
+        "reject": "Reject"
     }
 }
-
-    

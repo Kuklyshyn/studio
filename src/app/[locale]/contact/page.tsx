@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
+import { Link } from "@/i18n";
 
 export default function ContactPage() {
   const pathname = usePathname(); // наприклад "/sk/contact"
@@ -124,6 +125,10 @@ export default function ContactPage() {
                   {loading ? "⏳ Відправка..." : t("submitButton")}
                 </Button>
                 {status && <p className="text-sm mt-2">{status}</p>}
+                <p className="text-sm text-muted-foreground">
+                  {t("privacyNote")}{" "}
+                  <Link href="/privacy-policy" className="underline hover:text-primary">{t("privacyLink")}</Link>
+                </p>
               </form>
             </div>
             <div className="space-y-8 bg-secondary/30 p-8 rounded-lg">

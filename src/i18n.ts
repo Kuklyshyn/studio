@@ -26,6 +26,10 @@ export const pathnames = {
     en: "/portfolio",
     sk: "/portfolio",
   },
+  "/imprint": {
+    en: "/imprint",
+    sk: "/imprint",
+  },
   "/privacy-policy": {
     en: "/privacy-policy",
     sk: "/privacy-policy",
@@ -49,7 +53,6 @@ export default getRequestConfig(async ({requestLocale}) => {
   const locale = hasLocale(routing.locales, requested)
     ? requested
     : routing.defaultLocale;
-  console.log("locale", locale);
   if (!locales.includes(locale as any)) {
     notFound();
   }

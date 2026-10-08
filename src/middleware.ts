@@ -1,13 +1,13 @@
 import createMiddleware from 'next-intl/middleware';
 import { locales, pathnames, localePrefix } from './i18n';
- 
+
 export default createMiddleware({
   defaultLocale: 'sk',
   locales,
   pathnames,
   localePrefix
 });
- 
+
 export const config = {
   matcher: [
     // Enable a redirect to a matching locale at the root
@@ -18,7 +18,7 @@ export const config = {
     '/(sk|en)/:path*',
 
     // Enable redirects that add a locale prefix
-    // (e.g. `/about` -> `/en/about`)
-    '/((?!_next|.*\\..*).*)'
+    // (e.g. `/about` -> `/en/about`), but never for API routes or static files
+    '/((?!api|_next|_vercel|.*\\..*).*)'
   ]
 };

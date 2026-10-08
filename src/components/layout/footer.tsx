@@ -3,6 +3,7 @@ import { Mountain, Twitter, Linkedin, Facebook } from "lucide-react";
 import { Button } from "../ui/button";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { CookieSettingsButton } from "./cookie-settings-button";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -16,7 +17,7 @@ export function Footer() {
             <Link href="/" className="flex items-center space-x-2">
               <Image
                 src="/img/logo-white.png"
-                alt="Omnichannel"
+                alt="Omnicode"
                 width={100}
                 height={34}
               />
@@ -79,7 +80,7 @@ export function Footer() {
                 </Link>
               </Button> */}
               <Button asChild variant="ghost" size="icon">
-                <Link href="https://www.linkedin.com/company/105907699/admin/dashboard/" aria-label="LinkedIn">
+                <Link href="https://www.linkedin.com/company/105907699/" aria-label="LinkedIn">
                   <Linkedin className="h-5 w-5" />
                 </Link>
               </Button>
@@ -93,15 +94,17 @@ export function Footer() {
         </div>
         <div className="border-t border-border/50 pt-6 text-center text-sm text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} Omnichannel.{" "}
-            {t("copyright")} |{" "}
-            <Link
-              href="/privacy-policy"
-              className="hover:text-primary transition-colors"
-            >
+            &copy; {new Date().getFullYear()} Omnicode. {t("copyright")}
+          </p>
+          <nav className="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-2">
+            <Link href="/privacy-policy" className="hover:text-primary transition-colors">
               {t("privacy-policy")}
             </Link>
-          </p>
+            <Link href="/imprint" className="hover:text-primary transition-colors">
+              {t("imprint")}
+            </Link>
+            <CookieSettingsButton />
+          </nav>
         </div>
       </div>
     </footer>

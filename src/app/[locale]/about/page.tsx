@@ -2,6 +2,9 @@
 import { Check } from "lucide-react";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { pageMetadata, type Locale } from "@/lib/seo";
 
 const teamMemberHints = ["man portrait professional", "woman smiling", "man glasses"];
 
@@ -23,6 +26,13 @@ const values_sk = [
     "Vášeň pre digitálny svet"
 ];
 
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: "Seo.about" });
+
+    return pageMetadata({ locale: locale as Locale, path: "/about", title: t("title"), description: t("description") });
+}
 
 export default function AboutPage() {
     const t = useTranslations("AboutPage");
@@ -51,7 +61,7 @@ export default function AboutPage() {
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
-                            <Image src="https://supermykola.sirv.com/omni/Wavy_Bus-20_Single-04.jpg" alt="Our Story" width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="team collaborating office" />
+                            <Image src="https://supermykola.sirv.com/omni/Wavy_Bus-20_Single-04.jpg" alt={t('storyTitle')} width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="team collaborating office" />
                         </div>
                         <div>
                             <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">{t('storyTitle')}</h2>
@@ -81,7 +91,7 @@ export default function AboutPage() {
                             </div>
                         </div>
                         <div className="order-1 md:order-2">
-                             <Image src="https://supermykola.sirv.com/omni/6671227.jpg" alt="Our Values" width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="glowing core abstract" />
+                             <Image src="https://supermykola.sirv.com/omni/6671227.jpg" alt={t('valuesTitle')} width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="glowing core abstract" />
                         </div>
                     </div>
                 </div>

@@ -1,17 +1,25 @@
-
-
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { useLocale, useTranslations } from "next-intl";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Link } from '@/i18n';
-import { portfolioProjects } from "./projects";
-import { useTranslations } from "next-intl";
+import { localizeProject, portfolioProjects } from "./projects";
+import { pageMetadata, type Locale } from "@/lib/seo";
 
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Seo.portfolio" });
+
+  return pageMetadata({ locale: locale as Locale, path: "/portfolio", title: t("title"), description: t("description") });
+}
 
 export default function PortfolioPage() {
   const t = useTranslations("PortfolioPage");
+  const locale = useLocale();
+  const projects = portfolioProjects.map((project) => localizeProject(project, locale));
 
   return (
     <>
@@ -29,8 +37,8 @@ export default function PortfolioPage() {
       <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {portfolioProjects.map((project, index) => (
-              <Card key={index} className="flex flex-col bg-secondary/50 border-border/50 hover:border-primary/50 transition-all duration-300 group">
+            {projects.map((project) => (
+              <Card key={project.slug} className="flex flex-col bg-secondary/50 border-border/50 hover:border-primary/50 transition-all duration-300 group">
                 <Link href={`/portfolio/${project.slug}`} className="flex flex-col flex-grow">
                   <CardHeader className="p-0">
                      <div className="overflow-hidden rounded-t-lg">
@@ -65,5 +73,3 @@ export default function PortfolioPage() {
     </>
   );
 }
-
-    
