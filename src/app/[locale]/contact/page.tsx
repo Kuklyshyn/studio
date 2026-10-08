@@ -9,6 +9,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n";
 import { trackEvent } from "@/lib/analytics";
+import { CONTACT_EMAIL } from "@/lib/site";
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -165,11 +166,11 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold">{t("email")}</h3>
                     <a
-                      href="mailto:kuklyshynpro@gmail.com"
+                      href={`mailto:${CONTACT_EMAIL}`}
                       onClick={() => trackEvent("mail_click", { location: "contact_info" })}
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      kuklyshynpro@gmail.com
+                      {CONTACT_EMAIL}
                     </a>
                   </div>
                 </div>
