@@ -9,6 +9,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { Link } from "@/i18n";
+import { trackEvent } from "@/lib/analytics";
 
 export default function ContactPage() {
   const pathname = usePathname(); // наприклад "/sk/contact"
@@ -40,6 +41,7 @@ export default function ContactPage() {
 
       if (res.ok) {
         setStatus("✅ Successfully sent!");
+        trackEvent("form_submit", { form: "contact" });
         form.reset();
       } else {
         setStatus("❌ Error sending message");
@@ -142,6 +144,7 @@ export default function ContactPage() {
                     <h3 className="font-semibold">{t("email")}</h3>
                     <a
                       href="mailto:kuklyshynpro@gmail.com"
+                      onClick={() => trackEvent("mail_click", { location: "contact_info" })}
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       kuklyshynpro@gmail.com

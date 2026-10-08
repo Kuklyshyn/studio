@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Check, Code2, Layers, Megaphone, MessagesSquare, MoveRight, Palette, PenTool, Rocket, Users } from "lucide-react";
 import Image from "next/image";
 import { Link } from "@/i18n";
+import { TrackedLink } from "@/components/tracked-link";
 import { TechLogos } from "@/components/tech-logos";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -53,9 +54,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               {t('heroSubtitle')}
             </p>
             <Button asChild size="lg" className="rounded-full font-bold">
-              <Link href="/contact">
+              <TrackedLink location="hero" href="/contact">
                 {t('heroCta')}
-              </Link>
+              </TrackedLink>
             </Button>
           </div>
         </section>
@@ -181,7 +182,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 <h2 className="font-headline text-3xl md:text-5xl font-bold text-primary-foreground mb-4">{t('ctaTitle')}</h2>
                 <p className="max-w-2xl mx-auto text-lg text-primary-foreground/80 mb-8">{t('ctaSubtitle')}</p>
                 <Button asChild size="lg" variant="secondary" className="rounded-full font-bold">
-                    <Link href="/contact">{t('ctaButton')}</Link>
+                    <TrackedLink location="bottom_cta" href="/contact">{t('ctaButton')}</TrackedLink>
                 </Button>
             </div>
         </section>

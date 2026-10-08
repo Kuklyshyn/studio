@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname, Link } from "@/i18n";
+import { TrackedLink } from "@/components/tracked-link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Mountain } from "lucide-react";
@@ -72,7 +73,7 @@ export function Header() {
           {!isBlogDetail && !isPortfolioDetail && <LanguageSwitcher />} {/* <-- тут ховаємо */}
           {/* <ThemeSwitcher /> */}
           <Button asChild className="hidden md:inline-flex rounded-full">
-            <Link href="/contact">{t("contact-us")}</Link>
+            <TrackedLink location="header" href="/contact">{t("contact-us")}</TrackedLink>
           </Button>
           <Sheet>
             <SheetTrigger asChild>
@@ -114,7 +115,7 @@ export function Header() {
                   );
                 })}
                 <Button asChild className="mt-4 rounded-full">
-                  <Link href="/contact">{t("contact-us")}</Link>
+                  <TrackedLink location="mobile_menu" href="/contact">{t("contact-us")}</TrackedLink>
                 </Button>
               </nav>
             </SheetContent>
