@@ -11,22 +11,42 @@ const technologies = [
   { name: "GraphQL", src: "/tech/graphql.svg" },
 ];
 
+// Stack the developer works with daily, taken from real projects. Shown as text because it has no logo files.
+const dailyStack = [
+  "Vue 3",
+  "Nuxt",
+  "TypeScript",
+  "Playwright",
+  "WordPress",
+  "WooCommerce",
+  "Salesforce Commerce Cloud",
+];
+
 export function TechLogos() {
   return (
-    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-      {technologies.map((tech) => (
-        <div key={tech.name} className="text-center" title={tech.name}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={tech.src}
-            alt={tech.name}
-            width={64}
-            height={64}
-            loading="lazy"
-            className="w-16 h-16 grayscale hover:grayscale-0 transition-all duration-300"
-          />
-        </div>
-      ))}
+    <div className="space-y-8">
+      <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+        {technologies.map((tech) => (
+          <div key={tech.name} className="text-center" title={tech.name}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={tech.src}
+              alt={tech.name}
+              width={64}
+              height={64}
+              loading="lazy"
+              className="w-16 h-16 grayscale hover:grayscale-0 transition-all duration-300"
+            />
+          </div>
+        ))}
+      </div>
+      <ul className="flex flex-wrap justify-center gap-2">
+        {dailyStack.map((name) => (
+          <li key={name} className="rounded-full border border-border px-3 py-1 text-sm text-muted-foreground">
+            {name}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
