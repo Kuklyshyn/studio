@@ -34,14 +34,18 @@ function storeConsent(value: Consent) {
 export function CookieConsent() {
   const t = useTranslations("Cookies");
   const [consent, setConsent] = useState<Consent | null>(null);
-  const [bannerOpen, setBannerOpen] = useState(false);
+  // The banner is in the server HTML so it can be the first thing painted. It is hidden by CSS for visitors who chose before.
+  const [bannerOpen, setBannerOpen] = useState(true);
 
   useEffect(() => {
     const stored = readConsent();
     setConsent(stored);
     setBannerOpen(stored === null);
 
-    const openSettings = () => setBannerOpen(true);
+    const openSettings = () => {
+      document.documentElement.removeAttribute("data-consent");
+      setBannerOpen(true);
+    };
     window.addEventListener(OPEN_COOKIE_SETTINGS_EVENT, openSettings);
     return () => window.removeEventListener(OPEN_COOKIE_SETTINGS_EVENT, openSettings);
   }, []);
@@ -80,7 +84,7 @@ export function CookieConsent() {
         <div
           role="dialog"
           aria-labelledby="cookie-consent-text"
-          className="fixed bottom-0 left-0 right-0 z-[100] bg-secondary/95 backdrop-blur-sm border-t border-border/50 p-4 shadow-lg"
+          className="cookie-banner fixed bottom-0 left-0 right-0 z-[100] bg-secondary/95 backdrop-blur-sm border-t border-border/50 p-4 shadow-lg"
         >
           <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
             <p id="cookie-consent-text" className="text-sm text-muted-foreground">

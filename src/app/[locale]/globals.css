@@ -58,3 +58,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* The layout script sets data-consent before first paint when the visitor has already chosen. */
+html[data-consent] .cookie-banner {
+  display: none;
+}

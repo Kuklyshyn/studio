@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
-import { useLocale, useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardDescription, CardFooter, CardHeader } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
@@ -16,9 +15,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return pageMetadata({ locale: locale as Locale, path: "/portfolio", title: t("title"), description: t("description") });
 }
 
-export default function PortfolioPage() {
-  const t = useTranslations("PortfolioPage");
-  const locale = useLocale();
+export default async function PortfolioPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("PortfolioPage");
   const projects = portfolioProjects.map((project) => localizeProject(project, locale));
 
   return (
@@ -37,7 +37,7 @@ export default function PortfolioPage() {
       <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
+            {projects.map((project, index) => (
               <Card key={project.slug} className="flex flex-col bg-secondary/50 border-border/50 hover:border-primary/50 transition-all duration-300 group">
                 <Link href={{ pathname: "/portfolio/[slug]", params: { slug: project.slug } }} className="flex flex-col flex-grow">
                   <CardHeader className="p-0">
@@ -47,6 +47,8 @@ export default function PortfolioPage() {
                           alt={project.title}
                           width={600}
                           height={400}
+                          sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                          priority={index === 0}
                           data-ai-hint={project.hint}
                           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                         />

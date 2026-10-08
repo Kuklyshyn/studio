@@ -3,10 +3,9 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Code, Database, FlaskConical, Layers, LifeBuoy, PenTool, Rocket, Search, ShieldCheck, Zap } from "lucide-react";
 import Image from "next/image";
 import { Link } from "@/i18n";
-import { useTranslations } from "next-intl";
 import { TechLogos } from "@/components/tech-logos";
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { pageMetadata, type Locale } from "@/lib/seo";
 
 const featureIcons = [
@@ -32,8 +31,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return pageMetadata({ locale: locale as Locale, path: "/custom-programming", title: t("title"), description: t("description") });
 }
 
-export default function CustomProgrammingPage() {
-    const t = useTranslations("CustomProgrammingPage");
+export default async function CustomProgrammingPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations("CustomProgrammingPage");
     const features = t.raw('features');
     const processSteps = t.raw('processSteps');
 

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ProseStyles } from "@/components/prose-styles";
 import { pageMetadata, type Locale } from "@/lib/seo";
 import { isLocale } from "@/lib/site";
@@ -67,8 +67,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return pageMetadata({ locale: locale as Locale, path: "/imprint", title: t("title"), description: t("description") });
 }
 
-export default async function ImprintPage() {
-  const locale = (await getLocale()) === "en" ? "en" : "sk";
+export default async function ImprintPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale: requested } = await params;
+  setRequestLocale(requested);
+  const locale = requested === "en" ? "en" : "sk";
 
   return (
     <div className="container mx-auto px-4 py-16 md:py-24">

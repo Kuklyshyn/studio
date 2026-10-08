@@ -4,9 +4,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Link } from '@/i18n';
 import { blogPosts } from "./posts";
-import { useTranslations } from "next-intl";
-import { useLocale } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { pageMetadata, type Locale } from "@/lib/seo";
 
@@ -17,9 +15,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return pageMetadata({ locale: locale as Locale, path: "/blog", title: t("title"), description: t("description") });
 }
 
-export default function BlogPage() {
-  const t = useTranslations("BlogPage");
-  const locale = useLocale();
+export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("BlogPage");
 
   return (
     <>

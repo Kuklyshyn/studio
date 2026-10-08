@@ -65,6 +65,12 @@ export default async function LocaleLayout({ children, params }: Props) {
       suppressHydrationWarning
     >
       <body>
+        {/* Runs before first paint: if the visitor already chose, the cookie banner stays hidden. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var c=localStorage.getItem('cookie-consent');if(c==='granted'||c==='denied'){document.documentElement.setAttribute('data-consent',c)}}catch(e){}`,
+          }}
+        />
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider

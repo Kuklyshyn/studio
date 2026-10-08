@@ -1,9 +1,8 @@
 
 import { Check } from "lucide-react";
 import Image from "next/image";
-import { useTranslations, useLocale } from "next-intl";
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { pageMetadata, type Locale } from "@/lib/seo";
 
 const teamMemberHints = ["man portrait professional", "woman smiling", "man glasses"];
@@ -34,11 +33,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return pageMetadata({ locale: locale as Locale, path: "/about", title: t("title"), description: t("description") });
 }
 
-export default function AboutPage() {
-    const t = useTranslations("AboutPage");
-    const tHeader = useTranslations("Header");
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations("AboutPage");
+    const tHeader = await getTranslations("Header");
 
-    const locale = useLocale();
 
     const teamMembers = t.raw('teamMembers');
     const values = locale === 'en' ? values_en : values_sk;

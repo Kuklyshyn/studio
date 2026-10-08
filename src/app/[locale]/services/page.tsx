@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
-import { useLocale, useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Code, Smartphone, Search } from "lucide-react";
 import Image from "next/image";
@@ -22,9 +21,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     return pageMetadata({ locale: locale as Locale, path: "/services", title: t("title"), description: t("description") });
 }
 
-export default function ServicesPage() {
-    const t = useTranslations("ServicesPage");
-    const locale = useLocale();
+export default async function ServicesPage({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations("ServicesPage");
     const benefits = t.raw('benefits');
     const services = t.raw('services');
     const projects = portfolioProjects.map((project) => localizeProject(project, locale));

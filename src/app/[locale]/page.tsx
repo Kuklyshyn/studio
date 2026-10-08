@@ -106,6 +106,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                     alt={item.alt}
                     width={600}
                     height={800}
+                    sizes="(min-width: 768px) 33vw, 100vw"
                     data-ai-hint={item.hint}
                     className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
                   />

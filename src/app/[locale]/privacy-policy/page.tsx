@@ -1,4 +1,4 @@
-import { getLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { ProseStyles } from "@/components/prose-styles";
 
 // Legal text in both languages. Change the effective date whenever the content changes.
@@ -133,8 +133,10 @@ const content = {
 `,
 };
 
-export default async function PrivacyPolicyPage() {
-  const locale = (await getLocale()) === "en" ? "en" : "sk";
+export default async function PrivacyPolicyPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale: requested } = await params;
+  setRequestLocale(requested);
+  const locale = requested === "en" ? "en" : "sk";
 
   return (
     <div className="container mx-auto px-4 py-16 md:py-24">
