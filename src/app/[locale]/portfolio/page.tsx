@@ -53,7 +53,9 @@ export default function PortfolioPage() {
                      </div>
                   </CardHeader>
                   <div className="p-6 flex flex-col flex-grow">
+                      <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">{project.industry}</p>
                       <h2 className="font-headline text-xl font-bold mb-2 group-hover:text-primary transition-colors">{project.title}</h2>
+                      {project.results && <p className="text-sm font-semibold mb-2">{project.results}</p>}
                       <div className="flex flex-wrap gap-2 mb-4">
                           {project.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
                       </div>

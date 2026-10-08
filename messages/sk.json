@@ -163,7 +163,13 @@
     "viewProject": "Zobraziť projekt"
   },
   "PortfolioDetailsPage": {
-    "back": "Späť na portfólio"
+    "back": "Späť na portfólio",
+    "industry": "Odvetvie",
+    "problem": "Problém",
+    "solution": "Riešenie",
+    "results": "Výsledky",
+    "technologies": "Technológie",
+    "liveSite": "Zobraziť živý web"
   },
   "CustomProgrammingPage": {
     "heroTitle": "Programovanie na Mieru",

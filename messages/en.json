@@ -163,7 +163,13 @@
         "viewProject": "View Project"
     },
     "PortfolioDetailsPage": {
-        "back": "Back to Portfolio"
+        "back": "Back to Portfolio",
+        "industry": "Industry",
+        "problem": "Problem",
+        "solution": "Solution",
+        "results": "Results",
+        "technologies": "Technologies",
+        "liveSite": "View live site"
     },
     "CustomProgrammingPage": {
         "heroTitle": "Custom Programming",
