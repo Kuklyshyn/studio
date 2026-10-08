@@ -39,7 +39,7 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <Card key={project.slug} className="flex flex-col bg-secondary/50 border-border/50 hover:border-primary/50 transition-all duration-300 group">
-                <Link href={{ pathname: "/portfolio/[slug]", params: { slug: project.slug } }} className="flex flex-col flex-grow">
+                <Link href={{ pathname: "/portfolio/[slug]", params: { slug: project.slug } }} prefetch={false} className="flex flex-col flex-grow">
                   <CardHeader className="p-0">
                      <div className="overflow-hidden rounded-t-lg">
                         <Image
