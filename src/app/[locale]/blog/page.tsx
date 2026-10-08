@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Link } from '@/i18n';
 import { blogPosts } from "./posts";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { CtaBand } from "@/components/cta-band";
 import type { Metadata } from "next";
 import { pageMetadata, type Locale } from "@/lib/seo";
 
@@ -67,6 +68,8 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
           </div>
         </div>
       </section>
+
+      <CtaBand locale={locale} location="blog_cta" />
     </>
   );
 }

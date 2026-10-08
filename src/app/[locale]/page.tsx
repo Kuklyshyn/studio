@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Check, Code2, Layers, Megaphone, MessagesSquare, MoveRight, Palette, PenTool, Rocket, Users } from "lucide-react";
-import Image from "next/image";
+import { ProjectCard } from "@/components/project-card";
 import { Link } from "@/i18n";
 import { TrackedLink } from "@/components/tracked-link";
 import { TechLogos } from "@/components/tech-logos";
@@ -11,6 +11,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { pageMetadata, type Locale } from "@/lib/seo";
 import { localizeProject, portfolioProjects } from "./portfolio/projects";
 import { PricingPlans } from "@/components/pricing-plans";
+import { CtaBand } from "@/components/cta-band";
 
 const portfolio = [
   { slug: "fashion-eshop-woocommerce", hint: "fashion boutique website" },
@@ -36,7 +37,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const t = await getTranslations("HomePage");
   const portfolioItems = portfolio.map((item) => {
     const project = localizeProject(portfolioProjects.find((p) => p.slug === item.slug)!, locale);
-    return { src: project.image, alt: project.title, hint: item.hint };
+    return { slug: project.slug, title: project.title, industry: project.industry, image: project.image, hint: item.hint };
   });
   const services = t.raw("services");
   const processSteps = t.raw("processSteps");
@@ -45,7 +46,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
-        <section id="home" className="pt-12 pb-16 md:py-40 relative">
+        <section id="home" className="pt-16 pb-12 md:pt-32 md:pb-24 relative">
           <div className="absolute inset-0 bg-grid-white/[0.05] [mask-image:linear-gradient(to_bottom,white_50%,transparent_100%)]"></div>
           <div className="container mx-auto px-4 text-center relative">
             <h1 className="font-headline text-4xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white to-white/70">
@@ -69,7 +70,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
         </section>
 
-        <section id="services" className="py-16 md:py-24">
+        <section id="services" className="py-24 md:py-32">
           <div className="container mx-auto px-4">
             <h2 className="font-headline text-3xl md:text-5xl font-bold text-center mb-12">
               {t('servicesTitle')}
@@ -92,25 +93,24 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
         <PricingPlans locale={locale} />
 
-        <section id="portfolio" className="py-16 md:py-24">
+        <section id="portfolio" className="py-24 md:py-32">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
                 <h2 className="font-headline text-3xl md:text-5xl font-bold">{t('portfolioTitle')}</h2>
                 <p className="text-muted-foreground mt-4 text-lg">{t('portfolioSubtitle')}</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {portfolioItems.map((item, index) => (
-                <div key={index} className="overflow-hidden group rounded-lg">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    width={600}
-                    height={800}
-                    sizes="(min-width: 768px) 33vw, 100vw"
-                    data-ai-hint={item.hint}
-                    className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
+              {portfolioItems.map((item) => (
+                <ProjectCard
+                  key={item.slug}
+                  slug={item.slug}
+                  title={item.title}
+                  industry={item.industry}
+                  image={item.image}
+                  hint={item.hint}
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  badge={t('projectBadge')}
+                />
               ))}
             </div>
             <div className="text-center mt-12">
@@ -123,7 +123,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
         </section>
 
-        <section id="process" className="py-16 md:py-24 bg-secondary/30">
+        <section id="process" className="py-24 md:py-32 bg-secondary/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 md:mb-16">
               <h2 className="font-headline text-3xl md:text-5xl font-bold">{t('processTitle')}</h2>
@@ -153,26 +153,24 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
         </section>
 
-        <section id="why-us" className="py-16 md:py-24">
+        <section id="why-us" className="py-24 md:py-32">
             <div className="container mx-auto px-4">
-                <div className="max-w-3xl">
-                    <div>
-                        <h2 className="font-headline text-3xl md:text-5xl font-bold mb-6">{t('whyUsTitle')}</h2>
-                        <p className="text-muted-foreground text-lg mb-8">{t('whyUsSubtitle')}</p>
-                        <div className="grid grid-cols-2 gap-4">
-                            {whyUs.map((item: string, index: number) => (
-                                <div key={index} className="flex items-center gap-3">
-                                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                                    <span className="font-semibold">{item}</span>
-                                </div>
-                            ))}
+                <div className="text-center mb-12">
+                    <h2 className="font-headline text-3xl md:text-5xl font-bold mb-4">{t('whyUsTitle')}</h2>
+                    <p className="text-muted-foreground text-lg max-w-2xl mx-auto">{t('whyUsSubtitle')}</p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {whyUs.map((item: string, index: number) => (
+                        <div key={index} className="flex items-start gap-4 rounded-lg border border-border/50 bg-secondary/50 p-6">
+                            <Check className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                            <span className="text-lg font-semibold">{item}</span>
                         </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </section>
 
-        <section id="technologies" className="py-16 md:py-24 bg-secondary/30">
+        <section id="technologies" className="py-24 md:py-32 bg-secondary/30">
             <div className="container mx-auto px-4">
                 <div className="flex justify-center items-center gap-4 mb-12">
                     <Layers className="w-10 h-10 text-primary" />
@@ -185,15 +183,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </section>
 
 
-        <section className="bg-primary/90 py-16 md:py-24">
-            <div className="container mx-auto px-4 text-center">
-                <h2 className="font-headline text-3xl md:text-5xl font-bold text-primary-foreground mb-4">{t('ctaTitle')}</h2>
-                <p className="max-w-2xl mx-auto text-lg text-primary-foreground/80 mb-8">{t('ctaSubtitle')}</p>
-                <Button asChild size="lg" variant="secondary" className="rounded-full font-bold">
-                    <TrackedLink location="bottom_cta" href="/contact">{t('ctaButton')}</TrackedLink>
-                </Button>
-            </div>
-        </section>
+        <CtaBand locale={locale} location="bottom_cta" />
       </main>
     </div>
   );

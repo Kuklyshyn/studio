@@ -9,6 +9,7 @@ import { Card } from "@/components/ui/card";
 import { localizeProject, portfolioProjects, type PortfolioCategory } from "../portfolio/projects";
 import { pageMetadata, type Locale } from "@/lib/seo";
 import { PricingPlans } from "@/components/pricing-plans";
+import { CtaBand } from "@/components/cta-band";
 
 const categoryOrder: PortfolioCategory[] = ["websites", "eshops", "saas", "apps"];
 
@@ -49,7 +50,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
                 </div>
             </section>
 
-            <section className="py-16 md:py-24">
+            <section className="py-24 md:py-32">
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
@@ -68,7 +69,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
                 </div>
             </section>
 
-             <section className="py-16 md:py-24 bg-secondary/30">
+             <section className="py-24 md:py-32 bg-secondary/30">
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                          <div className="order-1 md:order-2">
@@ -87,31 +88,31 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
                 </div>
             </section>
 
-            <section className="py-16 md:py-24">
+            <section className="py-24 md:py-32">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2 className="font-headline text-3xl md:text-5xl font-bold">{t('projectsTitle')}</h2>
                         <p className="text-muted-foreground mt-4 text-lg max-w-2xl mx-auto">{t('projectsSubtitle')}</p>
                     </div>
-                    <Tabs defaultValue={projectCategories[0]} className="w-full">
-                        <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8 h-auto">
-                            {projectCategories.map((category) => (
+                    <Tabs defaultValue="all" className="w-full">
+                        <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mb-8 h-auto">
+                            {["all", ...projectCategories].map((category) => (
                                 <TabsTrigger key={category} value={category} className="py-2.5 text-base">{t(`categories.${category}`)}</TabsTrigger>
                             ))}
                         </TabsList>
-                        {projectCategories.map((category) => (
+                        {["all", ...projectCategories].map((category) => (
                             <TabsContent key={category} value={category}>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                                    {projects.filter((project) => project.category === category).map((project) => (
-                                        <Link key={project.slug} href={{ pathname: "/portfolio/[slug]", params: { slug: project.slug } }} className="group">
-                                            <Card className="overflow-hidden bg-secondary/50 border-border/50 hover:border-primary/50 transition-all">
-                                                <div className="overflow-hidden">
-                                                    <Image src={project.image} alt={project.title} width={600} height={400} data-ai-hint={project.hint} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
-                                                </div>
-                                                <div className="p-4">
-                                                    <h3 className="font-bold text-lg group-hover:text-primary transition-colors">{project.title}</h3>
-                                                </div>
-                                            </Card>
+                                    {projects.filter((project) => category === "all" || project.category === category).map((project) => (
+                                        <Link key={project.slug} href={{ pathname: "/portfolio/[slug]", params: { slug: project.slug } }} className="group flex flex-col overflow-hidden rounded-lg border border-border/50 bg-secondary/50 transition-colors hover:border-primary/50">
+                                            <div className="relative aspect-[16/10] overflow-hidden">
+                                                <Image src={project.image} alt={project.title} fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" data-ai-hint={project.hint} className="object-cover group-hover:scale-105 transition-transform duration-300" />
+                                                <span className="absolute left-3 top-3 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary">{t('projectBadge')}</span>
+                                            </div>
+                                            <div className="p-4">
+                                                <p className="text-xs font-semibold uppercase tracking-widest text-primary">{project.industry}</p>
+                                                <h3 className="mt-2 font-bold text-lg group-hover:text-primary transition-colors">{project.title}</h3>
+                                            </div>
                                         </Link>
                                     ))}
                                 </div>
@@ -126,7 +127,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
                 </div>
             </section>
 
-            <section className="py-16 md:py-24 bg-secondary/30">
+            <section className="py-24 md:py-32 bg-secondary/30">
                 <div className="container mx-auto px-4">
                      <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
@@ -152,7 +153,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
 
              <PricingPlans locale={locale} />
 
-             <section className="py-16 md:py-24">
+             <section className="py-24 md:py-32">
                 <div className="container mx-auto px-4 max-w-4xl">
                      <div className="text-center mb-12">
                         <h2 className="font-headline text-3xl md:text-5xl font-bold">{t('servicesListTitle')}</h2>
@@ -175,6 +176,8 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
                     </div>
                 </div>
             </section>
+
+            <CtaBand locale={locale} location="services_cta" />
         </>
     );
 }

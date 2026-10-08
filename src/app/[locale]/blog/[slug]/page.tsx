@@ -10,6 +10,7 @@ import { absoluteUrl, blogPostingJsonLd, breadcrumbJsonLd, pageMetadata, type Lo
 import { LOCALES, isLocale } from '@/lib/site';
 import { JsonLd } from '@/components/json-ld';
 import { ProseStyles } from '@/components/prose-styles';
+import { CtaBand } from '@/components/cta-band';
 
 export const dynamicParams = false;
 
@@ -58,7 +59,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const url = absoluteUrl(`/${locale}/blog/${slug}`);
 
   return (
-    <div className="container mx-auto px-4 py-16 md:py-24">
+    <>
+    <div className="container mx-auto px-4 pt-12 pb-16 md:pt-16 md:pb-24">
       <ProseStyles />
       <JsonLd
         data={[
@@ -89,11 +91,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <span>{post.date}</span>
         </div>
 
-        <div className="relative w-full h-96 mb-8 rounded-lg overflow-hidden">
+        <div className="relative w-full aspect-[16/10] mb-8 rounded-lg overflow-hidden">
             <Image
                 src={post.image}
                 alt={post.title}
                 fill
+                priority
                 sizes="(min-width: 896px) 896px, 100vw"
                 className="object-cover"
                 data-ai-hint={post.hint}
@@ -106,5 +109,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </div>
       </div>
     </div>
+
+    <CtaBand locale={locale} location="article_cta" />
+    </>
   );
 }

@@ -52,7 +52,7 @@ export default async function CustomProgrammingPage({ params }: { params: Promis
                 </div>
             </section>
 
-            <section className="py-16 md:py-24">
+            <section className="py-24 md:py-32">
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
@@ -71,7 +71,7 @@ export default async function CustomProgrammingPage({ params }: { params: Promis
                 </div>
             </section>
 
-            <section className="py-16 md:py-24 bg-secondary/30">
+            <section className="py-24 md:py-32 bg-secondary/30">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2 className="font-headline text-3xl md:text-5xl font-bold">{t('whyCustomTitle')}</h2>
@@ -91,7 +91,7 @@ export default async function CustomProgrammingPage({ params }: { params: Promis
                 </div>
             </section>
             
-            <section id="process" className="py-16 md:py-24">
+            <section id="process" className="py-24 md:py-32">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <h2 className="font-headline text-3xl md:text-5xl font-bold">{t('processTitle')}</h2>
@@ -121,7 +121,7 @@ export default async function CustomProgrammingPage({ params }: { params: Promis
                 </div>
             </section>
 
-            <section id="technologies" className="py-16 md:py-24 bg-secondary/30">
+            <section id="technologies" className="py-24 md:py-32 bg-secondary/30">
                 <div className="container mx-auto px-4">
                      <div className="flex justify-center items-center gap-4 mb-12">
                         <Database className="w-10 h-10 text-primary" />
@@ -133,7 +133,7 @@ export default async function CustomProgrammingPage({ params }: { params: Promis
                 </div>
             </section>
 
-             <section className="bg-primary/90 py-16 md:py-24">
+             <section className="bg-primary/90 py-24 md:py-32">
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="font-headline text-3xl md:text-5xl font-bold text-primary-foreground mb-4">{t('ctaTitle')}</h2>
                     <p className="max-w-2xl mx-auto text-lg text-primary-foreground/80 mb-8">{t('ctaSubtitle')}</p>

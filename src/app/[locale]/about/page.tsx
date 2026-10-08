@@ -4,6 +4,16 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { pageMetadata, type Locale } from "@/lib/seo";
+import { CtaBand } from "@/components/cta-band";
+
+// A brand visual in place of stock illustrations. Replace it with the owner's photo when one is supplied.
+function BrandVisual() {
+    return (
+        <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-lg border border-border/50 bg-secondary/50 bg-grid-white/[0.05]">
+            <Image src="/img/logo-white.png" alt="Omnicode" width={240} height={82} />
+        </div>
+    );
+}
 
 const teamMemberHints = ["man portrait professional", "woman smiling", "man glasses"];
 
@@ -57,11 +67,11 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                 </div>
             </section>
 
-            <section className="py-16 md:py-24">
+            <section className="py-24 md:py-32">
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
-                            <Image src="https://supermykola.sirv.com/omni/Wavy_Bus-20_Single-04.jpg" alt={t('storyTitle')} width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="team collaborating office" />
+                            <BrandVisual />
                         </div>
                         <div>
                             <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">{t('storyTitle')}</h2>
@@ -76,7 +86,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                 </div>
             </section>
 
-            <section className="py-16 md:py-24 bg-secondary/30">
+            <section className="py-24 md:py-32 bg-secondary/30">
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div className="order-2 md:order-1">
@@ -91,23 +101,23 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                             </div>
                         </div>
                         <div className="order-1 md:order-2">
-                             <Image src="https://supermykola.sirv.com/omni/6671227.jpg" alt={t('valuesTitle')} width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="glowing core abstract" />
+                            <BrandVisual />
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="py-16 md:py-24">
+            <section className="py-24 md:py-32">
                 <div className="container mx-auto px-4">
                     <h2 className="font-headline text-3xl md:text-5xl font-bold text-center mb-12">
                         {t('teamTitle')}
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
                         {teamMembers.map((member: any, index: number) => (
-                            <div key={index} className="text-center group">
-                                {/* <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-lg">
-                                    <Image src="https://placehold.co/400x400.png" alt={member.name} width={400} height={400} data-ai-hint={teamMemberHints[index]} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-                                </div> */}
+                            <div key={index} className="text-center">
+                                <div aria-hidden="true" className="mx-auto mb-4 flex h-28 w-28 items-center justify-center rounded-full border border-primary/40 bg-primary/10 font-headline text-3xl font-bold text-primary">
+                                    {member.name.split(" ").map((part: string) => part[0]).join("").slice(0, 2)}
+                                </div>
                                 <h3 className="font-bold text-xl">{member.name}</h3>
                                 <p className="text-primary">{member.role}</p>
                             </div>
@@ -115,6 +125,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                     </div>
                 </div>
             </section>
+
+            <CtaBand locale={locale} location="about_cta" />
         </>
     );
 }

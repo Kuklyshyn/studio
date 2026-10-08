@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Link } from '@/i18n';
 import { localizeProject, portfolioProjects } from "./projects";
 import { pageMetadata, type Locale } from "@/lib/seo";
+import { CtaBand } from "@/components/cta-band";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -34,24 +35,24 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-secondary/30">
+      <section className="py-24 md:py-32 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <Card key={project.slug} className="flex flex-col bg-secondary/50 border-border/50 hover:border-primary/50 transition-all duration-300 group">
                 <Link href={{ pathname: "/portfolio/[slug]", params: { slug: project.slug } }} prefetch={false} className="flex flex-col flex-grow">
                   <CardHeader className="p-0">
-                     <div className="overflow-hidden rounded-t-lg">
+                     <div className="relative aspect-[16/10] overflow-hidden rounded-t-lg">
                         <Image
                           src={project.image}
                           alt={project.title}
-                          width={600}
-                          height={400}
+                          fill
                           sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                           priority={index === 0}
                           data-ai-hint={project.hint}
-                          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                          className="object-cover group-hover:scale-105 transition-transform duration-300"
                         />
+                        <span className="absolute left-3 top-3 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-primary">{t('projectBadge')}</span>
                      </div>
                   </CardHeader>
                   <div className="p-6 flex flex-col flex-grow">
@@ -74,6 +75,8 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
           </div>
         </div>
       </section>
+
+      <CtaBand locale={locale} location="portfolio_cta" />
     </>
   );
 }
