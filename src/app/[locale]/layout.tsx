@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -11,7 +11,7 @@ import { CookieConsent } from "@/components/layout/cookie-consent";
 import { Space_Grotesk, PT_Sans } from "next/font/google";
 import { JsonLd } from "@/components/json-ld";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
-import { SITE_NAME, SITE_URL, isLocale } from "@/lib/site";
+import { LOCALES, SITE_NAME, SITE_URL, isLocale } from "@/lib/site";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -29,6 +29,11 @@ type Props = {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 };
+
+// Pages are rendered once per locale at build time. Metadata then lands in <head> for every client.
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }));
+}
 
 // Site-wide defaults. Each page overrides the title and description with its own metadata.
 export async function generateMetadata({ params }: Pick<Props, "params">): Promise<Metadata> {
@@ -48,6 +53,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
   // Unknown language prefixes such as /robots.txt or /xyz must return 404, not a page.
   if (!isLocale(locale)) notFound();
+  setRequestLocale(locale);
 
   const messages = await getMessages();
 

@@ -4,10 +4,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Check, Code2, Layers, Megaphone, MessagesSquare, MoveRight, Palette, PenTool, Rocket, Users } from "lucide-react";
 import Image from "next/image";
 import { Link } from "@/i18n";
-import { useLocale, useTranslations } from "next-intl";
 import { Icon } from "@iconify/react";
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { pageMetadata, type Locale } from "@/lib/seo";
 import { localizeProject, portfolioProjects } from "./portfolio/projects";
 
@@ -40,9 +39,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return pageMetadata({ locale: locale as Locale, path: "", title: t("title"), description: t("description") });
 }
 
-export default function Home() {
-  const t = useTranslations("HomePage");
-  const locale = useLocale();
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("HomePage");
   const portfolioItems = portfolio.map((item) => {
     const project = localizeProject(portfolioProjects.find((p) => p.slug === item.slug)!, locale);
     return { src: project.image, alt: project.title, hint: item.hint };
