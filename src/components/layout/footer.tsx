@@ -10,7 +10,7 @@ export function Footer() {
   const tHeader = useTranslations("Header");
 
   return (
-    <footer className="bg-secondary/30 border-t border-border/50">
+    <footer className="bg-secondary/30 border-t border-border/50 pb-20 md:pb-0">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4 md:col-span-2">

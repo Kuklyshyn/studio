@@ -8,6 +8,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { Toaster } from "@/components/ui/toaster";
 import { CookieConsent } from "@/components/layout/cookie-consent";
+import { MobileCta } from "@/components/layout/mobile-cta";
 import { Space_Grotesk, PT_Sans } from "next/font/google";
 import { JsonLd } from "@/components/json-ld";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
@@ -74,6 +75,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <Header />
             <main>{children}</main>
             <Footer />
+            <MobileCta />
             <Toaster />
             <CookieConsent />
           </ThemeProvider>

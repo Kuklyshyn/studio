@@ -1,53 +1,68 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { usePathname } from "next/navigation";
 import { Link } from "@/i18n";
 import { trackEvent } from "@/lib/analytics";
 
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+// Accepts an e-mail address, or a phone number with 7 to 15 digits.
+function isValidContact(value: string) {
+  if (EMAIL_PATTERN.test(value)) return true;
+  const digits = value.replace(/\D/g, "");
+  return /^\+?[0-9 ()-]+$/.test(value) && digits.length >= 7 && digits.length <= 15;
+}
+
+type Status = "sent" | "error" | "invalid" | null;
+
 export default function ContactPage() {
-  const pathname = usePathname(); // наприклад "/sk/contact"
-  const locale = pathname.split("/")[1]; // "sk" або "en"
   const t = useTranslations("ContactPage");
   const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState<string | null>(null);
+  const [status, setStatus] = useState<Status>(null);
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setLoading(true);
-    setStatus(null);
 
     const form = e.currentTarget;
-    const data = {
-      name: (form.elements.namedItem("name") as HTMLInputElement).value,
-      email: (form.elements.namedItem("email") as HTMLInputElement).value,
-      subject: (form.elements.namedItem("subject") as HTMLInputElement).value,
-      message: (form.elements.namedItem("message") as HTMLTextAreaElement)
-        .value,
-    };
+    const data = new FormData(form);
+    const contact = String(data.get("contact") ?? "").trim();
+
+    if (!isValidContact(contact)) {
+      setStatus("invalid");
+      return;
+    }
+
+    setLoading(true);
+    setStatus(null);
 
     try {
       const res = await fetch(`/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          name: data.get("name"),
+          contact,
+          message: data.get("message"),
+          consent: data.get("consent") === "on",
+          website: data.get("website"),
+        }),
       });
 
       if (res.ok) {
-        setStatus("✅ Successfully sent!");
+        setStatus("sent");
         trackEvent("form_submit", { form: "contact" });
         form.reset();
       } else {
-        setStatus("❌ Error sending message");
+        setStatus("error");
       }
-    } catch (err) {
-      setStatus("⚠️ Server problem");
+    } catch {
+      setStatus("error");
     } finally {
       setLoading(false);
     }
@@ -75,62 +90,69 @@ export default function ContactPage() {
                 {t("formTitle")}
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">{t("nameLabel")}</Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      placeholder={t("namePlaceholder")}
-                      required
-                      className="bg-secondary/50 border-border/50"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">{t("emailLabel")}</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      placeholder={t("emailPlaceholder")}
-                      required
-                      className="bg-secondary/50 border-border/50"
-                    />
-                  </div>
-                </div>
                 <div className="space-y-2">
-                  <Label htmlFor="subject">{t("subjectLabel")}</Label>
+                  <Label htmlFor="name">{t("nameLabel")}</Label>
                   <Input
-                    id="subject"
-                    name="subject"
-                    placeholder={t("subjectPlaceholder")}
+                    id="name"
+                    name="name"
+                    placeholder={t("namePlaceholder")}
+                    required
+                    autoComplete="name"
                     className="bg-secondary/50 border-border/50"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="message">{t("messageLabel")}</Label>
+                  <Label htmlFor="contact">{t("contactLabel")}</Label>
+                  <Input
+                    id="contact"
+                    name="contact"
+                    placeholder={t("contactPlaceholder")}
+                    required
+                    autoComplete="email"
+                    className="bg-secondary/50 border-border/50"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="message">{t("needLabel")}</Label>
                   <Textarea
                     id="message"
                     name="message"
-                    placeholder={t("messagePlaceholder")}
+                    placeholder={t("needPlaceholder")}
                     rows={5}
                     required
                     className="bg-secondary/50 border-border/50"
                   />
                 </div>
+                <div className="flex items-start gap-3">
+                  <input
+                    id="consent"
+                    name="consent"
+                    type="checkbox"
+                    required
+                    className="mt-1 h-4 w-4 accent-primary"
+                  />
+                  <Label htmlFor="consent" className="text-sm font-normal text-muted-foreground leading-snug">
+                    {t("consentText")}{" "}
+                    <Link href="/privacy-policy" className="underline hover:text-primary">{t("privacyLink")}</Link>
+                  </Label>
+                </div>
+                {/* Honeypot: hidden from people. Bots that fill every field reveal themselves. */}
+                <input name="website" type="text" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
                 <Button
                   type="submit"
                   size="lg"
                   className="rounded-full font-semibold"
                   disabled={loading}
                 >
-                  {loading ? "⏳ Відправка..." : t("submitButton")}
+                  {loading ? t("sending") : t("submitButton")}
                 </Button>
-                {status && <p className="text-sm mt-2">{status}</p>}
-                <p className="text-sm text-muted-foreground">
-                  {t("privacyNote")}{" "}
-                  <Link href="/privacy-policy" className="underline hover:text-primary">{t("privacyLink")}</Link>
-                </p>
+                {status && (
+                  <p role="status" className="text-sm mt-2">
+                    {status === "sent" && t("sentText")}
+                    {status === "error" && t("errorText")}
+                    {status === "invalid" && t("invalidContact")}
+                  </p>
+                )}
               </form>
             </div>
             <div className="space-y-8 bg-secondary/30 p-8 rounded-lg">
@@ -173,6 +195,10 @@ export default function ContactPage() {
                   </div>
                 </div>
               </div>
+              <p className="text-sm text-muted-foreground">
+                {t("companyId")}: 55 907 890.{" "}
+                <Link href="/imprint" className="underline hover:text-primary">{t("imprintLink")}</Link>
+              </p>
             </div>
           </div>
         </div>

@@ -264,7 +264,18 @@
     "phone": "Telefón",
     "address": "Adresa",
     "privacyNote": "Odoslaním správy beriete na vedomie, že vaše údaje spracúvame na odpoveď na váš dopyt. Podrobnosti nájdete v",
-    "privacyLink": "zásadách ochrany osobných údajov."
+    "privacyLink": "zásadách ochrany osobných údajov.",
+    "contactLabel": "E-mail alebo telefón",
+    "contactPlaceholder": "jan@firma.sk alebo +421 900 000 000",
+    "needLabel": "Čo potrebujete?",
+    "needPlaceholder": "Napríklad: nový web pre našu firmu alebo e-shop.",
+    "consentText": "Súhlasím so spracovaním osobných údajov na odpoveď na moju správu. Podrobnosti sú v",
+    "sending": "Odosielam...",
+    "sentText": "Ďakujeme, ozveme sa vám čoskoro.",
+    "errorText": "Správu sa nepodarilo odoslať. Skúste to prosím znova.",
+    "invalidContact": "Zadajte platný e-mail alebo telefónne číslo.",
+    "companyId": "IČO",
+    "imprintLink": "Informácie o prevádzkovateľovi"
   },
   "PrivacyPolicyPage": {
     "title": "Zásady ochrany osobných údajov",
