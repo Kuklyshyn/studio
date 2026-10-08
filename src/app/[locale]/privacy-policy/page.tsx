@@ -9,7 +9,7 @@ const content = {
 <p><strong>Dátum účinnosti: 8. októbra 2026</strong></p>
 
 <h2>1. Prevádzkovateľ</h2>
-<p>Prevádzkovateľom osobných údajov na tejto webovej stránke je Mykola Kuklyshyn, podnik zahraničnej osoby, IČO: 55 907 890, miesto podnikania: Doležalova 3424/15C, 821 04 Bratislava-Ružinov, Slovensko. Webové štúdio pôsobí pod značkou Omnicode. Všetky otázky k ochrane údajov posielajte na e-mail kuklyshynpro@gmail.com.</p>
+<p>Prevádzkovateľom osobných údajov na tejto webovej stránke je Mykola Kuklyshyn, podnik zahraničnej osoby, IČO: 55 907 890, miesto podnikania: Doležalova 3424/15C, 821 04 Bratislava-Ružinov, Slovensko. Webové štúdio pôsobí pod značkou Omnicode. Všetky otázky k ochrane údajov posielajte na e-mail info@omnicode.sk.</p>
 
 <h2>2. Aké údaje spracúvame, na aký účel a na akom základe</h2>
 
@@ -56,7 +56,7 @@ const content = {
 <li>namietať proti spracúvaniu na základe nášho oprávneného záujmu,</li>
 <li>kedykoľvek odvolať súhlas. Odvolanie nemá vplyv na spracúvanie pred jeho odvolaním.</li>
 </ul>
-<p>Svoje práva uplatníte e-mailom na kuklyshynpro@gmail.com. Máte tiež právo podať sťažnosť na Úrad na ochranu osobných údajov Slovenskej republiky, Hraničná 12, 820 07 Bratislava 27, www.dataprotection.gov.sk.</p>
+<p>Svoje práva uplatníte e-mailom na info@omnicode.sk. Máte tiež právo podať sťažnosť na Úrad na ochranu osobných údajov Slovenskej republiky, Hraničná 12, 820 07 Bratislava 27, www.dataprotection.gov.sk.</p>
 
 <h2>7. Bezpečnosť</h2>
 <p>Údaje chránime primeranými technickými a organizačnými opatreniami. Prístup k nim majú len osoby, ktoré ich potrebujú na vybavenie vašej žiadosti.</p>
@@ -73,7 +73,7 @@ const content = {
 <p><strong>Effective date: October 8, 2026</strong></p>
 
 <h2>1. Controller</h2>
-<p>The controller of personal data on this website is Mykola Kuklyshyn, a business of a foreign person registered in Slovakia (podnik zahraničnej osoby), company ID (IČO): 55 907 890, place of business: Doležalova 3424/15C, 821 04 Bratislava-Ružinov, Slovakia. The web studio operates under the Omnicode brand. Send all data protection questions to kuklyshynpro@gmail.com.</p>
+<p>The controller of personal data on this website is Mykola Kuklyshyn, a business of a foreign person registered in Slovakia (podnik zahraničnej osoby), company ID (IČO): 55 907 890, place of business: Doležalova 3424/15C, 821 04 Bratislava-Ružinov, Slovakia. The web studio operates under the Omnicode brand. Send all data protection questions to info@omnicode.sk.</p>
 
 <h2>2. What data we process, why and on what legal basis</h2>
 
@@ -120,7 +120,7 @@ const content = {
 <li>object to processing based on our legitimate interest,</li>
 <li>withdraw your consent at any time. Withdrawal does not affect processing carried out before the withdrawal.</li>
 </ul>
-<p>Exercise your rights by emailing kuklyshynpro@gmail.com. You also have the right to lodge a complaint with the Office for Personal Data Protection of the Slovak Republic (Úrad na ochranu osobných údajov SR), Hraničná 12, 820 07 Bratislava 27, Slovakia, www.dataprotection.gov.sk.</p>
+<p>Exercise your rights by emailing info@omnicode.sk. You also have the right to lodge a complaint with the Office for Personal Data Protection of the Slovak Republic (Úrad na ochranu osobných údajov SR), Hraničná 12, 820 07 Bratislava 27, Slovakia, www.dataprotection.gov.sk.</p>
 
 <h2>7. Security</h2>
 <p>We protect data with appropriate technical and organisational measures. Only people who need the data to handle your request have access to it.</p>

@@ -15,7 +15,7 @@ const content = {
 <li><strong>Forma podnikania:</strong> podnik zahraničnej osoby</li>
 <li><strong>IČO:</strong> 55 907 890</li>
 <li><strong>Miesto podnikania:</strong> Doležalova 3424/15C, 821 04 Bratislava-Ružinov, Slovensko</li>
-<li><strong>E-mail:</strong> kuklyshynpro@gmail.com</li>
+<li><strong>E-mail:</strong> info@omnicode.sk</li>
 <li><strong>Webové štúdio:</strong> Omnicode, omnicode.sk</li>
 </ul>
 
@@ -40,7 +40,7 @@ const content = {
 <li><strong>Business form:</strong> business of a foreign person registered in Slovakia (podnik zahraničnej osoby)</li>
 <li><strong>Company ID (IČO):</strong> 55 907 890</li>
 <li><strong>Place of business:</strong> Doležalova 3424/15C, 821 04 Bratislava-Ružinov, Slovakia</li>
-<li><strong>Email:</strong> kuklyshynpro@gmail.com</li>
+<li><strong>Email:</strong> info@omnicode.sk</li>
 <li><strong>Web studio:</strong> Omnicode, omnicode.sk</li>
 </ul>
 
