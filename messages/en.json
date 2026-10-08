@@ -20,9 +20,10 @@
         "cookie-settings": "Cookie settings"
     },
     "HomePage": {
-        "heroTitle": "Website and E-shop Development",
+        "heroTitle": "Websites and e-shops for Slovak businesses that want to sell",
         "heroSubtitle": "We will create a modern and profitable website or e-shop for you that will set you apart from the competition.",
-        "heroCta": "Get a Free Quote",
+        "heroCta": "Arrange a call",
+        "heroSecondaryCta": "View our work",
         "servicesTitle": "Our Services",
         "services": [
             {
@@ -65,12 +66,9 @@
         "whyUsTitle": "Why Choose Us?",
         "whyUsSubtitle": "We are a team of enthusiasts who love what they do. Every project is unique to us, and we approach it with maximum commitment.",
         "whyUsReasons": [
-            "Individual approach",
-            "Modern technologies",
-            "We meet deadlines",
-            "Fair prices",
-            "Support and advice",
-            "Focus on results"
+            "Consultation and analysis at the start of every project",
+            "Built with Next.js, React and TypeScript",
+            "Support and maintenance after launch"
         ],
         "technologiesTitle": "Our Technologies",
         "ctaTitle": "Interested in our services?",

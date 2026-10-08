@@ -20,9 +20,10 @@
     "cookie-settings": "Nastavenia cookies"
   },
   "HomePage": {
-    "heroTitle": "Tvorba web stránok a e-shopov",
+    "heroTitle": "Weby a e-shopy pre slovenské firmy, ktoré chcú predávať",
     "heroSubtitle": "Vytvoríme vám modernú a ziskovú web stránku alebo e-shop, ktorý vás odlíši od konkurencie.",
-    "heroCta": "Nezáväzná cenová ponuka",
+    "heroCta": "Dohodnúť si hovor",
+    "heroSecondaryCta": "Pozrieť referencie",
     "servicesTitle": "Naše Služby",
     "services": [
       {
@@ -65,12 +66,9 @@
     "whyUsTitle": "Prečo si vybrať nás?",
     "whyUsSubtitle": "Sme tím nadšencov, ktorí milujú to, čo robia. Každý projekt je pre nás jedinečný a pristupujeme k nemu s maximálnym nasadením.",
     "whyUsReasons": [
-      "Individuálny prístup",
-      "Moderné technológie",
-      "Dodržiavame termíny",
-      "Férové ceny",
-      "Podpora a poradenstvo",
-      "Zameranie na výsledky"
+      "Konzultácia a analýza na začiatku každého projektu",
+      "Stavame na Next.js, React a TypeScript",
+      "Podpora a údržba aj po spustení webu"
     ],
     "technologiesTitle": "Naše Technológie",
     "ctaTitle": "Máte záujem o naše služby?",

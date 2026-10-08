@@ -44,7 +44,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">
-        <section id="home" className="py-20 md:py-40 relative">
+        <section id="home" className="pt-12 pb-16 md:py-40 relative">
           <div className="absolute inset-0 bg-grid-white/[0.05] [mask-image:linear-gradient(to_bottom,white_50%,transparent_100%)]"></div>
           <div className="container mx-auto px-4 text-center relative">
             <h1 className="font-headline text-4xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white to-white/70">
@@ -53,11 +53,18 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground mb-10">
               {t('heroSubtitle')}
             </p>
-            <Button asChild size="lg" className="rounded-full font-bold">
-              <TrackedLink location="hero" href="/contact">
-                {t('heroCta')}
-              </TrackedLink>
-            </Button>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Button asChild size="lg" className="rounded-full font-bold">
+                <TrackedLink location="hero" href="/contact">
+                  {t('heroCta')}
+                </TrackedLink>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="rounded-full font-semibold border-2">
+                <Link href="/portfolio">
+                  {t('heroSecondaryCta')}
+                </Link>
+              </Button>
+            </div>
           </div>
         </section>
 
@@ -144,7 +151,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
         <section id="why-us" className="py-16 md:py-24">
             <div className="container mx-auto px-4">
-                <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="max-w-3xl">
                     <div>
                         <h2 className="font-headline text-3xl md:text-5xl font-bold mb-6">{t('whyUsTitle')}</h2>
                         <p className="text-muted-foreground text-lg mb-8">{t('whyUsSubtitle')}</p>
@@ -156,9 +163,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                                 </div>
                             ))}
                         </div>
-                    </div>
-                    <div>
-                        <Image src="https://supermykola.sirv.com/omni/9.jpg" alt={t('whyUsTitle')} width={800} height={800} className="rounded-lg shadow-2xl" data-ai-hint="team collaborating modern" />
                     </div>
                 </div>
             </div>
