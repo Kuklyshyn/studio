@@ -84,8 +84,8 @@ export default function ContactPage() {
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="md:col-span-2">
+          <div className="grid lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2">
               <h2 className="font-headline text-3xl font-bold mb-6">
                 {t("formTitle")}
               </h2>
@@ -98,7 +98,7 @@ export default function ContactPage() {
                     placeholder={t("namePlaceholder")}
                     required
                     autoComplete="name"
-                    className="bg-secondary/50 border-border/50"
+                    className="h-11 bg-secondary/50 border-border/50"
                   />
                 </div>
                 <div className="space-y-2">
@@ -109,7 +109,7 @@ export default function ContactPage() {
                     placeholder={t("contactPlaceholder")}
                     required
                     autoComplete="email"
-                    className="bg-secondary/50 border-border/50"
+                    className="h-11 bg-secondary/50 border-border/50"
                   />
                 </div>
                 <div className="space-y-2">
@@ -129,7 +129,7 @@ export default function ContactPage() {
                     name="consent"
                     type="checkbox"
                     required
-                    className="mt-1 h-4 w-4 accent-primary"
+                    className="mt-0.5 h-5 w-5 accent-primary"
                   />
                   <Label htmlFor="consent" className="text-sm font-normal text-muted-foreground leading-snug">
                     {t("consentText")}{" "}
@@ -167,7 +167,7 @@ export default function ContactPage() {
                     <a
                       href="mailto:kuklyshynpro@gmail.com"
                       onClick={() => trackEvent("mail_click", { location: "contact_info" })}
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="inline-flex min-h-11 items-center text-muted-foreground hover:text-primary transition-colors"
                     >
                       kuklyshynpro@gmail.com
                     </a>

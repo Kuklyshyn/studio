@@ -11,7 +11,7 @@ export function CookieSettingsButton() {
     <button
       type="button"
       onClick={() => window.dispatchEvent(new Event(OPEN_COOKIE_SETTINGS_EVENT))}
-      className="hover:text-primary transition-colors"
+      className="inline-flex min-h-11 items-center hover:text-primary transition-colors"
     >
       {t("cookie-settings")}
     </button>

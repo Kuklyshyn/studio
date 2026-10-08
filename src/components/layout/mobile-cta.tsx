@@ -13,7 +13,7 @@ export function MobileCta() {
   if (pathname.endsWith("/contact")) return null;
 
   return (
-    <div className="fixed bottom-0 inset-x-0 z-40 border-t border-border/50 bg-background/95 p-3 backdrop-blur md:hidden">
+    <div className="fixed bottom-0 inset-x-0 z-40 border-t border-border/50 bg-background/95 p-3 backdrop-blur lg:hidden">
       <Button asChild size="lg" className="w-full rounded-full font-bold">
         <TrackedLink location="mobile_sticky" href="/contact">
           {t("heroCta")}

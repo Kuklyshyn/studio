@@ -38,7 +38,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center px-4">
-        <Link href="/" className="mr-6 flex items-center space-x-2">
+        <Link href="/" className="mr-6 flex min-h-11 items-center space-x-2">
           <Image
             src="/img/logo-white.png"
             alt="Omnicode"
@@ -46,7 +46,7 @@ export function Header() {
             height={34}
           />
         </Link>
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <nav className="hidden lg:flex items-center space-x-6 text-sm font-medium">
           {navLinks.map(({ href, label }) => {
             const isActive =
               mounted &&
@@ -57,6 +57,7 @@ export function Header() {
               <Link
                 key={href}
                 href={href}
+                aria-current={isActive ? "page" : undefined}
                 className={cn(
                   "transition-colors hover:text-primary",
                   isActive
@@ -72,12 +73,12 @@ export function Header() {
         <div className="flex flex-1 items-center justify-end space-x-2">
           {!isBlogDetail && !isPortfolioDetail && <LanguageSwitcher />} {/* <-- тут ховаємо */}
           {/* <ThemeSwitcher /> */}
-          <Button asChild className="hidden md:inline-flex rounded-full">
+          <Button asChild className="hidden lg:inline-flex rounded-full">
             <TrackedLink location="header" href="/contact">{t("contact-us")}</TrackedLink>
           </Button>
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden">
+              <Button variant="ghost" size="icon" className="lg:hidden h-11 w-11">
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Toggle Menu</span>
               </Button>
@@ -103,8 +104,9 @@ export function Header() {
                     <Link
                       key={href}
                       href={href}
+                      aria-current={isActive ? "page" : undefined}
                       className={cn(
-                        "transition-colors hover:text-primary",
+                        "flex min-h-11 items-center transition-colors hover:text-primary",
                         isActive
                           ? "text-primary font-semibold"
                           : "text-muted-foreground"

@@ -10,11 +10,11 @@ export function Footer() {
   const tHeader = useTranslations("Header");
 
   return (
-    <footer className="bg-secondary/30 border-t border-border/50 pb-20 md:pb-0">
+    <footer className="bg-secondary/30 border-t border-border/50 pb-20 lg:pb-0">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4 md:col-span-2">
-            <Link href="/" className="flex items-center space-x-2">
+            <Link href="/" className="flex min-h-11 items-center space-x-2">
               <Image
                 src="/img/logo-white.png"
                 alt="Omnicode"
@@ -31,14 +31,14 @@ export function Footer() {
             </h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>
-                <Link href="/" className="hover:text-primary transition-colors">
+                <Link href="/" className="inline-flex min-h-11 items-center hover:text-primary transition-colors">
                   {tHeader("home")}
                 </Link>
               </li>
               <li>
                 <Link
                   href="/about"
-                  className="hover:text-primary transition-colors"
+                  className="inline-flex min-h-11 items-center hover:text-primary transition-colors"
                 >
                   {tHeader("about")}
                 </Link>
@@ -46,23 +46,33 @@ export function Footer() {
               <li>
                 <Link
                   href="/services"
-                  className="hover:text-primary transition-colors"
+                  className="inline-flex min-h-11 items-center hover:text-primary transition-colors"
                 >
                   {tHeader("services")}
                 </Link>
               </li>
               <li>
+                <Link href="/custom-programming" className="inline-flex min-h-11 items-center hover:text-primary transition-colors">
+                  {tHeader("custom-programming")}
+                </Link>
+              </li>
+              <li>
                 <Link
                   href="/portfolio"
-                  className="hover:text-primary transition-colors"
+                  className="inline-flex min-h-11 items-center hover:text-primary transition-colors"
                 >
                   {tHeader("portfolio")}
                 </Link>
               </li>
               <li>
+                <Link href="/blog" className="inline-flex min-h-11 items-center hover:text-primary transition-colors">
+                  {tHeader("blog")}
+                </Link>
+              </li>
+              <li>
                 <Link
                   href="/contact"
-                  className="hover:text-primary transition-colors"
+                  className="inline-flex min-h-11 items-center hover:text-primary transition-colors"
                 >
                   {tHeader("contact")}
                 </Link>
@@ -74,17 +84,17 @@ export function Footer() {
               {t("follow-us")}
             </h3>
             <div className="flex space-x-2">
-              {/* <Button asChild variant="ghost" size="icon">
+              {/* <Button asChild variant="ghost" size="icon" className="h-11 w-11">
                 <Link href="https://www.linkedin.com/company/105907699/admin/dashboard/" aria-label="Twitter">
                   <Twitter className="h-5 w-5" />
                 </Link>
               </Button> */}
-              <Button asChild variant="ghost" size="icon">
+              <Button asChild variant="ghost" size="icon" className="h-11 w-11">
                 <a href="https://www.linkedin.com/company/105907699/" aria-label="LinkedIn">
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
-              <Button asChild variant="ghost" size="icon">
+              <Button asChild variant="ghost" size="icon" className="h-11 w-11">
                 <a href="https://www.facebook.com/profile.php?id=61573524654723" aria-label="Facebook">
                   <Facebook className="h-5 w-5" />
                 </a>
@@ -97,10 +107,10 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Omnicode. {t("companyId")}: 55 907 890. {t("copyright")}
           </p>
           <nav className="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-2">
-            <Link href="/privacy-policy" className="hover:text-primary transition-colors">
+            <Link href="/privacy-policy" className="inline-flex min-h-11 items-center hover:text-primary transition-colors">
               {t("privacy-policy")}
             </Link>
-            <Link href="/imprint" className="hover:text-primary transition-colors">
+            <Link href="/imprint" className="inline-flex min-h-11 items-center hover:text-primary transition-colors">
               {t("imprint")}
             </Link>
             <CookieSettingsButton />

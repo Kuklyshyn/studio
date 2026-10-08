@@ -94,10 +94,10 @@ export function CookieConsent() {
               </Link>
             </p>
             <div className="flex gap-3">
-              <Button onClick={() => choose("denied")} className="rounded-full font-semibold">
+              <Button onClick={() => choose("denied")} className="h-11 rounded-full font-semibold">
                 {t("reject")}
               </Button>
-              <Button onClick={() => choose("granted")} className="rounded-full font-semibold">
+              <Button onClick={() => choose("granted")} className="h-11 rounded-full font-semibold">
                 {t("accept")}
               </Button>
             </div>
