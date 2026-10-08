@@ -94,7 +94,7 @@ export function Footer() {
         </div>
         <div className="border-t border-border/50 pt-6 text-center text-sm text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} Omnicode. {t("copyright")}
+            &copy; {new Date().getFullYear()} Omnicode. {t("companyId")}: 55 907 890. {t("copyright")}
           </p>
           <nav className="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-2">
             <Link href="/privacy-policy" className="hover:text-primary transition-colors">
