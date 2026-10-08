@@ -4,21 +4,10 @@ import { ArrowRight, Check, Code, Database, FlaskConical, Layers, LifeBuoy, PenT
 import Image from "next/image";
 import { Link } from "@/i18n";
 import { useTranslations } from "next-intl";
-import { Icon } from "@iconify/react";
+import { TechLogos } from "@/components/tech-logos";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { pageMetadata, type Locale } from "@/lib/seo";
-
-const technologies = [
-    { name: "Next.js", icon: "logos:nextjs-icon", hint: "nextjs logo" },
-    { name: "React", icon: "logos:react", hint: "react logo" },
-    { name: "TypeScript", icon: "logos:typescript-icon", hint: "typescript logo" },
-    { name: "Node.js", icon: "logos:nodejs-icon", hint: "nodejs logo" },
-    { name: "Firebase", icon: "logos:firebase-icon", hint: "firebase logo" },
-    { name: "PostgreSQL", icon: "logos:postgresql-icon", hint: "postgresql logo" },
-    { name: "Docker", icon: "logos:docker-icon", hint: "docker logo" },
-    { name: "GraphQL", icon: "logos:graphql-icon", hint: "graphql logo" },
-];
 
 const featureIcons = [
     <Zap className="w-8 h-8 text-primary" />,
@@ -139,13 +128,7 @@ export default function CustomProgrammingPage() {
                           {t('techTitle')}
                         </h2>
                     </div>
-                    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                        {technologies.map(tech => (
-                            <div key={tech.name} className="text-center" title={tech.name}>
-                                 <Icon icon={tech.icon} className="w-16 h-16 grayscale hover:grayscale-0 transition-all duration-300" />
-                            </div>
-                        ))}
-                    </div>
+                    <TechLogos />
                 </div>
             </section>
 

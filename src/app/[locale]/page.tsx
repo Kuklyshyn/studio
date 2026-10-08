@@ -4,22 +4,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Check, Code2, Layers, Megaphone, MessagesSquare, MoveRight, Palette, PenTool, Rocket, Users } from "lucide-react";
 import Image from "next/image";
 import { Link } from "@/i18n";
-import { Icon } from "@iconify/react";
+import { TechLogos } from "@/components/tech-logos";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { pageMetadata, type Locale } from "@/lib/seo";
 import { localizeProject, portfolioProjects } from "./portfolio/projects";
-
-const technologies = [
-    { name: "Next.js", icon: "logos:nextjs-icon", hint: "nextjs logo" },
-    { name: "React", icon: "logos:react", hint: "react logo" },
-    { name: "TypeScript", icon: "logos:typescript-icon", hint: "typescript logo" },
-    { name: "Node.js", icon: "logos:nodejs-icon", hint: "nodejs logo" },
-    { name: "Firebase", icon: "logos:firebase-icon", hint: "firebase logo" },
-    { name: "PostgreSQL", icon: "logos:postgresql-icon", hint: "postgresql logo" },
-    { name: "Docker", icon: "logos:docker-icon", hint: "docker logo" },
-    { name: "GraphQL", icon: "logos:graphql-icon", hint: "graphql logo" },
-];
 
 const portfolio = [
   { slug: "fashion-eshop-woocommerce", hint: "fashion boutique website" },
@@ -182,13 +171,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                       {t('technologiesTitle')}
                     </h2>
                 </div>
-                <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                    {technologies.map(tech => (
-                        <div key={tech.name} className="text-center" title={tech.name}>
-                             <Icon icon={tech.icon} className="w-16 h-16 grayscale hover:grayscale-0 transition-all duration-300" />
-                        </div>
-                    ))}
-                </div>
+                <TechLogos />
             </div>
         </section>
 
