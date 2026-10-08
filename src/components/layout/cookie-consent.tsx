@@ -84,7 +84,7 @@ export function CookieConsent() {
         <div
           role="dialog"
           aria-labelledby="cookie-consent-text"
-          className="cookie-banner fixed bottom-0 left-0 right-0 z-[100] bg-secondary/95 backdrop-blur-sm border-t border-border/50 p-4 shadow-lg"
+          className="cookie-banner fixed bottom-0 left-0 right-0 z-[100] bg-secondary border-t border-border/50 p-4 shadow-lg"
         >
           <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
             <p id="cookie-consent-text" className="text-sm text-muted-foreground">
