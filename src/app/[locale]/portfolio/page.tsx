@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { useLocale, useTranslations } from "next-intl";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardFooter, CardHeader } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Link } from '@/i18n';
@@ -53,7 +53,7 @@ export default function PortfolioPage() {
                      </div>
                   </CardHeader>
                   <div className="p-6 flex flex-col flex-grow">
-                      <CardTitle className="font-headline text-xl font-bold mb-2 group-hover:text-primary transition-colors">{project.title}</CardTitle>
+                      <h2 className="font-headline text-xl font-bold mb-2 group-hover:text-primary transition-colors">{project.title}</h2>
                       <div className="flex flex-wrap gap-2 mb-4">
                           {project.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
                       </div>

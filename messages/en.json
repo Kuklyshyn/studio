@@ -7,7 +7,8 @@
         "portfolio": "Portfolio",
         "blog": "Blog",
         "contact": "Contact",
-        "contact-us": "Contact Us"
+        "contact-us": "Contact Us",
+        "switchLanguage": "Change language"
     },
     "Footer": {
         "description": "We create modern web solutions that move your business forward. We focus on quality, speed, and client satisfaction.",
