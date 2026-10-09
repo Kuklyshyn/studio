@@ -123,9 +123,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             </Reveal>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
               {portfolioItems.map((item, index) => (
-                <Reveal key={index} delay={index * 120}>
-                  <Link href="/portfolio" className="group block overflow-hidden rounded-2xl border border-border/60 bg-secondary/40 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50">
-                    <div className="relative aspect-[4/5] overflow-hidden">
+                <Reveal key={index} delay={index * 120} className="h-full">
+                  <Link href="/portfolio" className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/60 bg-secondary/40 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50">
+                    <div className="relative aspect-[2/1] overflow-hidden">
                       <Image
                         src={item.src}
                         alt={item.alt}
@@ -135,7 +135,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                     </div>
-                    <div className="p-6">
+                    <div className="flex flex-1 flex-col p-6">
                       <p className="text-xs font-semibold uppercase tracking-widest text-primary">{item.industry}</p>
                       <h3 className="mt-2 font-headline text-xl font-bold">{item.alt}</h3>
                     </div>
