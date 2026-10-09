@@ -22,7 +22,7 @@
   },
   "HomePage": {
     "heroTitle": "Weby a e-shopy pre slovenské firmy, ktoré chcú predávať",
-    "heroSubtitle": "Vytvoríme vám modernú a ziskovú web stránku alebo e-shop, ktorý vás odlíši od konkurencie.",
+    "heroSubtitle": "Vytvorím vám moderný a rýchly web alebo e-shop, ktorý vás odlíši od konkurencie.",
     "heroCta": "Dohodnúť si hovor",
     "startTitle": "S čím vám pomôžem?",
     "startSubtitle": "Vyberte situáciu, ktorá vám sedí. V oboch prípadoch začneme krátkym rozhovorom.",
@@ -35,11 +35,11 @@
     "bandWords": ["Weby", "E-shopy", "Rezervačné systémy", "CRM", "Integrácie", "Rýchlosť", "Prístupnosť", "Údržba"],
     "heroBadge": "Bratislava · weby a e-shopy na mieru",
     "heroSecondaryCta": "Pozrieť referencie",
-    "servicesTitle": "Naše Služby",
+    "servicesTitle": "Služby",
     "services": [
         {
           "title": "Tvorba web stránok",
-          "description": "Vytvoríme vám modernú a responzívnu webovú stránku, ktorá zaujme a predá.",
+          "description": "Vytvorím vám modernú a responzívnu webovú stránku, ktorá zaujme a predá.",
           "items": [
             "Do 5 stránok alebo podľa rozsahu",
             "Systém na správu obsahu",
@@ -49,7 +49,7 @@
         },
         {
           "title": "Tvorba E-shopov",
-          "description": "Vyvinieme vám e-shop na mieru, ktorý bude rýchly, bezpečný a pripravený na vaše podnikanie.",
+          "description": "Vyvediem vám e-shop na mieru, ktorý bude rýchly, bezpečný a pripravený na vaše podnikanie.",
           "items": [
             "Katalóg produktov",
             "Platba a doprava na Slovensku",
@@ -68,36 +68,36 @@
           ]
         }
       ],
-    "portfolioTitle": "Naše Referencie",
-    "portfolioSubtitle": "Pozrite si ukážky našich prác.",
+    "portfolioTitle": "Referencie",
+    "portfolioSubtitle": "Pozrite si ukážky prác.",
     "portfolioCta": "Zobraziť všetky projekty",
-    "processTitle": "Náš Postup",
+    "processTitle": "Ako pracujem",
     "processSubtitle": "Kvalitný web je výsledkom dobre naplánovaného procesu.",
     "stepLabel": "Krok {number}",
     "processSteps": [
       {
         "title": "Konzultácia & Analýza",
-        "description": "Na začiatku je dôležité pochopiť vaše ciele a potreby. Zanalyzujeme vašu konkurenciu a navrhneme stratégiu."
+        "description": "Na začiatku je dôležité pochopiť vaše ciele a potreby. Zanalyzujem vašu konkurenciu a navrhnem stratégiu."
       },
       {
-        "title": "Návrh & Dizajn",
-        "description": "Vytvoríme moderný a pútavý dizajn, ktorý bude reprezentovať vašu značku a osloví vašu cieľovú skupinu."
+        "title": "Návrh & Plán",
+        "description": "Dohodneme štruktúru stránok, rozsah a harmonogram. Dizajn a texty dodáte vy."
       },
       {
         "title": "Vývoj & Testovanie",
-        "description": "Ako vývojár premením dizajn na plne funkčný a responzívny web. Všetko dôkladne otestujem."
+        "description": "Ako vývojár premením podklady na plne funkčný a responzívny web. Všetko dôkladne otestujem."
       },
       {
         "title": "Spustenie & Podpora",
         "description": "Po vašom schválení web spustím. Ani vtedy to nekončí: ponúkam aj následnú podporu a údržbu."
       }
     ],
-    "whyUsTitle": "Prečo si vybrať nás?",
+    "whyUsTitle": "Prečo Omnicode?",
     "whyUsSubtitle": "Robím weby, ktoré mám rád. Každý projekt je pre mňa jedinečný a pristupujem k nemu s maximálnym nasadením.",
     "whyUsReasons": [
         {
           "title": "Konzultácia a analýza na začiatku každého projektu",
-          "description": "Najprv ujasníme cieľ, používateľov a obmedzenia. Až potom píšeme kód."
+          "description": "Najprv ujasním cieľ, používateľov a obmedzenia. Až potom píšem kód."
         },
         {
           "title": "Frontend vo Vue 3, Nuxt, React a TypeScript",
@@ -120,10 +120,10 @@
           "description": "Aktualizácie, bezpečnosť a rýchle opravy, keď ich potrebujete."
         }
       ],
-    "technologiesTitle": "Naše Technológie",
-    "ctaTitle": "Máte záujem o naše služby?",
-    "ctaSubtitle": "Neváhajte nás kontaktovať. Radi vám pripravíme nezáväznú cenovú ponuku na mieru.",
-    "ctaButton": "Kontaktujte nás"
+    "technologiesTitle": "Technológie",
+    "ctaTitle": "Máte záujem o spoluprácu?",
+    "ctaSubtitle": "Napíšte mi. Pripravím vám nezáväznú cenovú ponuku na mieru.",
+    "ctaButton": "Napíšte mi"
   },
   "Pricing": {
     "title": "Orientačné ceny",

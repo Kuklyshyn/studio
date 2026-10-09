@@ -22,7 +22,7 @@
     },
     "HomePage": {
         "heroTitle": "Websites and e-shops for Slovak businesses that want to sell",
-        "heroSubtitle": "We will create a modern and profitable website or e-shop for you that will set you apart from the competition.",
+        "heroSubtitle": "I will build you a modern, fast website or e-shop that sets you apart from the competition.",
         "heroCta": "Arrange a call",
         "startTitle": "Where do you start?",
         "startSubtitle": "Pick the situation that fits. Either way, the first step is a short conversation.",
@@ -35,11 +35,11 @@
         "bandWords": ["Websites", "E-shops", "Booking systems", "CRM", "Integrations", "Speed", "Accessibility", "Maintenance"],
         "heroBadge": "Bratislava · websites and e-shops made to measure",
         "heroSecondaryCta": "View our work",
-        "servicesTitle": "Our Services",
+        "servicesTitle": "Services",
         "services": [
             {
               "title": "Website Development",
-              "description": "We will create a modern and responsive website for you that will attract and sell.",
+              "description": "I will create a modern, responsive website for you that attracts and sells.",
               "items": [
                 "Up to 5 pages or as scoped",
                 "Content management system",
@@ -49,7 +49,7 @@
             },
             {
               "title": "E-shop Development",
-              "description": "We will develop a custom e-shop for you that will be fast, secure, and ready for your business.",
+              "description": "I will develop a custom e-shop for you that is fast, secure and ready for your business.",
               "items": [
                 "Product catalogue",
                 "Payment and delivery in Slovakia",
@@ -68,36 +68,36 @@
               ]
             }
           ],
-        "portfolioTitle": "Our Portfolio",
-        "portfolioSubtitle": "Check out examples of our work.",
+        "portfolioTitle": "Portfolio",
+        "portfolioSubtitle": "See examples of work.",
         "portfolioCta": "View All Projects",
-        "processTitle": "Our Process",
+        "processTitle": "How I work",
         "processSubtitle": "A quality website is the result of a well-planned process.",
         "stepLabel": "Step {number}",
         "processSteps": [
             {
                 "title": "Consultation & Analysis",
-                "description": "At the beginning, it's important to understand your goals and needs. We will analyze your competition and propose a strategy."
+                "description": "At the beginning, it's important to understand your goals and needs. I will analyze your competition and propose a strategy."
             },
             {
-                "title": "Proposal & Design",
-                "description": "We will create a modern and engaging design that will represent your brand and appeal to your target audience."
+                "title": "Proposal & Plan",
+                "description": "We agree the page structure, scope and schedule. You provide the design and copy."
             },
             {
                 "title": "Development & Testing",
-                "description": "As an experienced developer, I will turn the design into a fully functional and responsive website. I test everything thoroughly."
+                "description": "As an experienced developer, I will turn your materials into a fully functional, responsive website. I test everything thoroughly."
             },
             {
                 "title": "Launch & Support",
                 "description": "After your approval, I will launch the website. But it doesn't end there: I also provide support and maintenance afterwards."
             }
         ],
-        "whyUsTitle": "Why Choose Us?",
+        "whyUsTitle": "Why Omnicode?",
         "whyUsSubtitle": "I build websites I'm proud of. Every project is unique to me, and I approach it with maximum commitment.",
         "whyUsReasons": [
             {
               "title": "Consultation and analysis at the start of every project",
-              "description": "First we clarify the goal, the users and the constraints. Only then do we write code."
+              "description": "First I clarify the goal, the users and the constraints. Only then do I write code."
             },
             {
               "title": "Frontend in Vue 3, Nuxt, React and TypeScript",
@@ -120,10 +120,10 @@
               "description": "Updates, security and quick fixes when you need them."
             }
           ],
-        "technologiesTitle": "Our Technologies",
-        "ctaTitle": "Interested in our services?",
-        "ctaSubtitle": "Don't hesitate to contact us. We will be happy to prepare a non-binding custom quote for you.",
-        "ctaButton": "Contact Us"
+        "technologiesTitle": "Technologies",
+        "ctaTitle": "Interested in working together?",
+        "ctaSubtitle": "Write to me. I will prepare a non-binding custom quote for you.",
+        "ctaButton": "Write to me"
     },
     "Pricing": {
         "title": "Indicative prices",
