@@ -1,3 +1,5 @@
+import { ScrollMarquee } from "@/components/scroll-marquee";
+
 // Logos are served from /public, so the page makes no requests to an icon API.
 // The logos are from the CC0 "logos" set on Iconify (github.com/gilbarbara/logos).
 const technologies = [
@@ -44,15 +46,13 @@ export function TechLogos() {
           </div>
         ))}
       </div>
-      <div className="marquee overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]">
-        <ul className="marquee-track flex w-max gap-2">
-          {[...dailyStack, ...dailyStack].map((name, i) => (
-            <li key={`${name}-${i}`} aria-hidden={i >= dailyStack.length} className="whitespace-nowrap rounded-full border border-border px-4 py-1.5 text-sm text-muted-foreground">
-              {name}
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ScrollMarquee className="gap-2" speed={0.35}>
+        {[...dailyStack, ...dailyStack].map((name, i) => (
+          <li key={`${name}-${i}`} aria-hidden={i >= dailyStack.length} className="whitespace-nowrap rounded-full border border-border px-4 py-1.5 text-sm text-muted-foreground">
+            {name}
+          </li>
+        ))}
+      </ScrollMarquee>
     </div>
   );
 }

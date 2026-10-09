@@ -8,7 +8,7 @@ import { TechLogos } from "@/components/tech-logos";
 import { Reveal } from "@/components/reveal";
 import { SpotlightCard } from "@/components/spotlight-card";
 import { HeroScene } from "@/components/hero-scene";
-import { Tilt } from "@/components/tilt";
+import { ScrollMarquee } from "@/components/scroll-marquee";
 import { ProjectCard } from "@/components/project-card";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -67,7 +67,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <main className="flex-grow">
         {/* Hero */}
         <section className="relative overflow-hidden pt-16 pb-16 md:pt-28 md:pb-20">
-          <div className="hero-glow pointer-events-none absolute -left-32 top-10 h-[420px] w-[420px] rounded-full bg-primary/15 blur-3xl" />
+          <div className="pointer-events-none absolute -left-32 top-10 h-[420px] w-[420px] rounded-full bg-primary/15 blur-3xl" />
           <div className="pointer-events-none absolute -right-24 bottom-0 h-[360px] w-[360px] rounded-full bg-sky-500/10 blur-3xl" />
           <div className="absolute inset-0 bg-grid-white/[0.04] [mask-image:linear-gradient(to_bottom,white_40%,transparent_100%)]" />
           <div className="container relative mx-auto grid items-center gap-12 px-4 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-16">
@@ -105,39 +105,21 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             </div>
 
             <Reveal delay={150} className="min-w-0">
-              <Tilt>
-                <div className="relative">
-                  <HeroScene />
-                    {["Vue 3", "Nuxt", "TypeScript", "WooCommerce", "Laravel"].map((tag, i) => (
-                      <span
-                        key={tag}
-                        className="hero-chip absolute whitespace-nowrap rounded-full border border-primary/40 bg-background/80 px-4 py-2 text-sm font-semibold text-primary shadow-lg backdrop-blur"
-                        style={{
-                          top: ["4%", "30%", "52%", "88%", "8%"][i],
-                          left: ["-4%", "auto", "-8%", "52%", "auto"][i],
-                          right: ["auto", "-4%", "auto", "auto", "-2%"][i],
-                          animationDelay: `${i * 0.7}s`,
-                        }}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                </div>
-              </Tilt>
+              <HeroScene />
             </Reveal>
           </div>
         </section>
 
         {/* Keyword band */}
-        <div className="marquee overflow-hidden border-y border-border/50 py-6 [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
-          <ul className="marquee-track flex w-max items-center gap-10">
+        <div className="border-y border-border/50 py-6">
+          <ScrollMarquee className="items-center gap-10" speed={0.6}>
             {[...bandWords, ...bandWords].map((word: string, i: number) => (
               <li key={`${word}-${i}`} aria-hidden={i >= bandWords.length} className="flex items-center gap-10 whitespace-nowrap font-headline text-3xl font-bold tracking-tight text-foreground/90 md:text-5xl">
                 <span className={i % 3 === 1 ? "text-transparent [-webkit-text-stroke:1.5px_hsl(var(--primary))]" : ""}>{word}</span>
                 <span className="text-primary">✦</span>
               </li>
             ))}
-          </ul>
+          </ScrollMarquee>
         </div>
 
         {/* Start: two entry points */}
@@ -175,7 +157,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
         {/* Services */}
         <section id="services" className="relative overflow-hidden border-t border-border/50 py-20 md:py-28">
-          <div className="hero-glow pointer-events-none absolute -right-40 top-20 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
+          <div className="pointer-events-none absolute -right-40 top-20 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
           <div className="container mx-auto px-4">
             <Reveal>
               <SectionHead number="02" title={t('servicesTitle')} />
@@ -278,7 +260,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
         {/* Why us */}
         <section id="why-us" className="relative overflow-hidden py-20 md:py-28">
-          <div className="hero-glow pointer-events-none absolute -left-40 bottom-0 h-96 w-96 rounded-full bg-sky-500/10 blur-3xl" />
+          <div className="pointer-events-none absolute -left-40 bottom-0 h-96 w-96 rounded-full bg-sky-500/10 blur-3xl" />
           <div className="container mx-auto px-4">
             <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
               <Reveal>
