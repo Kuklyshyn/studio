@@ -181,6 +181,8 @@ function coverSvg({ icon, label }) {
 async function renderCovers(posts) {
   mkdirSync(COVER_DIR, { recursive: true });
   for (const post of posts) {
+    // Photo covers come from scripts/blog/fetch-covers.mjs and must not be overwritten here.
+    if (post.cover.photo) continue;
     await sharp(Buffer.from(coverSvg(post.cover)))
       .webp({ quality: 84 })
       .toFile(join(COVER_DIR, `${post.slug}.webp`));

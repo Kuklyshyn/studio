@@ -6,12 +6,17 @@
       "slug": "ai-agents-everyday-business-software",
       "cover": {
         "icon": "Bot",
-        "label": "AI agents"
+        "label": "AI agents",
+        "photo": true
       },
       "sources": [
         {
           "name": "TechCrunch",
           "url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/"
+        },
+        {
+          "name": "Foto: Carlos Muza / Unsplash",
+          "url": "https://unsplash.com/@kmuza?utm_source=omnicode&utm_medium=referral"
         }
       ],
       "en": {
@@ -51,12 +56,17 @@
       "slug": "chat-interfaces-become-visual-ux-rules",
       "cover": {
         "icon": "LayoutGrid",
-        "label": "UX & AI"
+        "label": "UX & AI",
+        "photo": true
       },
       "sources": [
         {
           "name": "TechCrunch",
           "url": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/"
+        },
+        {
+          "name": "Foto: Amélie Mourichon / Unsplash",
+          "url": "https://unsplash.com/@amayli?utm_source=omnicode&utm_medium=referral"
         }
       ],
       "en": {
@@ -96,7 +106,8 @@
       "slug": "ai-guardrails-testing-before-launch",
       "cover": {
         "icon": "ShieldCheck",
-        "label": "AI safety"
+        "label": "AI safety",
+        "photo": true
       },
       "sources": [
         {
@@ -106,6 +117,10 @@
         {
           "name": "TechXplore",
           "url": "https://techxplore.com/news/2026-10-guardrails-chatgpt-teens-dont-watchdog.html"
+        },
+        {
+          "name": "Foto: Christopher Gower / Unsplash",
+          "url": "https://unsplash.com/@cgower?utm_source=omnicode&utm_medium=referral"
         }
       ],
       "en": {
@@ -143,12 +158,17 @@
       "slug": "capital-beyond-silicon-valley-founders-slovakia",
       "cover": {
         "icon": "Globe",
-        "label": "Startups"
+        "label": "Startups",
+        "photo": true
       },
       "sources": [
         {
           "name": "TechCrunch",
           "url": "https://techcrunch.com/2026/10/07/while-vcs-crowd-into-san-francisco-endeavor-catalyst-raises-320m-for-founders-elsewhere/"
+        },
+        {
+          "name": "Foto: Dylan Gillis / Unsplash",
+          "url": "https://unsplash.com/@mainermedia?utm_source=omnicode&utm_medium=referral"
         }
       ],
       "en": {
@@ -184,12 +204,17 @@
       "slug": "vertical-ai-niche-software",
       "cover": {
         "icon": "Layers",
-        "label": "Vertical SaaS"
+        "label": "Vertical SaaS",
+        "photo": true
       },
       "sources": [
         {
           "name": "TechCrunch",
           "url": "https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents/"
+        },
+        {
+          "name": "Foto: Homa Appliances / Unsplash",
+          "url": "https://unsplash.com/@homaappliances?utm_source=omnicode&utm_medium=referral"
         }
       ],
       "en": {
@@ -225,12 +250,17 @@
       "slug": "software-fault-f1-testing-lessons",
       "cover": {
         "icon": "Bug",
-        "label": "Testing"
+        "label": "Testing",
+        "photo": true
       },
       "sources": [
         {
           "name": "TechXplore",
           "url": "https://techxplore.com/news/2026-10-fia-software-f1-cars-track.html"
+        },
+        {
+          "name": "Foto: Chi Hang Leong / Unsplash",
+          "url": "https://unsplash.com/@ufo147896321?utm_source=omnicode&utm_medium=referral"
         }
       ],
       "en": {
@@ -266,7 +296,8 @@
       "slug": "eu-ai-act-article-50-slovak-web-studios",
       "cover": {
         "icon": "Scale",
-        "label": "EU AI Act"
+        "label": "EU AI Act",
+        "photo": true
       },
       "sources": [
         {
@@ -276,6 +307,10 @@
         {
           "name": "Gibson Dunn",
           "url": "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement"
+        },
+        {
+          "name": "Foto: Arisa Chattasa / Unsplash",
+          "url": "https://unsplash.com/@golfarisa?utm_source=omnicode&utm_medium=referral"
         }
       ],
       "en": {
@@ -311,7 +346,8 @@
       "slug": "slovak-eshops-accessibility-eaa",
       "cover": {
         "icon": "Accessibility",
-        "label": "Accessibility"
+        "label": "Accessibility",
+        "photo": true
       },
       "sources": [
         {
@@ -321,6 +357,10 @@
         {
           "name": "Nariadenie vlády č. 283/2023 Z. z. (Slov-Lex)",
           "url": "https://static.slov-lex.sk/static/SK/ZZ/2023/283/20250628.html"
+        },
+        {
+          "name": "Foto: Raj Tuladhar / Unsplash",
+          "url": "https://unsplash.com/@reazonsraj?utm_source=omnicode&utm_medium=referral"
         }
       ],
       "en": {
@@ -360,9 +400,15 @@
       "slug": "bilingual-website-slovak-english-seo",
       "cover": {
         "icon": "Languages",
-        "label": "SEO & languages"
+        "label": "SEO & languages",
+        "photo": true
       },
-      "sources": [],
+      "sources": [
+        {
+          "name": "Foto: Ling App / Unsplash",
+          "url": "https://unsplash.com/@lingapp?utm_source=omnicode&utm_medium=referral"
+        }
+      ],
       "en": {
         "title": "Bilingual websites in Slovak and English: URLs, hreflang and translations that rank",
         "description": "How we structure a Slovak and English website so both versions are found, translated well and do not compete with each other in search.",
@@ -402,9 +448,15 @@
       "slug": "blog-images-speed-seo",
       "cover": {
         "icon": "Gauge",
-        "label": "Performance"
+        "label": "Performance",
+        "photo": true
       },
-      "sources": [],
+      "sources": [
+        {
+          "name": "Foto: Ales Nesetril / Unsplash",
+          "url": "https://unsplash.com/@alesnesetril?utm_source=omnicode&utm_medium=referral"
+        }
+      ],
       "en": {
         "title": "Why blog images slow sites down, and how to fix it: formats, sizes and alt text",
         "description": "Images are often the heaviest part of a blog post. A practical guide to WebP, responsive sizes, lazy loading and alt text, with Next.js examples.",

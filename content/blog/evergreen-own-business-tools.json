@@ -6,9 +6,15 @@
       "slug": "own-website-benefits-for-small-business",
       "cover": {
         "icon": "Globe",
-        "label": "Own website"
+        "label": "Own website",
+        "photo": true
       },
-      "sources": [],
+      "sources": [
+        {
+          "name": "Foto: Vitaly Gariev / Unsplash",
+          "url": "https://unsplash.com/@silverkblack?utm_source=omnicode&utm_medium=referral"
+        }
+      ],
       "en": {
         "title": "Why a small business benefits from its own website",
         "description": "A social media profile is not a website. Here is what your own site gives you that rented pages cannot.",
@@ -41,9 +47,15 @@
       "slug": "own-eshop-or-marketplace",
       "cover": {
         "icon": "ShoppingCart",
-        "label": "Own e-shop"
+        "label": "Own e-shop",
+        "photo": true
       },
-      "sources": [],
+      "sources": [
+        {
+          "name": "Foto: Shutter Speed / Unsplash",
+          "url": "https://unsplash.com/@shutter_speed_?utm_source=omnicode&utm_medium=referral"
+        }
+      ],
       "en": {
         "title": "Your own e-shop or a marketplace: why owning the shop matters",
         "description": "Marketplaces are a fast start. A shop you own gives you more control over customers, prices and margins as you grow.",
@@ -76,9 +88,15 @@
       "slug": "crm-for-small-business",
       "cover": {
         "icon": "Users",
-        "label": "CRM"
+        "label": "CRM",
+        "photo": true
       },
-      "sources": [],
+      "sources": [
+        {
+          "name": "Foto: Rodeo Project Management Software / Unsplash",
+          "url": "https://unsplash.com/@getrodeo?utm_source=omnicode&utm_medium=referral"
+        }
+      ],
       "en": {
         "title": "Why a small business needs a CRM before the spreadsheet breaks",
         "description": "When leads and clients live in a spreadsheet and in several inboxes, follow-ups get lost. A simple CRM fixes that.",
