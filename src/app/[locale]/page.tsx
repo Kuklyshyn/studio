@@ -6,7 +6,7 @@ import { Link } from "@/i18n";
 import { TrackedLink } from "@/components/tracked-link";
 import { TechLogos } from "@/components/tech-logos";
 import { Reveal } from "@/components/reveal";
-import { ProjectMockup } from "@/components/project-mockup";
+import { ProjectCard } from "@/components/project-card";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { pageMetadata, type Locale } from "@/lib/seo";
@@ -36,9 +36,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("HomePage");
+  const tPortfolio = await getTranslations("PortfolioPage");
   const portfolioItems = portfolio.map((item) => {
     const project = localizeProject(portfolioProjects.find((p) => p.slug === item.slug)!, locale);
-    return { alt: project.title, industry: project.industry };
+    return project;
   });
   const services = t.raw("services");
   const processSteps = t.raw("processSteps");
@@ -123,14 +124,17 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             </Reveal>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
               {portfolioItems.map((item, index) => (
-                <Reveal key={index} delay={index * 120} className="h-full">
-                  <Link href="/portfolio" className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/60 bg-secondary/40 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50">
-                    <ProjectMockup label={item.alt} />
-                    <div className="flex flex-1 flex-col p-6">
-                      <p className="text-xs font-semibold uppercase tracking-widest text-primary">{item.industry}</p>
-                      <h3 className="mt-2 font-headline text-xl font-bold">{item.alt}</h3>
-                    </div>
-                  </Link>
+                <Reveal key={item.slug} delay={index * 120} className="h-full">
+                  <ProjectCard
+                    slug={item.slug}
+                    index={index}
+                    industry={item.industry}
+                    title={item.title}
+                    description={item.description}
+                    results={item.results}
+                    tags={item.tags}
+                    viewLabel={tPortfolio('viewProject')}
+                  />
                 </Reveal>
               ))}
             </div>

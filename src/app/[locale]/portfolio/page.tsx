@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardDescription, CardFooter, CardHeader } from "@/components/ui/card";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-import { Link } from '@/i18n';
+import { ProjectCard } from "@/components/project-card";
 import { localizeProject, portfolioProjects } from "./projects";
 import { pageMetadata, type Locale } from "@/lib/seo";
 
@@ -34,42 +30,21 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-secondary/30">
+      <section className="pb-20 md:pb-28">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (
-              <Card key={project.slug} className="flex flex-col bg-secondary/50 border-border/50 hover:border-primary/50 transition-all duration-300 group">
-                <Link href={{ pathname: "/portfolio/[slug]", params: { slug: project.slug } }} prefetch={false} className="flex flex-col flex-grow">
-                  <CardHeader className="p-0">
-                     <div className="overflow-hidden rounded-t-lg">
-                        <Image
-                          src={project.image}
-                          alt={project.title}
-                          width={600}
-                          height={400}
-                          sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                          priority={index === 0}
-                          data-ai-hint={project.hint}
-                          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                     </div>
-                  </CardHeader>
-                  <div className="p-6 flex flex-col flex-grow">
-                      <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">{project.industry}</p>
-                      <h2 className="font-headline text-xl font-bold mb-2 group-hover:text-primary transition-colors">{project.title}</h2>
-                      {project.results && <p className="text-sm font-semibold mb-2">{project.results}</p>}
-                      <div className="flex flex-wrap gap-2 mb-4">
-                          {project.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
-                      </div>
-                      <CardDescription className="text-muted-foreground flex-grow line-clamp-3">{project.description}</CardDescription>
-                  </div>
-                  <CardFooter>
-                      <span className="flex items-center text-primary font-semibold">
-                          {t('viewProject')} <ArrowRight className="ml-2 h-4 w-4" />
-                      </span>
-                  </CardFooter>
-                </Link>
-              </Card>
+              <ProjectCard
+                key={project.slug}
+                slug={project.slug}
+                index={index}
+                industry={project.industry}
+                title={project.title}
+                description={project.description}
+                results={project.results}
+                tags={project.tags}
+                viewLabel={t('viewProject')}
+              />
             ))}
           </div>
         </div>
