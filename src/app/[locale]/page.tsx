@@ -59,12 +59,15 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const services = t.raw("services");
   const processSteps = t.raw("processSteps");
   const whyUs = t.raw("whyUsReasons");
+  const bandWords: string[] = t.raw("bandWords");
 
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-grow">
         {/* Hero */}
-        <section className="relative overflow-hidden pt-16 pb-24 md:pt-32 md:pb-32">
+        <section className="relative overflow-hidden pt-16 pb-16 md:pt-28 md:pb-20">
+          <div className="pointer-events-none absolute -left-32 top-10 h-[420px] w-[420px] rounded-full bg-primary/15 blur-3xl" />
+          <div className="pointer-events-none absolute -right-24 bottom-0 h-[360px] w-[360px] rounded-full bg-sky-500/10 blur-3xl" />
           <div className="absolute inset-0 bg-grid-white/[0.04] [mask-image:linear-gradient(to_bottom,white_40%,transparent_100%)]" />
           <div className="container relative mx-auto grid items-center gap-12 px-4 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-16">
             <div className="min-w-0">
@@ -126,8 +129,20 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
         </section>
 
+        {/* Keyword band */}
+        <div className="marquee overflow-hidden border-y border-border/50 py-6 [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+          <ul className="marquee-track flex w-max items-center gap-10">
+            {[...bandWords, ...bandWords].map((word: string, i: number) => (
+              <li key={`${word}-${i}`} aria-hidden={i >= bandWords.length} className="flex items-center gap-10 whitespace-nowrap font-headline text-3xl font-bold tracking-tight text-foreground/90 md:text-5xl">
+                <span className={i % 3 === 1 ? "text-transparent [-webkit-text-stroke:1.5px_hsl(var(--primary))]" : ""}>{word}</span>
+                <span className="text-primary">✦</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         {/* Start: two entry points */}
-        <section className="py-24 md:py-32">
+        <section className="py-20 md:py-28">
           <div className="container mx-auto px-4">
             <Reveal>
               <SectionHead number="01" title={t('startTitle')} subtitle={t('startSubtitle')} />
@@ -135,7 +150,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <div className="grid gap-6 md:grid-cols-2">
               <Reveal>
                 <TrackedLink location="start_new" href="/contact" className="group block h-full">
-                  <SpotlightCard className="h-full rounded-3xl border border-border/60 bg-secondary/40 p-10 transition-all duration-300 hover:border-primary/50">
+                  <SpotlightCard className="h-full rounded-3xl border border-border/60 bg-gradient-to-b from-white/[0.06] to-secondary/30 p-10 transition-all duration-300 hover:border-primary/50">
                     <h3 className="font-headline text-2xl font-bold">{t('startNewTitle')}</h3>
                     <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{t('startNewText')}</p>
                     <span className="mt-8 inline-flex items-center font-semibold text-primary">
@@ -146,7 +161,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               </Reveal>
               <Reveal delay={120}>
                 <TrackedLink location="start_existing" href="/contact" className="group block h-full">
-                  <SpotlightCard className="h-full rounded-3xl border border-border/60 bg-secondary/40 p-10 transition-all duration-300 hover:border-primary/50">
+                  <SpotlightCard className="h-full rounded-3xl border border-border/60 bg-gradient-to-b from-white/[0.06] to-secondary/30 p-10 transition-all duration-300 hover:border-primary/50">
                     <h3 className="font-headline text-2xl font-bold">{t('startExistingTitle')}</h3>
                     <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{t('startExistingText')}</p>
                     <span className="mt-8 inline-flex items-center font-semibold text-primary">
@@ -160,7 +175,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </section>
 
         {/* Services */}
-        <section id="services" className="border-t border-border/50 py-24 md:py-32">
+        <section id="services" className="relative overflow-hidden border-t border-border/50 py-20 md:py-28">
+          <div className="pointer-events-none absolute -right-40 top-20 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
           <div className="container mx-auto px-4">
             <Reveal>
               <SectionHead number="02" title={t('servicesTitle')} />
@@ -168,7 +184,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <div className="grid gap-6 md:grid-cols-3">
               {services.map((service: any, index: number) => (
                 <Reveal key={index} delay={index * 100} className="h-full">
-                  <SpotlightCard className="h-full rounded-3xl border border-border/60 bg-secondary/40 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50">
+                  <SpotlightCard className="h-full rounded-3xl border border-border/60 bg-gradient-to-b from-white/[0.06] to-secondary/30 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50">
                     <div className="mb-8 flex items-center justify-between">
                       <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">{serviceIcons[index]}</span>
                       <span className="font-headline text-sm font-semibold text-muted-foreground">0{index + 1}</span>
@@ -244,7 +260,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             </Reveal>
             <ol className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               {processSteps.map((step: { title: string; description: string }, index: number) => (
-                <li key={index} className="group rounded-2xl border border-border/60 bg-secondary/30 p-7 transition-colors duration-300 hover:border-primary/50">
+                <li key={index} className="group rounded-2xl border border-border/60 bg-gradient-to-b from-white/[0.05] to-secondary/20 p-7 transition-colors duration-300 hover:border-primary/50">
                   <div className="mb-6 flex items-center gap-3">
                     <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
                       {processIcons[index]}
@@ -262,7 +278,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </section>
 
         {/* Why us */}
-        <section id="why-us" className="py-24 md:py-32">
+        <section id="why-us" className="relative overflow-hidden py-20 md:py-28">
+          <div className="pointer-events-none absolute -left-40 bottom-0 h-96 w-96 rounded-full bg-sky-500/10 blur-3xl" />
           <div className="container mx-auto px-4">
             <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
               <Reveal>
@@ -275,7 +292,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               <div className="grid gap-4 sm:grid-cols-2">
                 {whyUs.map((item: { title: string; description: string }, index: number) => (
                   <Reveal key={index} delay={index * 80} className="h-full">
-                    <div className="flex h-full gap-4 rounded-2xl border border-border/60 bg-secondary/30 p-6 transition-colors duration-300 hover:border-primary/50">
+                    <div className="flex h-full gap-4 rounded-2xl border border-border/60 bg-gradient-to-b from-white/[0.05] to-secondary/20 p-6 transition-colors duration-300 hover:border-primary/50">
                       <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">{whyUsIcons[index]}</span>
                       <div>
                         <h3 className="font-headline text-lg font-bold leading-snug">{item.title}</h3>
