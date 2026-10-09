@@ -2,11 +2,11 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Code2, Gauge, Layers, Megaphone, MessagesSquare, MoveRight, Palette, PenTool, Rocket, Search, ShieldCheck } from "lucide-react";
-import Image from "next/image";
 import { Link } from "@/i18n";
 import { TrackedLink } from "@/components/tracked-link";
 import { TechLogos } from "@/components/tech-logos";
 import { Reveal } from "@/components/reveal";
+import { ProjectMockup } from "@/components/project-mockup";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { pageMetadata, type Locale } from "@/lib/seo";
@@ -38,7 +38,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const t = await getTranslations("HomePage");
   const portfolioItems = portfolio.map((item) => {
     const project = localizeProject(portfolioProjects.find((p) => p.slug === item.slug)!, locale);
-    return { src: project.image, alt: project.title, hint: item.hint, industry: project.industry };
+    return { alt: project.title, industry: project.industry };
   });
   const services = t.raw("services");
   const processSteps = t.raw("processSteps");
@@ -125,16 +125,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               {portfolioItems.map((item, index) => (
                 <Reveal key={index} delay={index * 120} className="h-full">
                   <Link href="/portfolio" className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/60 bg-secondary/40 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50">
-                    <div className="relative aspect-[2/1] overflow-hidden">
-                      <Image
-                        src={item.src}
-                        alt={item.alt}
-                        fill
-                        sizes="(min-width: 768px) 33vw, 100vw"
-                        data-ai-hint={item.hint}
-                        className="object-cover transition-transform duration-700 group-hover:scale-105"
-                      />
-                    </div>
+                    <ProjectMockup label={item.alt} />
                     <div className="flex flex-1 flex-col p-6">
                       <p className="text-xs font-semibold uppercase tracking-widest text-primary">{item.industry}</p>
                       <h3 className="mt-2 font-headline text-xl font-bold">{item.alt}</h3>
