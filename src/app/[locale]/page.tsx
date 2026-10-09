@@ -66,7 +66,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         {/* Hero */}
         <section className="relative overflow-hidden pt-16 pb-24 md:pt-32 md:pb-32">
           <div className="absolute inset-0 bg-grid-white/[0.04] [mask-image:linear-gradient(to_bottom,white_40%,transparent_100%)]" />
-          <div className="container relative mx-auto grid items-center gap-14 px-4 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="container relative mx-auto grid items-center gap-12 px-4 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-16">
             <div>
               <Reveal>
                 <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
@@ -74,7 +74,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                   {t('heroBadge')}
                 </p>
               </Reveal>
-              <h1 className="mb-6 font-headline text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
+              <h1 className="mb-6 break-words font-headline text-[2.6rem] font-bold leading-[1.02] tracking-tight md:text-6xl lg:text-[4.5rem]">
                 {t('heroTitle').split(' ').map((word: string, i: number) => (
                   <span key={i} className="word-in" style={{ animationDelay: `${120 + i * 70}ms` }}>
                     {word}&nbsp;
@@ -99,12 +99,27 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               </Reveal>
             </div>
 
-            <Reveal delay={150}>
-              <figure className="relative">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border/60 shadow-2xl shadow-black/50">
+            <Reveal delay={150} className="min-w-0">
+              <figure className="relative mx-auto w-full max-w-md lg:max-w-none">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-border/60 shadow-2xl shadow-black/60">
                   <Image src="/home/hero.webp" alt="" fill priority sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
                 </div>
-                <figcaption className="mt-3 text-right text-xs text-muted-foreground">{t('heroPhotoCredit')}</figcaption>
+                {["Vue 3", "Nuxt", "TypeScript", "WooCommerce", "Laravel"].map((tag, i) => (
+                  <span
+                    key={tag}
+                    className="hero-chip absolute whitespace-nowrap rounded-full border border-primary/40 bg-background/80 px-4 py-2 text-sm font-semibold text-primary shadow-lg backdrop-blur"
+                    style={{
+                      top: ["8%", "30%", "58%", "78%", "12%"][i],
+                      left: ["-6%", "auto", "-10%", "62%", "auto"][i],
+                      right: ["auto", "-6%", "auto", "auto", "-4%"][i],
+                      animationDelay: `${i * 0.7}s`,
+                    }}
+                  >
+                    {tag}
+                  </span>
+                ))}
+                <figcaption className="mt-4 text-right text-xs text-muted-foreground">{t('heroPhotoCredit')}</figcaption>
               </figure>
             </Reveal>
           </div>
