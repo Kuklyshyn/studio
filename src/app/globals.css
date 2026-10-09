@@ -97,3 +97,52 @@
     animation: none;
   }
 }
+
+/* Hero headline: words rise in one by one on load. */
+@keyframes word-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.45em);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+.word-in {
+  display: inline-block;
+  opacity: 0;
+  animation: word-in 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+/* Technology strip: one row that scrolls continuously and pauses on hover. */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee 32s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .word-in {
+    opacity: 1;
+    animation: none;
+  }
+
+  .marquee-track {
+    animation: none;
+  }
+}

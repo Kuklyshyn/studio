@@ -6,6 +6,7 @@ import { Link } from "@/i18n";
 import { TrackedLink } from "@/components/tracked-link";
 import { TechLogos } from "@/components/tech-logos";
 import { Reveal } from "@/components/reveal";
+import { SpotlightCard } from "@/components/spotlight-card";
 import { ProjectCard } from "@/components/project-card";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -66,7 +67,11 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             </Reveal>
             <Reveal delay={80}>
               <h1 className="mx-auto max-w-4xl font-headline text-4xl font-bold leading-[1.05] tracking-tight md:text-7xl mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white to-white/70">
-                {t('heroTitle')}
+                {t('heroTitle').split(' ').map((word: string, i: number) => (
+                  <span key={i} className="word-in" style={{ animationDelay: `${120 + i * 70}ms` }}>
+                    {word}&nbsp;
+                  </span>
+                ))}
               </h1>
             </Reveal>
             <Reveal delay={160}>
@@ -102,7 +107,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
               {services.map((service: any, index: number) => (
                 <Reveal key={index} delay={index * 100}>
-                  <Card className="group h-full rounded-2xl border-border/60 bg-secondary/40 p-8 text-left transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_0_40px_-12px_hsl(var(--primary)/0.5)]">
+                  <SpotlightCard className="h-full rounded-2xl border border-border/60 bg-secondary/40 p-8 text-left transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_0_40px_-12px_hsl(var(--primary)/0.5)]">
                     <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-xl bg-primary/10 transition-transform duration-300 group-hover:scale-110">
                       {serviceIcons[index]}
                     </div>
@@ -110,7 +115,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                       {service.title}
                     </CardTitle>
                     <p className="leading-relaxed text-muted-foreground">{service.description}</p>
-                  </Card>
+                  </SpotlightCard>
                 </Reveal>
               ))}
             </div>

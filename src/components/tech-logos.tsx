@@ -44,13 +44,15 @@ export function TechLogos() {
           </div>
         ))}
       </div>
-      <ul className="flex flex-wrap justify-center gap-2">
-        {dailyStack.map((name) => (
-          <li key={name} className="rounded-full border border-border px-3 py-1 text-sm text-muted-foreground">
-            {name}
-          </li>
-        ))}
-      </ul>
+      <div className="marquee overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]">
+        <ul className="marquee-track flex w-max gap-2">
+          {[...dailyStack, ...dailyStack].map((name, i) => (
+            <li key={`${name}-${i}`} aria-hidden={i >= dailyStack.length} className="whitespace-nowrap rounded-full border border-border px-4 py-1.5 text-sm text-muted-foreground">
+              {name}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
