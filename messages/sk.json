@@ -13,6 +13,7 @@
   "Footer": {
     "description": "Tvorím moderné webové riešenia. Zameriavam sa na kvalitu, rýchlosť a spokojnosť klienta.",
     "quick-links": "Rýchle odkazy",
+    "services": "Služby",
     "follow-us": "Sledujte nás",
     "copyright": "Všetky práva vyhradené.",
     "privacy-policy": "Zásady ochrany osobných údajov",
@@ -327,10 +328,15 @@
     "lead": "Vaše súkromie je pre nás dôležité. V týchto zásadách ochrany osobných údajov vám vysvetlíme, ako zhromažďujeme, používame a chránime vaše osobné údaje.",
     "lastUpdated": "Posledná aktualizácia:"
   },
+  "Landing": {
+    "cta": "Napíšte mi",
+    "faqTitle": "Časté otázky",
+    "related": "Ďalšie služby"
+  },
   "Seo": {
     "home": {
-      "title": "Tvorba web stránok a e-shopov",
-      "description": "Omnicode je webové štúdio v Bratislave. Tvorím rýchle a moderné weby a e-shopy. Vyžiadajte si ponuku zadarmo."
+      "title": "Tvorba web stránok a e-shopov Bratislava",
+      "description": "Tvorba web stránok a e-shopov na mieru v Bratislave. Rýchle weby, e-shopy, rezervačné systémy a CRM. Ceny od 990 € bez DPH, ponuka zadarmo."
     },
     "about": {
       "title": "O mne",

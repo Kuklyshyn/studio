@@ -13,6 +13,7 @@
     "Footer": {
         "description": "I create modern web solutions. I focus on quality, speed and client satisfaction.",
         "quick-links": "Quick Links",
+        "services": "Services",
         "follow-us": "Follow Us",
         "copyright": "All rights reserved.",
         "privacy-policy": "Privacy Policy",
@@ -327,10 +328,15 @@
         "lead": "Your privacy is important to us. In this privacy policy, we explain how we collect, use, and protect your personal data.",
         "lastUpdated": "Last updated:"
     },
+    "Landing": {
+        "cta": "Write to me",
+        "faqTitle": "Frequently asked questions",
+        "related": "Related services"
+    },
     "Seo": {
         "home": {
-            "title": "Website and E-shop Development",
-            "description": "Omnicode is a web studio in Bratislava. I build fast, modern websites and e-shops. Request a free quote."
+            "title": "Website and E-shop Development in Bratislava",
+            "description": "Custom website and e-shop development in Bratislava. Fast websites, e-shops, booking systems and CRM. Prices from €990 excl. VAT, free quote."
         },
         "about": {
             "title": "About Me",

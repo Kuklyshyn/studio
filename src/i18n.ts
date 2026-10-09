@@ -39,6 +39,23 @@ export const pathnames = {
     en: "/services",
     sk: "/services",
   },
+  // Landing pages written for search queries; each language gets its own readable address.
+  "/web-development": {
+    en: "/web-development-bratislava",
+    sk: "/tvorba-webov-bratislava",
+  },
+  "/eshop-development": {
+    en: "/eshop-development",
+    sk: "/tvorba-eshopu",
+  },
+  "/booking-system": {
+    en: "/custom-booking-system",
+    sk: "/rezervacny-system-na-mieru",
+  },
+  "/custom-crm": {
+    en: "/custom-crm-system",
+    sk: "/crm-na-mieru",
+  },
   "/blog/[slug]": {
     en: "/blog/[slug]",
     sk: "/blog/[slug]",

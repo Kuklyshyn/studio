@@ -19,6 +19,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { pageMetadata, type Locale } from "@/lib/seo";
 import { localizeProject, portfolioProjects } from "./portfolio/projects";
 import { PricingPlans } from "@/components/pricing-plans";
+import { Faq } from "@/components/faq";
+import { homeFaq } from "../../../content/faq";
 import { Testimonials } from "@/components/testimonials";
 import { ClientLogos } from "@/components/client-logos";
 
@@ -58,6 +60,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   setRequestLocale(locale);
   const t = await getTranslations("HomePage");
   const tPortfolio = await getTranslations("PortfolioPage");
+  const tLanding = await getTranslations("Landing");
   const projects = portfolio.map((slug) => localizeProject(portfolioProjects.find((p) => p.slug === slug)!, locale));
   const services = t.raw("services");
   const processSteps = t.raw("processSteps");
@@ -310,6 +313,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             </Reveal>
           </div>
         </section>
+
+        <Faq items={homeFaq[locale === "sk" ? "sk" : "en"]} title={tLanding("faqTitle")} />
 
         {/* Closing call to action */}
         <section className="pb-24 md:pb-32">

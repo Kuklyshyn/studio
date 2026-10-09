@@ -1,13 +1,16 @@
 import { Link } from "@/i18n";
 import { Mountain, Twitter, Linkedin, Facebook } from "lucide-react";
 import { Button } from "../ui/button";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { landingKeys, landingPages } from "../../../content/landing";
 import Image from "next/image";
 import { CookieSettingsButton } from "./cookie-settings-button";
 
 export function Footer() {
   const t = useTranslations("Footer");
   const tHeader = useTranslations("Header");
+  const lang = useLocale() === "sk" ? "sk" : "en";
+  const landingHrefs = { "web-development": "/web-development", "eshop-development": "/eshop-development", "booking-system": "/booking-system", "custom-crm": "/custom-crm" } as const;
 
   return (
     <footer className="bg-secondary/30 border-t border-border/50 pb-20 md:pb-0">
@@ -67,6 +70,18 @@ export function Footer() {
                   {tHeader("contact")}
                 </Link>
               </li>
+            </ul>
+            <h3 className="font-headline font-semibold text-lg mb-4 mt-8">
+              {t("services")}
+            </h3>
+            <ul className="space-y-2 text-muted-foreground">
+              {landingKeys.map((key) => (
+                <li key={key}>
+                  <Link href={landingHrefs[key]} className="hover:text-primary transition-colors">
+                    {landingPages[key][lang].navLabel}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>

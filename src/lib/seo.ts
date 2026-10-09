@@ -8,6 +8,7 @@ import {
   SITE_URL,
   SOCIAL_LINKS,
 } from "./site";
+import { pathnames } from "../i18n";
 
 export type Locale = (typeof LOCALES)[number];
 
@@ -27,13 +28,23 @@ export function truncate(text: string, max = 160) {
   return `${wordEnd > 0 ? cut.slice(0, wordEnd) : cut}…`;
 }
 
-// `path` is the page path without the locale prefix ("" for the home page).
+// The address a page has in one language. Pages with their own readable address per language are listed in
+// `pathnames` (src/i18n.ts); every other page uses the same path in both languages.
+export function localizedPath(path: string, locale: Locale): string {
+  const entry = (pathnames as Record<string, unknown>)[path];
+  if (entry && typeof entry === "object") {
+    return (entry as Record<string, string>)[locale] ?? path;
+  }
+  return path;
+}
+
+// `path` is the internal page path without the locale prefix ("" for the home page).
 export function languageAlternates(path: string) {
   const languages: Record<string, string> = {};
   for (const locale of LOCALES) {
-    languages[locale] = absoluteUrl(`/${locale}${path}`);
+    languages[locale] = absoluteUrl(`/${locale}${localizedPath(path, locale)}`);
   }
-  languages["x-default"] = absoluteUrl(`/${DEFAULT_LOCALE}${path}`);
+  languages["x-default"] = absoluteUrl(`/${DEFAULT_LOCALE}${localizedPath(path, DEFAULT_LOCALE as Locale)}`);
   return languages;
 }
 
@@ -54,7 +65,7 @@ export function pageMetadata({
   image,
   publishedTime,
 }: PageMetadataOptions): Metadata {
-  const url = absoluteUrl(`/${locale}${path}`);
+  const url = absoluteUrl(`/${locale}${localizedPath(path, locale)}`);
   const description = truncate(rawDescription);
   const imageUrl = image?.startsWith("http") ? image : absoluteUrl(image ?? DEFAULT_OG_IMAGE);
 
@@ -154,5 +165,30 @@ export function breadcrumbJsonLd(items: { name: string; url: string }[]) {
       name: item.name,
       item: item.url,
     })),
+  };
+}
+
+
+export function faqJsonLd(items: { q: string; a: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  };
+}
+
+export function serviceJsonLd({ name, description, url }: { name: string; description: string; url: string }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name,
+    description,
+    url,
+    provider: { "@id": ORGANIZATION_ID },
+    areaServed: { "@type": "Country", name: "Slovakia" },
   };
 }
