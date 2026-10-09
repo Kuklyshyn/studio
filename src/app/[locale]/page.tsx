@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardTitle } from "@/components/ui/card";
-import { ArrowRight, Code2, Gauge, Layers, Megaphone, MessagesSquare, MoveRight, Palette, PenTool, Rocket, Search, ShieldCheck } from "lucide-react";
+import { Accessibility, ArrowRight, Code2, Layers, Megaphone, MessagesSquare, MoveRight, Palette, PenTool, Rocket, Search, ShoppingCart, Server, Wrench } from "lucide-react";
 import { Link } from "@/i18n";
 import { TrackedLink } from "@/components/tracked-link";
 import { TechLogos } from "@/components/tech-logos";
@@ -23,7 +23,14 @@ const serviceIcons = [<Palette key="p" className="w-8 h-8 text-primary" />, <Cod
 
 const processIcons = [<MessagesSquare key="a" className="w-6 h-6" />, <PenTool key="b" className="w-6 h-6" />, <Code2 key="c" className="w-6 h-6" />, <Rocket key="d" className="w-6 h-6" />];
 
-const whyUsIcons = [<Search key="s" className="w-6 h-6" />, <Gauge key="g" className="w-6 h-6" />, <ShieldCheck key="v" className="w-6 h-6" />];
+const whyUsIcons = [
+  <Search key="s" className="w-6 h-6" />,
+  <Layers key="l" className="w-6 h-6" />,
+  <ShoppingCart key="c" className="w-6 h-6" />,
+  <Server key="v" className="w-6 h-6" />,
+  <Accessibility key="a" className="w-6 h-6" />,
+  <Wrench key="w" className="w-6 h-6" />,
+];
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -189,14 +196,17 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 <h2 className="font-headline text-3xl md:text-5xl font-bold mb-6">{t('whyUsTitle')}</h2>
                 <p className="text-muted-foreground text-lg">{t('whyUsSubtitle')}</p>
               </Reveal>
-              <div className="grid gap-4">
-                {whyUs.map((item: string, index: number) => (
-                  <Reveal key={index} delay={index * 100}>
-                    <div className="flex items-start gap-4 rounded-2xl border border-border/60 bg-secondary/40 p-6 transition-colors duration-300 hover:border-primary/50">
+              <div className="grid gap-4 sm:grid-cols-2">
+                {whyUs.map((item: { title: string; description: string }, index: number) => (
+                  <Reveal key={index} delay={index * 100} className="h-full">
+                    <div className="flex h-full items-start gap-4 rounded-2xl border border-border/60 bg-secondary/40 p-6 transition-colors duration-300 hover:border-primary/50">
                       <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
                         {whyUsIcons[index]}
                       </div>
-                      <span className="pt-2 font-semibold leading-snug">{item}</span>
+                      <div>
+                        <h3 className="font-headline text-lg font-bold leading-snug">{item.title}</h3>
+                        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+                      </div>
                     </div>
                   </Reveal>
                 ))}

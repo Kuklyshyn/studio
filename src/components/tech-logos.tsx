@@ -20,6 +20,10 @@ const dailyStack = [
   "WordPress",
   "WooCommerce",
   "Salesforce Commerce Cloud",
+  "Laravel",
+  "Java",
+  "PHP",
+  "Node.js",
 ];
 
 export function TechLogos() {
