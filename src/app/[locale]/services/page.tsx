@@ -2,17 +2,21 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, Code, Smartphone, Search } from "lucide-react";
-import Image from "next/image";
 import { Link } from "@/i18n";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Card } from "@/components/ui/card";
 import { localizeProject, portfolioProjects, type PortfolioCategory } from "../portfolio/projects";
 import { pageMetadata, type Locale } from "@/lib/seo";
 import { PricingPlans } from "@/components/pricing-plans";
+import { PageHero } from "@/components/page-hero";
+import { Reveal } from "@/components/reveal";
+import { Magnetic } from "@/components/magnetic";
+import { SpotlightCard } from "@/components/spotlight-card";
+import { ProjectCard } from "@/components/project-card";
+import { SceneBlueprint, SceneCart, SceneGauge } from "@/components/scenes";
 
 const categoryOrder: PortfolioCategory[] = ["websites", "eshops", "saas", "apps"];
 
-const benefitIcons = [<Code className="w-7 h-7 text-primary flex-shrink-0 mt-1" />, <Smartphone className="w-7 h-7 text-primary flex-shrink-0 mt-1" />, <Search className="w-7 h-7 text-primary flex-shrink-0 mt-1" />];
+const benefitIcons = [<Code key="c" className="h-6 w-6" />, <Smartphone key="s" className="h-6 w-6" />, <Search key="r" className="h-6 w-6" />];
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
     const { locale } = await params;
@@ -25,6 +29,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
     const { locale } = await params;
     setRequestLocale(locale);
     const t = await getTranslations("ServicesPage");
+    const tPortfolio = await getTranslations("PortfolioPage");
     const benefits = t.raw('benefits');
     const services = t.raw('services');
     const projects = portfolioProjects.map((project) => localizeProject(project, locale));
@@ -32,146 +37,148 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
 
     return (
         <>
-            <section className="py-20 md:py-32 relative">
-                <div className="absolute inset-0 bg-grid-white/[0.05]"></div>
-                <div className="container mx-auto px-4 text-center relative">
-                    <h1 className="font-headline text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-white/70 mb-4">
-                        {t('heroTitle')}
-                    </h1>
-                    <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-                        {t('heroSubtitle')}
-                    </p>
-                    <div className="mt-8">
-                        <Button asChild size="lg" className="rounded-full font-bold">
-                            <Link href="/contact">{t('heroCta')}</Link>
-                        </Button>
-                    </div>
-                </div>
-            </section>
+            <PageHero title={t('heroTitle')} subtitle={t('heroSubtitle')}>
+                <Magnetic>
+                    <Button asChild size="lg" className="btn-shine rounded-full font-bold">
+                        <Link href="/contact">{t('heroCta')}</Link>
+                    </Button>
+                </Magnetic>
+            </PageHero>
 
             <section className="py-16 md:py-24">
                 <div className="container mx-auto px-4">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">{t('websitesTitle')}</h2>
-                            <p className="text-muted-foreground mb-4 text-lg">
-                                {t('websitesText1')}
-                            </p>
-                            <p className="text-muted-foreground text-lg">
-                                {t('websitesText2')}
-                            </p>
-                        </div>
-                        <div>
-                             <Image src="https://supermykola.sirv.com/omni/9.jpg" alt={t('websitesTitle')} width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="website interface design" />
-                        </div>
+                    <div className="grid items-center gap-12 md:grid-cols-2">
+                        <Reveal>
+                            <h2 className="mb-4 font-headline text-3xl font-bold md:text-4xl">{t('websitesTitle')}</h2>
+                            <p className="mb-4 text-lg text-muted-foreground">{t('websitesText1')}</p>
+                            <p className="text-lg text-muted-foreground">{t('websitesText2')}</p>
+                        </Reveal>
+                        <Reveal delay={120}>
+                            <SceneBlueprint />
+                        </Reveal>
                     </div>
                 </div>
             </section>
 
-             <section className="py-16 md:py-24 bg-secondary/30">
+            <section className="border-t border-border/50 py-16 md:py-24">
                 <div className="container mx-auto px-4">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                         <div className="order-1 md:order-2">
-                            <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">{t('eshopsTitle')}</h2>
-                            <p className="text-muted-foreground mb-4 text-lg">
-                                {t('eshopsText1')}
-                            </p>
-                            <p className="text-muted-foreground text-lg">
-                                {t('eshopsText2')}
-                            </p>
-                        </div>
-                        <div className="order-2 md:order-1">
-                             <Image src="https://supermykola.sirv.com/omni/12.jpg" alt={t('eshopsTitle')} width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="online shopping checkout" />
-                        </div>
+                    <div className="grid items-center gap-12 md:grid-cols-2">
+                        <Reveal className="order-2 md:order-1">
+                            <SceneCart />
+                        </Reveal>
+                        <Reveal delay={120} className="order-1 md:order-2">
+                            <h2 className="mb-4 font-headline text-3xl font-bold md:text-4xl">{t('eshopsTitle')}</h2>
+                            <p className="mb-4 text-lg text-muted-foreground">{t('eshopsText1')}</p>
+                            <p className="text-lg text-muted-foreground">{t('eshopsText2')}</p>
+                        </Reveal>
                     </div>
                 </div>
             </section>
 
-            <section className="py-16 md:py-24">
+            <section className="border-t border-border/50 py-16 md:py-24">
                 <div className="container mx-auto px-4">
-                    <div className="text-center mb-12">
-                        <h2 className="font-headline text-3xl md:text-5xl font-bold">{t('projectsTitle')}</h2>
-                        <p className="text-muted-foreground mt-4 text-lg max-w-2xl mx-auto">{t('projectsSubtitle')}</p>
-                    </div>
+                    <Reveal>
+                        <div className="mx-auto mb-12 max-w-2xl text-center">
+                            <h2 className="font-headline text-3xl font-bold md:text-5xl">{t('projectsTitle')}</h2>
+                            <p className="mt-4 text-lg text-muted-foreground">{t('projectsSubtitle')}</p>
+                        </div>
+                    </Reveal>
                     <Tabs defaultValue={projectCategories[0]} className="w-full">
-                        <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8 h-auto">
+                        <TabsList className="mb-8 grid h-auto w-full grid-cols-2 md:grid-cols-4">
                             {projectCategories.map((category) => (
                                 <TabsTrigger key={category} value={category} className="py-2.5 text-base">{t(`categories.${category}`)}</TabsTrigger>
                             ))}
                         </TabsList>
                         {projectCategories.map((category) => (
                             <TabsContent key={category} value={category}>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                                    {projects.filter((project) => project.category === category).map((project) => (
-                                        <Link key={project.slug} href={{ pathname: "/portfolio/[slug]", params: { slug: project.slug } }} className="group">
-                                            <Card className="overflow-hidden bg-secondary/50 border-border/50 hover:border-primary/50 transition-all">
-                                                <div className="overflow-hidden">
-                                                    <Image src={project.image} alt={project.title} width={600} height={400} data-ai-hint={project.hint} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
-                                                </div>
-                                                <div className="p-4">
-                                                    <h3 className="font-bold text-lg group-hover:text-primary transition-colors">{project.title}</h3>
-                                                </div>
-                                            </Card>
-                                        </Link>
+                                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                                    {projects.filter((project) => project.category === category).map((project, index) => (
+                                        <ProjectCard
+                                            key={project.slug}
+                                            slug={project.slug}
+                                            index={index}
+                                            industry={project.industry}
+                                            title={project.title}
+                                            description={project.description}
+                                            results={project.results}
+                                            tags={project.tags}
+                                            viewLabel={tPortfolio('viewProject')}
+                                        />
                                     ))}
                                 </div>
                             </TabsContent>
                         ))}
                     </Tabs>
-                    <div className="text-center mt-12">
-                         <Button asChild size="lg" className="rounded-full font-bold">
-                            <Link href="/portfolio">{t('allProjects')}</Link>
-                        </Button>
+                    <div className="mt-12 text-center">
+                        <Magnetic>
+                            <Button asChild size="lg" className="btn-shine rounded-full font-bold">
+                                <Link href="/portfolio">{t('allProjects')}</Link>
+                            </Button>
+                        </Magnetic>
                     </div>
                 </div>
             </section>
 
-            <section className="py-16 md:py-24 bg-secondary/30">
+            <section className="border-t border-border/50 py-16 md:py-24">
                 <div className="container mx-auto px-4">
-                     <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div className="grid items-center gap-12 md:grid-cols-2">
                         <div>
-                            <h2 className="font-headline text-3xl md:text-4xl font-bold mb-6">{t('benefitsTitle')}</h2>
+                            <Reveal>
+                                <h2 className="mb-8 font-headline text-3xl font-bold md:text-4xl">{t('benefitsTitle')}</h2>
+                            </Reveal>
                             <div className="space-y-4">
                                 {benefits.map((benefit: any, index: number) => (
-                                    <div key={index} className="flex items-start gap-4">
-                                        {benefitIcons[index]}
-                                        <div>
-                                            <h3 className="font-bold text-lg">{benefit.title}</h3>
-                                            <p className="text-muted-foreground">{benefit.description}</p>
-                                        </div>
-                                    </div>
+                                    <Reveal key={index} delay={index * 100}>
+                                        <SpotlightCard className="rounded-2xl border border-border/60 bg-gradient-to-b from-white/[0.05] to-secondary/20 p-5 transition-colors duration-300 hover:border-primary/50">
+                                            <div className="flex items-start gap-4">
+                                                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">{benefitIcons[index]}</span>
+                                                <div>
+                                                    <h3 className="text-lg font-bold">{benefit.title}</h3>
+                                                    <p className="mt-1 text-muted-foreground">{benefit.description}</p>
+                                                </div>
+                                            </div>
+                                        </SpotlightCard>
+                                    </Reveal>
                                 ))}
                             </div>
                         </div>
-                        <div className="flex justify-center">
-                             <Image src="https://supermykola.sirv.com/omni/11.jpg" alt={t('benefitsTitle')} width={500} height={500} className="rounded-lg shadow-2xl" data-ai-hint="glowing cube technology" />
-                        </div>
+                        <Reveal delay={120}>
+                            <SceneGauge />
+                        </Reveal>
                     </div>
                 </div>
             </section>
 
-             <PricingPlans locale={locale} />
+            <PricingPlans locale={locale} />
 
-             <section className="py-16 md:py-24">
-                <div className="container mx-auto px-4 max-w-4xl">
-                     <div className="text-center mb-12">
-                        <h2 className="font-headline text-3xl md:text-5xl font-bold">{t('servicesListTitle')}</h2>
-                         <p className="text-muted-foreground mt-4 text-lg max-w-2xl mx-auto">{t('servicesListSubtitle')}</p>
-                    </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+            <section className="border-t border-border/50 py-16 md:py-24">
+                <div className="container mx-auto max-w-4xl px-4">
+                    <Reveal>
+                        <div className="mx-auto mb-12 max-w-2xl text-center">
+                            <h2 className="font-headline text-3xl font-bold md:text-5xl">{t('servicesListTitle')}</h2>
+                            <p className="mt-4 text-lg text-muted-foreground">{t('servicesListSubtitle')}</p>
+                        </div>
+                    </Reveal>
+                    <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                         {services.map((service: string, index: number) => (
-                           <div key={index} className="flex items-center gap-3 text-lg">
-                               <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                               <span>{service}</span>
-                           </div>
+                            <Reveal key={index} delay={(index % 2) * 80} className="h-full">
+                                <SpotlightCard className="h-full rounded-2xl border border-border/60 bg-gradient-to-b from-white/[0.05] to-secondary/20 p-4 transition-colors duration-300 hover:border-primary/50">
+                                    <div className="flex items-center gap-3 text-lg">
+                                        <Check className="h-5 w-5 flex-shrink-0 text-primary" />
+                                        <span>{service}</span>
+                                    </div>
+                                </SpotlightCard>
+                            </Reveal>
                         ))}
                     </div>
-                     <div className="text-center mt-12">
-                        <Button asChild size="lg" variant="outline" className="rounded-full font-semibold border-2 border-border/50 hover:bg-primary/10 hover:border-primary/50">
-                           <Link href="/custom-programming">
-                              {t('customCta')} <ArrowRight className="ml-2 h-5 w-5" />
-                           </Link>
-                        </Button>
+                    <div className="mt-12 text-center">
+                        <Magnetic>
+                            <Button asChild size="lg" variant="outline" className="rounded-full border-2 border-border/50 font-semibold hover:border-primary/50 hover:bg-primary/10">
+                                <Link href="/custom-programming">
+                                    {t('customCta')} <ArrowRight className="ml-2 h-5 w-5" />
+                                </Link>
+                            </Button>
+                        </Magnetic>
                     </div>
                 </div>
             </section>

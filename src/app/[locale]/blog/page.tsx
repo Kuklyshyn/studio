@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Link } from '@/i18n';
 import { Reveal } from "@/components/reveal";
+import { PageHero } from "@/components/page-hero";
 import { blogPosts } from "./posts";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
@@ -23,20 +24,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
 
   return (
     <>
-      <section className="pt-20 pb-12 md:pt-32 md:pb-16">
-        <div className="container mx-auto px-4">
-          <Reveal>
-            <h1 className="max-w-3xl font-headline text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl">
-              {t('heroTitle')}
-            </h1>
-          </Reveal>
-          <Reveal delay={120}>
-            <p className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-              {t('heroSubtitle')}
-            </p>
-          </Reveal>
-        </div>
-      </section>
+      <PageHero title={t('heroTitle')} subtitle={t('heroSubtitle')} />
 
       <section className="pb-20 md:pb-28">
         <div className="container mx-auto px-4">

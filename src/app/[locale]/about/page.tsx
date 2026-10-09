@@ -1,11 +1,11 @@
-
 import { Check } from "lucide-react";
-import Image from "next/image";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { pageMetadata, type Locale } from "@/lib/seo";
-
-const teamMemberHints = ["man portrait professional", "woman smiling", "man glasses"];
+import { PageHero } from "@/components/page-hero";
+import { Reveal } from "@/components/reveal";
+import { SpotlightCard } from "@/components/spotlight-card";
+import { SceneCode, SceneNodes } from "@/components/scenes";
 
 const values_en = [
     "Quality and precision",
@@ -25,7 +25,6 @@ const values_sk = [
     "Vášeň pre digitálny svet"
 ];
 
-
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: "Seo.about" });
@@ -37,80 +36,76 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
     const { locale } = await params;
     setRequestLocale(locale);
     const t = await getTranslations("AboutPage");
-    const tHeader = await getTranslations("Header");
 
-
-    const teamMembers = t.raw('teamMembers');
+    const teamMembers = t.raw('teamMembers') as { name: string; role: string }[];
     const values = locale === 'en' ? values_en : values_sk;
+    const initials = (name: string) => name.split(" ").map((part) => part[0]).slice(0, 2).join("");
 
     return (
         <>
-            <section className="py-20 md:py-32 relative">
-                <div className="absolute inset-0 bg-grid-white/[0.05]"></div>
-                <div className="container mx-auto px-4 text-center relative">
-                    <h1 className="font-headline text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-white/70 mb-4">
-                        {t('heroTitle')}
-                    </h1>
-                    <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-                        {t('heroSubtitle')}
-                    </p>
-                </div>
-            </section>
+            <PageHero title={t('heroTitle')} subtitle={t('heroSubtitle')} />
 
             <section className="py-16 md:py-24">
                 <div className="container mx-auto px-4">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <Image src="https://supermykola.sirv.com/omni/Wavy_Bus-20_Single-04.jpg" alt={t('storyTitle')} width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="team collaborating office" />
-                        </div>
-                        <div>
-                            <h2 className="font-headline text-3xl md:text-4xl font-bold mb-4">{t('storyTitle')}</h2>
-                            <p className="text-muted-foreground mb-4 text-lg">
-                                {t('storyText1')}
-                            </p>
-                            <p className="text-muted-foreground text-lg">
-                               {t('storyText2')}
-                            </p>
-                        </div>
+                    <div className="grid items-center gap-12 md:grid-cols-2">
+                        <Reveal>
+                            <SceneCode />
+                        </Reveal>
+                        <Reveal delay={120}>
+                            <h2 className="mb-4 font-headline text-3xl font-bold md:text-4xl">{t('storyTitle')}</h2>
+                            <p className="mb-4 text-lg text-muted-foreground">{t('storyText1')}</p>
+                            <p className="text-lg text-muted-foreground">{t('storyText2')}</p>
+                        </Reveal>
                     </div>
                 </div>
             </section>
 
-            <section className="py-16 md:py-24 bg-secondary/30">
+            <section className="border-t border-border/50 py-16 md:py-24">
                 <div className="container mx-auto px-4">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div className="grid items-center gap-12 md:grid-cols-2">
                         <div className="order-2 md:order-1">
-                            <h2 className="font-headline text-3xl md:text-4xl font-bold mb-6">{t('valuesTitle')}</h2>
-                            <div className="grid grid-cols-2 gap-4">
+                            <Reveal>
+                                <h2 className="mb-8 font-headline text-3xl font-bold md:text-4xl">{t('valuesTitle')}</h2>
+                            </Reveal>
+                            <div className="grid gap-3 sm:grid-cols-2">
                                 {values.map((value, index) => (
-                                    <div key={index} className="flex items-center gap-3">
-                                        <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                                        <span>{value}</span>
-                                    </div>
+                                    <Reveal key={index} delay={index * 70} className="h-full">
+                                        <SpotlightCard className="h-full rounded-2xl border border-border/60 bg-gradient-to-b from-white/[0.05] to-secondary/20 p-4 transition-colors duration-300 hover:border-primary/50">
+                                            <div className="flex items-center gap-3">
+                                                <Check className="h-5 w-5 flex-shrink-0 text-primary" />
+                                                <span>{value}</span>
+                                            </div>
+                                        </SpotlightCard>
+                                    </Reveal>
                                 ))}
                             </div>
                         </div>
-                        <div className="order-1 md:order-2">
-                             <Image src="https://supermykola.sirv.com/omni/6671227.jpg" alt={t('valuesTitle')} width={800} height={600} className="rounded-lg shadow-2xl" data-ai-hint="glowing core abstract" />
-                        </div>
+                        <Reveal className="order-1 md:order-2" delay={120}>
+                            <SceneNodes />
+                        </Reveal>
                     </div>
                 </div>
             </section>
 
-            <section className="py-16 md:py-24">
+            <section className="border-t border-border/50 py-16 md:py-24">
                 <div className="container mx-auto px-4">
-                    <h2 className="font-headline text-3xl md:text-5xl font-bold text-center mb-12">
-                        {t('teamTitle')}
-                    </h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                        {teamMembers.map((member: any, index: number) => (
-                            <div key={index} className="text-center group">
-                                {/* <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-lg">
-                                    <Image src="https://placehold.co/400x400.png" alt={member.name} width={400} height={400} data-ai-hint={teamMemberHints[index]} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-                                </div> */}
-                                <h3 className="font-bold text-xl">{member.name}</h3>
-                                <p className="text-primary">{member.role}</p>
-                            </div>
+                    <Reveal>
+                        <h2 className="mb-12 text-center font-headline text-3xl font-bold md:text-5xl">{t('teamTitle')}</h2>
+                    </Reveal>
+                    <div className="mx-auto flex max-w-xl flex-col items-center gap-6">
+                        {teamMembers.map((member, index) => (
+                            <Reveal key={index} className="w-full">
+                                <SpotlightCard className="group rounded-3xl border border-border/60 bg-gradient-to-b from-white/[0.06] to-secondary/20 p-8 text-center transition-colors duration-300 hover:border-primary/50">
+                                    <div className="relative mx-auto mb-6 flex h-28 w-28 items-center justify-center">
+                                        <span className="absolute inset-0 rounded-full border border-dashed border-primary/50 transition-transform duration-700 group-hover:rotate-180" />
+                                        <span className="flex h-24 w-24 items-center justify-center rounded-full bg-primary/15 font-headline text-3xl font-bold text-primary transition-transform duration-300 group-hover:scale-105">
+                                            {initials(member.name)}
+                                        </span>
+                                    </div>
+                                    <h3 className="text-xl font-bold">{member.name}</h3>
+                                    <p className="mt-1 text-primary">{member.role}</p>
+                                </SpotlightCard>
+                            </Reveal>
                         ))}
                     </div>
                 </div>
@@ -118,5 +113,3 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         </>
     );
 }
-
-    

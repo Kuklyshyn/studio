@@ -167,3 +167,38 @@
 @media (prefers-reduced-motion: reduce) {
   .scene-pop, .scene-bar, .skeleton, .scene-type, .scene-phone-scroll, .group:hover .pulse-ring::after, .btn-shine:hover::after { animation: none !important; }
 }
+
+/* ---- Shared vector scenes: each effect plays once, then again when the pointer enters the scene or its card ---- */
+@keyframes needle-a { from { transform: rotate(-80deg); } to { transform: rotate(var(--deg, 40deg)); } }
+@keyframes needle-b { from { transform: rotate(-80deg); } to { transform: rotate(var(--deg, 40deg)); } }
+@keyframes draw-a { from { stroke-dashoffset: var(--len, 140); } to { stroke-dashoffset: 0; } }
+@keyframes draw-b { from { stroke-dashoffset: var(--len, 140); } to { stroke-dashoffset: 0; } }
+@keyframes tick-a { from { opacity: 0; transform: scale(0.3); } to { opacity: 1; transform: none; } }
+@keyframes tick-b { from { opacity: 0; transform: scale(0.3); } to { opacity: 1; transform: none; } }
+
+.sc-needle { transform-origin: 50% 100%; transform: rotate(var(--deg, 40deg)); animation: needle-a 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.sc-draw { stroke-dasharray: var(--len, 140); animation: draw-a 1.1s ease-out both; }
+.sc-tick { animation: tick-a 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+
+.group:hover .sc-needle { animation-name: needle-b; }
+.group:hover .sc-draw { animation-name: draw-b; }
+.group:hover .sc-tick { animation-name: tick-b; }
+.group:hover .scene-pop { animation-name: pop-b; }
+.group:hover .scene-bar { animation-name: wave-b; }
+.group:hover .scene-type { animation-name: type-b; }
+.group:hover .skeleton { animation-name: shimmer-b; }
+
+/* Steps that light up as the page is scrolled through them (see components/scroll-steps.tsx).
+   Without JavaScript --p stays at 1, so every step is fully visible. */
+.scroll-step {
+  --on: clamp(0, calc(var(--p, 1) * var(--n, 1) - var(--i, 0) + 0.25), 1);
+  opacity: calc(0.4 + var(--on) * 0.6);
+  transform: translateY(calc((1 - var(--on)) * 16px));
+  border-color: hsl(var(--primary) / calc(var(--on) * 0.45));
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out, border-color 0.3s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sc-needle, .sc-draw, .sc-tick { animation: none !important; }
+  .scroll-step { --on: 1; transition: none; }
+}

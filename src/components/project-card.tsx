@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n";
 import { Badge } from "@/components/ui/badge";
+import { SpotlightCard } from "@/components/spotlight-card";
 
 type ProjectCardProps = {
   slug: string;
@@ -16,6 +17,7 @@ type ProjectCardProps = {
 // A project card without pictures: number, sector, title, stack and summary. Used where no approved screenshot exists.
 export function ProjectCard({ slug, index, industry, title, description, results, tags, viewLabel }: ProjectCardProps) {
   return (
+    <SpotlightCard className="h-full rounded-2xl">
     <Link
       href={{ pathname: "/portfolio/[slug]", params: { slug } }}
       prefetch={false}
@@ -39,5 +41,6 @@ export function ProjectCard({ slug, index, industry, title, description, results
         {viewLabel} <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
       </span>
     </Link>
+    </SpotlightCard>
   );
 }

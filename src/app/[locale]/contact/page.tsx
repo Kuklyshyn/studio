@@ -10,6 +10,10 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n";
 import { trackEvent } from "@/lib/analytics";
 import { CONTACT_EMAIL } from "@/lib/site";
+import { PageHero } from "@/components/page-hero";
+import { Reveal } from "@/components/reveal";
+import { SpotlightCard } from "@/components/spotlight-card";
+import { Magnetic } from "@/components/magnetic";
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -76,22 +80,13 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="py-20 md:py-32 relative">
-        <div className="absolute inset-0 bg-grid-white/[0.05]"></div>
-        <div className="container mx-auto px-4 text-center relative">
-          <h1 className="font-headline text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-white/70 mb-4">
-            {t("heroTitle")}
-          </h1>
-          <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-            {t("heroSubtitle")}
-          </p>
-        </div>
-      </section>
+      <PageHero title={t("heroTitle")} subtitle={t("heroSubtitle")} />
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="md:col-span-2">
+            <Reveal className="md:col-span-2">
+            <div>
               <h2 className="font-headline text-3xl font-bold mb-6">
                 {t("formTitle")}
               </h2>
@@ -155,14 +150,16 @@ export default function ContactPage() {
                 </div>
                 {/* Honeypot: hidden from people. Bots that fill every field reveal themselves. */}
                 <input name="website" type="text" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="rounded-full font-semibold"
-                  disabled={loading}
-                >
-                  {loading ? t("sending") : t("submitButton")}
-                </Button>
+                <Magnetic>
+                  <Button
+                    type="submit"
+                    size="lg"
+                    className="btn-shine rounded-full font-semibold"
+                    disabled={loading}
+                  >
+                    {loading ? t("sending") : t("submitButton")}
+                  </Button>
+                </Magnetic>
                 {status && (
                   <p role="status" className="text-sm mt-2">
                     {status === "sent" && t("sentText")}
@@ -173,7 +170,10 @@ export default function ContactPage() {
                 )}
               </form>
             </div>
-            <div className="space-y-8 bg-secondary/30 p-8 rounded-lg">
+            </Reveal>
+            <Reveal delay={120}>
+            <SpotlightCard className="rounded-3xl border border-border/60 bg-gradient-to-b from-white/[0.06] to-secondary/20 p-8">
+            <div className="space-y-8">
               <h2 className="font-headline text-3xl font-bold">
                 {t("contactInfoTitle")}
               </h2>
@@ -218,6 +218,8 @@ export default function ContactPage() {
                 <Link href="/imprint" className="underline hover:text-primary">{t("imprintLink")}</Link>
               </p>
             </div>
+            </SpotlightCard>
+            </Reveal>
           </div>
         </div>
       </section>

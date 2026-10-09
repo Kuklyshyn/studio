@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ProjectCard } from "@/components/project-card";
+import { PageHero } from "@/components/page-hero";
+import { Reveal } from "@/components/reveal";
 import { localizeProject, portfolioProjects } from "./projects";
 import { pageMetadata, type Locale } from "@/lib/seo";
 
@@ -19,23 +21,14 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
 
   return (
     <>
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="font-headline text-4xl md:text-6xl font-bold mb-4">
-            {t('heroTitle')}
-          </h1>
-          <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-            {t('heroSubtitle')}
-          </p>
-        </div>
-      </section>
+      <PageHero title={t('heroTitle')} subtitle={t('heroSubtitle')} />
 
       <section className="pb-20 md:pb-28">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (
+              <Reveal key={project.slug} delay={(index % 3) * 100} className="h-full">
               <ProjectCard
-                key={project.slug}
                 slug={project.slug}
                 index={index}
                 industry={project.industry}
@@ -45,6 +38,7 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
                 tags={project.tags}
                 viewLabel={t('viewProject')}
               />
+              </Reveal>
             ))}
           </div>
         </div>
