@@ -331,7 +331,11 @@
     "Landing": {
         "cta": "Write to me",
         "faqTitle": "Frequently asked questions",
-        "related": "Related services"
+        "related": "Related services",
+        "postCtaTitle": "Need a website or an e-shop?",
+        "postCtaText": "Tell me about your project and I will prepare a non-binding quote.",
+        "postCtaWeb": "Website development in Bratislava",
+        "postCtaEshop": "Custom e-shop development"
     },
     "Seo": {
         "home": {

@@ -331,7 +331,11 @@
   "Landing": {
     "cta": "Napíšte mi",
     "faqTitle": "Časté otázky",
-    "related": "Ďalšie služby"
+    "related": "Ďalšie služby",
+    "postCtaTitle": "Potrebujete web alebo e-shop?",
+    "postCtaText": "Napíšte mi o projekte a pripravím nezáväznú ponuku.",
+    "postCtaWeb": "Tvorba webov v Bratislave",
+    "postCtaEshop": "Tvorba e-shopu"
   },
   "Seo": {
     "home": {

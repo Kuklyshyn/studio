@@ -25,7 +25,15 @@ const QUERIES = {
   "own-website-benefits-for-small-business": "small business owner laptop",
   "own-eshop-or-marketplace": "online shop parcels",
   "crm-for-small-business": "sales team meeting office",
+  "how-much-does-a-website-cost": "calculator budget planning desk",
+  "what-to-prepare-before-a-website": "checklist planning notebook",
+  "booking-system-ready-made-or-custom": "calendar appointment planner",
+  "website-speed-what-slows-it-down": "speed fast motion light trails",
+  "how-to-choose-a-web-developer": "interview handshake business meeting",
 };
+
+// ONLY=slug1,slug2 limits the run to those posts, so existing covers are left alone.
+const only = process.env.ONLY ? process.env.ONLY.split(",") : null;
 
 const env = Object.fromEntries(
   readFileSync(join(ROOT, ".env.local"), "utf8")
@@ -41,6 +49,7 @@ const used = new Set();
 const credits = {};
 
 for (const [slug, query] of Object.entries(QUERIES)) {
+  if (only && !only.includes(slug)) continue;
   const search = await fetch(
     `https://api.unsplash.com/search/photos?${new URLSearchParams({ query, per_page: "10", orientation: "landscape" })}`,
     { headers: auth }

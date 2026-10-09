@@ -1,0 +1,223 @@
+{
+  "date": "2026-10-09",
+  "author": "Omnicode",
+  "posts": [
+    {
+      "slug": "how-much-does-a-website-cost",
+      "cover": {
+        "icon": "Wallet",
+        "label": "Website price",
+        "photo": true
+      },
+      "en": {
+        "title": "How much does a website cost: what the price is made of",
+        "description": "The price of a website depends on scope, features and materials. What drives it and how to compare quotes so you neither overpay nor underestimate.",
+        "content": [
+          "<p>Asking “how much does a website cost” is like asking “how much does a car cost”. The answer depends on what you need. Here is what the price is made of and what to watch for when comparing quotes.</p>",
+          "<h2>What drives the price</h2>",
+          "<ul><li><strong>Scope.</strong> Five pages are a different job from twelve. More languages and a blog add content and testing.</li><li><strong>Features.</strong> A simple form costs less than bookings, payments or a link to another system.</li><li><strong>Materials.</strong> Design, copy and photos are separate work. If you provide them, the development price is lower.</li><li><strong>Timeline.</strong> Urgent projects take priority over other work.</li></ul>",
+          "<h2>Indicative ranges</h2>",
+          "<p>For my services, a website of up to 5 pages begins at €990 excl. VAT, a company website of up to 12 pages begins at €1,990 excl. VAT and an e-shop begins at €3,500 excl. VAT. These are starting prices; I set the exact amount after a conversation. You can see more on the <a href='/en/services'>services page</a>.</p>",
+          "<h2>How to compare quotes</h2>",
+          "<p>Ask what is included and what is not: design, copy, hosting, maintenance, the number of revision rounds. A cheap quote without these points often becomes expensive at the first change. Ask also who looks after the site after launch.</p>",
+          "<h2>What to do next</h2>",
+          "<p>If you know what kind of site you need, <a href='/en/contact'>write to me</a> and I will prepare a non-binding quote. If you are still deciding, see <a href='/en/web-development-bratislava'>website development in Bratislava</a> or <a href='/en/eshop-development'>custom e-shop development</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Koľko stojí tvorba webu: z čoho sa skladá cena",
+        "description": "Cena webu závisí od rozsahu, funkcií a podkladov. Čo ju ovplyvňuje a ako porovnať ponuky, aby ste nepreplatili ani nepodcenili.",
+        "content": [
+          "<p>Pýtať sa, koľko stojí web, je ako pýtať sa, koľko stojí auto. Odpoveď závisí od toho, čo potrebujete. Tu je, z čoho sa cena skladá a na čo si dať pozor pri porovnávaní ponúk.</p>",
+          "<h2>Čo cenu ovplyvňuje</h2>",
+          "<ul><li><strong>Rozsah.</strong> Päť stránok je iná práca ako dvanásť. Viac jazykov a blog pridávajú obsah aj testovanie.</li><li><strong>Funkcie.</strong> Jednoduchý formulár stojí menej ako rezervácie, platby alebo napojenie na iný systém.</li><li><strong>Podklady.</strong> Dizajn, texty a fotografie sú samostatná práca. Ak ich dodáte vy, cena za vývoj je nižšia.</li><li><strong>Termín.</strong> Naliehavé projekty majú prednosť pred inou prácou.</li></ul>",
+          "<h2>Orientačné rozpätia</h2>",
+          "<p>Pri mojich službách začína web do 5 stránok od 990 € bez DPH, firemný web do 12 stránok od 1 990 € bez DPH a e-shop od 3 500 € bez DPH. Sú to východiskové ceny, presnú sumu určím po rozhovore. Viac nájdete na <a href='/sk/services'>stránke služieb</a>.</p>",
+          "<h2>Ako porovnať ponuky</h2>",
+          "<p>Pýtajte sa, čo je v cene a čo nie: dizajn, texty, hosting, údržba, počet kôl úprav. Lacná ponuka bez týchto bodov sa často zdraží pri prvej zmene. Pýtajte sa aj, kto web po spustení udrží.</p>",
+          "<h2>Čo robiť ďalej</h2>",
+          "<p>Ak viete, aký web potrebujete, <a href='/sk/contact'>napíšte mi</a> a pripravím nezáväznú ponuku. Ak ešte neviete, pozrite si <a href='/sk/tvorba-webov-bratislava'>tvorbu webov v Bratislave</a> alebo <a href='/sk/tvorba-eshopu'>tvorbu e-shopu</a>.</p>"
+        ]
+      },
+      "date": "2026-10-09",
+      "sources": [
+        {
+          "name": "Foto: Microsoft 365 / Unsplash",
+          "url": "https://unsplash.com/@microsoft365?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "what-to-prepare-before-a-website",
+      "cover": {
+        "icon": "ClipboardList",
+        "label": "Checklist",
+        "photo": true
+      },
+      "en": {
+        "title": "What to prepare before building a website: a checklist",
+        "description": "A website is built faster when materials are ready. Goals, pages, copy, photos and access: the list that repeats in every project.",
+        "content": [
+          "<p>A website comes together faster when your materials are ready. Here is a list of things that repeat in every project.</p>",
+          "<h2>The goal of the site</h2>",
+          "<p>Decide what the site should do: bring enquiries, sell, or simply show who you are. The goal drives the page structure and the main button.</p>",
+          "<h2>Structure and content</h2>",
+          "<ul><li>A list of pages, for example home, services, about, contact.</li><li>Copy for each page. It can be short, as long as it is true.</li><li>Photos, a logo and brand colours.</li><li>References or client contacts, if they agree.</li></ul>",
+          "<h2>Technical items</h2>",
+          "<ul><li>The domain and access to it, if one exists.</li><li>Access to the current site and e-mail.</li><li>Details for the legal pages: company name, ID number and address.</li></ul>",
+          "<h2>What to clarify</h2>",
+          "<p>Who will manage the site after launch, who approves the texts and by when they will be delivered. The most common delay is not in programming but in delivering materials.</p>",
+          "<p>If you are unsure, <a href='/en/contact'>write to me</a> and we will decide together what is needed. More about the process: <a href='/en/web-development-bratislava'>website development in Bratislava</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Čo pripraviť pred tvorbou webu: kontrolný zoznam",
+        "description": "Web vzniká rýchlejšie, keď máte podklady pripravené. Cieľ, stránky, texty, fotografie a prístupy: zoznam, ktorý sa opakuje pri každom projekte.",
+        "content": [
+          "<p>Web vzniká rýchlejšie, keď máte podklady pripravené. Tu je zoznam vecí, ktoré sa opakujú pri každom projekte.</p>",
+          "<h2>Cieľ webu</h2>",
+          "<p>Určte, čo má web robiť: prinášať dopyty, predávať, alebo len ukázať, kto ste. Z cieľa vychádza štruktúra stránok aj hlavné tlačidlo.</p>",
+          "<h2>Štruktúra a obsah</h2>",
+          "<ul><li>Zoznam stránok, napríklad úvod, služby, o mne, kontakt.</li><li>Texty ku každej stránke. Môžu byť stručné, hlavne pravdivé.</li><li>Fotografie, logo a farby značky.</li><li>Referencie alebo kontakty na klientov, ak s tým súhlasia.</li></ul>",
+          "<h2>Technické veci</h2>",
+          "<ul><li>Doména a prístup k nej, ak už existuje.</li><li>Prístup k existujúcemu webu a e-mailu.</li><li>Údaje pre právne stránky: obchodné meno, IČO a adresa.</li></ul>",
+          "<h2>Čo si ujasniť</h2>",
+          "<p>Kto bude web spravovať po spustení, kto schvaľuje texty a dokedy ich dodá. Najčastejšie zdržanie nie je v programovaní, ale v dodaní podkladov.</p>",
+          "<p>Ak si nie ste istý, <a href='/sk/contact'>napíšte mi</a> a spoločne určíme, čo je potrebné. Viac o procese: <a href='/sk/tvorba-webov-bratislava'>tvorba webov v Bratislave</a>.</p>"
+        ]
+      },
+      "date": "2026-10-09",
+      "sources": [
+        {
+          "name": "Foto: Glenn Carstens-Peters / Unsplash",
+          "url": "https://unsplash.com/@glenncarstenspeters?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "booking-system-ready-made-or-custom",
+      "cover": {
+        "icon": "CalendarCheck",
+        "label": "Booking system",
+        "photo": true
+      },
+      "en": {
+        "title": "Booking system: a ready-made tool or a custom one",
+        "description": "When a ready-made booking tool is enough and when a custom system pays off. Questions to ask before you decide.",
+        "content": [
+          "<p>If customers book appointments by phone or in messages, an online booking system saves time and removes mistakes. The question is whether to use a ready-made tool or have one built to measure.</p>",
+          "<h2>When a ready-made tool is enough</h2>",
+          "<p>A ready-made tool works when your process is simple: one place, one type of service, standard opening hours. It is quick to start and cheap per month. Check that it can send confirmations and that you can change available times yourself.</p>",
+          "<h2>When a custom system pays off</h2>",
+          "<ul><li>You have several branches, rooms or specialists with different availability.</li><li>Prices or length depend on the service, the time or the customer.</li><li>The booking must connect to your own system, such as an e-shop or a client database.</li><li>You want the booking to look and behave exactly like the rest of your site.</li></ul>",
+          "<h2>Questions to ask</h2>",
+          "<ul><li>Who owns the customer data?</li><li>Can the system connect to my other tools?</li><li>What does it cost per month as I grow?</li><li>What happens if the provider changes its terms?</li></ul>",
+          "<p>If your process is more specific than a ready-made tool allows, see <a href='/en/custom-booking-system'>custom booking systems</a> or <a href='/en/contact'>write to me</a> about your case.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Rezervačný systém: hotový nástroj alebo na mieru",
+        "description": "Kedy stačí hotový rezervačný nástroj a kedy sa oplatí systém na mieru. Otázky, ktoré si položiť pred rozhodnutím.",
+        "content": [
+          "<p>Ak si zákazníci rezervujú termíny telefonicky alebo cez správy, online rezervačný systém ušetrí čas a odstráni chyby. Otázka je, či použiť hotový nástroj, alebo si dať postaviť systém na mieru.</p>",
+          "<h2>Kedy stačí hotový nástroj</h2>",
+          "<p>Hotový nástroj funguje, keď je váš proces jednoduchý: jedno miesto, jeden typ služby, štandardné otváracie hodiny. Spustí sa rýchlo a mesačne stojí málo. Overte, že vie posielať potvrdenia a že dostupné časy zmeníte sami.</p>",
+          "<h2>Kedy sa oplatí systém na mieru</h2>",
+          "<ul><li>Máte viac pobočiek, miestností alebo špecialistov s rôznou dostupnosťou.</li><li>Ceny alebo dĺžka závisia od služby, času alebo zákazníka.</li><li>Rezervácia sa musí prepojiť s vlastným systémom, napríklad s e-shopom alebo databázou klientov.</li><li>Chcete, aby rezervácia vyzerala a fungovala presne ako zvyšok vášho webu.</li></ul>",
+          "<h2>Otázky, ktoré si položiť</h2>",
+          "<ul><li>Komu patria dáta o zákazníkoch?</li><li>Dá sa systém napojiť na moje ďalšie nástroje?</li><li>Koľko bude stáť mesačne, keď porastiem?</li><li>Čo sa stane, ak poskytovateľ zmení podmienky?</li></ul>",
+          "<p>Ak je váš proces špecifickejší, ako dovoľuje hotový nástroj, pozrite si <a href='/sk/rezervacny-system-na-mieru'>rezervačný systém na mieru</a> alebo mi <a href='/sk/contact'>napíšte</a> o vašom prípade.</p>"
+        ]
+      },
+      "date": "2026-10-09",
+      "sources": [
+        {
+          "name": "Foto: Eric Rothermel / Unsplash",
+          "url": "https://unsplash.com/@erothermel?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "website-speed-what-slows-it-down",
+      "cover": {
+        "icon": "Gauge",
+        "label": "Web speed",
+        "photo": true
+      },
+      "en": {
+        "title": "Why website speed matters and what slows it down",
+        "description": "A slow site loses visitors. What Core Web Vitals measure, the usual causes of slowness and the first things to fix.",
+        "content": [
+          "<p>People leave a page that does not respond. A fast site keeps visitors on the page and makes it easier for search engines to read it. Here is what slows a site down and what to fix first.</p>",
+          "<h2>What Core Web Vitals measure</h2>",
+          "<ul><li><strong>LCP (Largest Contentful Paint).</strong> How quickly the main content appears.</li><li><strong>INP (Interaction to Next Paint).</strong> How quickly the page reacts when someone taps or clicks.</li><li><strong>CLS (Cumulative Layout Shift).</strong> Whether elements jump while the page loads.</li></ul>",
+          "<h2>The usual causes of slowness</h2>",
+          "<ul><li>Large, uncompressed images.</li><li>Too many plugins and scripts, especially from third parties.</li><li>Slow hosting or no caching.</li><li>Fonts and effects loaded without need.</li></ul>",
+          "<h2>What to fix first</h2>",
+          "<p>Resize and compress images, remove plugins you do not use, enable caching and load scripts only where they are needed. You can measure the result with Google's PageSpeed Insights, which shows these metrics for a given address.</p>",
+          "<p>Speed is part of every site I build. See <a href='/en/web-development-bratislava'>website development in Bratislava</a> or <a href='/en/contact'>write to me</a> if your current site feels slow.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Prečo je rýchlosť webu dôležitá a čo ju spomaľuje",
+        "description": "Pomalý web stráca návštevníkov. Čo merajú Core Web Vitals, aké sú bežné príčiny pomalosti a čo opraviť ako prvé.",
+        "content": [
+          "<p>Ľudia opúšťajú stránku, ktorá nereaguje. Rýchly web udrží návštevníka a uľahčuje vyhľadávačom jeho čítanie. Tu je, čo web spomaľuje a čo opraviť ako prvé.</p>",
+          "<h2>Čo merajú Core Web Vitals</h2>",
+          "<ul><li><strong>LCP (Largest Contentful Paint).</strong> Ako rýchlo sa zobrazí hlavný obsah.</li><li><strong>INP (Interaction to Next Paint).</strong> Ako rýchlo stránka reaguje na klepnutie alebo kliknutie.</li><li><strong>CLS (Cumulative Layout Shift).</strong> Či prvky počas načítania poskakujú.</li></ul>",
+          "<h2>Bežné príčiny pomalosti</h2>",
+          "<ul><li>Veľké, nekomprimované obrázky.</li><li>Príliš veľa pluginov a skriptov, najmä od tretích strán.</li><li>Pomalý hosting alebo chýbajúca vyrovnávacia pamäť.</li><li>Písma a efekty načítané bez potreby.</li></ul>",
+          "<h2>Čo opraviť ako prvé</h2>",
+          "<p>Zmenšite a skomprimujte obrázky, odstráňte nepoužívané pluginy, zapnite vyrovnávaciu pamäť a skripty načítavajte len tam, kde sú potrebné. Výsledok zmeriate nástrojom Google PageSpeed Insights, ktorý tieto metriky ukáže pre danú adresu.</p>",
+          "<p>Rýchlosť je súčasťou každého webu, ktorý tvorím. Pozrite si <a href='/sk/tvorba-webov-bratislava'>tvorbu webov v Bratislave</a> alebo mi <a href='/sk/contact'>napíšte</a>, ak sa vám váš web zdá pomalý.</p>"
+        ]
+      },
+      "date": "2026-10-09",
+      "sources": [
+        {
+          "name": "Foto: Marc Sendra Martorell / Unsplash",
+          "url": "https://unsplash.com/@marcsm?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "how-to-choose-a-web-developer",
+      "cover": {
+        "icon": "UserCheck",
+        "label": "Choosing a developer",
+        "photo": true
+      },
+      "en": {
+        "title": "How to choose a web developer: 7 questions before you order",
+        "description": "What to ask before you order a website: scope, design, ownership, revisions, maintenance and references.",
+        "content": [
+          "<p>Choosing who builds your website is easier when you know what to ask. These seven questions make quotes comparable and prevent surprises later.</p>",
+          "<h2>The seven questions</h2>",
+          "<ol><li><strong>What is included in the price?</strong> Pages, features, languages, hosting and revisions.</li><li><strong>Who provides design and copy?</strong> If it is you, plan the time; if it is the developer, check the price.</li><li><strong>Who owns the domain, the code and the content?</strong> Agree it in writing.</li><li><strong>How many revision rounds are included?</strong> And what does an extra change cost?</li><li><strong>Who maintains the site after launch?</strong> Updates and security do not look after themselves.</li><li><strong>Can I edit the content myself?</strong> A content system saves you from paying for every small change.</li><li><strong>What can I see that was built before?</strong> Ask for examples and what exactly the developer did.</li></ol>",
+          "<h2>Why these questions</h2>",
+          "<p>Most problems with websites do not come from the code. They come from unclear scope, missing materials and nobody owning maintenance. A developer who answers these clearly is usually easier to work with.</p>",
+          "<p>If you want to see how I answer them, read about <a href='/en/web-development-bratislava'>website development in Bratislava</a>, or <a href='/en/contact'>write to me</a> with your questions.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Ako vybrať dodávateľa webu: 7 otázok pred objednávkou",
+        "description": "Čo sa opýtať pred objednávkou webu: rozsah, dizajn, vlastníctvo, úpravy, údržba a referencie.",
+        "content": [
+          "<p>Vybrať, kto vám postaví web, je jednoduchšie, keď viete, čo sa pýtať. Týchto sedem otázok urobí ponuky porovnateľnými a predíde prekvapeniam.</p>",
+          "<h2>Sedem otázok</h2>",
+          "<ol><li><strong>Čo je v cene?</strong> Stránky, funkcie, jazyky, hosting a úpravy.</li><li><strong>Kto dodá dizajn a texty?</strong> Ak vy, naplánujte si čas. Ak dodávateľ, skontrolujte cenu.</li><li><strong>Komu patrí doména, kód a obsah?</strong> Dohodnite to písomne.</li><li><strong>Koľko kôl úprav je v cene?</strong> A koľko stojí ďalšia zmena?</li><li><strong>Kto web udržiava po spustení?</strong> Aktualizácie a bezpečnosť sa nerobia samy.</li><li><strong>Môžem si obsah meniť sám?</strong> Systém na správu obsahu vás ušetrí od platenia za každú drobnosť.</li><li><strong>Čo môžem vidieť z predchádzajúcej práce?</strong> Požiadajte o ukážky a o to, čo presne dodávateľ robil.</li></ol>",
+          "<h2>Prečo práve tieto otázky</h2>",
+          "<p>Väčšina problémov s webmi nevzniká v kóde. Vzniká z nejasného rozsahu, chýbajúcich podkladov a z toho, že nikto nevlastní údržbu. Dodávateľ, ktorý na ne odpovie jasne, sa zvyčajne ľahšie spolupracuje.</p>",
+          "<p>Ak chcete vidieť, ako na ne odpovedám ja, prečítajte si o <a href='/sk/tvorba-webov-bratislava'>tvorbe webov v Bratislave</a> alebo mi <a href='/sk/contact'>napíšte</a> s otázkami.</p>"
+        ]
+      },
+      "date": "2026-10-09",
+      "sources": [
+        {
+          "name": "Foto: Vitaly Gariev / Unsplash",
+          "url": "https://unsplash.com/@silverkblack?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    }
+  ]
+}

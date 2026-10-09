@@ -12,6 +12,7 @@ import { JsonLd } from '@/components/json-ld';
 import { ProseStyles } from '@/components/prose-styles';
 import { Reveal } from "@/components/reveal";
 import { ReadingProgress } from "@/components/reading-progress";
+import { PostCta } from "@/components/post-cta";
 
 export const dynamicParams = false;
 
@@ -113,6 +114,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>
         </Reveal>
+
+        <PostCta locale={locale} />
       </div>
     </div>
   );
