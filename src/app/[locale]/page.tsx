@@ -74,7 +74,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                   {t('heroBadge')}
                 </p>
               </Reveal>
-              <h1 className="mb-6 break-words font-headline text-[2.6rem] font-bold leading-[1.02] tracking-tight md:text-6xl lg:text-[4.5rem]">
+              <h1 className="mb-6 font-headline text-[2.6rem] font-bold leading-[1.04] tracking-tight text-balance md:text-6xl lg:text-[3.6rem] xl:text-[4.25rem]">
                 {t('heroTitle').split(' ').map((word: string, i: number) => (
                   <span key={i} className="word-in" style={{ animationDelay: `${120 + i * 70}ms` }}>
                     {word}&nbsp;
