@@ -1,7 +1,8 @@
 
 import { Button } from "@/components/ui/button";
-import { Card, CardTitle } from "@/components/ui/card";
+import { CardTitle } from "@/components/ui/card";
 import { Accessibility, ArrowRight, Code2, Layers, Megaphone, MessagesSquare, MoveRight, Palette, PenTool, Rocket, Search, ShoppingCart, Server, Wrench } from "lucide-react";
+import Image from "next/image";
 import { Link } from "@/i18n";
 import { TrackedLink } from "@/components/tracked-link";
 import { TechLogos } from "@/components/tech-logos";
@@ -14,24 +15,31 @@ import { pageMetadata, type Locale } from "@/lib/seo";
 import { localizeProject, portfolioProjects } from "./portfolio/projects";
 import { PricingPlans } from "@/components/pricing-plans";
 
-const portfolio = [
-  { slug: "fashion-eshop-woocommerce", hint: "fashion boutique website" },
-  { slug: "interactive-expert-map-platform", hint: "interactive map platform" },
-  { slug: "car-service-booking-system", hint: "car service website" },
-];
+const portfolio = ["fashion-eshop-woocommerce", "interactive-expert-map-platform", "car-service-booking-system"];
 
-const serviceIcons = [<Palette key="p" className="w-8 h-8 text-primary" />, <Code2 key="c" className="w-8 h-8 text-primary" />, <Megaphone key="m" className="w-8 h-8 text-primary" />];
+const serviceIcons = [<Palette key="p" className="h-7 w-7" />, <Code2 key="c" className="h-7 w-7" />, <Megaphone key="m" className="h-7 w-7" />];
 
-const processIcons = [<MessagesSquare key="a" className="w-6 h-6" />, <PenTool key="b" className="w-6 h-6" />, <Code2 key="c" className="w-6 h-6" />, <Rocket key="d" className="w-6 h-6" />];
+const processIcons = [<MessagesSquare key="a" className="h-5 w-5" />, <PenTool key="b" className="h-5 w-5" />, <Code2 key="c" className="h-5 w-5" />, <Rocket key="d" className="h-5 w-5" />];
 
 const whyUsIcons = [
-  <Search key="s" className="w-6 h-6" />,
-  <Layers key="l" className="w-6 h-6" />,
-  <ShoppingCart key="c" className="w-6 h-6" />,
-  <Server key="v" className="w-6 h-6" />,
-  <Accessibility key="a" className="w-6 h-6" />,
-  <Wrench key="w" className="w-6 h-6" />,
+  <Search key="s" className="h-5 w-5" />,
+  <Layers key="l" className="h-5 w-5" />,
+  <ShoppingCart key="c" className="h-5 w-5" />,
+  <Server key="v" className="h-5 w-5" />,
+  <Accessibility key="a" className="h-5 w-5" />,
+  <Wrench key="w" className="h-5 w-5" />,
 ];
+
+// Section heading with a number, so every block reads as part of one sequence.
+function SectionHead({ number, title, subtitle }: { number: string; title: string; subtitle?: string }) {
+  return (
+    <div className="mb-14 max-w-2xl">
+      <p className="mb-4 font-headline text-sm font-semibold tracking-[0.2em] text-primary">{number}</p>
+      <h2 className="font-headline text-3xl font-bold leading-tight md:text-5xl">{title}</h2>
+      {subtitle && <p className="mt-5 text-lg text-muted-foreground">{subtitle}</p>}
+    </div>
+  );
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -45,75 +53,109 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   setRequestLocale(locale);
   const t = await getTranslations("HomePage");
   const tPortfolio = await getTranslations("PortfolioPage");
-  const portfolioItems = portfolio.map((item) => {
-    const project = localizeProject(portfolioProjects.find((p) => p.slug === item.slug)!, locale);
-    return project;
-  });
+  const projects = portfolio.map((slug) => localizeProject(portfolioProjects.find((p) => p.slug === slug)!, locale));
   const services = t.raw("services");
   const processSteps = t.raw("processSteps");
   const whyUs = t.raw("whyUsReasons");
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex min-h-screen flex-col">
       <main className="flex-grow">
-        <section id="home" className="relative overflow-hidden pt-16 pb-20 md:pt-36 md:pb-32">
-          <div className="absolute inset-0 bg-grid-white/[0.05] [mask-image:linear-gradient(to_bottom,white_40%,transparent_100%)]"></div>
-          <div className="hero-glow pointer-events-none absolute -top-24 left-1/2 h-[480px] w-[480px] -translate-x-1/2 rounded-full bg-primary/25 blur-3xl"></div>
-          <div className="container mx-auto px-4 text-center relative">
-            <Reveal>
-              <p className="mx-auto mb-6 inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
-                {t('heroBadge')}
-              </p>
-            </Reveal>
-            <Reveal delay={80}>
-              <h1 className="mx-auto max-w-4xl font-headline text-4xl font-bold leading-[1.05] tracking-tight md:text-7xl mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white to-white/70">
+        {/* Hero */}
+        <section className="relative overflow-hidden pt-16 pb-24 md:pt-32 md:pb-32">
+          <div className="absolute inset-0 bg-grid-white/[0.04] [mask-image:linear-gradient(to_bottom,white_40%,transparent_100%)]" />
+          <div className="container relative mx-auto grid items-center gap-14 px-4 lg:grid-cols-[1.1fr_0.9fr]">
+            <div>
+              <Reveal>
+                <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                  {t('heroBadge')}
+                </p>
+              </Reveal>
+              <h1 className="mb-6 font-headline text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
                 {t('heroTitle').split(' ').map((word: string, i: number) => (
                   <span key={i} className="word-in" style={{ animationDelay: `${120 + i * 70}ms` }}>
                     {word}&nbsp;
                   </span>
                 ))}
               </h1>
-            </Reveal>
-            <Reveal delay={160}>
-              <p className="max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground mb-10">
-                {t('heroSubtitle')}
-              </p>
-            </Reveal>
-            <Reveal delay={240}>
-              <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Button asChild size="lg" className="rounded-full font-bold">
-                  <TrackedLink location="hero" href="/contact">
-                    {t('heroCta')}
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </TrackedLink>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="rounded-full font-semibold border-2">
-                  <Link href="/portfolio">
-                    {t('heroSecondaryCta')}
-                  </Link>
-                </Button>
-              </div>
+              <Reveal delay={200}>
+                <p className="mb-10 max-w-xl text-lg text-muted-foreground md:text-xl">{t('heroSubtitle')}</p>
+              </Reveal>
+              <Reveal delay={280}>
+                <div className="flex flex-col gap-4 sm:flex-row">
+                  <Button asChild size="lg" className="rounded-full font-bold">
+                    <TrackedLink location="hero" href="/contact">
+                      {t('heroCta')}
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </TrackedLink>
+                  </Button>
+                  <Button asChild variant="outline" size="lg" className="rounded-full border-2 font-semibold">
+                    <Link href="/portfolio">{t('heroSecondaryCta')}</Link>
+                  </Button>
+                </div>
+              </Reveal>
+            </div>
+
+            <Reveal delay={150}>
+              <figure className="relative">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border/60 shadow-2xl shadow-black/50">
+                  <Image src="/home/hero.webp" alt="" fill priority sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
+                </div>
+                <figcaption className="mt-3 text-right text-xs text-muted-foreground">{t('heroPhotoCredit')}</figcaption>
+              </figure>
             </Reveal>
           </div>
         </section>
 
-        <section id="services" className="py-20 md:py-28">
+        {/* Start: two entry points */}
+        <section className="py-24 md:py-32">
           <div className="container mx-auto px-4">
             <Reveal>
-              <div className="mx-auto mb-14 max-w-2xl text-center">
-                <h2 className="font-headline text-3xl md:text-5xl font-bold">{t('servicesTitle')}</h2>
-              </div>
+              <SectionHead number="01" title={t('startTitle')} subtitle={t('startSubtitle')} />
             </Reveal>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            <div className="grid gap-6 md:grid-cols-2">
+              <Reveal>
+                <TrackedLink location="start_new" href="/contact" className="group block h-full">
+                  <SpotlightCard className="h-full rounded-3xl border border-border/60 bg-secondary/40 p-10 transition-all duration-300 hover:border-primary/50">
+                    <h3 className="font-headline text-2xl font-bold">{t('startNewTitle')}</h3>
+                    <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{t('startNewText')}</p>
+                    <span className="mt-8 inline-flex items-center font-semibold text-primary">
+                      {t('startCta')} <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    </span>
+                  </SpotlightCard>
+                </TrackedLink>
+              </Reveal>
+              <Reveal delay={120}>
+                <TrackedLink location="start_existing" href="/contact" className="group block h-full">
+                  <SpotlightCard className="h-full rounded-3xl border border-border/60 bg-secondary/40 p-10 transition-all duration-300 hover:border-primary/50">
+                    <h3 className="font-headline text-2xl font-bold">{t('startExistingTitle')}</h3>
+                    <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{t('startExistingText')}</p>
+                    <span className="mt-8 inline-flex items-center font-semibold text-primary">
+                      {t('startCta')} <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    </span>
+                  </SpotlightCard>
+                </TrackedLink>
+              </Reveal>
+            </div>
+          </div>
+        </section>
+
+        {/* Services */}
+        <section id="services" className="border-t border-border/50 py-24 md:py-32">
+          <div className="container mx-auto px-4">
+            <Reveal>
+              <SectionHead number="02" title={t('servicesTitle')} />
+            </Reveal>
+            <div className="grid gap-6 md:grid-cols-3">
               {services.map((service: any, index: number) => (
-                <Reveal key={index} delay={index * 100}>
-                  <SpotlightCard className="h-full rounded-2xl border border-border/60 bg-secondary/40 p-8 text-left transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_0_40px_-12px_hsl(var(--primary)/0.5)]">
-                    <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-xl bg-primary/10 transition-transform duration-300 group-hover:scale-110">
-                      {serviceIcons[index]}
+                <Reveal key={index} delay={index * 100} className="h-full">
+                  <SpotlightCard className="h-full rounded-3xl border border-border/60 bg-secondary/40 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50">
+                    <div className="mb-8 flex items-center justify-between">
+                      <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">{serviceIcons[index]}</span>
+                      <span className="font-headline text-sm font-semibold text-muted-foreground">0{index + 1}</span>
                     </div>
-                    <CardTitle className="font-headline text-2xl font-bold mb-3">
-                      {service.title}
-                    </CardTitle>
+                    <CardTitle className="mb-3 font-headline text-2xl font-bold">{service.title}</CardTitle>
                     <p className="leading-relaxed text-muted-foreground">{service.description}</p>
                   </SpotlightCard>
                 </Reveal>
@@ -122,92 +164,83 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
         </section>
 
-        <Reveal>
-          <PricingPlans locale={locale} />
-        </Reveal>
+        <PricingPlans locale={locale} />
 
-        <section id="portfolio" className="py-20 md:py-28">
+        {/* Portfolio */}
+        <section id="portfolio" className="py-24 md:py-32">
           <div className="container mx-auto px-4">
             <Reveal>
-              <div className="mx-auto mb-14 max-w-2xl text-center">
-                <h2 className="font-headline text-3xl md:text-5xl font-bold">{t('portfolioTitle')}</h2>
-                <p className="text-muted-foreground mt-4 text-lg">{t('portfolioSubtitle')}</p>
+              <div className="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+                <div className="max-w-2xl">
+                  <p className="mb-4 font-headline text-sm font-semibold tracking-[0.2em] text-primary">03</p>
+                  <h2 className="font-headline text-3xl font-bold leading-tight md:text-5xl">{t('portfolioTitle')}</h2>
+                  <p className="mt-5 text-lg text-muted-foreground">{t('portfolioSubtitle')}</p>
+                </div>
+                <Link href="/portfolio" className="inline-flex items-center font-semibold text-primary">
+                  {t('portfolioCta')} <MoveRight className="ml-2 h-5 w-5" />
+                </Link>
               </div>
             </Reveal>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-              {portfolioItems.map((item, index) => (
-                <Reveal key={item.slug} delay={index * 120} className="h-full">
+              {projects.map((project, index) => (
+                <Reveal key={project.slug} delay={index * 120} className="h-full">
                   <ProjectCard
-                    slug={item.slug}
+                    slug={project.slug}
                     index={index}
-                    industry={item.industry}
-                    title={item.title}
-                    description={item.description}
-                    results={item.results}
-                    tags={item.tags}
+                    industry={project.industry}
+                    title={project.title}
+                    description={project.description}
+                    results={project.results}
+                    tags={project.tags}
                     viewLabel={tPortfolio('viewProject')}
                   />
                 </Reveal>
               ))}
             </div>
-            <Reveal>
-              <div className="text-center mt-14">
-                <Button asChild variant="outline" size="lg" className="rounded-full font-semibold border-2">
-                  <Link href="/portfolio">
-                    {t('portfolioCta')} <MoveRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-              </div>
-            </Reveal>
           </div>
         </section>
 
-        <section id="process" className="py-20 md:py-28 bg-secondary/30">
+        {/* Process */}
+        <section id="process" className="border-t border-border/50 py-24 md:py-32">
           <div className="container mx-auto px-4">
             <Reveal>
-              <div className="text-center mb-14 md:mb-20">
-                <h2 className="font-headline text-3xl md:text-5xl font-bold">{t('processTitle')}</h2>
-                <p className="text-muted-foreground mt-4 text-lg">{t('processSubtitle')}</p>
-              </div>
+              <SectionHead number="04" title={t('processTitle')} subtitle={t('processSubtitle')} />
             </Reveal>
-            <ol className="relative mx-auto grid max-w-3xl lg:max-w-none lg:grid-cols-4 lg:gap-8 before:absolute before:left-[12.5%] before:right-[12.5%] before:top-7 before:hidden before:h-px before:bg-gradient-to-r before:from-primary/20 before:via-primary/60 before:to-primary/20 before:content-[''] lg:before:block">
+            <ol className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               {processSteps.map((step: { title: string; description: string }, index: number) => (
-                  <li
-                    key={index}
-                    className="group relative flex h-full gap-6 pb-12 last:pb-0 before:absolute before:bottom-0 before:left-7 before:top-14 before:w-px before:bg-primary/30 before:content-[''] last:before:hidden lg:flex-col lg:items-center lg:gap-0 lg:pb-0 lg:text-center lg:before:hidden"
-                  >
-                    <div className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-background transition-transform duration-300 group-hover:scale-110">
-                      <div className="flex h-full w-full items-center justify-center rounded-full border border-primary/40 bg-primary/10 text-primary">
-                        {processIcons[index]}
-                      </div>
-                    </div>
-                    <div className="pt-1 lg:mt-6 lg:w-full lg:pt-0">
-                      <p className="text-sm font-semibold uppercase tracking-widest text-primary">
-                        {t('stepLabel', { number: String(index + 1).padStart(2, '0') })}
-                      </p>
-                      <h3 className="mt-1 font-headline text-xl font-bold">{step.title}</h3>
-                      <p className="mt-3 leading-relaxed text-muted-foreground">{step.description}</p>
-                    </div>
-                  </li>
+                <li key={index} className="group rounded-2xl border border-border/60 bg-secondary/30 p-7 transition-colors duration-300 hover:border-primary/50">
+                  <div className="mb-6 flex items-center gap-3">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+                      {processIcons[index]}
+                    </span>
+                    <span className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                      {t('stepLabel', { number: String(index + 1).padStart(2, '0') })}
+                    </span>
+                  </div>
+                  <h3 className="font-headline text-xl font-bold">{step.title}</h3>
+                  <p className="mt-3 leading-relaxed text-muted-foreground">{step.description}</p>
+                </li>
               ))}
             </ol>
           </div>
         </section>
 
-        <section id="why-us" className="py-20 md:py-28">
+        {/* Why us */}
+        <section id="why-us" className="py-24 md:py-32">
           <div className="container mx-auto px-4">
-            <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
+            <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
               <Reveal>
-                <h2 className="font-headline text-3xl md:text-5xl font-bold mb-6">{t('whyUsTitle')}</h2>
-                <p className="text-muted-foreground text-lg">{t('whyUsSubtitle')}</p>
+                <div className="lg:sticky lg:top-32">
+                  <p className="mb-4 font-headline text-sm font-semibold tracking-[0.2em] text-primary">05</p>
+                  <h2 className="mb-6 font-headline text-3xl font-bold leading-tight md:text-5xl">{t('whyUsTitle')}</h2>
+                  <p className="text-lg text-muted-foreground">{t('whyUsSubtitle')}</p>
+                </div>
               </Reveal>
               <div className="grid gap-4 sm:grid-cols-2">
                 {whyUs.map((item: { title: string; description: string }, index: number) => (
-                  <Reveal key={index} delay={index * 100} className="h-full">
-                    <div className="flex h-full items-start gap-4 rounded-2xl border border-border/60 bg-secondary/40 p-6 transition-colors duration-300 hover:border-primary/50">
-                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                        {whyUsIcons[index]}
-                      </div>
+                  <Reveal key={index} delay={index * 80} className="h-full">
+                    <div className="flex h-full gap-4 rounded-2xl border border-border/60 bg-secondary/30 p-6 transition-colors duration-300 hover:border-primary/50">
+                      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">{whyUsIcons[index]}</span>
                       <div>
                         <h3 className="font-headline text-lg font-bold leading-snug">{item.title}</h3>
                         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
@@ -220,27 +253,27 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
         </section>
 
-        <section id="technologies" className="py-20 md:py-28 bg-secondary/30">
+        {/* Technologies */}
+        <section id="technologies" className="border-t border-border/50 py-24 md:py-28">
           <div className="container mx-auto px-4">
             <Reveal>
-              <div className="flex justify-center items-center gap-4 mb-14">
-                <Layers className="w-10 h-10 text-primary" />
-                <h2 className="font-headline text-3xl md:text-5xl font-bold text-center">
-                  {t('technologiesTitle')}
-                </h2>
+              <div className="mb-12 flex items-center gap-4">
+                <Layers className="h-8 w-8 text-primary" />
+                <h2 className="font-headline text-3xl font-bold md:text-4xl">{t('technologiesTitle')}</h2>
               </div>
               <TechLogos />
             </Reveal>
           </div>
         </section>
 
-        <section className="py-20 md:py-28">
+        {/* Closing call to action */}
+        <section className="pb-24 md:pb-32">
           <div className="container mx-auto px-4">
             <Reveal>
-              <div className="relative overflow-hidden rounded-3xl bg-primary px-6 py-16 text-center md:px-16">
-                <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-white/10 blur-3xl"></div>
-                <h2 className="relative font-headline text-3xl md:text-5xl font-bold text-primary-foreground mb-4">{t('ctaTitle')}</h2>
-                <p className="relative max-w-2xl mx-auto text-lg text-primary-foreground/80 mb-8">{t('ctaSubtitle')}</p>
+              <div className="relative overflow-hidden rounded-3xl bg-primary px-6 py-16 text-center md:px-16 md:py-20">
+                <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
+                <h2 className="relative mb-4 font-headline text-3xl font-bold text-primary-foreground md:text-5xl">{t('ctaTitle')}</h2>
+                <p className="relative mx-auto mb-8 max-w-2xl text-lg text-primary-foreground/80">{t('ctaSubtitle')}</p>
                 <Button asChild size="lg" variant="secondary" className="relative rounded-full font-bold">
                   <TrackedLink location="bottom_cta" href="/contact">{t('ctaButton')}</TrackedLink>
                 </Button>
