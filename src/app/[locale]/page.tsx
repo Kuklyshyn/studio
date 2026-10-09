@@ -67,7 +67,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <section className="relative overflow-hidden pt-16 pb-24 md:pt-32 md:pb-32">
           <div className="absolute inset-0 bg-grid-white/[0.04] [mask-image:linear-gradient(to_bottom,white_40%,transparent_100%)]" />
           <div className="container relative mx-auto grid items-center gap-12 px-4 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-16">
-            <div>
+            <div className="min-w-0">
               <Reveal>
                 <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
                   <span className="h-1.5 w-1.5 rounded-full bg-primary" />
@@ -75,9 +75,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 </p>
               </Reveal>
               <h1 className="mb-6 font-headline text-[2.6rem] font-bold leading-[1.04] tracking-tight text-balance md:text-6xl lg:text-[3.6rem] xl:text-[4.25rem]">
-                {t('heroTitle').split(' ').map((word: string, i: number) => (
-                  <span key={i} className="word-in" style={{ animationDelay: `${120 + i * 70}ms` }}>
-                    {word}&nbsp;
+                {t('heroTitle').split(' ').map((word: string, i: number, all: string[]) => (
+                  <span key={i}>
+                    <span className="word-in" style={{ animationDelay: `${120 + i * 70}ms` }}>{word}</span>
+                    {i < all.length - 1 ? ' ' : null}
                   </span>
                 ))}
               </h1>
