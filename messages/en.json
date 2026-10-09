@@ -1,17 +1,17 @@
 {
     "Header": {
         "home": "Home",
-        "about": "About Us",
+        "about": "About Me",
         "services": "Services",
         "custom-programming": "Custom Programming",
         "portfolio": "Portfolio",
         "blog": "Blog",
         "contact": "Contact",
-        "contact-us": "Contact Us",
+        "contact-us": "Write to me",
         "switchLanguage": "Change language"
     },
     "Footer": {
-        "description": "We create modern web solutions that move your business forward. We focus on quality, speed, and client satisfaction.",
+        "description": "I create modern web solutions. I focus on quality, speed and client satisfaction.",
         "quick-links": "Quick Links",
         "follow-us": "Follow Us",
         "copyright": "All rights reserved.",
@@ -134,12 +134,12 @@
         "timeline": "Indicative timeline"
     },
     "AboutPage": {
-        "heroTitle": "Who We Are?",
+        "heroTitle": "Who am I?",
         "heroSubtitle": "I am a web developer from Bratislava, driven by a passion for modern technology and a sense for detail.",
-        "storyTitle": "Our Story",
-        "storyText1": "Omnicode started with a simple vision: to create websites that not only look good but, more importantly, deliver results. We believe that a successful website is a combination of engaging design, flawless code, and a well-thought-out marketing strategy.",
+        "storyTitle": "My Story",
+        "storyText1": "Omnicode started with a simple vision: to create websites that not only look good but, more importantly, deliver results. I believe that a successful website is a combination of clear content, clean code and a well-thought-out structure.",
         "storyText2": "Today I help clients launch or grow their online businesses. Every project is a new challenge for me, which I approach with enthusiasm and determination.",
-        "valuesTitle": "Our Values",
+        "valuesTitle": "My Values",
         "values": [
             "Quality and precision",
             "Innovation and modern technologies",
@@ -158,18 +158,18 @@
     },
     "ServicesPage": {
         "heroTitle": "Website and E-shop Development",
-        "heroSubtitle": "We specialize in creating modern, fast, and secure web solutions built on the most popular technologies.",
+        "heroSubtitle": "I specialize in modern, fast and secure web solutions built on proven technologies.",
         "heroCta": "Get a Quote",
         "websitesTitle": "Modern Websites",
-        "websitesText1": "We create websites that not only look great but are also highly functional and user-friendly. We use modern technologies like Next.js and React, which guarantee speed, security, and scalability. Each website is designed from the ground up with your goals and your customers' needs in mind.",
-        "websitesText2": "Our goal is to create a digital business card that will represent you with dignity and help you grow.",
+        "websitesText1": "I create websites that not only look good but are also functional and user-friendly. I use modern technologies like Next.js and React, which help deliver speed, security and scalability. Each website is designed from the ground up with your goals and your customers' needs in mind.",
+        "websitesText2": "My goal is to create a digital business card that represents you well and helps you grow.",
         "eshopsTitle": "E-shops That Sell",
-        "eshopsText1": "For your online business, we will create a custom e-shop that is ready for success. With platforms like WooCommerce and Shopify, we create robust and easily manageable online stores. We focus on a great user experience, a seamless purchasing process, and optimization for mobile devices.",
-        "eshopsText2": "From product import to payment gateway integration – we take care of everything so you can focus on selling.",
+        "eshopsText1": "For your online business, I will create a custom e-shop that is ready for success. With platforms like WooCommerce and Salesforce Commerce Cloud, I build robust and easily manageable online stores. I focus on a good user experience, a smooth purchasing process and optimization for mobile devices.",
+        "eshopsText2": "From product import to payment gateway integration – I take care of the technical side so you can focus on selling.",
         "projectsTitle": "Choose a Project",
-        "projectsSubtitle": "Browse our work and get inspired for your next project.",
+        "projectsSubtitle": "Browse my work and get inspired for your next project.",
         "allProjects": "All Projects",
-        "benefitsTitle": "Benefits of Our Solutions",
+        "benefitsTitle": "Benefits of My Solutions",
         "benefits": [
             {
                 "title": "Flexibility and Scalability",
@@ -177,15 +177,15 @@
             },
             {
                 "title": "Responsive Design",
-                "description": "All our websites are fully responsive and look great on all devices – from mobile phones to large monitors."
+                "description": "All my websites are responsive and work on all devices – from mobile phones to large monitors."
             },
             {
                 "title": "SEO-Friendly",
-                "description": "We emphasize technical SEO optimization so that customers can easily find you in search engines."
+                "description": "I take care of technical SEO so that customers can find you more easily in search engines."
             }
         ],
-        "servicesListTitle": "Our Services in This Area",
-        "servicesListSubtitle": "We provide comprehensive services from design to long-term support and development of your website.",
+        "servicesListTitle": "Services in This Area",
+        "servicesListSubtitle": "I provide services from development to support and growth of your website.",
         "services": [
             "Custom website development",
             "E-shop development with WooCommerce",
@@ -194,7 +194,7 @@
             "Speed and performance optimization",
             "Website security and protection",
             "Regular maintenance and updates",
-            "SEO for search engines",
+            "Technical SEO",
             "Integrations with external systems (API)"
         ],
         "customCta": "More about custom programming",
@@ -206,8 +206,8 @@
         }
     },
     "PortfolioPage": {
-        "heroTitle": "Our Portfolio",
-        "heroSubtitle": "Check out the projects we are proud of and that have helped our clients succeed.",
+        "heroTitle": "Portfolio",
+        "heroSubtitle": "See the projects I have worked on.",
         "viewProject": "View Project"
     },
     "PortfolioDetailsPage": {
@@ -221,41 +221,41 @@
     },
     "CustomProgrammingPage": {
         "heroTitle": "Custom Programming",
-        "heroSubtitle": "We transform your unique ideas into functional and robust web applications, systems, and solutions tailored to your requirements.",
+        "heroSubtitle": "I turn your ideas into functional web applications, systems and solutions tailored to your requirements.",
         "visionTitle": "From Vision to Reality",
-        "visionText1": "Do you have specific requirements that standard 'off-the-shelf' solutions don't meet? Do you need an internal system, a client portal, or a complex web application? Our custom programming services are here for you.",
-        "visionText2": "We focus on a detailed understanding of your processes and goals to create software that not only works but also genuinely simplifies your work and brings measurable results.",
+        "visionText1": "Do you have specific requirements that standard 'off-the-shelf' solutions don't meet? Do you need an internal system, a client portal, or a complex web application? Custom programming is made for you.",
+        "visionText2": "I focus on understanding your processes and goals to create software that not only works but genuinely simplifies your work.",
         "whyCustomTitle": "Why Choose a Custom Solution?",
         "whyCustomSubtitle": "Investing in custom software is an investment in the future and efficiency of your business.",
         "features": [
             {
                 "title": "Speed and Efficiency",
-                "description": "We optimize code for maximum performance and fast application response."
+                "description": "I optimize code for good performance and fast application response."
             },
             {
                 "title": "Security First",
-                "description": "We implement the latest security standards to protect your data."
+                "description": "I follow security practices to protect your data."
             },
             {
                 "title": "Scalability",
-                "description": "Our solutions are designed to grow with your business."
+                "description": "I design solutions so they can grow with your business."
             },
             {
                 "title": "Clean and Maintainable Code",
-                "description": "We write code that is easy to read, extend, and maintain for the future."
+                "description": "I write code that is readable, extensible and maintainable."
             }
         ],
-        "processTitle": "Our Development Process",
+        "processTitle": "How Development Works",
         "processSubtitle": "A transparent and proven procedure for successful project delivery.",
         "stepLabel": "Step {number}",
         "processSteps": [
             {
                 "title": "Requirement Analysis",
-                "description": "We deeply analyze your needs and goals to design the optimal solution."
+                "description": "First I analyze your needs and goals to design a suitable solution."
             },
             {
-                "title": "Architecture and Design",
-                "description": "We will design a robust architecture and UX/UI design that ensures a great user experience."
+                "title": "Architecture and Planning",
+                "description": "I design the architecture and structure of the application. You provide the visual design and materials."
             },
             {
                 "title": "Development and Implementation",
@@ -263,24 +263,24 @@
             },
             {
                 "title": "Testing and QA",
-                "description": "We thoroughly test every aspect of the application to ensure its flawless operation."
+                "description": "I test the application before launch so that it runs stably."
             },
             {
                 "title": "Deployment and Launch",
-                "description": "We will ensure a smooth deployment to production and the launch of your application."
+                "description": "I take care of deployment to production and the launch of your application."
             },
             {
                 "title": "Support and Maintenance",
-                "description": "We provide long-term support, monitoring, and maintenance for hassle-free operation."
+                "description": "After launch I offer support and maintenance."
             }
         ],
         "techTitle": "Technologies Used",
         "ctaTitle": "Ready to start your project?",
-        "ctaSubtitle": "Contact us for a non-binding consultation and a quote for your custom solution.",
-        "ctaButton": "Contact Us"
+        "ctaSubtitle": "Write to me for a non-binding consultation and a quote for your custom solution.",
+        "ctaButton": "Write to me"
     },
     "BlogPage": {
-        "heroTitle": "Our Blog",
+        "heroTitle": "Blog",
         "heroSubtitle": "Stay updated with the latest trends and tips in web and marketing.",
         "readMore": "Read More"
     },
@@ -289,9 +289,9 @@
         "by": "By"
     },
     "ContactPage": {
-        "heroTitle": "Contact Us",
-        "heroSubtitle": "Have a project or an idea? Write to us, and together we will turn it into reality.",
-        "formTitle": "Write to us",
+        "heroTitle": "Write to Me",
+        "heroSubtitle": "Have a project or an idea? Write to me, and together we will turn it into reality.",
+        "formTitle": "Write to me",
         "nameLabel": "Your Name",
         "namePlaceholder": "John Doe",
         "emailLabel": "Your Email",
@@ -330,11 +330,11 @@
     "Seo": {
         "home": {
             "title": "Website and E-shop Development",
-            "description": "Omnicode is a web studio in Bratislava. We build fast, modern websites and e-shops and support them with digital marketing. Request a free quote."
+            "description": "Omnicode is a web studio in Bratislava. I build fast, modern websites and e-shops. Request a free quote."
         },
         "about": {
-            "title": "About Us",
-            "description": "Meet the Omnicode team: designers and developers from Bratislava who build websites that look good and bring results for their clients."
+            "title": "About Me",
+            "description": "Meet Omnicode: a web developer from Bratislava who builds websites that look good and bring results for clients."
         },
         "services": {
             "title": "Web Design and E-shop Services",
@@ -346,15 +346,15 @@
         },
         "portfolio": {
             "title": "Portfolio: Websites and E-shops",
-            "description": "Selected projects we are proud of: websites, e-shops, SaaS platforms and web applications built for real businesses."
+            "description": "Selected projects: websites, e-shops, SaaS platforms and web applications built for real businesses."
         },
         "blog": {
             "title": "Blog: Web Design, SEO and IT Trends",
             "description": "Articles on web design, SEO, AI and IT products for people who build websites and digital products. Published in English and Slovak."
         },
         "contact": {
-            "title": "Contact Us and Get a Free Quote",
-            "description": "Tell us about your project and get a free, non-binding quote for your website or e-shop from a developer in Bratislava."
+            "title": "Write to Me and Get a Free Quote",
+            "description": "Tell me about your project and get a free, non-binding quote for your website or e-shop from a developer in Bratislava."
         },
         "privacyPolicy": {
             "title": "Privacy Policy",

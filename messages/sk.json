@@ -1,17 +1,17 @@
 {
   "Header": {
     "home": "Home",
-    "about": "O nás",
+    "about": "O mne",
     "services": "Služby",
     "custom-programming": "Programovanie na mieru",
     "portfolio": "Referencie",
     "blog": "Blog",
     "contact": "Kontakt",
-    "contact-us": "Kontaktujte nás",
+    "contact-us": "Napíšte mi",
     "switchLanguage": "Zmeniť jazyk"
   },
   "Footer": {
-    "description": "Tvoríme moderné webové riešenia, ktoré posúvajú vaše podnikanie vpred. Zameriavame sa na kvalitu, rýchlosť a spokojnosť klienta.",
+    "description": "Tvorím moderné webové riešenia. Zameriavam sa na kvalitu, rýchlosť a spokojnosť klienta.",
     "quick-links": "Rýchle odkazy",
     "follow-us": "Sledujte nás",
     "copyright": "Všetky práva vyhradené.",
@@ -134,12 +134,12 @@
     "timeline": "Orientačný termín"
   },
   "AboutPage": {
-    "heroTitle": "Kto sme?",
+    "heroTitle": "Kto som?",
     "heroSubtitle": "Som webový vývojár z Bratislavy. Spája ma vášeň pre moderné technológie a zmysel pre detail.",
-    "storyTitle": "Náš príbeh",
-    "storyText1": "Omnicode začalo s jednoduchou víziou: tvoriť weby, ktoré nielen dobre vyzerajú, ale hlavne prinášajú výsledky. Veríme, že úspešný web je kombináciou pútavého dizajnu, bezchybného kódu a premyslenej marketingovej stratégie.",
+    "storyTitle": "Môj príbeh",
+    "storyText1": "Omnicode začalo s jednoduchou víziou: tvoriť weby, ktoré nielen dobre vyzerajú, ale hlavne prinášajú výsledky. Verím, že úspešný web je kombináciou jasného obsahu, bezchybného kódu a premyslenej štruktúry.",
     "storyText2": "Dnes pomáham klientom naštartovať alebo posunúť ich online podnikanie. Každý projekt je pre mňa novou výzvou, ku ktorej pristupujem s nadšením a odhodlaním.",
-    "valuesTitle": "Naše hodnoty",
+    "valuesTitle": "Moje hodnoty",
     "values": [
       "Kvalita a precíznosť",
       "Inovácie a moderné technológie",
@@ -158,18 +158,18 @@
   },
   "ServicesPage": {
     "heroTitle": "Tvorba webov a e-shopov",
-    "heroSubtitle": "Špecializujeme sa na tvorbu moderných, rýchlych a bezpečných webových riešení postavených na najpopulárnejších technológiách.",
+    "heroSubtitle": "Špecializujem sa na tvorbu moderných, rýchlych a bezpečných webových riešení postavených na overených technológiách.",
     "heroCta": "Získať cenovú ponuku",
     "websitesTitle": "Moderné webové stránky",
-    "websitesText1": "Tvoríme webové stránky, ktoré nielen skvele vyzerajú, ale sú aj vysoko funkčné a používateľsky prívetivé. Používame moderné technológie ako Next.js a React, ktoré zaručujú rýchlosť, bezpečnosť a škálovateľnosť. Každý web je od základu navrhnutý s ohľadom na vaše ciele a potreby vašich zákazníkov.",
-    "websitesText2": "Našim cieľom je vytvoriť digitálnu vizitku, ktorá vás bude dôstojne reprezentovať a pomôže vám rásť.",
+    "websitesText1": "Tvorím webové stránky, ktoré nielen dobre vyzerajú, ale sú aj funkčné a prívetivé pre používateľov. Používam moderné technológie ako Next.js a React, ktoré pomáhajú dosiahnuť rýchlosť, bezpečnosť a škálovateľnosť. Každý web od základu navrhujem s ohľadom na vaše ciele a potreby vašich zákazníkov.",
+    "websitesText2": "Mojím cieľom je vytvoriť digitálnu vizitku, ktorá vás bude dôstojne reprezentovať a pomôže vám rásť.",
     "eshopsTitle": "E-shopy, ktoré predávajú",
-    "eshopsText1": "Pre vaše online podnikanie vytvoríme e-shop na mieru, ktorý je pripravený na úspech. S platformami ako WooCommerce a Shopify vytvárame robustné a ľahko spravovateľné online obchody. Zameriavame sa na skvelý používateľský zážitok, bezproblémový nákupný proces a optimalizáciu pre mobilné zariadenia.",
-    "eshopsText2": "Od importu produktov až po integráciu platobných brán – postaráme sa o všetko, aby ste sa vy mohli sústrediť na predaj.",
+    "eshopsText1": "Pre vaše online podnikanie vytvorím e-shop na mieru, ktorý je pripravený na úspech. S platformami ako WooCommerce a Salesforce Commerce Cloud budujem robustné a ľahko spravovateľné online obchody. Zameriavam sa na dobrý používateľský zážitok, bezproblémový nákupný proces a optimalizáciu pre mobilné zariadenia.",
+    "eshopsText2": "Od importu produktov až po integráciu platobných brán – postarám sa o technickú stránku, aby ste sa vy mohli sústrediť na predaj.",
     "projectsTitle": "Vyberte si projekt",
-    "projectsSubtitle": "Pozrite si naše práce a inšpirujte sa pre váš ďalší projekt.",
+    "projectsSubtitle": "Pozrite si moje práce a inšpirujte sa pre váš ďalší projekt.",
     "allProjects": "Všetky projekty",
-    "benefitsTitle": "Výhody našich riešení",
+    "benefitsTitle": "Výhody mojich riešení",
     "benefits": [
       {
         "title": "Flexibilita a rozšíriteľnosť",
@@ -177,15 +177,15 @@
       },
       {
         "title": "Responzívny dizajn",
-        "description": "Všetky naše weby sú plne responzívne a vyzerajú skvele na všetkých zariadeniach – od mobilov po veľké monitory."
+        "description": "Všetky moje weby sú responzívne a fungujú na všetkých zariadeniach – od mobilov po veľké monitory."
       },
       {
         "title": "SEO-Friendly",
-        "description": "Kladieme dôraz na technickú SEO optimalizáciu, aby vás zákazníci ľahko našli vo vyhľadávačoch."
+        "description": "Dbám na technické SEO, aby vás zákazníci mohli ľahšie nájsť vo vyhľadávačoch."
       }
     ],
-    "servicesListTitle": "Naše služby v tejto oblasti",
-    "servicesListSubtitle": "Poskytujeme komplexné služby od návrhu až po dlhodobú podporu a rozvoj vášho webu.",
+    "servicesListTitle": "Služby v tejto oblasti",
+    "servicesListSubtitle": "Poskytujem služby od vývoja až po podporu a rozvoj vášho webu.",
     "services": [
       "Tvorba webových stránok na mieru",
       "Tvorba e-shopov s WooCommerce",
@@ -194,7 +194,7 @@
       "Optimalizácia rýchlosti a výkonu",
       "Zabezpečenie a ochrana webu",
       "Pravidelná údržba a aktualizácie",
-      "SEO optimalizácia pre vyhľadávače",
+      "Technické SEO",
       "Integrácie s externými systémami (API)"
     ],
     "customCta": "Viac o programovaní na mieru",
@@ -206,8 +206,8 @@
     }
   },
   "PortfolioPage": {
-    "heroTitle": "Naše Portfólio",
-    "heroSubtitle": "Pozrite si projekty, na ktoré sme hrdí a ktoré pomohli našim klientom uspieť.",
+    "heroTitle": "Referencie",
+    "heroSubtitle": "Pozrite si projekty, na ktorých som pracoval.",
     "viewProject": "Zobraziť projekt"
   },
   "PortfolioDetailsPage": {
@@ -221,41 +221,41 @@
   },
   "CustomProgrammingPage": {
     "heroTitle": "Programovanie na Mieru",
-    "heroSubtitle": "Premeníme vaše unikátne nápady na funkčné a robustné webové aplikácie, systémy a riešenia presne podľa vašich požiadaviek.",
+    "heroSubtitle": "Premením vaše nápady na funkčné webové aplikácie, systémy a riešenia podľa vašich požiadaviek.",
     "visionTitle": "Od vízie k realite",
-    "visionText1": "Máte špecifické požiadavky, ktoré nespĺňajú bežné \"krabicové\" riešenia? Potrebujete interný systém, portál pre klientov, alebo komplexnú webovú aplikáciu? Naše služby programovania na mieru sú tu presne pre vás.",
-    "visionText2": "Sústredíme sa na detailné pochopenie vašich procesov a cieľov, aby sme vytvorili softvér, ktorý nielen funguje, ale vám aj reálne zjednodušuje prácu a prináša merateľné výsledky.",
+    "visionText1": "Máte špecifické požiadavky, ktoré nespĺňajú bežné \"krabicové\" riešenia? Potrebujete interný systém, portál pre klientov, alebo komplexnú webovú aplikáciu? Programovanie na mieru je pre vás.",
+    "visionText2": "Sústredím sa na pochopenie vašich procesov a cieľov, aby som vytvoril softvér, ktorý nielen funguje, ale vám aj reálne zjednodušuje prácu.",
     "whyCustomTitle": "Prečo si vybrať riešenie na mieru?",
     "whyCustomSubtitle": "Investícia do softvéru na mieru je investíciou do budúcnosti a efektivity vášho podnikania.",
     "features": [
       {
         "title": "Rýchlosť a Efektivita",
-        "description": "Optimalizujeme kód pre maximálny výkon a rýchlu odozvu aplikácie."
+        "description": "Optimalizujem kód pre dobrý výkon a rýchlu odozvu aplikácie."
       },
       {
         "title": "Bezpečnosť na Prvom Mieste",
-        "description": "Implementujeme najnovšie bezpečnostné štandardy na ochranu vašich dát."
+        "description": "Dodržiavam bezpečnostné postupy na ochranu vašich dát."
       },
       {
         "title": "Škálovateľnosť",
-        "description": "Naše riešenia sú navrhnuté tak, aby rástli spolu s vaším podnikaním."
+        "description": "Riešenia navrhujem tak, aby mohli rásť spolu s vaším podnikaním."
       },
       {
         "title": "Čistý a Udržateľný Kód",
-        "description": "Píšeme kód, ktorý je ľahko čitateľný, rozšíriteľný a udržiavateľný do budúcna."
+        "description": "Píšem kód, ktorý je čitateľný, rozšíriteľný a udržiavateľný do budúcna."
       }
     ],
-    "processTitle": "Náš Proces Vývoja",
+    "processTitle": "Ako prebieha vývoj",
     "processSubtitle": "Transparentný a osvedčený postup pre úspešné dodanie projektu.",
     "stepLabel": "Krok {number}",
     "processSteps": [
       {
         "title": "Analýza požiadaviek",
-        "description": "Hĺbkovo analyzujeme vaše potreby a ciele, aby sme navrhli optimálne riešenie."
+        "description": "Najprv analyzujem vaše potreby a ciele, aby som navrhol vhodné riešenie."
       },
       {
-        "title": "Architektúra a Dizajn",
-        "description": "Navrhneme robustnú architektúru a UX/UI dizajn, ktorý zabezpečí skvelý používateľský zážitok."
+        "title": "Architektúra a Návrh",
+        "description": "Navrhnem architektúru a štruktúru aplikácie. Vizuálny dizajn a podklady dodáte vy."
       },
       {
         "title": "Vývoj a Implementácia",
@@ -263,24 +263,24 @@
       },
       {
         "title": "Testovanie a QA",
-        "description": "Dôkladne testujeme každý aspekt aplikácie, aby sme zaručili jej bezchybný chod."
+        "description": "Testujem aplikáciu pred spustením, aby fungovala stabilne."
       },
       {
         "title": "Nasadenie a Spustenie",
-        "description": "Zabezpečíme plynulé nasadenie do produkcie a spustenie vašej aplikácie."
+        "description": "Postarám sa o nasadenie do produkcie a spustenie vašej aplikácie."
       },
       {
         "title": "Podpora a Údržba",
-        "description": "Poskytujeme dlhodobú podporu, monitoring a údržbu pre bezproblémovú prevádzku."
+        "description": "Po spustení ponúkam podporu a údržbu."
       }
     ],
     "techTitle": "Používané Technológie",
     "ctaTitle": "Pripravení začať váš projekt?",
-    "ctaSubtitle": "Kontaktujte nás pre nezáväznú konzultáciu a cenovú ponuku pre vaše riešenie na mieru.",
-    "ctaButton": "Kontaktujte nás"
+    "ctaSubtitle": "Napíšte mi pre nezáväznú konzultáciu a cenovú ponuku pre vaše riešenie na mieru.",
+    "ctaButton": "Napíšte mi"
   },
   "BlogPage": {
-    "heroTitle": "Náš Blog",
+    "heroTitle": "Blog",
     "heroSubtitle": "Zostaňte v obraze s najnovšími trendmi a tipmi z oblasti webu a marketingu.",
     "readMore": "Čítať viac"
   },
@@ -289,9 +289,9 @@
     "by": ""
   },
   "ContactPage": {
-    "heroTitle": "Kontaktujte nás",
-    "heroSubtitle": "Máte projekt alebo nápad? Napíšte nám a spoločne ho premeníme na realitu.",
-    "formTitle": "Napíšte nám",
+    "heroTitle": "Napíšte mi",
+    "heroSubtitle": "Máte projekt alebo nápad? Napíšte mi a spoločne ho premeníme na realitu.",
+    "formTitle": "Napíšte mi",
     "nameLabel": "Vaše Meno",
     "namePlaceholder": "Ján Mrkvička",
     "emailLabel": "Váš Email",
@@ -330,10 +330,10 @@
   "Seo": {
     "home": {
       "title": "Tvorba web stránok a e-shopov",
-      "description": "Omnicode je webové štúdio v Bratislave. Tvoríme rýchle a moderné weby a e-shopy a pomáhame im aj s digitálnym marketingom. Vyžiadajte si ponuku zadarmo."
+      "description": "Omnicode je webové štúdio v Bratislave. Tvorím rýchle a moderné weby a e-shopy. Vyžiadajte si ponuku zadarmo."
     },
     "about": {
-      "title": "O nás",
+      "title": "O mne",
       "description": "Spoznajte Omnicode: webového vývojára z Bratislavy, ktorý tvorí weby, čo dobre vyzerajú a prinášajú výsledky pre klientov."
     },
     "services": {
@@ -346,15 +346,15 @@
     },
     "portfolio": {
       "title": "Referencie: weby a e-shopy",
-      "description": "Vybrané projekty, na ktoré sme hrdí: weby, e-shopy, SaaS platformy a webové aplikácie pre reálne podniky."
+      "description": "Vybrané projekty: weby, e-shopy, SaaS platformy a webové aplikácie pre reálne podniky."
     },
     "blog": {
       "title": "Blog: webdizajn, SEO a IT trendy",
       "description": "Články o webdizajne, SEO, AI a IT produktoch pre ľudí, ktorí tvoria weby a digitálne produkty. Vychádzajú v slovenčine a angličtine."
     },
     "contact": {
-      "title": "Kontaktujte nás a získajte ponuku zadarmo",
-      "description": "Napíšte nám o vašom projekte a získajte nezáväznú ponuku na web alebo e-shop od vývojára z Bratislavy."
+      "title": "Napíšte mi a získajte ponuku zadarmo",
+      "description": "Napíšte mi o vašom projekte a získajte nezáväznú ponuku na web alebo e-shop od vývojára z Bratislavy."
     },
     "privacyPolicy": {
       "title": "Zásady ochrany osobných údajov",
