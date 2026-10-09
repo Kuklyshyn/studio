@@ -2,12 +2,13 @@
 import { Button } from "@/components/ui/button";
 import { CardTitle } from "@/components/ui/card";
 import { Accessibility, ArrowRight, Check, Code2, Layers, MessagesSquare, MoveRight, Palette, PenTool, Rocket, Search, ShoppingCart, Server, Wrench } from "lucide-react";
-import Image from "next/image";
 import { Link } from "@/i18n";
 import { TrackedLink } from "@/components/tracked-link";
 import { TechLogos } from "@/components/tech-logos";
 import { Reveal } from "@/components/reveal";
 import { SpotlightCard } from "@/components/spotlight-card";
+import { HeroScene } from "@/components/hero-scene";
+import { Tilt } from "@/components/tilt";
 import { ProjectCard } from "@/components/project-card";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -66,7 +67,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <main className="flex-grow">
         {/* Hero */}
         <section className="relative overflow-hidden pt-16 pb-16 md:pt-28 md:pb-20">
-          <div className="pointer-events-none absolute -left-32 top-10 h-[420px] w-[420px] rounded-full bg-primary/15 blur-3xl" />
+          <div className="hero-glow pointer-events-none absolute -left-32 top-10 h-[420px] w-[420px] rounded-full bg-primary/15 blur-3xl" />
           <div className="pointer-events-none absolute -right-24 bottom-0 h-[360px] w-[360px] rounded-full bg-sky-500/10 blur-3xl" />
           <div className="absolute inset-0 bg-grid-white/[0.04] [mask-image:linear-gradient(to_bottom,white_40%,transparent_100%)]" />
           <div className="container relative mx-auto grid items-center gap-12 px-4 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-16">
@@ -90,7 +91,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               </Reveal>
               <Reveal delay={280}>
                 <div className="flex flex-col gap-4 sm:flex-row">
-                  <Button asChild size="lg" className="rounded-full font-bold">
+                  <Button asChild size="lg" className="btn-shine rounded-full font-bold">
                     <TrackedLink location="hero" href="/contact">
                       {t('heroCta')}
                       <ArrowRight className="ml-2 h-5 w-5" />
@@ -104,27 +105,25 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             </div>
 
             <Reveal delay={150} className="min-w-0">
-              <figure className="relative mx-auto w-full max-w-md lg:max-w-none">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-border/60 shadow-2xl shadow-black/60">
-                  <Image src="/home/hero.webp" alt="" fill priority sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
+              <Tilt>
+                <div className="relative">
+                  <HeroScene />
+                    {["Vue 3", "Nuxt", "TypeScript", "WooCommerce", "Laravel"].map((tag, i) => (
+                      <span
+                        key={tag}
+                        className="hero-chip absolute whitespace-nowrap rounded-full border border-primary/40 bg-background/80 px-4 py-2 text-sm font-semibold text-primary shadow-lg backdrop-blur"
+                        style={{
+                          top: ["4%", "30%", "52%", "88%", "8%"][i],
+                          left: ["-4%", "auto", "-8%", "52%", "auto"][i],
+                          right: ["auto", "-4%", "auto", "auto", "-2%"][i],
+                          animationDelay: `${i * 0.7}s`,
+                        }}
+                      >
+                        {tag}
+                      </span>
+                    ))}
                 </div>
-                {["Vue 3", "Nuxt", "TypeScript", "WooCommerce", "Laravel"].map((tag, i) => (
-                  <span
-                    key={tag}
-                    className="hero-chip absolute whitespace-nowrap rounded-full border border-primary/40 bg-background/80 px-4 py-2 text-sm font-semibold text-primary shadow-lg backdrop-blur"
-                    style={{
-                      top: ["8%", "30%", "58%", "78%", "12%"][i],
-                      left: ["-6%", "auto", "-10%", "62%", "auto"][i],
-                      right: ["auto", "-6%", "auto", "auto", "-4%"][i],
-                      animationDelay: `${i * 0.7}s`,
-                    }}
-                  >
-                    {tag}
-                  </span>
-                ))}
-                <figcaption className="mt-4 text-right text-xs text-muted-foreground">{t('heroPhotoCredit')}</figcaption>
-              </figure>
+              </Tilt>
             </Reveal>
           </div>
         </section>
@@ -176,7 +175,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
         {/* Services */}
         <section id="services" className="relative overflow-hidden border-t border-border/50 py-20 md:py-28">
-          <div className="pointer-events-none absolute -right-40 top-20 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
+          <div className="hero-glow pointer-events-none absolute -right-40 top-20 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
           <div className="container mx-auto px-4">
             <Reveal>
               <SectionHead number="02" title={t('servicesTitle')} />
@@ -186,7 +185,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 <Reveal key={index} delay={index * 100} className="h-full">
                   <SpotlightCard className="h-full rounded-3xl border border-border/60 bg-gradient-to-b from-white/[0.06] to-secondary/30 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50">
                     <div className="mb-8 flex items-center justify-between">
-                      <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">{serviceIcons[index]}</span>
+                      <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110">{serviceIcons[index]}</span>
                       <span className="font-headline text-sm font-semibold text-muted-foreground">0{index + 1}</span>
                     </div>
                     <CardTitle className="mb-3 font-headline text-2xl font-bold">{service.title}</CardTitle>
@@ -262,7 +261,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               {processSteps.map((step: { title: string; description: string }, index: number) => (
                 <li key={index} className="group rounded-2xl border border-border/60 bg-gradient-to-b from-white/[0.05] to-secondary/20 p-7 transition-colors duration-300 hover:border-primary/50">
                   <div className="mb-6 flex items-center gap-3">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+                    <span className="pulse-ring flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
                       {processIcons[index]}
                     </span>
                     <span className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
@@ -279,7 +278,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
         {/* Why us */}
         <section id="why-us" className="relative overflow-hidden py-20 md:py-28">
-          <div className="pointer-events-none absolute -left-40 bottom-0 h-96 w-96 rounded-full bg-sky-500/10 blur-3xl" />
+          <div className="hero-glow pointer-events-none absolute -left-40 bottom-0 h-96 w-96 rounded-full bg-sky-500/10 blur-3xl" />
           <div className="container mx-auto px-4">
             <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
               <Reveal>
@@ -327,7 +326,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
                 <h2 className="relative mb-4 font-headline text-3xl font-bold text-primary-foreground md:text-5xl">{t('ctaTitle')}</h2>
                 <p className="relative mx-auto mb-8 max-w-2xl text-lg text-primary-foreground/80">{t('ctaSubtitle')}</p>
-                <Button asChild size="lg" variant="secondary" className="relative rounded-full font-bold">
+                <Button asChild size="lg" variant="secondary" className="btn-shine relative rounded-full font-bold">
                   <TrackedLink location="bottom_cta" href="/contact">{t('ctaButton')}</TrackedLink>
                 </Button>
               </div>
