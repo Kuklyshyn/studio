@@ -20,7 +20,7 @@ function isValidContact(value: string) {
   return /^\+?[0-9 ()-]+$/.test(value) && digits.length >= 7 && digits.length <= 15;
 }
 
-type Status = "sent" | "error" | "invalid" | null;
+type Status = "sent" | "error" | "invalid" | "too_large" | null;
 
 export default function ContactPage() {
   const t = useTranslations("ContactPage");
@@ -39,21 +39,26 @@ export default function ContactPage() {
       return;
     }
 
+    const attachment = data.get("attachment");
+    if (attachment instanceof File && attachment.size > 10 * 1024 * 1024) {
+      setStatus("too_large");
+      return;
+    }
+
     setLoading(true);
     setStatus(null);
 
     try {
-      const res = await fetch(`/api/contact`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: data.get("name"),
-          contact,
-          message: data.get("message"),
-          consent: data.get("consent") === "on",
-          website: data.get("website"),
-        }),
-      });
+      // Sent as multipart so an optional brief or file can go with the message.
+      const payload = new FormData();
+      payload.set("name", String(data.get("name") ?? ""));
+      payload.set("contact", contact);
+      payload.set("message", String(data.get("message") ?? ""));
+      payload.set("consent", data.get("consent") === "on" ? "on" : "");
+      payload.set("website", String(data.get("website") ?? ""));
+      if (attachment instanceof File && attachment.size > 0) payload.set("attachment", attachment);
+
+      const res = await fetch(`/api/contact`, { method: "POST", body: payload });
 
       if (res.ok) {
         setStatus("sent");
@@ -124,6 +129,17 @@ export default function ContactPage() {
                     className="bg-secondary/50 border-border/50"
                   />
                 </div>
+                <div className="space-y-2">
+                  <Label htmlFor="attachment">{t("attachLabel")}</Label>
+                  <input
+                    id="attachment"
+                    name="attachment"
+                    type="file"
+                    accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.zip"
+                    className="block w-full text-sm text-muted-foreground file:mr-4 file:rounded-full file:border-0 file:bg-primary/10 file:px-4 file:py-2 file:font-semibold file:text-primary"
+                  />
+                  <p className="text-xs text-muted-foreground">{t("attachHint")}</p>
+                </div>
                 <div className="flex items-start gap-3">
                   <input
                     id="consent"
@@ -152,6 +168,7 @@ export default function ContactPage() {
                     {status === "sent" && t("sentText")}
                     {status === "error" && t("errorText")}
                     {status === "invalid" && t("invalidContact")}
+                    {status === "too_large" && t("fileTooLarge")}
                   </p>
                 )}
               </form>

@@ -36,19 +36,37 @@
     "heroSecondaryCta": "Pozrieť referencie",
     "servicesTitle": "Naše Služby",
     "services": [
-      {
-        "title": "Tvorba web stránok",
-        "description": "Vytvoríme vám modernú a responzívnu webovú stránku, ktorá zaujme a predá."
-      },
-      {
-        "title": "Tvorba E-shopov",
-        "description": "Vyvinieme vám e-shop na mieru, ktorý bude rýchly, bezpečný a pripravený na vaše podnikanie."
-      },
-      {
-        "title": "Digitálny Marketing",
-        "description": "Zviditeľníme vašu značku online a privedieme vám nových zákazníkov vďaka efektívnym stratégiám."
-      }
-    ],
+        {
+          "title": "Tvorba web stránok",
+          "description": "Vytvoríme vám modernú a responzívnu webovú stránku, ktorá zaujme a predá.",
+          "items": [
+            "Do 5 stránok alebo podľa rozsahu",
+            "Systém na správu obsahu",
+            "Formulár napojený na e-mail",
+            "Technické SEO a rýchle načítanie"
+          ]
+        },
+        {
+          "title": "Tvorba E-shopov",
+          "description": "Vyvinieme vám e-shop na mieru, ktorý bude rýchly, bezpečný a pripravený na vaše podnikanie.",
+          "items": [
+            "Katalóg produktov",
+            "Platba a doprava na Slovensku",
+            "Administrácia objednávok",
+            "Základné napojenie na účtovníctvo"
+          ]
+        },
+        {
+          "title": "Vlastné systémy a integrácie",
+          "description": "Rezervácie, správa klientov a prepojenia s vašimi systémami, postavené podľa vášho procesu.",
+          "items": [
+            "Rezervačný kalendár",
+            "Správa klientov a dopytov",
+            "Prepojenie s vašimi systémami",
+            "Úpravy a údržba po spustení"
+          ]
+        }
+      ],
     "portfolioTitle": "Naše Referencie",
     "portfolioSubtitle": "Pozrite si ukážky našich prác.",
     "portfolioCta": "Zobraziť všetky projekty",
@@ -296,6 +314,9 @@
     "sending": "Odosielam...",
     "sentText": "Ďakujeme, ozveme sa vám čoskoro.",
     "errorText": "Správu sa nepodarilo odoslať. Skúste to prosím znova.",
+    "attachLabel": "Príloha (nepovinné)",
+    "attachHint": "PDF, DOC, DOCX, JPG, PNG alebo ZIP, najviac 10 MB.",
+    "fileTooLarge": "Súbor je väčší ako 10 MB.",
     "invalidContact": "Zadajte platný e-mail alebo telefónne číslo.",
     "companyId": "IČO",
     "imprintLink": "Informácie o prevádzkovateľovi"

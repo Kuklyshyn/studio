@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { CardTitle } from "@/components/ui/card";
-import { Accessibility, ArrowRight, Code2, Layers, Megaphone, MessagesSquare, MoveRight, Palette, PenTool, Rocket, Search, ShoppingCart, Server, Wrench } from "lucide-react";
+import { Accessibility, ArrowRight, Check, Code2, Layers, MessagesSquare, MoveRight, Palette, PenTool, Rocket, Search, ShoppingCart, Server, Wrench } from "lucide-react";
 import Image from "next/image";
 import { Link } from "@/i18n";
 import { TrackedLink } from "@/components/tracked-link";
@@ -14,10 +14,12 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { pageMetadata, type Locale } from "@/lib/seo";
 import { localizeProject, portfolioProjects } from "./portfolio/projects";
 import { PricingPlans } from "@/components/pricing-plans";
+import { Testimonials } from "@/components/testimonials";
+import { ClientLogos } from "@/components/client-logos";
 
 const portfolio = ["fashion-eshop-woocommerce", "interactive-expert-map-platform", "car-service-booking-system"];
 
-const serviceIcons = [<Palette key="p" className="h-7 w-7" />, <Code2 key="c" className="h-7 w-7" />, <Megaphone key="m" className="h-7 w-7" />];
+const serviceIcons = [<Palette key="p" className="h-7 w-7" />, <Code2 key="c" className="h-7 w-7" />, <Server key="s" className="h-7 w-7" />];
 
 const processIcons = [<MessagesSquare key="a" className="h-5 w-5" />, <PenTool key="b" className="h-5 w-5" />, <Code2 key="c" className="h-5 w-5" />, <Rocket key="d" className="h-5 w-5" />];
 
@@ -157,6 +159,16 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                     </div>
                     <CardTitle className="mb-3 font-headline text-2xl font-bold">{service.title}</CardTitle>
                     <p className="leading-relaxed text-muted-foreground">{service.description}</p>
+                    {service.items && (
+                      <ul className="mt-6 space-y-3 border-t border-border/60 pt-6">
+                        {service.items.map((item: string) => (
+                          <li key={item} className="flex items-start gap-3 text-sm">
+                            <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </SpotlightCard>
                 </Reveal>
               ))}
@@ -164,7 +176,15 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
         </section>
 
+        <Reveal>
+          <ClientLogos />
+        </Reveal>
+
         <PricingPlans locale={locale} />
+
+        <Reveal>
+          <Testimonials locale={locale} />
+        </Reveal>
 
         {/* Portfolio */}
         <section id="portfolio" className="py-24 md:py-32">

@@ -37,18 +37,36 @@
         "servicesTitle": "Our Services",
         "services": [
             {
-                "title": "Website Development",
-                "description": "We will create a modern and responsive website for you that will attract and sell."
+              "title": "Website Development",
+              "description": "We will create a modern and responsive website for you that will attract and sell.",
+              "items": [
+                "Up to 5 pages or as scoped",
+                "Content management system",
+                "Form connected to e-mail",
+                "Technical SEO and fast loading"
+              ]
             },
             {
-                "title": "E-shop Development",
-                "description": "We will develop a custom e-shop for you that will be fast, secure, and ready for your business."
+              "title": "E-shop Development",
+              "description": "We will develop a custom e-shop for you that will be fast, secure, and ready for your business.",
+              "items": [
+                "Product catalogue",
+                "Payment and delivery in Slovakia",
+                "Order administration",
+                "Basic accounting integration"
+              ]
             },
             {
-                "title": "Digital Marketing",
-                "description": "We will make your brand visible online and bring you new customers through effective strategies."
+              "title": "Custom systems and integrations",
+              "description": "Bookings, client management and links with your own systems, built around your process.",
+              "items": [
+                "Booking calendar",
+                "Client and enquiry management",
+                "Links with your own systems",
+                "Changes and maintenance after launch"
+              ]
             }
-        ],
+          ],
         "portfolioTitle": "Our Portfolio",
         "portfolioSubtitle": "Check out examples of our work.",
         "portfolioCta": "View All Projects",
@@ -296,6 +314,9 @@
         "sending": "Sending...",
         "sentText": "Thank you, we will get back to you soon.",
         "errorText": "We could not send your message. Please try again.",
+        "attachLabel": "Attachment (optional)",
+        "attachHint": "PDF, DOC, DOCX, JPG, PNG or ZIP, up to 10 MB.",
+        "fileTooLarge": "The file is larger than 10 MB.",
         "invalidContact": "Enter a valid email address or phone number.",
         "companyId": "Company ID",
         "imprintLink": "Legal notice"
