@@ -1,8 +1,7 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Link } from '@/i18n';
+import { Reveal } from "@/components/reveal";
 import { blogPosts } from "./posts";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
@@ -19,50 +18,90 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("BlogPage");
+  const posts = blogPosts[locale as keyof typeof blogPosts] as any[];
+  const [featured, ...rest] = posts;
 
   return (
     <>
-      <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="font-headline text-4xl md:text-6xl font-bold mb-4">
-            {t('heroTitle')}
-          </h1>
-          <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-            {t('heroSubtitle')}
-          </p>
+      <section className="pt-20 pb-12 md:pt-32 md:pb-16">
+        <div className="container mx-auto px-4">
+          <Reveal>
+            <h1 className="max-w-3xl font-headline text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl">
+              {t('heroTitle')}
+            </h1>
+          </Reveal>
+          <Reveal delay={120}>
+            <p className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
+              {t('heroSubtitle')}
+            </p>
+          </Reveal>
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-secondary/30">
+      <section className="pb-20 md:pb-28">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts[locale as keyof typeof blogPosts].map((post: any) => (
-              <Card key={post.slug} className="flex flex-col bg-secondary/50 border-border/50 hover:border-primary/50 transition-all duration-300 group">
-                <Link href={{ pathname: "/blog/[slug]", params: { slug: post.slug } }} className="flex flex-col flex-grow">
-                  <CardHeader className="p-0">
+          {featured && (
+            <Reveal>
+              <Link
+                href={{ pathname: "/blog/[slug]", params: { slug: featured.slug } }}
+                className="group grid gap-8 overflow-hidden rounded-3xl border border-border/60 bg-secondary/30 transition-colors duration-500 hover:border-primary/40 md:grid-cols-2"
+              >
+                <div className="relative aspect-[16/10] overflow-hidden md:aspect-auto md:min-h-[360px]">
+                  <Image
+                    src={featured.image}
+                    alt={featured.title}
+                    fill
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    priority
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                  />
+                </div>
+                <div className="flex flex-col justify-center p-8 md:p-12">
+                  <p className="text-sm text-muted-foreground">
+                    <span>{featured.date}</span> &middot; <span>{featured.author}</span>
+                  </p>
+                  <h2 className="mt-4 font-headline text-2xl font-bold leading-snug transition-colors group-hover:text-primary md:text-3xl">
+                    {featured.title}
+                  </h2>
+                  <p className="mt-4 line-clamp-3 leading-relaxed text-muted-foreground">{featured.description}</p>
+                  <span className="mt-8 inline-flex items-center font-semibold text-primary">
+                    {t('readMore')} <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </span>
+                </div>
+              </Link>
+            </Reveal>
+          )}
+
+          <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {rest.map((post: any, index: number) => (
+              <Reveal key={post.slug} delay={(index % 3) * 100} className="h-full">
+                <Link
+                  href={{ pathname: "/blog/[slug]", params: { slug: post.slug } }}
+                  className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border/60 bg-secondary/30 transition-all duration-500 hover:-translate-y-1 hover:border-primary/40"
+                >
+                  <div className="relative aspect-[16/10] overflow-hidden">
                     <Image
                       src={post.image}
                       alt={post.title}
-                      width={600}
-                      height={400}
-                      data-ai-hint={post.hint}
-                      className="w-full h-48 object-cover rounded-t-lg"
+                      fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                     />
-                  </CardHeader>
-                  <div className="p-6 flex flex-col flex-grow">
-                      <CardTitle className="font-headline text-xl font-bold mb-2 group-hover:text-primary transition-colors">{post.title}</CardTitle>
-                      <CardDescription className="text-muted-foreground line-clamp-3">{post.description}</CardDescription>
-                      <div className="text-sm text-muted-foreground mt-4">
-                          <span>{post.date}</span> &bull; <span>{post.author}</span>
-                      </div>
                   </div>
-                  <CardFooter>
-                      <span className="flex items-center text-primary font-semibold">
-                          {t('readMore')} <ArrowRight className="ml-2 h-4 w-4" />
-                      </span>
-                  </CardFooter>
+                  <div className="flex flex-1 flex-col p-6">
+                    <p className="text-xs text-muted-foreground">
+                      <span>{post.date}</span> &middot; <span>{post.author}</span>
+                    </p>
+                    <h3 className="mt-3 font-headline text-xl font-bold leading-snug transition-colors group-hover:text-primary">
+                      {post.title}
+                    </h3>
+                    <p className="mt-3 line-clamp-3 flex-1 leading-relaxed text-muted-foreground">{post.description}</p>
+                    <span className="mt-6 inline-flex items-center text-sm font-semibold text-primary">
+                      {t('readMore')} <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                    </span>
+                  </div>
                 </Link>
-              </Card>
+              </Reveal>
             ))}
           </div>
         </div>

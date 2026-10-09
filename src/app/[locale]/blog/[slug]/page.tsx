@@ -10,6 +10,8 @@ import { absoluteUrl, blogPostingJsonLd, breadcrumbJsonLd, pageMetadata, type Lo
 import { LOCALES, isLocale } from '@/lib/site';
 import { JsonLd } from '@/components/json-ld';
 import { ProseStyles } from '@/components/prose-styles';
+import { Reveal } from "@/components/reveal";
+import { ReadingProgress } from "@/components/reading-progress";
 
 export const dynamicParams = false;
 
@@ -60,6 +62,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   return (
     <div className="container mx-auto px-4 py-16 md:py-24">
       <ProseStyles />
+      <ReadingProgress />
       <JsonLd
         data={[
           blogPostingJsonLd({
@@ -82,14 +85,17 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <ArrowLeft className="w-4 h-4" />
             <span>{t('back')}</span>
         </Link>
-        <h1 className="font-headline text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>
-        <div className="flex items-center space-x-4 text-muted-foreground mb-8">
-          <span>{t('by')} {post.author}</span>
-          <span>&bull;</span>
-          <span>{post.date}</span>
-        </div>
+        <Reveal>
+          <h1 className="font-headline text-4xl md:text-5xl font-bold mb-4 leading-tight">{post.title}</h1>
+          <div className="flex items-center space-x-4 text-muted-foreground mb-8">
+            <span>{t('by')} {post.author}</span>
+            <span>&bull;</span>
+            <span>{post.date}</span>
+          </div>
+        </Reveal>
 
-        <div className="relative w-full h-96 mb-8 rounded-lg overflow-hidden">
+        <Reveal delay={120}>
+        <div className="relative w-full aspect-[16/9] md:h-96 md:aspect-auto mb-8 rounded-2xl overflow-hidden">
             <Image
                 src={post.image}
                 alt={post.title}
@@ -99,11 +105,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 data-ai-hint={post.hint}
             />
         </div>
+        </Reveal>
 
+        <Reveal>
         <div className="prose prose-invert lg:prose-xl max-w-none mx-auto text-foreground/90">
           <p className="lead text-xl text-muted-foreground mb-8">{post.description}</p>
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </div>
+        </Reveal>
       </div>
     </div>
   );
