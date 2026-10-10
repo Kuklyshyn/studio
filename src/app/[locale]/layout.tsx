@@ -1,4 +1,4 @@
-import "./globals.css";
+import "../globals.css";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
@@ -9,21 +9,27 @@ import { Footer } from "@/components/layout/footer";
 import { Toaster } from "@/components/ui/toaster";
 import { CookieConsent } from "@/components/layout/cookie-consent";
 import { MobileCta } from "@/components/layout/mobile-cta";
-import { Space_Grotesk, PT_Sans } from "next/font/google";
+import { Bricolage_Grotesque, Instrument_Sans, JetBrains_Mono } from "next/font/google";
 import { JsonLd } from "@/components/json-ld";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 import { LOCALES, SITE_NAME, SITE_URL, isLocale } from "@/lib/site";
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-space-grotesk",
+const bricolage = Bricolage_Grotesque({
+  subsets: ["latin", "latin-ext"],
+  weight: ["500", "700", "800"],
+  variable: "--font-bricolage",
 });
 
-const ptSans = PT_Sans({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-pt-sans",
+const instrument = Instrument_Sans({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500", "600"],
+  variable: "--font-instrument",
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500"],
+  variable: "--font-jetbrains",
 });
 
 type Props = {
@@ -61,10 +67,10 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html
       lang={locale}
-      className={`${spaceGrotesk.variable} ${ptSans.variable}`}
+      className={`${bricolage.variable} ${instrument.variable} ${jetbrains.variable}`}
       suppressHydrationWarning
     >
-      <body>
+      <body className="font-body antialiased">
         {/* Runs before first paint: if the visitor already chose, the cookie banner stays hidden. */}
         <script
           dangerouslySetInnerHTML={{

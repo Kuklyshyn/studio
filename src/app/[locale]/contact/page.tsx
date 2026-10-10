@@ -87,7 +87,7 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <Reveal className="md:col-span-2">
             <div>
-              <h2 className="font-headline text-3xl font-bold mb-6">
+              <h2 className="font-headline text-3xl font-extrabold mb-6 tracking-[-0.03em]">
                 {t("formTitle")}
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -174,7 +174,7 @@ export default function ContactPage() {
             <Reveal delay={120}>
             <SpotlightCard className="rounded-3xl border border-border/60 bg-gradient-to-b from-white/[0.06] to-secondary/20 p-8">
             <div className="space-y-8">
-              <h2 className="font-headline text-3xl font-bold">
+              <h2 className="font-headline text-3xl font-extrabold tracking-[-0.03em]">
                 {t("contactInfoTitle")}
               </h2>
               <div className="space-y-4 text-lg">

@@ -17,9 +17,10 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['"Poppins"', 'sans-serif'],
-        headline: ['"Manrope"', 'sans-serif'],
-        code: ['monospace'],
+        body: ['var(--font-instrument)', 'system-ui', 'sans-serif'],
+        headline: ['var(--font-bricolage)', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-jetbrains)', 'ui-monospace', 'monospace'],
+        code: ['var(--font-jetbrains)', 'monospace'],
       },
       colors: {
         background: 'hsl(var(--background))',

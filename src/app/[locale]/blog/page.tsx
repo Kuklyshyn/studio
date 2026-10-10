@@ -48,7 +48,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
                   <p className="text-sm text-muted-foreground">
                     <span>{featured.date}</span> &middot; <span>{featured.author}</span>
                   </p>
-                  <h2 className="mt-4 font-headline text-2xl font-bold leading-snug transition-colors group-hover:text-primary md:text-3xl">
+                  <h2 className="mt-4 font-headline text-2xl font-extrabold leading-snug transition-colors group-hover:text-primary md:text-3xl tracking-[-0.03em]">
                     {featured.title}
                   </h2>
                   <p className="mt-4 line-clamp-3 leading-relaxed text-muted-foreground">{featured.description}</p>

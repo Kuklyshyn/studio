@@ -4,49 +4,49 @@
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 165 100% 45.1%;
-    --primary-foreground: 165 100% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --background: 195 13% 4.5%;
+    --foreground: 150 14% 94%;
+    --card: 194 19% 7%;
+    --card-foreground: 150 14% 94%;
+    --popover: 194 19% 7%;
+    --popover-foreground: 150 14% 94%;
+    --primary: 160 87% 56%;
+    --primary-foreground: 159 65% 4.5%;
+    --secondary: 195 20% 12%;
+    --secondary-foreground: 150 14% 94%;
+    --muted: 195 20% 12%;
+    --muted-foreground: 161 9% 66%;
+    --accent: 195 20% 12%;
+    --accent-foreground: 150 14% 94%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 165 100% 45.1%;
-    --radius: 0.75rem;
+    --destructive-foreground: 150 14% 94%;
+    --border: 194 18% 13%;
+    --input: 194 18% 13%;
+    --ring: 160 87% 56%;
+    --radius: 1rem;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 165 100% 45.1%;
-    --primary-foreground: 165 100% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --background: 195 13% 4.5%;
+    --foreground: 150 14% 94%;
+    --card: 194 19% 7%;
+    --card-foreground: 150 14% 94%;
+    --popover: 194 19% 7%;
+    --popover-foreground: 150 14% 94%;
+    --primary: 160 87% 56%;
+    --primary-foreground: 159 65% 4.5%;
+    --secondary: 195 20% 12%;
+    --secondary-foreground: 150 14% 94%;
+    --muted: 195 20% 12%;
+    --muted-foreground: 161 9% 66%;
+    --accent: 195 20% 12%;
+    --accent-foreground: 150 14% 94%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 165 100% 45.1%;
-    --radius: 0.75rem;
+    --destructive-foreground: 150 14% 94%;
+    --border: 194 18% 13%;
+    --input: 194 18% 13%;
+    --ring: 160 87% 56%;
+    --radius: 1rem;
   }
 }
 
@@ -201,4 +201,38 @@
 @media (prefers-reduced-motion: reduce) {
   .sc-needle, .sc-draw, .sc-tick { animation: none !important; }
   .scroll-step { --on: 1; transition: none; }
+}
+
+/* ---- Graphite look: mono labels, flat cards that lift on hover ---- */
+@layer components {
+  .grid-bg {
+    background-image: linear-gradient(hsl(var(--foreground) / 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--foreground) / 0.045) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+
+  .eyebrow {
+    @apply font-mono text-[13px] font-medium text-primary;
+  }
+
+  .surface {
+    @apply border border-border bg-card;
+    transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.3s, box-shadow 0.45s;
+  }
+
+  .surface:hover {
+    transform: translateY(-6px);
+    border-color: hsl(var(--primary));
+    box-shadow: 0 30px 50px -30px hsl(var(--primary) / 0.5);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .surface { transition: none; }
+  .surface:hover { transform: none; }
+}
+
+/* The layout script sets data-consent before first paint when the visitor has already chosen. */
+html[data-consent] .cookie-banner {
+  display: none;
 }

@@ -23,7 +23,7 @@ export function ProjectCard({ slug, index, industry, title, description, results
       prefetch={false}
       className="group flex h-full flex-col rounded-2xl border border-border/60 bg-secondary/40 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_0_40px_-16px_hsl(var(--primary)/0.6)]"
     >
-      <span className="font-headline text-5xl font-bold text-primary/25 transition-colors group-hover:text-primary/60">
+      <span className="font-headline text-5xl font-extrabold text-primary/25 transition-colors group-hover:text-primary/60 tracking-[-0.03em]">
         {String(index + 1).padStart(2, "0")}
       </span>
       <p className="mt-6 text-xs font-semibold uppercase tracking-widest text-primary">{industry}</p>

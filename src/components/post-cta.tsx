@@ -11,7 +11,7 @@ export async function PostCta({ locale }: { locale: string }) {
   return (
     <Reveal>
       <aside className="mt-16 rounded-3xl border border-primary/30 bg-gradient-to-br from-primary/15 to-transparent p-8 md:p-10">
-        <h2 className="font-headline text-2xl font-bold md:text-3xl">{t("postCtaTitle")}</h2>
+        <h2 className="font-headline text-2xl font-extrabold md:text-3xl tracking-[-0.03em]">{t("postCtaTitle")}</h2>
         <p className="mt-3 text-lg text-muted-foreground">{t("postCtaText")}</p>
         <div className="mt-6 flex flex-wrap items-center gap-4">
           <Magnetic>

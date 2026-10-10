@@ -49,7 +49,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
                 <div className="container mx-auto px-4">
                     <div className="grid items-center gap-12 md:grid-cols-2">
                         <Reveal>
-                            <h2 className="mb-4 font-headline text-3xl font-bold md:text-4xl">{t('websitesTitle')}</h2>
+                            <h2 className="mb-4 font-headline text-3xl font-extrabold md:text-4xl tracking-[-0.03em]">{t('websitesTitle')}</h2>
                             <p className="mb-4 text-lg text-muted-foreground">{t('websitesText1')}</p>
                             <p className="text-lg text-muted-foreground">{t('websitesText2')}</p>
                         </Reveal>
@@ -67,7 +67,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
                             <SceneCart />
                         </Reveal>
                         <Reveal delay={120} className="order-1 md:order-2">
-                            <h2 className="mb-4 font-headline text-3xl font-bold md:text-4xl">{t('eshopsTitle')}</h2>
+                            <h2 className="mb-4 font-headline text-3xl font-extrabold md:text-4xl tracking-[-0.03em]">{t('eshopsTitle')}</h2>
                             <p className="mb-4 text-lg text-muted-foreground">{t('eshopsText1')}</p>
                             <p className="text-lg text-muted-foreground">{t('eshopsText2')}</p>
                         </Reveal>
@@ -79,7 +79,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
                 <div className="container mx-auto px-4">
                     <Reveal>
                         <div className="mx-auto mb-12 max-w-2xl text-center">
-                            <h2 className="font-headline text-3xl font-bold md:text-5xl">{t('projectsTitle')}</h2>
+                            <h2 className="font-headline text-3xl font-extrabold md:text-5xl tracking-[-0.03em]">{t('projectsTitle')}</h2>
                             <p className="mt-4 text-lg text-muted-foreground">{t('projectsSubtitle')}</p>
                         </div>
                     </Reveal>
@@ -124,12 +124,12 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
                     <div className="grid items-center gap-12 md:grid-cols-2">
                         <div>
                             <Reveal>
-                                <h2 className="mb-8 font-headline text-3xl font-bold md:text-4xl">{t('benefitsTitle')}</h2>
+                                <h2 className="mb-8 font-headline text-3xl font-extrabold md:text-4xl tracking-[-0.03em]">{t('benefitsTitle')}</h2>
                             </Reveal>
                             <div className="space-y-4">
                                 {benefits.map((benefit: any, index: number) => (
                                     <Reveal key={index} delay={index * 100}>
-                                        <SpotlightCard className="rounded-2xl border border-border/60 bg-gradient-to-b from-white/[0.05] to-secondary/20 p-5 transition-colors duration-300 hover:border-primary/50">
+                                        <SpotlightCard className="rounded-2xl border border-border/60 bg-card p-5 transition-colors duration-300 hover:border-primary/50">
                                             <div className="flex items-start gap-4">
                                                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">{benefitIcons[index]}</span>
                                                 <div>
@@ -155,14 +155,14 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
                 <div className="container mx-auto max-w-4xl px-4">
                     <Reveal>
                         <div className="mx-auto mb-12 max-w-2xl text-center">
-                            <h2 className="font-headline text-3xl font-bold md:text-5xl">{t('servicesListTitle')}</h2>
+                            <h2 className="font-headline text-3xl font-extrabold md:text-5xl tracking-[-0.03em]">{t('servicesListTitle')}</h2>
                             <p className="mt-4 text-lg text-muted-foreground">{t('servicesListSubtitle')}</p>
                         </div>
                     </Reveal>
                     <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                         {services.map((service: string, index: number) => (
                             <Reveal key={index} delay={(index % 2) * 80} className="h-full">
-                                <SpotlightCard className="h-full rounded-2xl border border-border/60 bg-gradient-to-b from-white/[0.05] to-secondary/20 p-4 transition-colors duration-300 hover:border-primary/50">
+                                <SpotlightCard className="h-full rounded-2xl border border-border/60 bg-card p-4 transition-colors duration-300 hover:border-primary/50">
                                     <div className="flex items-center gap-3 text-lg">
                                         <Check className="h-5 w-5 flex-shrink-0 text-primary" />
                                         <span>{service}</span>

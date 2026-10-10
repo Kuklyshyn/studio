@@ -67,7 +67,7 @@ export async function LandingView({ pageKey, locale }: { pageKey: LandingKey; lo
             {content.sections.map((section, index) => (
               <Reveal key={section.title} delay={index * 60}>
                 <SpotlightCard className="rounded-3xl border border-border/60 bg-gradient-to-b from-white/[0.06] to-secondary/20 p-8 transition-colors duration-300 hover:border-primary/50">
-                  <h2 className="mb-4 font-headline text-2xl font-bold md:text-3xl">{section.title}</h2>
+                  <h2 className="mb-4 font-headline text-2xl font-extrabold md:text-3xl tracking-[-0.03em]">{section.title}</h2>
                   {section.paragraphs?.map((paragraph) => (
                     <p key={paragraph} className="mb-3 text-lg leading-relaxed text-muted-foreground last:mb-0">{paragraph}</p>
                   ))}
@@ -96,14 +96,14 @@ export async function LandingView({ pageKey, locale }: { pageKey: LandingKey; lo
       <section className="border-t border-border/50 py-20 md:py-28">
         <div className="container mx-auto px-4">
           <Reveal>
-            <h2 className="mb-10 text-center font-headline text-3xl font-bold md:text-4xl">{tFaq("related")}</h2>
+            <h2 className="mb-10 text-center font-headline text-3xl font-extrabold md:text-4xl tracking-[-0.03em]">{tFaq("related")}</h2>
           </Reveal>
           <div className="grid gap-4 md:grid-cols-3">
             {related.map((key, index) => (
               <Reveal key={key} delay={index * 80} className="h-full">
                 <Link
                   href={internalPath[key]}
-                  className="group flex h-full items-center justify-between gap-4 rounded-2xl border border-border/60 bg-gradient-to-b from-white/[0.05] to-secondary/20 p-6 transition-colors duration-300 hover:border-primary/50"
+                  className="group flex h-full items-center justify-between gap-4 rounded-2xl border border-border/60 bg-card p-6 transition-colors duration-300 hover:border-primary/50"
                 >
                   <span className="font-headline text-lg font-bold">{landingPages[key][lang].navLabel}</span>
                   <ArrowRight className="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-hover:translate-x-1" />
@@ -119,7 +119,7 @@ export async function LandingView({ pageKey, locale }: { pageKey: LandingKey; lo
           <Reveal>
             <div className="relative overflow-hidden rounded-3xl bg-primary px-6 py-16 text-center md:px-16 md:py-20">
               <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
-              <h2 className="relative mb-8 font-headline text-3xl font-bold text-primary-foreground md:text-5xl">{content.ctaTitle}</h2>
+              <h2 className="relative mb-8 font-headline text-3xl font-extrabold text-primary-foreground md:text-5xl tracking-[-0.03em]">{content.ctaTitle}</h2>
               <Magnetic>
                 <Button asChild size="lg" variant="secondary" className="btn-shine relative rounded-full font-bold">
                   <Link href="/contact">{tFaq("cta")}</Link>

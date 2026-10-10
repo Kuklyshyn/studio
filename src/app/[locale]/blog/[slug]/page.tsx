@@ -87,7 +87,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <span>{t('back')}</span>
         </Link>
         <Reveal>
-          <h1 className="font-headline text-4xl md:text-5xl font-bold mb-4 leading-tight">{post.title}</h1>
+          <h1 className="font-headline text-4xl md:text-5xl font-extrabold mb-4 leading-tight tracking-[-0.03em]">{post.title}</h1>
           <div className="flex items-center space-x-4 text-muted-foreground mb-8">
             <span>{t('by')} {post.author}</span>
             <span>&bull;</span>

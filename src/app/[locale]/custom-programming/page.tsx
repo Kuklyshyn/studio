@@ -53,7 +53,7 @@ export default async function CustomProgrammingPage({ params }: { params: Promis
                             <SceneCode />
                         </Reveal>
                         <Reveal delay={120}>
-                            <h2 className="mb-4 font-headline text-3xl font-bold md:text-4xl">{t('visionTitle')}</h2>
+                            <h2 className="mb-4 font-headline text-3xl font-extrabold md:text-4xl tracking-[-0.03em]">{t('visionTitle')}</h2>
                             <p className="mb-4 text-lg text-muted-foreground">{t('visionText1')}</p>
                             <p className="text-lg text-muted-foreground">{t('visionText2')}</p>
                         </Reveal>
@@ -65,7 +65,7 @@ export default async function CustomProgrammingPage({ params }: { params: Promis
                 <div className="container mx-auto px-4">
                     <Reveal>
                         <div className="mx-auto mb-12 max-w-2xl text-center">
-                            <h2 className="font-headline text-3xl font-bold md:text-5xl">{t('whyCustomTitle')}</h2>
+                            <h2 className="font-headline text-3xl font-extrabold md:text-5xl tracking-[-0.03em]">{t('whyCustomTitle')}</h2>
                             <p className="mt-4 text-lg text-muted-foreground">{t('whyCustomSubtitle')}</p>
                         </div>
                     </Reveal>
@@ -89,7 +89,7 @@ export default async function CustomProgrammingPage({ params }: { params: Promis
                 <div className="container mx-auto px-4">
                     <Reveal>
                         <div className="mx-auto mb-12 max-w-2xl text-center">
-                            <h2 className="font-headline text-3xl font-bold md:text-5xl">{t('processTitle')}</h2>
+                            <h2 className="font-headline text-3xl font-extrabold md:text-5xl tracking-[-0.03em]">{t('processTitle')}</h2>
                             <p className="mt-4 text-lg text-muted-foreground">{t('processSubtitle')}</p>
                         </div>
                     </Reveal>
@@ -97,7 +97,7 @@ export default async function CustomProgrammingPage({ params }: { params: Promis
                         {processSteps.map((step: { title: string; description: string }, index: number) => (
                             <li
                                 key={index}
-                                className="scroll-step group flex gap-5 rounded-2xl border bg-gradient-to-b from-white/[0.05] to-secondary/20 p-6"
+                                className="scroll-step group flex gap-5 rounded-2xl border bg-card p-6"
                                 style={{ ["--i" as string]: index, ["--n" as string]: processSteps.length }}
                             >
                                 <span className="pulse-ring flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
@@ -121,7 +121,7 @@ export default async function CustomProgrammingPage({ params }: { params: Promis
                     <Reveal>
                         <div className="mb-12 flex items-center justify-center gap-4">
                             <Database className="h-8 w-8 text-primary" />
-                            <h2 className="text-center font-headline text-3xl font-bold md:text-5xl">{t('techTitle')}</h2>
+                            <h2 className="text-center font-headline text-3xl font-extrabold md:text-5xl tracking-[-0.03em]">{t('techTitle')}</h2>
                         </div>
                         <TechLogos />
                     </Reveal>
@@ -133,7 +133,7 @@ export default async function CustomProgrammingPage({ params }: { params: Promis
                     <Reveal>
                         <div className="relative overflow-hidden rounded-3xl bg-primary px-6 py-16 text-center md:px-16 md:py-20">
                             <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
-                            <h2 className="relative mb-4 font-headline text-3xl font-bold text-primary-foreground md:text-5xl">{t('ctaTitle')}</h2>
+                            <h2 className="relative mb-4 font-headline text-3xl font-extrabold text-primary-foreground md:text-5xl tracking-[-0.03em]">{t('ctaTitle')}</h2>
                             <p className="relative mx-auto mb-8 max-w-2xl text-lg text-primary-foreground/80">{t('ctaSubtitle')}</p>
                             <Magnetic>
                                 <Button asChild size="lg" variant="secondary" className="btn-shine relative rounded-full font-bold">

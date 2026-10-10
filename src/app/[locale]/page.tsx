@@ -41,8 +41,8 @@ const whyUsIcons = [
 function SectionHead({ number, title, subtitle }: { number: string; title: string; subtitle?: string }) {
   return (
     <div className="mb-14 max-w-2xl">
-      <p className="mb-4 font-headline text-sm font-semibold tracking-[0.2em] text-primary">{number}</p>
-      <h2 className="font-headline text-3xl font-bold leading-tight md:text-5xl">{title}</h2>
+      <p className="eyebrow mb-4">{number} /</p>
+      <h2 className="font-headline text-4xl font-extrabold leading-[1.02] tracking-[-0.03em] md:text-5xl">{title}</h2>
       {subtitle && <p className="mt-5 text-lg text-muted-foreground">{subtitle}</p>}
     </div>
   );
@@ -75,19 +75,19 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           <PointerGlow />
           <div className="pointer-events-none absolute -left-32 top-10 h-[420px] w-[420px] rounded-full bg-primary/15 blur-3xl" />
           <div className="pointer-events-none absolute -right-24 bottom-0 h-[360px] w-[360px] rounded-full bg-sky-500/10 blur-3xl" />
-          <div className="absolute inset-0 bg-grid-white/[0.04] [mask-image:linear-gradient(to_bottom,white_40%,transparent_100%)]" />
+          <div className="absolute inset-0 grid-bg [mask-image:linear-gradient(to_bottom,white_40%,transparent_100%)]" />
           <div className="container relative mx-auto grid items-center gap-12 px-4 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-16">
             <div className="min-w-0">
               <Reveal>
-                <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
-                  <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                <p className="eyebrow mb-8 inline-flex items-center gap-2.5 rounded-full border border-border px-4 py-2">
+                  <span className="h-2 w-2 rounded-full bg-primary" />
                   {t('heroBadge')}
                 </p>
               </Reveal>
-              <h1 className="mb-6 font-headline text-[2.6rem] font-bold leading-[1.04] tracking-tight text-balance md:text-6xl lg:text-[3.6rem] xl:text-[4.25rem]">
+              <h1 className="mb-7 font-headline text-[2.6rem] font-extrabold leading-[0.98] tracking-[-0.035em] text-balance md:text-6xl lg:text-[3.6rem] xl:text-[4.5rem]">
                 {t('heroTitle').split(' ').map((word: string, i: number, all: string[]) => (
                   <span key={i}>
-                    <span className="word-in" style={{ animationDelay: `${120 + i * 70}ms` }}>{word}</span>
+                    <span className={`word-in${i === all.length - 1 ? " text-primary" : ""}`} style={{ animationDelay: `${120 + i * 70}ms` }}>{word}</span>
                     {i < all.length - 1 ? ' ' : null}
                   </span>
                 ))}
@@ -122,7 +122,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <div className="border-y border-border/50 py-6">
           <ScrollMarquee className="items-center gap-10" speed={0.6}>
             {[...bandWords, ...bandWords].map((word: string, i: number) => (
-              <li key={`${word}-${i}`} aria-hidden={i >= bandWords.length} className="flex items-center gap-10 whitespace-nowrap font-headline text-3xl font-bold tracking-tight text-foreground/90 md:text-5xl">
+              <li key={`${word}-${i}`} aria-hidden={i >= bandWords.length} className="flex items-center gap-10 whitespace-nowrap font-headline text-3xl font-extrabold tracking-tight text-foreground/30 md:text-5xl">
                 <span className={i % 3 === 1 ? "text-transparent [-webkit-text-stroke:1.5px_hsl(var(--primary))]" : ""}>{word}</span>
                 <span className="text-primary">✦</span>
               </li>
@@ -139,7 +139,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <div className="grid gap-6 md:grid-cols-2">
               <Reveal>
                 <TrackedLink location="start_new" href="/contact" className="group block h-full">
-                  <SpotlightCard className="h-full rounded-3xl border border-border/60 bg-gradient-to-b from-white/[0.06] to-secondary/30 p-10 transition-all duration-300 hover:border-primary/50">
+                  <SpotlightCard className="h-full rounded-3xl border border-border/60 bg-card p-10 transition-all duration-300 hover:border-primary/50">
                     <SceneBlueprint className="mb-8 aspect-[16/9]" />
                     <h3 className="font-headline text-2xl font-bold">{t('startNewTitle')}</h3>
                     <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{t('startNewText')}</p>
@@ -151,7 +151,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               </Reveal>
               <Reveal delay={120}>
                 <TrackedLink location="start_existing" href="/contact" className="group block h-full">
-                  <SpotlightCard className="h-full rounded-3xl border border-border/60 bg-gradient-to-b from-white/[0.06] to-secondary/30 p-10 transition-all duration-300 hover:border-primary/50">
+                  <SpotlightCard className="h-full rounded-3xl border border-border/60 bg-card p-10 transition-all duration-300 hover:border-primary/50">
                     <SceneGauge className="mb-8 aspect-[16/9]" />
                     <h3 className="font-headline text-2xl font-bold">{t('startExistingTitle')}</h3>
                     <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{t('startExistingText')}</p>
@@ -175,7 +175,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <div className="grid gap-6 md:grid-cols-3">
               {services.map((service: any, index: number) => (
                 <Reveal key={index} delay={index * 100} className="h-full">
-                  <SpotlightCard className="h-full rounded-3xl border border-border/60 bg-gradient-to-b from-white/[0.06] to-secondary/30 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50">
+                  <SpotlightCard className="h-full rounded-3xl border border-border/60 bg-card p-8 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50">
                     <div className="relative mb-8">
                       {[<SceneBlueprint key="b" className="aspect-[16/10]" />, <SceneCart key="c" className="aspect-[16/10]" />, <SceneCalendar key="k" className="aspect-[16/10]" />][index]}
                       <span className="absolute right-3 top-3 font-headline text-sm font-semibold text-muted-foreground">0{index + 1}</span>
@@ -215,8 +215,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <Reveal>
               <div className="mb-14 flex flex-col justify-between gap-6 md:flex-row md:items-end">
                 <div className="max-w-2xl">
-                  <p className="mb-4 font-headline text-sm font-semibold tracking-[0.2em] text-primary">03</p>
-                  <h2 className="font-headline text-3xl font-bold leading-tight md:text-5xl">{t('portfolioTitle')}</h2>
+                  <p className="eyebrow mb-4">04 /</p>
+                  <h2 className="font-headline text-4xl font-extrabold leading-[1.02] tracking-[-0.03em] md:text-5xl">{t('portfolioTitle')}</h2>
                   <p className="mt-5 text-lg text-muted-foreground">{t('portfolioSubtitle')}</p>
                 </div>
                 <Link href="/portfolio" className="inline-flex items-center font-semibold text-primary">
@@ -247,13 +247,13 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <section id="process" className="border-t border-border/50 py-24 md:py-32">
           <div className="container mx-auto px-4">
             <Reveal>
-              <SectionHead number="04" title={t('processTitle')} subtitle={t('processSubtitle')} />
+              <SectionHead number="05" title={t('processTitle')} subtitle={t('processSubtitle')} />
             </Reveal>
             <ScrollSteps className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               {processSteps.map((step: { title: string; description: string }, index: number) => (
                 <li
                   key={index}
-                  className="scroll-step group rounded-2xl border bg-gradient-to-b from-white/[0.05] to-secondary/20 p-7"
+                  className="scroll-step group rounded-2xl border bg-card p-7"
                   style={{ ["--i" as string]: index, ["--n" as string]: processSteps.length }}
                 >
                   <div className="mb-6 flex items-center gap-3">
@@ -279,15 +279,15 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
               <Reveal>
                 <div className="lg:sticky lg:top-32">
-                  <p className="mb-4 font-headline text-sm font-semibold tracking-[0.2em] text-primary">05</p>
-                  <h2 className="mb-6 font-headline text-3xl font-bold leading-tight md:text-5xl">{t('whyUsTitle')}</h2>
+                  <p className="eyebrow mb-4">06 /</p>
+                  <h2 className="mb-6 font-headline text-4xl font-extrabold leading-[1.02] tracking-[-0.03em] md:text-5xl">{t('whyUsTitle')}</h2>
                   <p className="text-lg text-muted-foreground">{t('whyUsSubtitle')}</p>
                 </div>
               </Reveal>
               <div className="grid gap-4 sm:grid-cols-2">
                 {whyUs.map((item: { title: string; description: string }, index: number) => (
                   <Reveal key={index} delay={index * 80} className="h-full">
-                    <div className="flex h-full gap-4 rounded-2xl border border-border/60 bg-gradient-to-b from-white/[0.05] to-secondary/20 p-6 transition-colors duration-300 hover:border-primary/50">
+                    <div className="flex h-full gap-4 rounded-2xl border border-border/60 bg-card p-6 transition-colors duration-300 hover:border-primary/50">
                       <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">{whyUsIcons[index]}</span>
                       <div>
                         <h3 className="font-headline text-lg font-bold leading-snug">{item.title}</h3>
@@ -307,7 +307,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             <Reveal>
               <div className="mb-12 flex items-center gap-4">
                 <Layers className="h-8 w-8 text-primary" />
-                <h2 className="font-headline text-3xl font-bold md:text-4xl">{t('technologiesTitle')}</h2>
+                <h2 className="font-headline text-3xl font-extrabold tracking-[-0.02em] md:text-4xl">{t('technologiesTitle')}</h2>
               </div>
               <TechLogos />
             </Reveal>
@@ -320,12 +320,13 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <section className="pb-24 md:pb-32">
           <div className="container mx-auto px-4">
             <Reveal>
-              <div className="relative overflow-hidden rounded-3xl bg-primary px-6 py-16 text-center md:px-16 md:py-20">
-                <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
-                <h2 className="relative mb-4 font-headline text-3xl font-bold text-primary-foreground md:text-5xl">{t('ctaTitle')}</h2>
-                <p className="relative mx-auto mb-8 max-w-2xl text-lg text-primary-foreground/80">{t('ctaSubtitle')}</p>
+              <div className="relative flex flex-col items-start justify-between gap-8 overflow-hidden rounded-[2rem] bg-primary px-6 py-14 text-primary-foreground md:flex-row md:items-center md:px-14 md:py-20">
+                <div className="relative max-w-2xl">
+                  <h2 className="mb-4 font-headline text-4xl font-extrabold leading-none tracking-[-0.035em] md:text-6xl">{t('ctaTitle')}</h2>
+                  <p className="text-lg md:text-xl">{t('ctaSubtitle')}</p>
+                </div>
                 <Magnetic>
-                  <Button asChild size="lg" variant="secondary" className="btn-shine relative rounded-full font-bold">
+                  <Button asChild size="lg" className="btn-shine relative bg-background text-foreground hover:bg-background/90">
                     <TrackedLink location="bottom_cta" href="/contact">{t('ctaButton')}</TrackedLink>
                   </Button>
                 </Magnetic>

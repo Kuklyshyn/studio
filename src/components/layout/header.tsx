@@ -4,12 +4,12 @@ import { usePathname, Link } from "@/i18n";
 import { TrackedLink } from "@/components/tracked-link";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Mountain } from "lucide-react";
+import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ThemeSwitcher } from "../theme-switcher";
 import { LanguageSwitcher } from "./language-switcher";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+import { Logo } from "@/components/logo";
 import { useState, useEffect } from "react";
 
 export function Header() {
@@ -36,17 +36,12 @@ export function Header() {
   const isPortfolioDetail = /^\/portfolio\/[^/]+$/.test(pathname as string);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center px-4">
-        <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Image
-            src="/img/logo-white.png"
-            alt="Omnicode"
-            width={100}
-            height={34}
-          />
+    <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/70">
+      <div className="container mx-auto flex h-[72px] items-center px-4">
+        <Link href="/" aria-label="Omnicode" className="mr-8 flex items-center">
+          <Logo />
         </Link>
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex items-center space-x-6 text-[15px] font-medium">
           {navLinks.map(({ href, label }) => {
             const isActive =
               mounted &&
@@ -84,17 +79,8 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right">
               <nav className="grid gap-6 text-lg font-medium mt-8">
-                <Link
-                  href="/"
-                  className="flex items-center gap-2 text-lg font-semibold"
-                >
-                  <Image
-                    src="/img/logo-white.png"
-                    alt="Omnicode"
-                    width={100}
-                    height={34}
-                  />
-                  <span className="font-headline">Omnicode</span>
+                <Link href="/" aria-label="Omnicode" className="flex items-center">
+                  <Logo />
                 </Link>
                 {navLinks.map(({ href, label }) => {
                   const isActive = mounted && pathname === href;

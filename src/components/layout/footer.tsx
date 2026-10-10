@@ -3,7 +3,7 @@ import { Mountain, Twitter, Linkedin, Facebook } from "lucide-react";
 import { Button } from "../ui/button";
 import { useLocale, useTranslations } from "next-intl";
 import { landingKeys, landingPages } from "../../../content/landing";
-import Image from "next/image";
+import { Logo } from "@/components/logo";
 import { CookieSettingsButton } from "./cookie-settings-button";
 
 export function Footer() {
@@ -13,23 +13,18 @@ export function Footer() {
   const landingHrefs = { "web-development": "/web-development", "eshop-development": "/eshop-development", "booking-system": "/booking-system", "custom-crm": "/custom-crm" } as const;
 
   return (
-    <footer className="bg-secondary/30 border-t border-border/50 pb-20 md:pb-0">
+    <footer className="border-t border-border/60 bg-card/60 pb-20 md:pb-0">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4 md:col-span-2">
-            <Link href="/" className="flex items-center space-x-2">
-              <Image
-                src="/img/logo-white.png"
-                alt="Omnicode"
-                width={100}
-                height={34}
-              />
+            <Link href="/" aria-label="Omnicode" className="flex items-center">
+              <Logo />
             </Link>
             <p className="text-muted-foreground max-w-md">{t("description")}</p>
           </div>
 
           <div>
-            <h3 className="font-headline font-semibold text-lg mb-4">
+            <h3 className="font-mono text-[13px] font-medium uppercase tracking-widest text-primary mb-4">
               {t("quick-links")}
             </h3>
             <ul className="space-y-2 text-muted-foreground">
@@ -71,7 +66,7 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
-            <h3 className="font-headline font-semibold text-lg mb-4 mt-8">
+            <h3 className="font-mono text-[13px] font-medium uppercase tracking-widest text-primary mb-4 mt-8">
               {t("services")}
             </h3>
             <ul className="space-y-2 text-muted-foreground">
@@ -85,7 +80,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-headline font-semibold text-lg mb-4">
+            <h3 className="font-mono text-[13px] font-medium uppercase tracking-widest text-primary mb-4">
               {t("follow-us")}
             </h3>
             <div className="flex space-x-2">

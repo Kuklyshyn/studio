@@ -5,12 +5,11 @@ import { PointerGlow } from "@/components/pointer-glow";
 // rise in one after another.
 export function PageHero({ title, subtitle, children }: { title: string; subtitle?: string; children?: React.ReactNode }) {
   return (
-    <section className="relative overflow-hidden py-20 md:py-28">
-      <div className="absolute inset-0 bg-grid-white/[0.04] [mask-image:linear-gradient(to_bottom,white_40%,transparent_100%)]" />
+    <section className="relative overflow-hidden border-b border-border/60 py-20 md:py-28">
+      <div className="absolute inset-0 grid-bg [mask-image:linear-gradient(to_bottom,white_40%,transparent_100%)]" />
       <PointerGlow />
-      <div className="pointer-events-none absolute left-1/2 top-0 h-72 w-[620px] -translate-x-1/2 rounded-full bg-primary/10 blur-3xl" />
-      <div className="container relative mx-auto px-4 text-center">
-        <h1 className="mx-auto mb-5 max-w-4xl font-headline text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl">
+      <div className="container relative mx-auto px-4">
+        <h1 className="mb-6 max-w-4xl font-headline text-4xl font-extrabold leading-[0.98] tracking-[-0.035em] md:text-6xl lg:text-7xl">
           {title.split(" ").map((word, i, all) => (
             <span key={i}>
               <span className="word-in" style={{ animationDelay: `${100 + i * 60}ms` }}>{word}</span>
@@ -20,7 +19,7 @@ export function PageHero({ title, subtitle, children }: { title: string; subtitl
         </h1>
         {subtitle && (
           <Reveal delay={200}>
-            <p className="mx-auto max-w-3xl text-lg text-muted-foreground md:text-xl">{subtitle}</p>
+            <p className="max-w-3xl text-lg text-muted-foreground md:text-xl">{subtitle}</p>
           </Reveal>
         )}
         {children && (
