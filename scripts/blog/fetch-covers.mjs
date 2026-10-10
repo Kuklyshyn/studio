@@ -30,6 +30,9 @@ const QUERIES = {
   "booking-system-ready-made-or-custom": "calendar appointment planner",
   "website-speed-what-slows-it-down": "speed fast motion light trails",
   "how-to-choose-a-web-developer": "interview handshake business meeting",
+  "woocommerce-or-custom-eshop": "online store shopping laptop",
+  "prepare-products-for-eshop-import": "warehouse boxes packing products",
+  "website-accessibility-basics": "inclusive design keyboard laptop",
 };
 
 // ONLY=slug1,slug2 limits the run to those posts, so existing covers are left alone.
