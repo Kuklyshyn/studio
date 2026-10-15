@@ -33,6 +33,9 @@ const QUERIES = {
   "woocommerce-or-custom-eshop": "online store shopping laptop",
   "prepare-products-for-eshop-import": "warehouse boxes packing products",
   "website-accessibility-basics": "inclusive design keyboard laptop",
+  "move-eshop-to-new-platform": "moving boxes relocation",
+  "who-owns-your-domain-hosting-and-code": "keys ownership lock",
+  "website-after-launch-what-to-expect": "maintenance tools workshop",
 };
 
 // ONLY=slug1,slug2 limits the run to those posts, so existing covers are left alone.

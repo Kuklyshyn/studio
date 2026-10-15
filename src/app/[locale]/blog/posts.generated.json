@@ -1,6 +1,42 @@
 {
   "en": [
     {
+      "slug": "move-eshop-to-new-platform",
+      "title": "Moving an e-shop to a new platform without losing orders or search traffic",
+      "seoTitle": "Moving an e-shop to a new platform without losing orders or search traffic",
+      "description": "A practical plan for migrating an online shop: what to export, how to keep your addresses working, what to test before switching and what to do on launch day.",
+      "image": "/blog/move-eshop-to-new-platform.webp",
+      "hint": "moving an e-shop",
+      "date": "October 15, 2026",
+      "isoDate": "2026-10-15",
+      "author": "Omnicode",
+      "content": "<p>Moving an e-shop to a new platform is less risky when it is planned as a sequence of small steps. The two things owners worry about most are losing orders and losing the visitors who already find the shop in Google. Both can be protected.</p>\n<h2>1. List what you have</h2>\n<ul><li>Products, variants, categories and photos.</li><li>Customers and past orders, if you want to keep the history.</li><li>Shipping and payment methods, discount codes and tax settings.</li><li>Connections to other systems: accounting, warehouse, carriers, newsletter.</li><li>Page addresses (URLs) of the shop.</li></ul>\n<h2>2. Export and clean the data</h2>\n<p>Most platforms can export products and customers to a spreadsheet. Use this chance to remove old items and fix names and prices before they move. How to prepare product data is described in <a href='/en/blog/prepare-products-for-eshop-import'>how to prepare your products for an e-shop import</a>.</p>\n<h2>3. Keep your addresses working</h2>\n<p>If product and category addresses change, set up a permanent redirect (301) from each old address to its new one. Without it, visitors and search engines land on error pages, and the rankings you built can drop. Make a list of the old addresses before you start.</p>\n<h2>4. Build and test on a separate copy</h2>\n<p>Work on a test version, not on the live shop. Place test orders through every payment and delivery method, check the e-mails customers receive, and open the shop on a phone.</p>\n<h2>5. Choose a quiet time to switch</h2>\n<p>Pick a day and hour with fewer orders. Tell customers if the shop will be unavailable for a short time, and check that orders, payments and redirects work right after the switch.</p>\n<h2>6. Watch the first weeks</h2>\n<p>After launch, look for error pages in Google Search Console and fix missing redirects. Compare orders with the previous weeks to catch problems early.</p>\n<p>If you would like help with a move, see <a href='/en/eshop-development'>e-shop development</a> or <a href='/en/contact'>describe your shop to me</a>. If you are deciding between platforms first, read <a href='/en/blog/woocommerce-or-custom-eshop'>WooCommerce or a custom e-shop</a>.</p>\n<h3>Sources</h3><ul><li><a href=\"https://unsplash.com/@dinaamazing?utm_source=omnicode&amp;utm_medium=referral\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Dina Badamshina / Unsplash</a></li></ul>"
+    },
+    {
+      "slug": "website-after-launch-what-to-expect",
+      "title": "What happens after your website launches: updates, backups and changes",
+      "seoTitle": "What happens after your website launches: updates, backups and changes",
+      "description": "A launched website still needs care. What regular maintenance means, what to ask about backups and updates, and how small changes are usually handled.",
+      "image": "/blog/website-after-launch-what-to-expect.webp",
+      "hint": "after launch",
+      "date": "October 15, 2026",
+      "isoDate": "2026-10-15",
+      "author": "Omnicode",
+      "content": "<p>Launching a website is not the end of the work. Software gets updates, content changes and things occasionally break. It helps to agree before launch who looks after what.</p>\n<h2>Updates</h2>\n<p>Sites built on a content management system such as WordPress depend on updates to the system and its plugins. Skipped updates are one of the common ways a site becomes slow or vulnerable. Ask who installs them and how often.</p>\n<h2>Backups</h2>\n<p>A backup is a copy you can restore if something goes wrong. Ask where it is stored, how often it is made and whether a restore has ever been tested. A backup stored on the same server as the site does not help if the server fails.</p>\n<h2>Monitoring</h2>\n<p>Someone should notice when the site is down, when a form stops sending messages or when a certificate is about to expire. Even a simple automatic check is better than hearing about a problem from a customer.</p>\n<h2>Small changes</h2>\n<ul><li>Which changes can you make yourself, such as texts, photos and blog posts?</li><li>Which need a developer, and how are they priced: per hour or per task?</li><li>How quickly can you expect a reply?</li></ul>\n<h2>Questions to ask before launch</h2>\n<ul><li>Who is responsible for updates and backups?</li><li>What is included in the price, and what is charged separately?</li><li>Who do I contact if the site stops working?</li></ul>\n<p>I agree these points at the start of a project, so the end of the work is not a surprise. See <a href='/en/web-development-bratislava'>website development in Bratislava</a> or <a href='/en/contact'>write to me</a> with your questions.</p>\n<h3>Sources</h3><ul><li><a href=\"https://unsplash.com/@barnimages?utm_source=omnicode&amp;utm_medium=referral\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Barn Images / Unsplash</a></li></ul>"
+    },
+    {
+      "slug": "who-owns-your-domain-hosting-and-code",
+      "title": "Who owns your domain, hosting and website code?",
+      "seoTitle": "Who owns your domain, hosting and website code?",
+      "description": "Three things should belong to you after a website project: the domain, the hosting account and the code. How to check this before you sign and what to ask for.",
+      "image": "/blog/who-owns-your-domain-hosting-and-code.webp",
+      "hint": "who owns your website",
+      "date": "October 15, 2026",
+      "isoDate": "2026-10-15",
+      "author": "Omnicode",
+      "content": "<p>A common surprise comes years after a website is built: the domain is registered to the agency, or the site cannot be moved because nobody has the files. Ownership is easy to settle at the start and hard to fix later.</p>\n<h2>The domain</h2>\n<p>The domain (for example yourcompany.sk) should be registered in <strong>your</strong> name, with <strong>your</strong> e-mail as the contact. A developer can manage it for you, but the registrant should be you. Ask for the name of the registrar and check the record yourself.</p>\n<h2>The hosting account</h2>\n<p>Hosting is where the site runs. Ideally the account is yours, and the developer has access to work on it. If the account is the developer's, ask what happens to your site if you part ways, and how it can be moved.</p>\n<h2>The code and content</h2>\n<ul><li>Do you receive the source code and a copy of the content at handover?</li><li>Is anything built on a licence that must be renewed, such as a paid theme or plugin? Who pays for it and holds the licence?</li><li>Are the design files yours?</li></ul>\n<h2>Accounts and passwords</h2>\n<p>Keep a list of the accounts connected to the site: domain registrar, hosting, analytics, e-mail, payment provider. They should be reachable by you, not only by the person who set them up.</p>\n<h2>Put it in writing</h2>\n<p>A short sentence in the quote or contract is enough: what is handed over, to whom each account belongs, and what happens if the cooperation ends. This is one of the questions in <a href='/en/blog/how-to-choose-a-web-developer'>how to choose a web developer</a>.</p>\n<p>If you want to talk through what this looks like for your project, <a href='/en/contact'>write to me</a>.</p>\n<h3>Sources</h3><ul><li><a href=\"https://unsplash.com/@schluesseldienstvergleich_eu?utm_source=omnicode&amp;utm_medium=referral\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Maria Ziegler / Unsplash</a></li></ul>"
+    },
+    {
       "slug": "prepare-products-for-eshop-import",
       "title": "How to prepare your products for an e-shop import",
       "seoTitle": "How to prepare your products for an e-shop import",
@@ -254,6 +290,42 @@
     }
   ],
   "sk": [
+    {
+      "slug": "move-eshop-to-new-platform",
+      "title": "Presun e-shopu na novú platformu bez straty objednávok a návštevnosti z vyhľadávania",
+      "seoTitle": "Presun e-shopu na novú platformu bez straty objednávok a návštevnosti z vyhľadávania",
+      "description": "Praktický plán presunu internetového obchodu: čo exportovať, ako zachovať funkčné adresy, čo otestovať pred prepnutím a čo urobiť v deň spustenia.",
+      "image": "/blog/move-eshop-to-new-platform.webp",
+      "hint": "moving an e-shop",
+      "date": "15. októbra 2026",
+      "isoDate": "2026-10-15",
+      "author": "Omnicode",
+      "content": "<p>Presun e-shopu na novú platformu je menej riskantný, keď sa naplánuje ako postupnosť malých krokov. Majitelia sa najviac boja straty objednávok a straty návštevníkov, ktorí e-shop už nachádzajú cez Google. Obom sa dá predísť.</p>\n<h2>1. Zoznam toho, čo máte</h2>\n<ul><li>Produkty, varianty, kategórie a fotografie.</li><li>Zákazníci a staré objednávky, ak chcete zachovať históriu.</li><li>Spôsoby dopravy a platby, zľavové kódy a nastavenie dane.</li><li>Prepojenia na iné systémy: účtovníctvo, sklad, prepravcovia, newsletter.</li><li>Adresy (URL) stránok e-shopu.</li></ul>\n<h2>2. Export a vyčistenie údajov</h2>\n<p>Väčšina platforiem vie exportovať produkty a zákazníkov do tabuľky. Využite to na odstránenie starých položiek a opravu názvov a cien ešte pred presunom. Ako pripraviť údaje o produktoch popisuje článok <a href='/sk/blog/prepare-products-for-eshop-import'>ako pripraviť produkty na import do e-shopu</a>.</p>\n<h2>3. Zachovajte funkčné adresy</h2>\n<p>Ak sa adresy produktov a kategórií zmenia, nastavte trvalé presmerovanie (301) zo starej adresy na novú. Bez neho návštevníci a vyhľadávače skončia na chybových stránkach a pozície, ktoré ste si vybudovali, môžu klesnúť. Zoznam starých adries si urobte ešte pred začiatkom.</p>\n<h2>4. Stavba a testovanie na samostatnej kópii</h2>\n<p>Pracujte na testovacej verzii, nie na ostrom e-shope. Zadajte skúšobné objednávky cez každý spôsob platby a doručenia, skontrolujte e-maily, ktoré zákazníci dostanú, a otvorte e-shop na telefóne.</p>\n<h2>5. Vyberte pokojný čas na prepnutie</h2>\n<p>Zvoľte deň a hodinu s menším počtom objednávok. Ak bude e-shop krátko nedostupný, dajte zákazníkom vedieť a hneď po prepnutí skontrolujte objednávky, platby a presmerovania.</p>\n<h2>6. Sledujte prvé týždne</h2>\n<p>Po spustení hľadajte chybové stránky v Google Search Console a doplňte chýbajúce presmerovania. Porovnajte počet objednávok s predchádzajúcimi týždňami, aby ste problémy zachytili včas.</p>\n<p>Ak by ste pri presune uvítali pomoc, pozrite si <a href='/sk/tvorba-eshopu'>tvorbu e-shopu</a> alebo <a href='/sk/contact'>mi opíšte svoj e-shop</a>. Ak sa najprv rozhodujete medzi platformami, prečítajte si <a href='/sk/blog/woocommerce-or-custom-eshop'>WooCommerce alebo e-shop na mieru</a>.</p>\n<h3>Zdroje</h3><ul><li><a href=\"https://unsplash.com/@dinaamazing?utm_source=omnicode&amp;utm_medium=referral\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Dina Badamshina / Unsplash</a></li></ul>"
+    },
+    {
+      "slug": "website-after-launch-what-to-expect",
+      "title": "Čo sa deje po spustení webu: aktualizácie, zálohy a zmeny",
+      "seoTitle": "Čo sa deje po spustení webu: aktualizácie, zálohy a zmeny",
+      "description": "Spustený web potrebuje starostlivosť. Čo znamená pravidelná údržba, na čo sa pýtať pri zálohách a aktualizáciách a ako sa zvyčajne riešia drobné zmeny.",
+      "image": "/blog/website-after-launch-what-to-expect.webp",
+      "hint": "after launch",
+      "date": "15. októbra 2026",
+      "isoDate": "2026-10-15",
+      "author": "Omnicode",
+      "content": "<p>Spustením webu práca nekončí. Softvér dostáva aktualizácie, obsah sa mení a občas sa niečo pokazí. Pomáha dohodnúť si ešte pred spustením, kto sa o čo stará.</p>\n<h2>Aktualizácie</h2>\n<p>Weby postavené na redakčnom systéme, ako je WordPress, závisia od aktualizácií systému a jeho pluginov. Vynechané aktualizácie patria medzi časté dôvody, prečo je web pomalý alebo zraniteľný. Opýtajte sa, kto ich inštaluje a ako často.</p>\n<h2>Zálohy</h2>\n<p>Záloha je kópia, ktorú viete obnoviť, ak sa niečo pokazí. Opýtajte sa, kde je uložená, ako často sa robí a či sa obnova niekedy vyskúšala. Záloha uložená na tom istom serveri ako web nepomôže, ak server zlyhá.</p>\n<h2>Sledovanie</h2>\n<p>Niekto by si mal všimnúť, že web nie je dostupný, že formulár prestal posielať správy alebo že sa blíži koniec platnosti certifikátu. Aj jednoduchá automatická kontrola je lepšia ako dozvedieť sa o probléme od zákazníka.</p>\n<h2>Drobné zmeny</h2>\n<ul><li>Ktoré zmeny viete urobiť sami, napríklad texty, fotografie a články?</li><li>Ktoré vyžadujú vývojára a ako sa účtujú: za hodinu alebo za úlohu?</li><li>Ako rýchlo môžete čakať odpoveď?</li></ul>\n<h2>Otázky pred spustením</h2>\n<ul><li>Kto zodpovedá za aktualizácie a zálohy?</li><li>Čo je v cene a čo sa účtuje zvlášť?</li><li>Koho kontaktujem, ak web prestane fungovať?</li></ul>\n<p>Tieto body dohodnem na začiatku projektu, aby koniec práce nebol prekvapením. Pozrite si <a href='/sk/tvorba-webov-bratislava'>tvorbu webov v Bratislave</a> alebo mi <a href='/sk/contact'>napíšte</a> s otázkami.</p>\n<h3>Zdroje</h3><ul><li><a href=\"https://unsplash.com/@barnimages?utm_source=omnicode&amp;utm_medium=referral\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Barn Images / Unsplash</a></li></ul>"
+    },
+    {
+      "slug": "who-owns-your-domain-hosting-and-code",
+      "title": "Komu patrí doména, hosting a kód webu?",
+      "seoTitle": "Komu patrí doména, hosting a kód webu?",
+      "description": "Tri veci by mali po projekte patriť vám: doména, hosting a kód. Ako to overiť pred podpisom a čo si vypýtať.",
+      "image": "/blog/who-owns-your-domain-hosting-and-code.webp",
+      "hint": "who owns your website",
+      "date": "15. októbra 2026",
+      "isoDate": "2026-10-15",
+      "author": "Omnicode",
+      "content": "<p>Častým prekvapením je, že sa objaví roky po vytvorení webu: doména je zaregistrovaná na agentúru, alebo sa web nedá presunúť, lebo nikto nemá súbory. Vlastníctvo sa dá ľahko vyriešiť na začiatku a ťažko opraviť neskôr.</p>\n<h2>Doména</h2>\n<p>Doména (napríklad vasafirma.sk) by mala byť zaregistrovaná na <strong>vaše</strong> meno a s <strong>vaším</strong> e-mailom ako kontaktom. Vývojár vám ju môže spravovať, ale držiteľom máte byť vy. Opýtajte sa na názov registrátora a záznam si overte sami.</p>\n<h2>Hostingový účet</h2>\n<p>Hosting je miesto, kde web beží. V ideálnom prípade je účet váš a vývojár má prístup na prácu. Ak je účet vývojára, opýtajte sa, čo sa stane s webom, ak sa rozídete, a ako sa dá presunúť.</p>\n<h2>Kód a obsah</h2>\n<ul><li>Dostanete pri odovzdaní zdrojový kód a kópiu obsahu?</li><li>Je niečo postavené na licencii, ktorú treba obnovovať, napríklad platná šablóna alebo plugin? Kto ju platí a kto je držiteľom?</li><li>Patria vám aj dizajnové súbory?</li></ul>\n<h2>Účty a heslá</h2>\n<p>Majte zoznam účtov napojených na web: registrátor domény, hosting, analytika, e-mail, poskytovateľ platieb. Mali by byť dostupné vám, nie len človeku, ktorý ich zriadil.</p>\n<h2>Dajte to písomne</h2>\n<p>Stačí krátka veta v ponuke alebo zmluve: čo sa odovzdáva, komu ktorý účet patrí a čo sa stane, ak spolupráca skončí. Je to jedna z otázok v článku <a href='/sk/blog/how-to-choose-a-web-developer'>ako vybrať dodávateľa webu</a>.</p>\n<p>Ak sa chcete porozprávať o tom, ako to vyzerá pri vašom projekte, <a href='/sk/contact'>napíšte mi</a>.</p>\n<h3>Zdroje</h3><ul><li><a href=\"https://unsplash.com/@schluesseldienstvergleich_eu?utm_source=omnicode&amp;utm_medium=referral\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Maria Ziegler / Unsplash</a></li></ul>"
+    },
     {
       "slug": "prepare-products-for-eshop-import",
       "title": "Ako pripraviť produkty na import do e-shopu",
