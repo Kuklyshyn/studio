@@ -4,6 +4,17 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
 
 const nextConfig: NextConfig = {
+  // One host only: www.omnicode.sk answered with the full site, so Google picked it as canonical for omnicode.sk/sk.
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.omnicode.sk' }],
+        destination: 'https://omnicode.sk/:path*',
+        permanent: true,
+      },
+    ];
+  },
   typescript: { ignoreBuildErrors: true },
   eslint: { ignoreDuringBuilds: true },
   images: {
