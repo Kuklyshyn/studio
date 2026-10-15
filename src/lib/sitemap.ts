@@ -4,7 +4,7 @@ import { portfolioProjects } from "@/app/[locale]/portfolio/projects";
 import { LOCALES } from "./site";
 import { absoluteUrl, languageAlternates, localizedPath, type Locale } from "./seo";
 
-const STATIC_PATHS = ["", "/about", "/services", "/custom-programming", "/web-development", "/eshop-development", "/booking-system", "/custom-crm", "/portfolio", "/blog", "/contact", "/privacy-policy", "/imprint"];
+const STATIC_PATHS = ["", "/about", "/services", "/custom-programming", "/web-development", "/eshop-development", "/booking-system", "/custom-crm", "/website-maintenance", "/portfolio", "/blog", "/contact", "/privacy-policy", "/imprint"];
 
 // Every page appears once per locale, and each entry lists its hreflang alternates.
 export function sitemapFor(locales: readonly Locale[] = LOCALES): MetadataRoute.Sitemap {

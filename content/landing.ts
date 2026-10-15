@@ -3,7 +3,7 @@
 
 export type Lang = "sk" | "en";
 
-export type LandingKey = "web-development" | "eshop-development" | "booking-system" | "custom-crm";
+export type LandingKey = "web-development" | "eshop-development" | "booking-system" | "custom-crm" | "website-maintenance";
 
 export type LandingContent = {
   metaTitle: string;
@@ -16,7 +16,7 @@ export type LandingContent = {
   navLabel: string;
 };
 
-export const landingKeys: LandingKey[] = ["web-development", "eshop-development", "booking-system", "custom-crm"];
+export const landingKeys: LandingKey[] = ["web-development", "eshop-development", "booking-system", "custom-crm", "website-maintenance"];
 
 export const landingPages: Record<LandingKey, Record<Lang, LandingContent>> = {
   "web-development": {
@@ -61,7 +61,7 @@ export const landingPages: Record<LandingKey, Record<Lang, LandingContent>> = {
         { q: "Môžem si texty na webe meniť sám?", a: "Áno. Web má systém na správu obsahu, v ktorom upravíte texty, obrázky aj ceny bez programátora." },
         { q: "Zabezpečíte aj dizajn a texty?", a: "Dizajn, texty, fotografie a videá dodáva klient. Ja web naprogramujem podľa týchto podkladov." },
         { q: "Bude web fungovať na mobile?", a: "Áno. Každý web je responzívny a testujem ho na mobile aj na počítači." },
-        { q: "Staráte sa o web aj po spustení?", a: "Po spustení ponúkam podporu a údržbu: aktualizácie, opravy a úpravy podľa dohody." },
+        { q: "Staráte sa o web aj po spustení?", a: "Áno. Správa a údržba webu stojí od 25 € mesačne bez DPH: hosting, aktualizácie, zálohy a drobné úpravy." },
         { q: "Robíte aj SEO a reklamu?", a: "V cene je technické SEO: štruktúra stránok, rýchlosť a mapa stránok. Priebežné SEO a správu reklamy neponúkam." },
       ],
       ctaTitle: "Máte projekt? Napíšte mi.",
@@ -107,7 +107,7 @@ export const landingPages: Record<LandingKey, Record<Lang, LandingContent>> = {
         { q: "Can I edit the texts on the site myself?", a: "Yes. The site has a content management system where you edit texts, images and prices without a programmer." },
         { q: "Do you also provide design and copy?", a: "Design, copy, photos and video are provided by the client. I build the site from those materials." },
         { q: "Will the site work on mobile?", a: "Yes. Every site is responsive and I test it on mobile and on desktop." },
-        { q: "Do you look after the site after launch?", a: "After launch I offer support and maintenance: updates, fixes and changes as agreed." },
+        { q: "Do you look after the site after launch?", a: "Yes. Website maintenance starts at €25 per month excl. VAT: hosting, updates, backups and small edits." },
         { q: "Do you also do SEO and advertising?", a: "Technical SEO is included: page structure, speed and a sitemap. I do not offer ongoing SEO or ad management." },
       ],
       ctaTitle: "Have a project? Write to me.",
@@ -396,6 +396,123 @@ export const landingPages: Record<LandingKey, Record<Lang, LandingContent>> = {
         { q: "Can I move data from a spreadsheet into the CRM?", a: "Yes. I can import existing contacts from a spreadsheet into the new system." },
       ],
       ctaTitle: "Want your clients in one place? Write to me.",
+    },
+  },
+
+  "website-maintenance": {
+    sk: {
+      navLabel: "Správa a údržba webu",
+      metaTitle: "Správa a údržba webu",
+      metaDescription: "Správa a údržba webu: hosting, SSL, aktualizácie, zálohy, sledovanie dostupnosti a drobné úpravy. Od 25 € mesačne bez DPH.",
+      h1: "Správa a údržba webu",
+      intro: "Spustený web potrebuje pravidelnú starostlivosť: aktualizácie, zálohy a občas zmenu textu alebo ceny. Postarám sa o technickú stránku za pevnú mesačnú sumu, aby ste ju nemuseli riešiť vy.",
+      sections: [
+        {
+          title: "Pre koho je správa webu",
+          paragraphs: [
+            "Správa webu je pre majiteľov firiem a živnostníkov, ktorí chcú, aby web fungoval, ale nechcú sa starať o hosting, aktualizácie ani zálohy. Starám sa o weby, ktoré som vytvoril, a po úvodnej kontrole aj o existujúce weby na Next.js alebo na WordPresse a WooCommerce.",
+          ],
+        },
+        {
+          title: "Základ: 25 € mesačne bez DPH",
+          bullets: [
+            "Hosting webu",
+            "SSL certifikát",
+            "Aktualizácie systému, knižníc a pluginov raz mesačne, kritické bezpečnostné opravy čo najskôr",
+            "Denné sledovanie dostupnosti",
+            "Pravidelné zálohy webu",
+            "Do 30 minút drobných úprav mesačne: texty, obrázky, ceny",
+            "Odpoveď do 2 pracovných dní",
+          ],
+        },
+        {
+          title: "Štandard: 45 € mesačne bez DPH",
+          bullets: [
+            "Všetko zo Základu",
+            "Do 2 hodín úprav mesačne",
+            "Odpoveď do 1 pracovného dňa",
+            "Krátky mesačný report: dostupnosť, rýchlosť a čo sa aktualizovalo",
+            "Prednostné riešenie, ak web prestane fungovať",
+          ],
+        },
+        {
+          title: "Čo v správe nie je",
+          paragraphs: [
+            "Správa sa týka technickej stránky webu. Neobsahuje priebežné SEO, správu reklamy ani písanie textov. Väčšie zmeny a nové funkcie, napríklad novú sekciu alebo napojenie na ďalší systém, nacením samostatne. E-mailové schránky nie sú súčasťou správy. Doména zostáva registrovaná na vaše meno; ak jej predĺženie spravujem za vás, fakturujem ho za cenu registrátora.",
+          ],
+        },
+        {
+          title: "Ako začať",
+          paragraphs: [
+            "Najprv web krátko skontrolujem: na čom beží, v akom stave sú aktualizácie a zálohy a kde sú prístupy. Potom správa začne od nasledujúceho mesiaca. Zrušiť ju môžete s mesačnou výpovednou lehotou. Presné podmienky potvrdím v ponuke.",
+          ],
+        },
+      ],
+      faq: [
+        { q: "Prevezmete aj web, ktorý robil niekto iný?", a: "Áno, ak beží na Next.js alebo na WordPresse a WooCommerce. Najprv ho krátko skontrolujem a potom vám poviem, či ho viem prevziať." },
+        { q: "Čo ak nevyužijem čas na úpravy?", a: "Nevyužitý čas sa do ďalšieho mesiaca neprenáša. Ak pravidelne potrebujete viac úprav, oplatí sa plán Štandard." },
+        { q: "Čo sa stane, ak správu zruším?", a: "Web, obsah aj doména zostávajú vám. Hosting beží na mojom účte, preto vám pri ukončení odovzdám súbory, zálohy a prístupy, aby sa web dal presunúť k inému poskytovateľovi." },
+        { q: "Je hosting v cene?", a: "Áno. Hosting a SSL certifikát sú v oboch plánoch. Doména zostáva na vaše meno a jej predĺženie fakturujem samostatne za cenu registrátora." },
+        { q: "Čo znamená sledovanie dostupnosti?", a: "Služba každý deň automaticky kontroluje, či sa web načíta. Keď prestane fungovať, dostanem upozornenie a pozriem sa na to. V pláne Štandard začnem výpadok riešiť prednostne." },
+      ],
+      ctaTitle: "Nechcete riešiť technickú stránku webu? Napíšte mi.",
+    },
+    en: {
+      navLabel: "Website maintenance",
+      metaTitle: "Website Maintenance",
+      metaDescription: "Website maintenance: hosting, SSL, updates, backups, availability monitoring and small edits. From €25 per month excl. VAT.",
+      h1: "Website maintenance",
+      intro: "A launched website needs regular care: updates, backups and now and then a change to a text or a price. I take care of the technical side for a fixed monthly fee, so you do not have to.",
+      sections: [
+        {
+          title: "Who website maintenance is for",
+          paragraphs: [
+            "Maintenance is for business owners and freelancers who want their site to work but do not want to deal with hosting, updates or backups. I look after sites I built and, after a first check, also existing sites on Next.js or on WordPress and WooCommerce.",
+          ],
+        },
+        {
+          title: "Basic: €25 per month excl. VAT",
+          bullets: [
+            "Hosting",
+            "SSL certificate",
+            "System, library and plugin updates once a month, critical security fixes as soon as possible",
+            "Daily availability monitoring",
+            "Regular backups",
+            "Up to 30 minutes of small edits per month: texts, images, prices",
+            "A reply within 2 working days",
+          ],
+        },
+        {
+          title: "Standard: €45 per month excl. VAT",
+          bullets: [
+            "Everything in Basic",
+            "Up to 2 hours of edits per month",
+            "A reply within 1 working day",
+            "A short monthly report: availability, speed and what was updated",
+            "Priority handling if the site goes down",
+          ],
+        },
+        {
+          title: "What maintenance does not include",
+          paragraphs: [
+            "Maintenance covers the technical side of the site. It does not include ongoing SEO, ad management or copywriting. Larger changes and new features, such as a new section or an integration with another system, are quoted separately. E-mail mailboxes are not part of maintenance. The domain stays registered in your name; if I handle its renewal for you, it is billed at cost.",
+          ],
+        },
+        {
+          title: "How to start",
+          paragraphs: [
+            "First I briefly check the site: what it runs on, the state of updates and backups, and where the access details are. The plan then starts from the next month. You can cancel it with one month's notice. I confirm the exact terms in the quote.",
+          ],
+        },
+      ],
+      faq: [
+        { q: "Can you take over a site someone else built?", a: "Yes, if it runs on Next.js or on WordPress and WooCommerce. I first check it briefly and then tell you whether I can take it over." },
+        { q: "What if I do not use the edit time?", a: "Unused time does not carry over to the next month. If you regularly need more edits, the Standard plan is the better fit." },
+        { q: "What happens if I cancel?", a: "The site, its content and the domain stay yours. Hosting runs on my account, so when we finish I hand over the files, backups and access details needed to move the site to another provider." },
+        { q: "Is hosting included?", a: "Yes. Hosting and the SSL certificate are included in both plans. The domain stays in your name and its renewal is billed separately at cost." },
+        { q: "What does availability monitoring mean?", a: "A service checks automatically every day that the site loads. If it stops working, I get an alert and look into it. On the Standard plan I handle the outage with priority." },
+      ],
+      ctaTitle: "Do not want to deal with the technical side? Write to me.",
     },
   },
 };

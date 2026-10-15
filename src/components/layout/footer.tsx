@@ -10,7 +10,7 @@ export function Footer() {
   const t = useTranslations("Footer");
   const tHeader = useTranslations("Header");
   const lang = useLocale() === "sk" ? "sk" : "en";
-  const landingHrefs = { "web-development": "/web-development", "eshop-development": "/eshop-development", "booking-system": "/booking-system", "custom-crm": "/custom-crm" } as const;
+  const landingHrefs = { "web-development": "/web-development", "eshop-development": "/eshop-development", "booking-system": "/booking-system", "custom-crm": "/custom-crm", "website-maintenance": "/website-maintenance" } as const;
 
   return (
     <footer className="border-t border-border/60 bg-card/60 pb-20 md:pb-0">

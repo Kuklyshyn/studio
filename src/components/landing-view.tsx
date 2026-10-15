@@ -9,7 +9,7 @@ import { Magnetic } from "@/components/magnetic";
 import { SpotlightCard } from "@/components/spotlight-card";
 import { Faq } from "@/components/faq";
 import { JsonLd } from "@/components/json-ld";
-import { SceneBlueprint, SceneCart, SceneCalendar, SceneNodes } from "@/components/scenes";
+import { SceneBlueprint, SceneCart, SceneCalendar, SceneNodes, SceneGauge } from "@/components/scenes";
 import { landingKeys, landingPages, type Lang, type LandingKey } from "../../content/landing";
 import { absoluteUrl, breadcrumbJsonLd, localizedPath, pageMetadata, serviceJsonLd, type Locale } from "@/lib/seo";
 
@@ -18,13 +18,15 @@ const scenes: Record<LandingKey, React.ReactNode> = {
   "eshop-development": <SceneCart className="aspect-[16/9]" />,
   "booking-system": <SceneCalendar className="aspect-[16/9]" />,
   "custom-crm": <SceneNodes className="aspect-[16/9]" />,
+  "website-maintenance": <SceneGauge className="aspect-[16/9]" />,
 };
 
-const internalPath: Record<LandingKey, "/web-development" | "/eshop-development" | "/booking-system" | "/custom-crm"> = {
+const internalPath: Record<LandingKey, "/web-development" | "/eshop-development" | "/booking-system" | "/custom-crm" | "/website-maintenance"> = {
   "web-development": "/web-development",
   "eshop-development": "/eshop-development",
   "booking-system": "/booking-system",
   "custom-crm": "/custom-crm",
+  "website-maintenance": "/website-maintenance",
 };
 
 export function landingMetadata(key: LandingKey, locale: string): Metadata {
@@ -98,7 +100,7 @@ export async function LandingView({ pageKey, locale }: { pageKey: LandingKey; lo
           <Reveal>
             <h2 className="mb-10 text-center font-headline text-3xl font-extrabold md:text-4xl tracking-[-0.03em]">{tFaq("related")}</h2>
           </Reveal>
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {related.map((key, index) => (
               <Reveal key={key} delay={index * 80} className="h-full">
                 <Link

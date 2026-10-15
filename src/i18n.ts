@@ -56,6 +56,10 @@ export const pathnames = {
     en: "/custom-crm-system",
     sk: "/crm-na-mieru",
   },
+  "/website-maintenance": {
+    en: "/website-maintenance",
+    sk: "/sprava-a-udrzba-webu",
+  },
   "/blog/[slug]": {
     en: "/blog/[slug]",
     sk: "/blog/[slug]",

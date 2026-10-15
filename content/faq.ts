@@ -7,7 +7,7 @@ export const homeFaq: Record<Lang, { q: string; a: string }[]> = {
     { q: "Ako dlho trvá tvorba webu?", a: "Orientačne od 4 týždňov pre web a od 8 týždňov pre e-shop. Termín závisí od rozsahu a od toho, ako rýchlo dodáte podklady." },
     { q: "Čo musím pripraviť?", a: "Dizajn alebo podklady, texty a fotografie. Pri úvodnom rozhovore spolu určíme, čo je potrebné a v akom poradí." },
     { q: "Aké technológie používate?", a: "Vue 3, Nuxt, React, TypeScript, WordPress a WooCommerce, Node.js, PHP, Laravel a Java. Konkrétnu voľbu odporučím podľa vášho projektu." },
-    { q: "Staráte sa o web aj po spustení?", a: "Po spustení ponúkam podporu a údržbu: aktualizácie, opravy a úpravy podľa dohody." },
+    { q: "Staráte sa o web aj po spustení?", a: "Áno. Správa a údržba webu stojí od 25 € mesačne bez DPH: hosting, aktualizácie, zálohy a drobné úpravy." },
     { q: "Pracujete aj mimo Bratislavy?", a: "Áno. Pracujem s klientmi na celom Slovensku. Komunikujeme online alebo osobne v Bratislave." },
   ],
   en: [
@@ -15,7 +15,7 @@ export const homeFaq: Record<Lang, { q: string; a: string }[]> = {
     { q: "How long does it take to build a website?", a: "Roughly from 4 weeks for a website and from 8 weeks for an e-shop. The timeline depends on the scope and on how quickly you provide materials." },
     { q: "What do I need to prepare?", a: "A design or materials, copy and photos. In the first conversation we decide together what is needed and in what order." },
     { q: "Which technologies do you use?", a: "Vue 3, Nuxt, React, TypeScript, WordPress and WooCommerce, Node.js, PHP, Laravel and Java. I recommend the exact choice for your project." },
-    { q: "Do you look after the site after launch?", a: "After launch I offer support and maintenance: updates, fixes and changes as agreed." },
+    { q: "Do you look after the site after launch?", a: "Yes. Website maintenance starts at €25 per month excl. VAT: hosting, updates, backups and small edits." },
     { q: "Do you work outside Bratislava?", a: "Yes. I work with clients across Slovakia. We communicate online or in person in Bratislava." },
   ],
 };
