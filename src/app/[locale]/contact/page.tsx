@@ -99,7 +99,7 @@ export default function ContactPage() {
                     placeholder={t("namePlaceholder")}
                     required
                     autoComplete="name"
-                    className="bg-secondary/50 border-border/50"
+                    className="bg-secondary/50"
                   />
                 </div>
                 <div className="space-y-2">
@@ -110,7 +110,7 @@ export default function ContactPage() {
                     placeholder={t("contactPlaceholder")}
                     required
                     autoComplete="email"
-                    className="bg-secondary/50 border-border/50"
+                    className="bg-secondary/50"
                   />
                 </div>
                 <div className="space-y-2">
@@ -121,7 +121,7 @@ export default function ContactPage() {
                     placeholder={t("needPlaceholder")}
                     rows={5}
                     required
-                    className="bg-secondary/50 border-border/50"
+                    className="bg-secondary/50"
                   />
                 </div>
                 <div className="space-y-2">

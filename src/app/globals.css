@@ -21,7 +21,7 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 150 14% 94%;
     --border: 194 18% 13%;
-    --input: 194 18% 13%;
+    --input: 194 10% 38%;
     --ring: 160 87% 56%;
     --radius: 1rem;
   }
@@ -44,7 +44,7 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 150 14% 94%;
     --border: 194 18% 13%;
-    --input: 194 18% 13%;
+    --input: 194 10% 38%;
     --ring: 160 87% 56%;
     --radius: 1rem;
   }

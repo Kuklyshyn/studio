@@ -122,7 +122,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <div className="border-y border-border/50 py-6">
           <ScrollMarquee className="items-center gap-10" speed={0.6}>
             {[...bandWords, ...bandWords].map((word: string, i: number) => (
-              <li key={`${word}-${i}`} aria-hidden={i >= bandWords.length} className="flex items-center gap-10 whitespace-nowrap font-headline text-3xl font-extrabold tracking-tight text-foreground/30 md:text-5xl">
+              <li key={`${word}-${i}`} aria-hidden={i >= bandWords.length} className="flex items-center gap-10 whitespace-nowrap font-headline text-3xl font-extrabold tracking-tight text-foreground/40 md:text-5xl">
                 <span className={i % 3 === 1 ? "text-transparent [-webkit-text-stroke:1.5px_hsl(var(--primary))]" : ""}>{word}</span>
                 <span className="text-primary">✦</span>
               </li>
