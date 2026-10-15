@@ -4,6 +4,7 @@ export type PricingPlan = {
   includes: { en: string[]; sk: string[] };
   excludes: { en: string[]; sk: string[] };
   timeline: { en: string; sk: string } | null;
+  link?: { href: "/website-maintenance"; label: { en: string; sk: string } };
 };
 
 // Starting prices, excluding VAT. Change amounts here, not in components.
@@ -43,5 +44,20 @@ export const pricingPlans: PricingPlan[] = [
     },
     excludes: notIncluded,
     timeline: { en: "from 8 weeks", sk: "od 8 týždňov" },
+  },
+  {
+    // Monthly plans; details on the website-maintenance landing page in content/landing.ts.
+    name: { en: "Maintenance", sk: "Správa webu" },
+    from: { en: "25 € per month excl. VAT", sk: "25 € mesačne bez DPH" },
+    includes: {
+      en: ["Hosting and SSL certificate", "Updates and backups", "Availability monitoring", "30 minutes of small edits per month", "Standard plan: 45 € per month, 2 hours of edits"],
+      sk: ["Hosting a SSL certifikát", "Aktualizácie a zálohy", "Sledovanie dostupnosti", "30 minút drobných úprav mesačne", "Plán Štandard: 45 € mesačne, 2 hodiny úprav"],
+    },
+    excludes: {
+      en: ["Ongoing SEO, ads and copywriting", "Larger changes and new features (quoted separately)"],
+      sk: ["Priebežné SEO, reklama a texty", "Väčšie zmeny a nové funkcie (nacením samostatne)"],
+    },
+    timeline: null,
+    link: { href: "/website-maintenance", label: { en: "Maintenance plans in detail", sk: "Podrobnosti o správe webu" } },
   },
 ];

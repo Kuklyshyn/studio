@@ -1,5 +1,6 @@
-import { Check, Minus } from "lucide-react";
+import { ArrowRight, Check, Minus } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n";
 import { SpotlightCard } from "@/components/spotlight-card";
 import { pricingPlans } from "../../content/pricing";
 
@@ -18,7 +19,7 @@ export async function PricingPlans({ locale }: { locale: string }) {
           <h2 className="font-headline text-4xl font-extrabold leading-[1.02] tracking-[-0.03em] md:text-5xl">{t("title")}</h2>
           <p className="mt-5 text-lg text-muted-foreground">{t("subtitle")}</p>
         </div>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
           {pricingPlans.map((plan, planIndex) => {
             const featured = planIndex === 1;
             const sub = featured ? "text-primary-foreground/70" : "text-muted-foreground";
@@ -63,6 +64,16 @@ export async function PricingPlans({ locale }: { locale: string }) {
                       </li>
                     ))}
                   </ul>
+                )}
+
+                {plan.link && (
+                  <Link
+                    href={plan.link.href}
+                    className={`group mt-auto inline-flex items-center gap-2 pt-7 text-sm font-semibold ${featured ? "" : "text-primary"}`}
+                  >
+                    {plan.link.label[lang]}
+                    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </Link>
                 )}
               </SpotlightCard>
             );

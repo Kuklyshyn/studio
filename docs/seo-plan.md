@@ -31,7 +31,7 @@
 | Správa a údržba webu (`/sk/sprava-a-udrzba-webu`, `/en/website-maintenance`) | správa webu, údržba webu, údržba web stránky cena |
 | Články блогу | koľko stojí web, čo pripraviť pred tvorbou webu, rýchlosť webu, ako vybrať dodávateľa webu |
 
-Правило: тексти тільки про те, що ми справді робимо. Ціни й терміни збігаються з `content/pricing.ts`; місячні тарифи підтримки (25 € і 45 € без DPH) не входять у `pricing.ts`; при зміні ціни онови всі місця: сторінку `website-maintenance` і FAQ `web-development` у `content/landing.ts`, `content/faq.ts`, пост `website-after-launch-what-to-expect` у `content/blog/seo-2026-10-migration-ownership-care.json` (потім `npm run blog:build`). Не обіцяємо SEO-просування, рекламу й маркетинг.
+Правило: тексти тільки про те, що ми справді робимо. Ціни й терміни збігаються з `content/pricing.ts`; місячні тарифи підтримки (25 € і 45 € без DPH) є картою «Správa webu» в `pricing.ts`; при зміні ціни онови всі місця: `pricing.ts`, сторінку `website-maintenance` і FAQ `web-development` у `content/landing.ts`, `content/faq.ts`, пост `website-after-launch-what-to-expect` у `content/blog/seo-2026-10-migration-ownership-care.json` (потім `npm run blog:build`). Не обіцяємо SEO-просування, рекламу й маркетинг.
 
 ## 3. Ритм контенту (далі)
 
