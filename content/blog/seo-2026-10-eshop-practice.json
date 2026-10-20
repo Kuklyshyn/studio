@@ -1,0 +1,310 @@
+{
+  "date": "2026-10-20",
+  "author": "Omnicode",
+  "posts": [
+    {
+      "slug": "choose-payment-methods-for-eshop",
+      "cover": {
+        "icon": "CreditCard",
+        "label": "Payment methods",
+        "photo": true
+      },
+      "en": {
+        "title": "How to choose payment methods for your e-shop",
+        "description": "Card, bank transfer, cash on delivery or a digital wallet? How to pick payment methods for a small e-shop and which questions to ask a payment provider.",
+        "content": [
+          "<p>A customer decides quickly whether an order feels safe and familiar, and the payment methods you offer are a big part of that impression. You do not need every option. You need the few that fit your customers and that you can run without extra work. Here is how I think it through.</p>",
+          "<h2>The common options</h2>",
+          "<ul><li><strong>Card payment.</strong> The default for most online shops. The customer pays straight away and you see the order as paid.</li><li><strong>Bank transfer.</strong> Familiar and simple, but the customer has to pay separately after ordering, so some orders stay unpaid and someone has to track them.</li><li><strong>Cash on delivery.</strong> Some customers still prefer to pay when the parcel arrives. It can help a first-time buyer trust you, but it may come with an extra fee, and a parcel that is not collected costs you the shipping.</li><li><strong>Digital wallets.</strong> Paying with a phone is quick because the card details are already stored there. Whether you can offer it depends on your payment provider.</li></ul>",
+          "<h2>Questions to ask a payment provider</h2>",
+          "<ul><li>What are the fees, and are they charged per transaction, monthly, or both?</li><li>When does the money reach my bank account, and how often are payouts made?</li><li>How are refunds handled, and is there a fee for a refund?</li><li>What happens when a customer disputes a payment with their bank?</li><li>Which e-shop platforms does it connect to, and is that connection actively maintained?</li><li>What is needed to open an account, and how long does approval take?</li></ul>",
+          "<p>Keep the answers in writing and compare the total cost, not only the headline rate.</p>",
+          "<h2>Think about the whole flow</h2>",
+          "<p>Payment is not just the button on the last step. Decide what happens when a payment fails or the customer closes the window: does the order stay open, and does the customer get an email with a link to pay again? With bank transfer, who marks the order as paid? Where do you issue refunds? These small details create most of the daily work after launch. It also helps if payments match what your accountant needs to see.</p>",
+          "<h2>Start small</h2>",
+          "<p>Two or three methods are usually enough at the start: a card payment and one alternative that your customers expect. Add more when you see what people ask for. Show the accepted methods clearly on the product page and in the cart, so nobody is surprised at the end. If customers abandon the order at this stage, read <a href='/en/blog/why-customers-leave-the-checkout'>why customers leave the checkout</a>.</p>",
+          "<p>If you want to talk through which methods fit your shop, <a href='/en/contact'>write to me</a>. Connecting payments is part of <a href='/en/eshop-development'>e-shop development</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Ako vybrať spôsoby platby pre e-shop",
+        "description": "Karta, prevod, dobierka alebo digitálna peňaženka? Ako vybrať spôsoby platby pre malý e-shop a na čo sa opýtať poskytovateľa platobných služieb.",
+        "content": [
+          "<p>Zákazník sa rýchlo rozhodne, či mu objednávka pripadá bezpečná a známa, a spôsoby platby sú veľkou súčasťou tohto dojmu. Nepotrebujete ponúkať všetko. Stačí zopár možností, ktoré sedia vašim zákazníkom a ktoré zvládnete prevádzkovať bez zbytočnej práce. Takto o tom premýšľam.</p>",
+          "<h2>Bežné možnosti</h2>",
+          "<ul><li><strong>Platba kartou.</strong> Štandard väčšiny e-shopov. Zákazník zaplatí hneď a objednávka sa u vás zobrazí ako uhradená.</li><li><strong>Bankový prevod.</strong> Známy a jednoduchý, ale zákazník musí po objednávke zaplatiť zvlášť, takže niektoré objednávky zostanú neuhradené a niekto ich musí sledovať.</li><li><strong>Dobierka.</strong> Niektorí zákazníci stále radšej platia až pri prevzatí balíka. Pri prvom nákupe to môže pomôcť získať dôveru, no môže byť spojená s príplatkom a nevyzdvihnutý balík vás stojí prepravu.</li><li><strong>Digitálne peňaženky.</strong> Platba mobilom je rýchla, lebo údaje o karte sú tam už uložené. Či ju môžete ponúknuť, závisí od vášho poskytovateľa platieb.</li></ul>",
+          "<h2>Na čo sa opýtať poskytovateľa platieb</h2>",
+          "<ul><li>Aké sú poplatky a účtujú sa za každú transakciu, mesačne, alebo oboje?</li><li>Kedy a ako často pošlú peniaze na môj účet?</li><li>Ako sa riešia vrátenia platieb a platí sa za ne poplatok?</li><li>Čo sa stane, keď zákazník platbu spochybní u svojej banky?</li><li>S akými platformami e-shopov sa prepája a je to prepojenie aktívne udržiavané?</li><li>Čo treba na založenie účtu a ako dlho trvá schválenie?</li></ul>",
+          "<p>Odpovede si nechajte písomne a porovnávajte celkové náklady, nielen úvodnú sadzbu.</p>",
+          "<h2>Myslite na celý priebeh</h2>",
+          "<p>Platba nie je len tlačidlo v poslednom kroku. Rozhodnite, čo sa stane, keď platba zlyhá alebo zákazník zavrie okno: zostane objednávka otvorená a dostane zákazník e-mail s odkazom na opakovanú platbu? Kto pri bankovom prevode označí objednávku za uhradenú? Odkiaľ budete vracať peniaze? Práve tieto drobnosti spôsobujú po spustení najviac každodennej práce. Pomáha aj to, keď platby zodpovedajú tomu, čo potrebuje vidieť váš účtovník.</p>",
+          "<h2>Začnite s menším výberom</h2>",
+          "<p>Na začiatok zvyčajne stačia dva-tri spôsoby: platba kartou a jedna alternatíva, ktorú vaši zákazníci očakávajú. Ďalšie pridáte, keď uvidíte, na čo sa pýtajú. Prijímané spôsoby ukážte zreteľne na stránke produktu aj v košíku, aby nikoho na konci nič neprekvapilo. Ak zákazníci odchádzajú práve v tomto kroku, prečítajte si <a href='/sk/blog/why-customers-leave-the-checkout'>prečo zákazníci opúšťajú objednávku</a>.</p>",
+          "<p>Ak sa chcete porozprávať o tom, ktoré spôsoby sedia vášmu e-shopu, <a href='/sk/contact'>napíšte mi</a>. Prepojenie platieb je súčasťou <a href='/sk/tvorba-eshopu'>tvorby e-shopu</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Jonas Leupe / Unsplash",
+          "url": "https://unsplash.com/@jonasleupe?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "eshop-delivery-options-for-customers",
+      "cover": {
+        "icon": "Truck",
+        "label": "Delivery options",
+        "photo": true
+      },
+      "en": {
+        "title": "Delivery options for an e-shop: what customers expect",
+        "description": "Courier, pickup points or collection in person? How to choose delivery options, set shipping prices and a free-delivery threshold, and set customer expectations.",
+        "content": [
+          "<p>Delivery is one of the first things a customer checks, often before reading the product description. When the options and prices are clear, the order is easier to complete. Here are the choices I would go through for a small shop.</p>",
+          "<h2>The main options</h2>",
+          "<ul><li><strong>Courier to the door.</strong> Convenient for the customer, but someone has to be at the address or arrange for a neighbour. It is often the most expensive option.</li><li><strong>Pickup points and parcel lockers.</strong> Many customers like to collect a parcel when it suits them. Let them choose the pickup point inside the checkout, so they do not have to look up an address elsewhere.</li><li><strong>Collection in person.</strong> Useful if you have a shop, a warehouse or an office. Give the address and opening hours, and say when the order will be ready.</li></ul>",
+          "<p>What you can offer also depends on what you sell. Bulky or fragile goods may only suit a courier.</p>",
+          "<h2>Shipping price and free delivery</h2>",
+          "<p>Show the price before the last step. A shipping fee that appears only at the end is one of the most common reasons people give up. Two usual approaches are a flat price per delivery method, or a price based on weight or size.</p>",
+          "<p>Free delivery above a certain order value is popular because it encourages a larger basket, but only if your margin allows it. Work it out with your own numbers: the typical order value, the margin on your products and what the carrier charges you. Then show in the cart how much is missing for free delivery, so the customer sees the benefit while deciding.</p>",
+          "<h2>Set the right expectations</h2>",
+          "<ul><li>State the delivery time for each method, and say from when it counts: from the order or from the dispatch.</li><li>If you dispatch only on certain days, say so.</li><li>If an item is not in stock, tell the customer how long it will take before they pay.</li><li>Send an email when the parcel is dispatched, with a tracking link if the carrier provides one.</li><li>Explain what happens if nobody is at home and who to contact if the parcel is damaged.</li></ul>",
+          "<h2>Keep it manageable</h2>",
+          "<p>Offer only what you can really handle. Every method means labels, packaging, an agreement with a carrier and cases to resolve. Two or three options are a good start, and you can add more when customers ask. If you plan to connect the shop to a carrier's system, it is worth checking early whether the carrier offers such a connection.</p>",
+          "<p>The same information belongs on a clear delivery page, which I describe in <a href='/en/blog/returns-and-terms-page-for-eshop'>returns and terms pages for an e-shop</a>. If you would like help setting delivery up in your shop, <a href='/en/contact'>write to me</a> or see <a href='/en/eshop-development'>e-shop development</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Doprava v e-shope: čo zákazníci očakávajú",
+        "description": "Kuriér, odberné miesta alebo osobný odber? Ako vybrať spôsoby dopravy, nastaviť cenu dopravy a hranicu dopravy zadarmo a zladiť očakávania zákazníkov.",
+        "content": [
+          "<p>Doprava patrí k prvým veciam, ktoré zákazník kontroluje, často ešte pred čítaním popisu produktu. Keď sú možnosti a ceny jasné, objednávka sa dokončí ľahšie. Toto sú voľby, ktoré by som pri malom e-shope prešiel.</p>",
+          "<h2>Hlavné možnosti</h2>",
+          "<ul><li><strong>Kuriér až domov.</strong> Pohodlné pre zákazníka, ale niekto musí byť na adrese alebo zariadiť, aby balík prevzal sused. Často ide o najdrahšiu možnosť.</li><li><strong>Odberné miesta a balíkomaty.</strong> Mnohí zákazníci radi vyzdvihnú balík vtedy, keď im to vyhovuje. Odberné miesto nechajte vybrať priamo v objednávke, aby ho nemuseli hľadať inde.</li><li><strong>Osobný odber.</strong> Hodí sa, ak máte predajňu, sklad alebo kanceláriu. Uveďte adresu a otváracie hodiny a povedzte, kedy bude objednávka pripravená.</li></ul>",
+          "<p>To, čo môžete ponúknuť, závisí aj od toho, čo predávate. Objemný alebo krehký tovar môže vyhovovať len kuriérovi.</p>",
+          "<h2>Cena dopravy a doprava zadarmo</h2>",
+          "<p>Cenu ukážte pred posledným krokom. Poplatok za dopravu, ktorý sa objaví až na konci, je jedným z najčastejších dôvodov, prečo ľudia objednávku vzdajú. Bežné sú dva prístupy: jednotná cena za spôsob dopravy, alebo cena podľa hmotnosti či veľkosti.</p>",
+          "<p>Doprava zadarmo od určitej sumy je obľúbená, lebo láka k väčšiemu košíku, no len ak to dovolí vaša marža. Vypočítajte si to s vlastnými číslami: typická hodnota objednávky, marža na produktoch a to, čo vám účtuje prepravca. Potom v košíku ukážte, koľko chýba do dopravy zadarmo, aby zákazník videl výhodu práve pri rozhodovaní.</p>",
+          "<h2>Nastavte správne očakávania</h2>",
+          "<ul><li>Pri každom spôsobe uveďte dodaciu lehotu a povedzte, odkedy sa počíta: od objednávky alebo od odoslania.</li><li>Ak odosielate len v určité dni, napíšte to.</li><li>Ak položka nie je skladom, povedzte zákazníkovi ešte pred platbou, ako dlho bude čakať.</li><li>Pri odoslaní balíka pošlite e-mail a, ak prepravca ponúka sledovanie zásielky, pridajte odkaz na sledovanie.</li><li>Vysvetlite, čo sa stane, keď nikto nie je doma, a na koho sa obrátiť pri poškodenom balíku.</li></ul>",
+          "<h2>Nech je to zvládnuteľné</h2>",
+          "<p>Ponúkajte len to, čo naozaj zvládnete. Každý spôsob znamená štítky, balenie, dohodu s prepravcom a prípady na riešenie. Dve-tri možnosti sú dobrý začiatok a ďalšie pridáte, keď sa zákazníci opýtajú. Ak plánujete e-shop prepojiť so systémom prepravcu, oplatí sa včas zistiť, či takéto prepojenie ponúka.</p>",
+          "<p>Rovnaké informácie patria aj na prehľadnú stránku o doprave, o ktorej píšem v článku <a href='/sk/blog/returns-and-terms-page-for-eshop'>stránky s podmienkami a vrátením tovaru v e-shope</a>. Ak chcete pomôcť s nastavením dopravy vo vašom e-shope, <a href='/sk/contact'>napíšte mi</a> alebo si pozrite <a href='/sk/tvorba-eshopu'>tvorbu e-shopu</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Rowan Freeman / Unsplash",
+          "url": "https://unsplash.com/@rowanfreeman?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "product-page-checklist-eshop",
+      "cover": {
+        "icon": "PackageSearch",
+        "label": "Product page checklist",
+        "photo": true
+      },
+      "en": {
+        "title": "Product page checklist for an e-shop",
+        "description": "What a product page needs so a visitor can decide: name, photos, price, availability, variants, delivery, returns, reviews and speed. A practical checklist.",
+        "content": [
+          "<p>The product page is where the decision happens. A visitor arrives, often from a search, and wants quick answers: what is it, how much is it, can I get it, and what if it is not right? This is the checklist I use when I build or review a product page.</p>",
+          "<h2>The essentials</h2>",
+          "<ul><li><strong>Name.</strong> Clear and specific. Include what a customer would type into a search: the type of product, the brand, and a key attribute such as size, colour or model. An internal code alone says nothing.</li><li><strong>Photos.</strong> Several images from different angles, and one that shows the scale or the product in use. Photos should match what is delivered. Compress them so the page stays fast.</li><li><strong>Price.</strong> Visible next to the buy button, with a note on whether VAT is included. If you show a sale price, make sure the original price is a real one.</li><li><strong>Availability.</strong> In stock, or how long it takes if not. Do not offer an add-to-cart button for something you cannot sell.</li><li><strong>Variants.</strong> Size and colour chosen on the same page. Unavailable choices are marked clearly, and the photo changes with the colour.</li><li><strong>Description.</strong> The short answer first, details after: materials, dimensions, what is in the box. Use lists for specifications.</li></ul>",
+          "<h2>What removes doubt</h2>",
+          "<ul><li><strong>Delivery.</strong> The cost and time near the buy button, or a clear link to the delivery page. See <a href='/en/blog/eshop-delivery-options-for-customers'>delivery options for an e-shop</a>.</li><li><strong>Returns.</strong> One plain sentence and a link to the full terms. More in <a href='/en/blog/returns-and-terms-page-for-eshop'>returns and terms pages</a>.</li><li><strong>Payment methods.</strong> Show the accepted ones, so the customer knows before the cart.</li><li><strong>Contact.</strong> A visible email or phone number for questions.</li><li><strong>Reviews.</strong> Show them if you have real ones. With none, it is better to show nothing than to invent them.</li></ul>",
+          "<h2>The technical side</h2>",
+          "<ul><li>The page loads quickly on a phone. Oversized images are the usual cause of slow pages, as I explain in <a href='/en/blog/website-speed-what-slows-it-down'>what slows a website down</a>.</li><li>The buy button is visible on a phone without long scrolling.</li><li>Each product has its own address and its own page title, so it can be found and shared.</li><li>Related products appear only where they genuinely help.</li></ul>",
+          "<h2>How to use the list</h2>",
+          "<p>Take three of your best-selling products and go through them one by one, ideally on your own phone. Gaps are easy to spot when you look at the page as a customer. I build the structure of the page and make sure it works well; the photos and the product texts come from you.</p>",
+          "<p>If you plan a new shop or want to improve an existing one, <a href='/en/contact'>write to me</a> or read about <a href='/en/eshop-development'>e-shop development</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Zoznam kontrol pre kartu produktu v e-shope",
+        "description": "Čo potrebuje stránka produktu, aby sa návštevník vedel rozhodnúť: názov, fotky, cena, dostupnosť, varianty, doprava, vrátenie, recenzie a rýchlosť.",
+        "content": [
+          "<p>Stránka produktu je miesto, kde sa rozhoduje. Návštevník na ňu často príde z vyhľadávania a chce rýchle odpovede: čo to je, koľko to stojí, dostanem to a čo ak to nebude to pravé? Tento zoznam používam, keď produktovú stránku tvorím alebo kontrolujem.</p>",
+          "<h2>To najdôležitejšie</h2>",
+          "<ul><li><strong>Názov.</strong> Jasný a konkrétny. Uveďte to, čo by zákazník napísal do vyhľadávania: druh produktu, značku a kľúčovú vlastnosť, napríklad veľkosť, farbu alebo model. Samotný interný kód nepovie nič.</li><li><strong>Fotografie.</strong> Viac záberov z rôznych strán a jeden, ktorý ukáže mierku alebo produkt pri používaní. Fotky majú zodpovedať tomu, čo príde. Zmenšite ich, aby stránka zostala rýchla.</li><li><strong>Cena.</strong> Viditeľná vedľa tlačidla na nákup, s údajom, či je s DPH. Ak ukazujete zľavnenú cenu, uistite sa, že pôvodná cena je skutočná.</li><li><strong>Dostupnosť.</strong> Skladom, alebo ako dlho to trvá, ak nie. Neponúkajte tlačidlo do košíka pri tovare, ktorý predať neviete.</li><li><strong>Varianty.</strong> Veľkosť a farba sa vyberajú na tej istej stránke. Nedostupné voľby sú zreteľne označené a fotka sa mení podľa farby.</li><li><strong>Popis.</strong> Najprv stručná odpoveď, potom detaily: materiál, rozmery, obsah balenia. Parametre uveďte v zozname.</li></ul>",
+          "<h2>Čo odstraňuje pochybnosti</h2>",
+          "<ul><li><strong>Doprava.</strong> Cena a čas pri tlačidle na nákup, alebo jasný odkaz na stránku o doprave. Pozrite si <a href='/sk/blog/eshop-delivery-options-for-customers'>dopravu v e-shope</a>.</li><li><strong>Vrátenie tovaru.</strong> Jedna jasná veta a odkaz na úplné podmienky. Viac v článku <a href='/sk/blog/returns-and-terms-page-for-eshop'>stránky s podmienkami a vrátením tovaru</a>.</li><li><strong>Spôsoby platby.</strong> Ukážte prijímané, aby zákazník vedel ešte pred košíkom.</li><li><strong>Kontakt.</strong> Viditeľný e-mail alebo telefón pre otázky.</li><li><strong>Recenzie.</strong> Zobrazte ich, ak máte skutočné. Ak žiadne nemáte, radšej nezobrazujte nič, než aby ste ich vymýšľali.</li></ul>",
+          "<h2>Technická stránka</h2>",
+          "<ul><li>Stránka sa na telefóne načíta rýchlo. Najčastejšou príčinou pomalých stránok sú predimenzované obrázky, ako vysvetľujem v článku <a href='/sk/blog/website-speed-what-slows-it-down'>rýchlosť webu a čo ju spomaľuje</a>.</li><li>Tlačidlo na nákup je na telefóne viditeľné bez dlhého rolovania.</li><li>Každý produkt má vlastnú adresu a vlastný titulok stránky, aby sa dal nájsť a zdieľať.</li><li>Súvisiace produkty sa zobrazujú len tam, kde naozaj pomáhajú.</li></ul>",
+          "<h2>Ako zoznam využiť</h2>",
+          "<p>Vezmite tri svoje najpredávanejšie produkty a prejdite ich jeden po druhom, ideálne na vlastnom telefóne. Medzery sú dobre vidieť, keď sa na stránku pozriete očami zákazníka. Ja stavám štruktúru stránky a dbám na to, aby fungovala dobre; fotky a texty k produktom dodáte vy.</p>",
+          "<p>Ak plánujete nový e-shop alebo chcete zlepšiť existujúci, <a href='/sk/contact'>napíšte mi</a> alebo si prečítajte o <a href='/sk/tvorba-eshopu'>tvorbe e-shopu</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Emily Finch / Unsplash",
+          "url": "https://unsplash.com/@emilydafinchy?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "why-customers-leave-the-checkout",
+      "cover": {
+        "icon": "ShoppingCart",
+        "label": "Checkout problems",
+        "photo": true
+      },
+      "en": {
+        "title": "Why customers leave the checkout and what to do about it",
+        "description": "Unexpected costs, forced registration, long forms, missing payment options and slow pages are common reasons for abandoned orders. Practical fixes for each.",
+        "content": [
+          "<p>A customer who has put something in the cart wanted to buy it. If they leave, something in the checkout got in the way. I cannot tell you the exact reason for your shop without looking at it, but the same causes come up again and again. Here they are, with what to do about each.</p>",
+          "<h2>Costs that appear too late</h2>",
+          "<p>Nobody likes a surprise at the last step. A shipping fee, a payment fee or a tax that shows up only at the end feels like a trick, even if it was never hidden on purpose.</p>",
+          "<ul><li>Show the delivery cost early, in the cart or even on the product page.</li><li>Show the total clearly, with everything included.</li><li>If delivery is free above a certain amount, show how much is missing.</li></ul>",
+          "<h2>Forced registration and long forms</h2>",
+          "<ul><li>Let people order without creating an account. Offer to create one after the order is placed.</li><li>Ask only for what you need to deliver and invoice. Every extra field is a reason to stop.</li><li>Use clear labels, and show errors next to the field in plain words. Keep what the customer already typed when there is an error.</li><li>Test the form on a phone. The right keyboard for an email or a phone number makes a real difference.</li></ul>",
+          "<h2>Missing options and lost trust</h2>",
+          "<p>If the customer does not see their usual way to pay or receive the parcel, they may simply leave. Think about which methods your customers expect, as I describe in <a href='/en/blog/choose-payment-methods-for-eshop'>choosing payment methods</a> and <a href='/en/blog/eshop-delivery-options-for-customers'>delivery options</a>.</p>",
+          "<p>Trust matters too. Make sure your contact details, terms and returns information are easy to find, and that the whole shop runs on a secure connection (HTTPS).</p>",
+          "<h2>Slow or broken steps</h2>",
+          "<p>A checkout that hangs, jumps or shows an unclear error loses people quickly, and phones are the most fragile place. Check how fast each step loads (see <a href='/en/blog/website-speed-what-slows-it-down'>what slows a website down</a>) and make sure buttons and fields work properly on a small screen.</p>",
+          "<h2>How to find your own cause</h2>",
+          "<ul><li>Place a test order yourself on a phone and note every moment of hesitation.</li><li>Ask a friend who does not know the shop to do the same, and watch quietly.</li><li>Look at the questions customers send you by email or phone before ordering. They point to missing information.</li><li>If you have analytics set up, check which step people leave at.</li></ul>",
+          "<p>Fix one thing at a time, so you know what helped. If you want a second pair of eyes on your checkout, <a href='/en/contact'>write to me</a>. More about my work is on the <a href='/en/eshop-development'>e-shop development page</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Prečo zákazníci opúšťajú objednávku a čo s tým",
+        "description": "Nečakané náklady, povinná registrácia, dlhý formulár, chýbajúce spôsoby platby a pomalé stránky sú časté dôvody nedokončených objednávok. Ako ich riešiť.",
+        "content": [
+          "<p>Zákazník, ktorý si dal tovar do košíka, ho chcel kúpiť. Ak odíde, niečo mu v objednávke prekážalo. Presný dôvod vo vašom e-shope vám bez pohľadu naň nepoviem, ale rovnaké príčiny sa opakujú stále dokola. Tu sú, vždy aj s tým, čo s nimi.</p>",
+          "<h2>Náklady, ktoré sa objavia neskoro</h2>",
+          "<p>Nikto nemá rád prekvapenie v poslednom kroku. Poplatok za dopravu, za platbu alebo daň, ktoré sa ukážu až na konci, pôsobia ako trik, aj keď sa nikdy neskrývali zámerne.</p>",
+          "<ul><li>Cenu dopravy ukážte včas, v košíku alebo už na stránke produktu.</li><li>Celkovú sumu zobrazte jasne a so všetkým započítaným.</li><li>Ak je doprava zadarmo od určitej sumy, ukážte, koľko do nej chýba.</li></ul>",
+          "<h2>Povinná registrácia a dlhé formuláre</h2>",
+          "<ul><li>Nechajte ľudí objednať bez vytvárania účtu. Účet ponúknite až po odoslaní objednávky.</li><li>Pýtajte len to, čo potrebujete na doručenie a fakturáciu. Každé zbytočné políčko je dôvod prestať.</li><li>Používajte zrozumiteľné štítky a chyby ukazujte pri políčku jednoduchými slovami. Ak nastane chyba, nechajte zákazníkovi to, čo už napísal.</li><li>Formulár vyskúšajte na telefóne. Správna klávesnica pre e-mail či telefónne číslo robí skutočný rozdiel.</li></ul>",
+          "<h2>Chýbajúce možnosti a stratená dôvera</h2>",
+          "<p>Ak zákazník nevidí svoj obvyklý spôsob platby alebo prevzatia balíka, môže jednoducho odísť. Zamyslite sa, aké spôsoby vaši zákazníci očakávajú, ako popisujem v článkoch <a href='/sk/blog/choose-payment-methods-for-eshop'>ako vybrať spôsoby platby</a> a <a href='/sk/blog/eshop-delivery-options-for-customers'>doprava v e-shope</a>.</p>",
+          "<p>Dôležitá je aj dôvera. Dbajte na to, aby boli kontaktné údaje, obchodné podmienky a informácie o vrátení tovaru ľahko k nájdeniu a aby celý e-shop bežal na zabezpečenom pripojení (HTTPS).</p>",
+          "<h2>Pomalé alebo pokazené kroky</h2>",
+          "<p>Objednávka, ktorá sa seká, skáče alebo ukáže nejasnú chybu, rýchlo stráca ľudí, a telefón je na to najcitlivejšie miesto. Skontrolujte, ako rýchlo sa každý krok načíta (pozrite <a href='/sk/blog/website-speed-what-slows-it-down'>rýchlosť webu a čo ju spomaľuje</a>), a overte, že tlačidlá a políčka fungujú správne aj na malej obrazovke.</p>",
+          "<h2>Ako nájsť vlastnú príčinu</h2>",
+          "<ul><li>Sami si na telefóne vytvorte skúšobnú objednávku a poznačte si každý moment váhania.</li><li>Požiadajte známeho, ktorý e-shop nepozná, aby urobil to isté, a potichu ho pozorujte.</li><li>Prečítajte si otázky, ktoré vám zákazníci posielajú e-mailom alebo telefonicky pred objednávkou. Ukazujú, aké informácie chýbajú.</li><li>Ak máte nastavenú analytiku, pozrite, v ktorom kroku ľudia odchádzajú.</li></ul>",
+          "<p>Meňte jednu vec naraz, aby ste vedeli, čo pomohlo. Ak chcete na svoju objednávku druhý pohľad, <a href='/sk/contact'>napíšte mi</a>. Viac o mojej práci nájdete na stránke <a href='/sk/tvorba-eshopu'>tvorba e-shopu</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Shutter Speed / Unsplash",
+          "url": "https://unsplash.com/@shutter_speed_?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "returns-and-terms-page-for-eshop",
+      "cover": {
+        "icon": "FileText",
+        "label": "Terms and returns pages",
+        "photo": true
+      },
+      "en": {
+        "title": "Returns and terms pages for an e-shop: what customers look for",
+        "description": "Delivery, payment, returns and contact pages: what a customer wants to find before buying and how to present it clearly. A practical guide, not legal advice.",
+        "content": [
+          "<p>Before they buy from a shop they do not know, many customers look for the same few things: how long delivery takes, how to pay, what happens if they want to return something, and who to contact. If those answers are easy to find, the shop feels trustworthy. This article is about that practical side.</p>",
+          "<p><strong>This is not legal advice.</strong> What an e-shop must publish, and how, is set by law, including consumer rights and the handling of complaints. Please check the exact requirements for your business with a lawyer.</p>",
+          "<h2>Delivery page</h2>",
+          "<ul><li>The available delivery methods and the price of each.</li><li>The delivery time, and from when it counts.</li><li>The order value above which delivery is free, if there is one.</li><li>Who to contact if the parcel is late or damaged.</li></ul>",
+          "<p>More on this in <a href='/en/blog/eshop-delivery-options-for-customers'>delivery options for an e-shop</a>.</p>",
+          "<h2>Payment page</h2>",
+          "<p>List the accepted payment methods, explain how bank transfer works if you offer it (account details, how long you wait for the payment), and mention any extra fee for cash on delivery. Keep it consistent with what the checkout says.</p>",
+          "<h2>Returns and complaints page</h2>",
+          "<ul><li>How to start a return, step by step.</li><li>Who pays for the return shipping.</li><li>How and how soon the customer gets the money back.</li><li>A form or an address for sending the request.</li><li>Any goods that cannot be returned.</li><li>The difference between a return and a complaint about a defect, in simple words.</li></ul>",
+          "<p>The exact rights and deadlines are a legal matter, so the text should be checked by a lawyer. My job as the builder is to place it where customers will see it.</p>",
+          "<h2>Contact and company details</h2>",
+          "<p>Give the company name, address, registration details, an email address and a phone number if you answer calls. Say when you usually reply. A real name and a real address say more than any badge.</p>",
+          "<h2>How to present it</h2>",
+          "<ul><li>Link the pages from the footer, the cart and the product page.</li><li>Put a short plain-language summary at the top, with the full terms below.</li><li>Use short sentences and headings, so people can find their answer quickly.</li><li>Update the pages whenever you change a price, a carrier or a rule.</li></ul>",
+          "<p>The texts come from you and your lawyer; I build the pages and place them so they are easy to reach. Read also the <a href='/en/blog/product-page-checklist-eshop'>product page checklist</a>. If you are planning a shop, <a href='/en/contact'>write to me</a> or see <a href='/en/eshop-development'>e-shop development</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Stránky s podmienkami a vrátením tovaru v e-shope: čo zákazníci hľadajú",
+        "description": "Doprava, platba, vrátenie tovaru a kontakt: čo chce zákazník nájsť pred nákupom a ako to prehľadne podať. Praktický sprievodca, nie právna rada.",
+        "content": [
+          "<p>Skôr než zákazník nakúpi v e-shope, ktorý nepozná, hľadá zvyčajne tých istých pár vecí: ako dlho trvá doručenie, ako sa platí, čo sa stane, keď bude chcieť tovar vrátiť, a na koho sa obrátiť. Ak sú tieto odpovede na dosah, e-shop pôsobí dôveryhodne. Tento článok je o tejto praktickej stránke.</p>",
+          "<p><strong>Nejde o právnu radu.</strong> To, čo musí e-shop zverejniť a ako, určuje zákon, vrátane spotrebiteľských práv a vybavovania reklamácií. Presné požiadavky pre svoje podnikanie si prosím overte u právnika.</p>",
+          "<h2>Stránka o doprave</h2>",
+          "<ul><li>Dostupné spôsoby dopravy a cena každého z nich.</li><li>Dodacia lehota a odkedy sa počíta.</li><li>Hodnota objednávky, od ktorej je doprava zadarmo, ak taká je.</li><li>Na koho sa obrátiť, ak balík mešká alebo je poškodený.</li></ul>",
+          "<p>Viac o tom v článku <a href='/sk/blog/eshop-delivery-options-for-customers'>doprava v e-shope</a>.</p>",
+          "<h2>Stránka o platbe</h2>",
+          "<p>Vypíšte prijímané spôsoby platby, vysvetlite, ako funguje bankový prevod, ak ho ponúkate (údaje o účte, ako dlho čakáte na platbu), a spomeňte prípadný príplatok za dobierku. Nech je to v súlade s tým, čo ukazuje objednávka.</p>",
+          "<h2>Stránka o vrátení tovaru a reklamáciách</h2>",
+          "<ul><li>Ako vrátenie začať, krok za krokom.</li><li>Kto platí poštovné za vrátenie.</li><li>Ako a ako rýchlo dostane zákazník peniaze späť.</li><li>Formulár alebo adresa, kam žiadosť poslať.</li><li>Tovar, ktorý sa vrátiť nedá.</li><li>Rozdiel medzi vrátením tovaru a reklamáciou vady, jednoduchými slovami.</li></ul>",
+          "<p>Presné práva a lehoty sú právna otázka, preto by text mal skontrolovať právnik. Moja úloha ako tvorcu je umiestniť ho tam, kde ho zákazníci uvidia.</p>",
+          "<h2>Kontakt a údaje o firme</h2>",
+          "<p>Uveďte názov firmy, adresu, registračné údaje, e-mail a telefónne číslo, ak voláte. Napíšte, kedy zvyčajne odpisujete. Skutočné meno a skutočná adresa povedia viac než akákoľvek ikonka dôvery.</p>",
+          "<h2>Ako to podať</h2>",
+          "<ul><li>Stránky odkazujte z pätičky, z košíka aj zo stránky produktu.</li><li>Na začiatok dajte krátke zhrnutie jednoduchým jazykom a pod ním úplné podmienky.</li><li>Používajte krátke vety a nadpisy, aby ľudia rýchlo našli odpoveď.</li><li>Stránky aktualizujte vždy, keď zmeníte cenu, prepravcu alebo pravidlo.</li></ul>",
+          "<p>Texty dodáte vy a váš právnik; ja stránky postavím a umiestnim tak, aby boli ľahko dostupné. Prečítajte si aj <a href='/sk/blog/product-page-checklist-eshop'>zoznam kontrol pre kartu produktu</a>. Ak plánujete e-shop, <a href='/sk/contact'>napíšte mi</a> alebo si pozrite <a href='/sk/tvorba-eshopu'>tvorbu e-shopu</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Giorgio Trovato / Unsplash",
+          "url": "https://unsplash.com/@giorgiotrovato?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "eshop-search-and-filters",
+      "cover": {
+        "icon": "Search",
+        "label": "Search and filters",
+        "photo": true
+      },
+      "en": {
+        "title": "Search and filters in an e-shop: when you need them",
+        "description": "Do your customers need search and filters? When they matter, what to do with a large catalogue, and simple rules for names, attributes and categories.",
+        "content": [
+          "<p>In a small catalogue, customers can simply browse the categories. As the catalogue grows, they need a faster way to the right product. Search and filters are that way, but they only work well when the product data behind them is in order. Here is how I think about it.</p>",
+          "<h2>When you need them</h2>",
+          "<ul><li><strong>A few products in a few categories.</strong> A clear menu is enough. A search field still helps people who know exactly what they want.</li><li><strong>Products that differ by size, colour, material, brand or price.</strong> Filters let customers narrow the choice themselves.</li><li><strong>A large catalogue, or many similar products.</strong> You need both, and you need to take them seriously.</li><li><strong>Customers keep asking whether you have a certain item.</strong> That is a signal that it is hard to find.</li></ul>",
+          "<h2>What makes search work</h2>",
+          "<ul><li>The search box is visible on every page, especially on a phone.</li><li>It copes with Slovak diacritics, so a search for <strong>kozena</strong> still finds <strong>kožená</strong>.</li><li>It copes with small typos and with the words people really use, not only your internal names.</li><li>Results show a photo, the price and availability.</li><li>When nothing is found, the page offers a way forward, such as popular categories or a contact, instead of a dead end.</li></ul>",
+          "<p>How much of this you get depends on the tool. The built-in search of a simple platform is often basic, and a dedicated search service can do more, but it adds setup and cost. For a small shop, good data usually matters more than a clever engine.</p>",
+          "<h2>How to keep filters useful</h2>",
+          "<ul><li>Offer only the attributes people really choose by, such as size, colour, brand and price.</li><li>Use the same wording everywhere: one value for each colour, not three spellings.</li><li>Show how many products each choice gives, and make it easy to clear the filters.</li><li>Hide filters that have only one option.</li><li>On a phone, put filters in a panel that is easy to open and close.</li></ul>",
+          "<h2>Simple data rules that help</h2>",
+          "<ul><li>Name products by one pattern: type, brand, model, key attribute.</li><li>Keep attributes in their own fields, not buried in the description.</li><li>Keep categories few and group them by how customers think, not by how your warehouse is organised.</li><li>Use the same units everywhere.</li></ul>",
+          "<p>These rules are easiest to apply before products go into the shop, which is what <a href='/en/blog/prepare-products-for-eshop-import'>preparing products for an e-shop import</a> is about. A well-built product page also helps, see the <a href='/en/blog/product-page-checklist-eshop'>product page checklist</a>.</p>",
+          "<p>If your catalogue is growing and customers struggle to find things, <a href='/en/contact'>write to me</a> and we can look at what fits. More about what I build is on the <a href='/en/eshop-development'>e-shop development page</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Vyhľadávanie a filtre v e-shope: kedy ich potrebujete",
+        "description": "Potrebujú vaši zákazníci vyhľadávanie a filtre? Kedy sú dôležité, čo robiť pri veľkom katalógu a jednoduché pravidlá pre názvy, vlastnosti a kategórie.",
+        "content": [
+          "<p>V malom katalógu stačí zákazníkom prechádzať kategórie. Keď katalóg rastie, potrebujú rýchlejšiu cestu k správnemu produktu. Touto cestou sú vyhľadávanie a filtre, no dobre fungujú len vtedy, keď sú v poriadku údaje o produktoch, ktoré za nimi stoja. Takto o tom rozmýšľam.</p>",
+          "<h2>Kedy ich potrebujete</h2>",
+          "<ul><li><strong>Pár produktov v pár kategóriách.</strong> Stačí prehľadné menu. Vyhľadávacie pole stále pomôže ľuďom, ktorí presne vedia, čo chcú.</li><li><strong>Produkty, ktoré sa líšia veľkosťou, farbou, materiálom, značkou alebo cenou.</strong> Filtre umožnia zákazníkom zúžiť výber samostatne.</li><li><strong>Veľký katalóg alebo veľa podobných produktov.</strong> Potrebujete oboje a treba ich brať vážne.</li><li><strong>Zákazníci sa vás stále pýtajú, či máte nejakú položku.</strong> To je znamenie, že sa ťažko hľadá.</li></ul>",
+          "<h2>Čo robí vyhľadávanie funkčným</h2>",
+          "<ul><li>Vyhľadávacie pole je viditeľné na každej stránke, najmä na telefóne.</li><li>Poradí si so slovenskou diakritikou, takže hľadanie <strong>kozena</strong> nájde aj <strong>kožená</strong>.</li><li>Poradí si s drobnými preklepmi a so slovami, ktoré ľudia naozaj používajú, nielen s vašimi internými názvami.</li><li>Výsledky ukazujú fotku, cenu a dostupnosť.</li><li>Keď sa nič nenájde, stránka ponúkne cestu ďalej, napríklad obľúbené kategórie alebo kontakt, a nie slepú uličku.</li></ul>",
+          "<p>Koľko z toho dostanete, závisí od nástroja. Vstavané vyhľadávanie jednoduchej platformy je často základné a samostatná vyhľadávacia služba toho vie viac, no pridáva nastavovanie a náklady. Pri malom e-shope zvyčajne viac než šikovný nástroj záleží na kvalitných údajoch.</p>",
+          "<h2>Ako udržať filtre užitočné</h2>",
+          "<ul><li>Ponúkajte len vlastnosti, podľa ktorých ľudia naozaj vyberajú, napríklad veľkosť, farbu, značku a cenu.</li><li>Používajte všade rovnaké pomenovania: jednu hodnotu pre každú farbu, nie tri pravopisy.</li><li>Ukážte, koľko produktov každá voľba dá, a uľahčite zrušenie filtrov.</li><li>Skryte filtre, ktoré majú len jednu možnosť.</li><li>Na telefóne dajte filtre do panela, ktorý sa dá ľahko otvoriť a zavrieť.</li></ul>",
+          "<h2>Jednoduché pravidlá pre údaje</h2>",
+          "<ul><li>Produkty pomenúvajte podľa jedného vzoru: druh, značka, model, kľúčová vlastnosť.</li><li>Vlastnosti majte vo vlastných poliach, nie ukryté v popise.</li><li>Kategórií majte málo a zoraďte ich podľa toho, ako uvažujú zákazníci, nie podľa usporiadania vášho skladu.</li><li>Všade používajte rovnaké jednotky.</li></ul>",
+          "<p>Tieto pravidlá sa najľahšie uplatnia ešte pred nahraním produktov do e-shopu, o čom je článok <a href='/sk/blog/prepare-products-for-eshop-import'>ako pripraviť produkty na import do e-shopu</a>. Pomôže aj dobre postavená stránka produktu, pozrite <a href='/sk/blog/product-page-checklist-eshop'>zoznam kontrol pre kartu produktu</a>.</p>",
+          "<p>Ak váš katalóg rastie a zákazníci majú problém veci nájsť, <a href='/sk/contact'>napíšte mi</a> a spoločne pozrieme, čo sedí. Viac o tom, čo robím, nájdete na stránke <a href='/sk/tvorba-eshopu'>tvorba e-shopu</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Agence Olloweb / Unsplash",
+          "url": "https://unsplash.com/@olloweb?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    }
+  ]
+}

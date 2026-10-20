@@ -36,6 +36,18 @@ const QUERIES = {
   "move-eshop-to-new-platform": "moving boxes relocation",
   "who-owns-your-domain-hosting-and-code": "keys ownership lock",
   "website-after-launch-what-to-expect": "maintenance tools workshop",
+  "choose-payment-methods-for-eshop": "payment card terminal checkout",
+  "eshop-delivery-options-for-customers": "delivery courier parcel",
+  "product-page-checklist-eshop": "product photography flat lay",
+  "why-customers-leave-the-checkout": "shopping cart online store",
+  "returns-and-terms-page-for-eshop": "cardboard box package",
+  "eshop-search-and-filters": "search magnifying glass laptop",
+  "homepage-text-for-small-business": "notebook writing desk",
+  "seo-basics-for-a-small-website": "analytics laptop desk",
+  "google-business-profile-for-local-business": "small shop storefront street",
+  "website-analytics-what-to-measure": "charts graphs dashboard",
+  "test-your-website-on-a-phone": "smartphone hand screen",
+  "redesign-or-rebuild-old-website": "architect blueprint renovation",
 };
 
 // ONLY=slug1,slug2 limits the run to those posts, so existing covers are left alone.

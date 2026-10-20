@@ -1,0 +1,296 @@
+{
+  "date": "2026-10-20",
+  "author": "Omnicode",
+  "posts": [
+    {
+      "slug": "homepage-text-for-small-business",
+      "cover": {
+        "icon": "PenLine",
+        "label": "Homepage text",
+        "photo": true
+      },
+      "en": {
+        "title": "What to write on the homepage of a small business website",
+        "description": "A homepage has seconds to say who you are, what you do and how to reach you. A simple structure for the text, and the generic phrases to avoid.",
+        "content": [
+          "<p>Visitors usually skim a page before they read it. Your homepage does not have to tell the whole story of the business. It has to answer a few plain questions quickly. This is the structure I suggest when a client asks what to write.</p>",
+          "<h2>Five questions the homepage should answer</h2>",
+          "<ol><li><strong>Who are you?</strong> The business name and the place where you work.</li><li><strong>What do you do?</strong> One sentence, in the words your customer would use, not internal jargon.</li><li><strong>Who is it for?</strong> Say who your customers are: households, restaurants, small firms.</li><li><strong>What makes you different?</strong> One or two real differences, for example a reply within a day or work in one district only. Only what is true.</li><li><strong>How can I contact you?</strong> Phone, email, address or a form, visible without long scrolling.</li></ol>",
+          "<h2>An example structure</h2>",
+          "<ul><li>At the top, a headline and a short line saying what you do, plus one main button such as “Request a quote” or “Call us”.</li><li>Then three or four main services, each with one sentence and a link to its own page.</li><li>How working together goes, in three steps.</li><li>Things you can stand behind: real photos, client names with their permission, certificates you actually hold.</li><li>At the end, contact details and opening hours or the area you cover.</li></ul>",
+          "<h2>What to avoid</h2>",
+          "<ul><li>Generic phrases such as “we are a dynamic team of professionals offering quality solutions”. They could sit on anyone’s website, so they tell the visitor nothing.</li><li>Superlatives you cannot prove: “the best”, “number one”.</li><li>Text that is only about you. Start from the customer’s problem and how you help with it.</li><li>A long introduction before the contact details, and several equal buttons competing for attention.</li></ul>",
+          "<h2>A quick test</h2>",
+          "<p>Show the homepage for five seconds to someone who does not know your business and ask what you do. If they cannot say, rewrite the headline.</p>",
+          "<p>I do not write copy for clients, and the text is best prepared by you, because you know your field. What to bring is listed in <a href='/en/blog/what-to-prepare-before-a-website'>what to prepare before a website</a>. If you are planning a new site, see <a href='/en/web-development-bratislava'>website development in Bratislava</a> or <a href='/en/contact'>write to me</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Čo napísať na úvodnú stránku webu malej firmy",
+        "description": "Úvodná stránka má za pár sekúnd povedať, kto ste, čo robíte a ako vás zastihnúť. Jednoduchá štruktúra textu a frázy, ktorým sa treba vyhnúť.",
+        "content": [
+          "<p>Návštevníci stránku zvyčajne najprv preletia očami a až potom čítajú. Vaša úvodná stránka nemusí rozprávať celý príbeh firmy. Má rýchlo odpovedať na niekoľko jednoduchých otázok. Takúto štruktúru navrhujem, keď sa ma klient opýta, čo napísať.</p>",
+          "<h2>Päť otázok, na ktoré má úvodná stránka odpovedať</h2>",
+          "<ol><li><strong>Kto ste?</strong> Názov firmy a miesto, kde pôsobíte.</li><li><strong>Čo robíte?</strong> Jedna veta slovami, ktoré by použil váš zákazník, nie interným žargónom.</li><li><strong>Pre koho?</strong> Napíšte, kto sú vaši zákazníci: domácnosti, reštaurácie, malé firmy.</li><li><strong>Čím sa líšite?</strong> Jeden alebo dva skutočné rozdiely, napríklad odpoveď do jedného dňa alebo práca len v jednej mestskej časti. Len to, čo je pravda.</li><li><strong>Ako vás kontaktovať?</strong> Telefón, e-mail, adresa alebo formulár, viditeľné bez dlhého rolovania.</li></ol>",
+          "<h2>Príklad štruktúry</h2>",
+          "<ul><li>Hore nadpis a krátky riadok o tom, čo robíte, a jedno hlavné tlačidlo, napríklad „Požiadať o ponuku“ alebo „Zavolať“.</li><li>Potom tri až štyri hlavné služby, každá s jednou vetou a odkazom na vlastnú stránku.</li><li>Ako spolupráca prebieha, v troch krokoch.</li><li>To, za čím si môžete stáť: skutočné fotografie, mená klientov s ich súhlasom, certifikáty, ktoré naozaj máte.</li><li>Na konci kontakt a otváracie hodiny alebo oblasť, v ktorej pôsobíte.</li></ul>",
+          "<h2>Čomu sa vyhnúť</h2>",
+          "<ul><li>Všeobecným frázam typu „sme dynamický tím profesionálov, ktorý ponúka kvalitné riešenia“. Hodili by sa na web hocikoho, a preto návštevníkovi nič nehovoria.</li><li>Superlatívom, ktoré neviete doložiť: „najlepší“, „jednotka na trhu“.</li><li>Textu iba o vás. Radšej začnite problémom zákazníka a tým, ako mu pomáhate.</li><li>Dlhému úvodu pred kontaktom a viacerým rovnocenným tlačidlám, ktoré si navzájom konkurujú.</li></ul>",
+          "<h2>Rýchly test</h2>",
+          "<p>Ukážte úvodnú stránku na päť sekúnd niekomu, kto vašu firmu nepozná, a opýtajte sa, čo robíte. Ak to nevie povedať, prepíšte nadpis.</p>",
+          "<p>Texty pre klientov nepíšem a najlepšie ich pripravíte vy, pretože svoj odbor poznáte. Čo si priniesť, nájdete v článku <a href='/sk/blog/what-to-prepare-before-a-website'>čo pripraviť pred tvorbou webu</a>. Ak plánujete nový web, pozrite si <a href='/sk/tvorba-webov-bratislava'>tvorbu webov v Bratislave</a> alebo <a href='/sk/contact'>mi napíšte</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Kelly Sikkema / Unsplash",
+          "url": "https://unsplash.com/@kellysikkema?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "seo-basics-for-a-small-website",
+      "cover": {
+        "icon": "Search",
+        "label": "SEO basics",
+        "photo": true
+      },
+      "en": {
+        "title": "SEO basics for a small website: what you can check yourself",
+        "description": "Page titles, descriptions, headings, speed, mobile view, sitemap and Search Console: checks an owner can do, and an honest word about rankings.",
+        "content": [
+          "<p>Search optimisation can sound like a mystery, but a good part of it is basic housekeeping that you can verify yourself. First, to be honest: nobody can guarantee a position on Google, and I do not offer ongoing SEO. What I do is lay the technical foundation while building the site. The checks below show whether it is in order.</p>",
+          "<h2>Page titles and descriptions</h2>",
+          "<p>Every page should have its own title, which appears on the browser tab and as the headline in search results, and a short description. A title should say what the page is about, with the service and the place where it makes sense, not just “Home”. The same title on every page is a mistake. Google may show your description in results, but it sometimes picks a different piece of text from the page instead.</p>",
+          "<h2>Heading structure</h2>",
+          "<p>A page should have one main heading and sections with subheadings below it. Headings should describe the content that follows. They help readers scan the page and help people using screen readers, which I describe in <a href='/en/blog/website-accessibility-basics'>website accessibility basics</a>.</p>",
+          "<h2>Speed and mobile view</h2>",
+          "<ul><li>Open the site on your phone over mobile data and watch how quickly the content appears.</li><li>Text should be readable without zooming, and buttons large enough to tap.</li><li>A step-by-step check is in <a href='/en/blog/test-your-website-on-a-phone'>how to test your website on a phone</a>, and the usual causes of slow pages are in <a href='/en/blog/website-speed-what-slows-it-down'>what slows a website down</a>.</li></ul>",
+          "<h2>Sitemap and Google Search Console</h2>",
+          "<p>A sitemap is a file that lists the pages of your site, usually at yourdomain.com/sitemap.xml. Google Search Console is a free tool from Google. In it you verify that you own the domain, for example with a DNS record, submit the sitemap, and see which searches show your site, which pages are indexed and whether there are errors. Looking once a week or once a month is enough.</p>",
+          "<h2>What to realistically expect</h2>",
+          "<p>New pages are often found by Google within days or weeks, but positions develop slowly. They depend on competition, content and many things neither I nor anyone else controls. The most lasting thing is useful content that answers your customers’ questions. If someone promises you first place, be careful.</p>",
+          "<p>If your site has both language versions, read <a href='/en/blog/bilingual-website-slovak-english-seo'>bilingual website and SEO</a>. For a new site, see <a href='/en/web-development-bratislava'>website development in Bratislava</a>, or <a href='/en/contact'>write to me</a> with questions.</p>"
+        ]
+      },
+      "sk": {
+        "title": "SEO základy pre malý web: čo si môžete skontrolovať sami",
+        "description": "Titulky a popisy stránok, nadpisy, rýchlosť, mobil, sitemap a Search Console: kontroly pre majiteľa a úprimné slovo o pozíciách vo vyhľadávaní.",
+        "content": [
+          "<p>Optimalizácia pre vyhľadávače môže znieť ako tajomstvo, ale veľká časť je obyčajná základná údržba, ktorú si viete overiť sami. Hneď na začiatku úprimne: pozíciu v Google nikto zaručiť nevie a priebežné SEO neposkytujem. Pri tvorbe webu zakladám technický základ. Nižšie uvedené kontroly ukážu, či je v poriadku.</p>",
+          "<h2>Titulky a popisy stránok</h2>",
+          "<p>Každá stránka má mať vlastný titulok, ktorý sa zobrazuje na karte prehliadača a ako nadpis vo výsledkoch vyhľadávania, a krátky popis. Titulok má povedať, o čom stránka je, podľa potreby aj so službou a mestom, nie len „Domov“. Rovnaký titulok na každej stránke je chyba. Google môže vo výsledkoch zobraziť váš popis, no niekedy namiesto neho vyberie iný kúsok textu zo stránky.</p>",
+          "<h2>Štruktúra nadpisov</h2>",
+          "<p>Stránka má mať jeden hlavný nadpis a pod ním sekcie s podnadpismi. Nadpisy majú opisovať obsah, ktorý po nich nasleduje. Pomáhajú čitateľom rýchlo sa zorientovať aj ľuďom s čítačkou obrazovky, o čom píšem v článku <a href='/sk/blog/website-accessibility-basics'>prístupnosť webu: základy</a>.</p>",
+          "<h2>Rýchlosť a mobilná verzia</h2>",
+          "<ul><li>Otvorte web na telefóne cez mobilné dáta a sledujte, ako rýchlo sa objaví obsah.</li><li>Text má byť čitateľný bez priblíženia a tlačidlá dosť veľké na ťuknutie.</li><li>Postup krok za krokom je v článku <a href='/sk/blog/test-your-website-on-a-phone'>ako otestovať web na telefóne</a> a bežné príčiny pomalých stránok v článku <a href='/sk/blog/website-speed-what-slows-it-down'>rýchlosť webu a čo ju spomaľuje</a>.</li></ul>",
+          "<h2>Sitemap a Google Search Console</h2>",
+          "<p>Sitemap je súbor so zoznamom stránok webu, zvyčajne na adrese vasadomena.sk/sitemap.xml. Google Search Console je bezplatný nástroj od Googlu. Overíte v ňom vlastníctvo domény, napríklad záznamom v DNS, odošlete sitemap a uvidíte, pri akých vyhľadávaniach sa web zobrazuje, ktoré stránky sú v indexe a či sa objavili chyby. Stačí sa tam pozrieť raz za týždeň alebo raz za mesiac.</p>",
+          "<h2>Čo môžete reálne očakávať</h2>",
+          "<p>Nové stránky Google často nájde do pár dní či týždňov, no pozície sa vyvíjajú pomaly. Závisia od konkurencie, obsahu a mnohých vecí, ktoré neovplyvním ani ja, ani nikto iný. Najtrvácnejší je užitočný obsah, ktorý odpovedá na otázky vašich zákazníkov. Ak vám niekto sľúbi prvé miesto, buďte opatrní.</p>",
+          "<p>Ak má váš web dve jazykové verzie, prečítajte si <a href='/sk/blog/bilingual-website-slovak-english-seo'>dvojjazyčný web a SEO</a>. Pri novom webe sa pozrite na <a href='/sk/tvorba-webov-bratislava'>tvorbu webov v Bratislave</a> alebo mi s otázkami <a href='/sk/contact'>napíšte</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Carlos Muza / Unsplash",
+          "url": "https://unsplash.com/@kmuza?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "google-business-profile-for-local-business",
+      "cover": {
+        "icon": "MapPin",
+        "label": "Google Business Profile",
+        "photo": true
+      },
+      "en": {
+        "title": "Google Business Profile: what to fill in for a local business",
+        "description": "What a Google Business Profile is, which details to fill in and how verification works. A free step you can do yourself, with no promise of ranking.",
+        "content": [
+          "<p>When someone searches for a business near them, Google often shows a box with a map, a phone number and opening hours. That information comes from a Google Business Profile, which used to be called Google My Business. It is free and you manage it yourself. It does not replace your website. The two work side by side.</p>",
+          "<h2>What to fill in</h2>",
+          "<ul><li><strong>Name.</strong> The real name of your business as customers know it. Do not add extra keywords to it.</li><li><strong>Address or service area.</strong> If customers visit you, enter the address. If you travel to customers, you can set the area you serve instead. The rules on hiding an address change, so follow what the profile offers.</li><li><strong>Opening hours.</strong> And update them for holidays and any changes.</li><li><strong>Categories.</strong> Choose the main category that describes you best. Add others only if they are true.</li><li><strong>Phone and website.</strong> Exactly as they appear on your site.</li><li><strong>Photos.</strong> Real photos of the premises, your work and the team, not stock images.</li><li><strong>Short description.</strong> Plainly, what you do and for whom.</li></ul>",
+          "<h2>Verification of ownership</h2>",
+          "<p>Google wants to confirm that you are entitled to manage the business. The available methods depend on the business and can change. A postcard, a phone call, an email or a video check are examples of what Google has offered. Set the profile up with an account that belongs to the business, not the private account of an employee who may leave.</p>",
+          "<h2>Keep it consistent</h2>",
+          "<ul><li>Use the same name, address and phone number as on your website and in your documents.</li><li>Update the profile when something changes.</li><li>Answer reviews politely, including the critical ones.</li><li>Ask real customers for reviews. Do not buy them or write them yourself, because that goes against the rules.</li></ul>",
+          "<h2>What to expect</h2>",
+          "<p>A profile helps people find you and contact you quickly. It does not guarantee a position. Google says local results depend on factors such as relevance, distance and how well known a business is, and I cannot change those for you.</p>",
+          "<p>Make sure the details on your site match the profile. For the basics of the site itself, see <a href='/en/blog/seo-basics-for-a-small-website'>SEO basics for a small website</a>. If you need a new site, read about <a href='/en/web-development-bratislava'>website development in Bratislava</a> or <a href='/en/contact'>write to me</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Profil firmy na Googli: čo vyplniť pri miestnom podnikaní",
+        "description": "Čo je profil firmy na Googli, ktoré údaje vyplniť a ako funguje overenie. Bezplatný krok, ktorý zvládnete sami, bez sľubov o pozíciách vo vyhľadávaní.",
+        "content": [
+          "<p>Keď niekto hľadá firmu vo svojom okolí, Google často zobrazí rámček s mapou, telefónnym číslom a otváracími hodinami. Tieto údaje pochádzajú z profilu firmy na Googli (Google Business Profile), ktorý sa kedysi volal Google My Business. Je bezplatný a spravujete ho sami. Web nenahrádza, obe veci fungujú vedľa seba.</p>",
+          "<h2>Čo vyplniť</h2>",
+          "<ul><li><strong>Názov.</strong> Skutočný názov firmy tak, ako ho poznajú zákazníci. Nepridávajte do neho kľúčové slová navyše.</li><li><strong>Adresa alebo oblasť pôsobenia.</strong> Ak za vami zákazníci chodia, uveďte adresu. Ak jazdíte za zákazníkmi, môžete namiesto toho nastaviť oblasť, ktorú obsluhujete. Pravidlá skrytia adresy sa menia, preto sa riaďte tým, čo profil ponúka.</li><li><strong>Otváracie hodiny.</strong> A aktualizujte ich pri sviatkoch a zmenách.</li><li><strong>Kategórie.</strong> Vyberte hlavnú kategóriu, ktorá vás opisuje najlepšie. Ďalšie pridajte len vtedy, ak sú pravdivé.</li><li><strong>Telefón a web.</strong> Presne tak, ako sú na vašom webe.</li><li><strong>Fotografie.</strong> Skutočné fotky prevádzky, práce a tímu, nie fotobanku.</li><li><strong>Krátky popis.</strong> Jednoducho, čo robíte a pre koho.</li></ul>",
+          "<h2>Overenie vlastníctva</h2>",
+          "<p>Google chce potvrdiť, že máte oprávnenie firmu spravovať. Dostupné spôsoby závisia od typu firmy a môžu sa meniť. Príkladmi toho, čo Google ponúkal, sú pohľadnica, telefonát, e-mail alebo video overenie. Profil zakladajte cez účet, ktorý patrí firme, nie cez súkromný účet zamestnanca, ktorý môže odísť.</p>",
+          "<h2>Držte údaje jednotné</h2>",
+          "<ul><li>Používajte rovnaký názov, adresu a telefón ako na webe a v dokladoch.</li><li>Keď sa niečo zmení, profil aktualizujte.</li><li>Na recenzie odpovedajte slušne, aj na kritické.</li><li>O recenzie žiadajte skutočných zákazníkov. Nekupujte ich ani nepíšte sami, je to proti pravidlám.</li></ul>",
+          "<h2>Čo môžete očakávať</h2>",
+          "<p>Profil pomáha ľuďom nájsť vás a rýchlo sa vám ozvať. Pozíciu nezaručuje. Google uvádza, že miestne výsledky závisia od faktorov ako relevantnosť, vzdialenosť a známosť firmy, a tie za vás zmeniť neviem.</p>",
+          "<p>Dbajte, aby údaje na webe zodpovedali profilu. Základy samotného webu nájdete v článku <a href='/sk/blog/seo-basics-for-a-small-website'>SEO základy pre malý web</a>. Ak potrebujete nový web, pozrite si <a href='/sk/tvorba-webov-bratislava'>tvorbu webov v Bratislave</a> alebo mi <a href='/sk/contact'>napíšte</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Wai Hsuen Chan / Unsplash",
+          "url": "https://unsplash.com/@waihsuen?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "website-analytics-what-to-measure",
+      "cover": {
+        "icon": "BarChart3",
+        "label": "Website analytics",
+        "photo": true
+      },
+      "en": {
+        "title": "Website analytics for a small site: what to measure",
+        "description": "Visits, sources, popular pages, form submissions and clicks on phone or email: a few numbers worth watching on a small website, and how not to drown in data.",
+        "content": [
+          "<p>Analytics tools can show dozens of charts. A small business needs only a few of them. The useful question is not “how many visitors do I have”, but “does the site bring me enquiries”. Here is what I would watch.</p>",
+          "<h2>Five numbers worth watching</h2>",
+          "<ol><li><strong>Visits.</strong> Roughly how many people come, and how that changes over months rather than days.</li><li><strong>Where they come from.</strong> Search, direct visits, social networks, links from other sites. It shows which channel actually brings people.</li><li><strong>Which pages they view.</strong> It shows what interests people, and which pages nobody opens.</li><li><strong>Submitted forms.</strong> The most important number, because each one is a real enquiry.</li><li><strong>Calls and email clicks.</strong> Taps on your phone number and clicks on your email address. They are not counted by default and usually need a small setup.</li></ol>",
+          "<h2>How not to drown in numbers</h2>",
+          "<ul><li>Pick three or four numbers and ignore the rest at first.</li><li>Look once a month and compare with the previous month, not with other businesses.</li><li>Write down what you changed, such as a new page or a new offer, so you can link it to the results.</li><li>Do not react to daily swings. A small site has small numbers, and they move around a lot.</li></ul>",
+          "<h2>Tools and privacy</h2>",
+          "<p>Google Analytics is the most common tool, and Google Search Console shows the searches that lead to your site. There are also analytics tools that focus on privacy. In the EU, measurement that uses cookies usually requires the visitor’s consent, so check the rules that apply to you with a lawyer.</p>",
+          "<h2>What numbers cannot tell you</h2>",
+          "<p>Analytics shows what happened, not why. Combine it with simple human questions. Ask new customers how they found you, and read the messages that come through the form.</p>",
+          "<p>What to expect after the site goes live is in <a href='/en/blog/website-after-launch-what-to-expect'>website after launch</a>. If you would like measurement planned into a new site, <a href='/en/contact'>write to me</a> or see <a href='/en/web-development-bratislava'>website development in Bratislava</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Analytika webu pre malý web: čo merať",
+        "description": "Návštevnosť, zdroje, najčítanejšie stránky, odoslané formuláre a kliky na telefón či e-mail: pár čísel, ktoré stoja za sledovanie, a ako sa v dátach nestratiť.",
+        "content": [
+          "<p>Analytické nástroje vedia ukázať desiatky grafov. Malá firma ich potrebuje len zopár. Užitočná otázka nie je „koľko mám návštevníkov“, ale „prináša mi web dopyty“. Toto by som sledoval.</p>",
+          "<h2>Päť čísel, ktoré stoja za sledovanie</h2>",
+          "<ol><li><strong>Návštevnosť.</strong> Približne koľko ľudí prichádza a ako sa to mení v priebehu mesiacov, nie dní.</li><li><strong>Odkiaľ prichádzajú.</strong> Vyhľadávanie, priame návštevy, sociálne siete, odkazy z iných webov. Ukáže, ktorý kanál ľudí naozaj privádza.</li><li><strong>Ktoré stránky si pozerajú.</strong> Vidieť, čo ľudí zaujíma a ktoré stránky nikto neotvára.</li><li><strong>Odoslané formuláre.</strong> Najdôležitejšie číslo, lebo každý je skutočný dopyt.</li><li><strong>Hovory a kliky na e-mail.</strong> Ťuknutia na telefónne číslo a kliky na e-mailovú adresu. Predvolene sa nepočítajú a zvyčajne potrebujú malé nastavenie.</li></ol>",
+          "<h2>Ako sa v číslach nestratiť</h2>",
+          "<ul><li>Vyberte si tri alebo štyri čísla a ostatné spočiatku ignorujte.</li><li>Pozrite sa raz za mesiac a porovnávajte s predchádzajúcim mesiacom, nie s inými firmami.</li><li>Zapisujte si, čo ste zmenili, napríklad novú stránku alebo novú ponuku, aby ste to vedeli spojiť s výsledkami.</li><li>Nereagujte na denné výkyvy. Malý web má malé čísla a tie kolíšu.</li></ul>",
+          "<h2>Nástroje a ochrana súkromia</h2>",
+          "<p>Najbežnejší je Google Analytics a Google Search Console ukazuje vyhľadávania, ktoré vedú na váš web. Existujú aj analytické nástroje zamerané na súkromie. V EÚ meranie, ktoré používa cookies, zvyčajne vyžaduje súhlas návštevníka, preto pravidlá, ktoré sa vás týkajú, overte s právnikom.</p>",
+          "<h2>Čo vám čísla nepovedia</h2>",
+          "<p>Analytika ukazuje, čo sa stalo, nie prečo. Doplňte ju jednoduchými ľudskými otázkami. Pýtajte sa nových zákazníkov, ako vás našli, a čítajte správy, ktoré prídu cez formulár.</p>",
+          "<p>Čo čakať po spustení webu, popisuje článok <a href='/sk/blog/website-after-launch-what-to-expect'>web po spustení</a>. Ak chcete mať meranie premyslené už v novom webe, <a href='/sk/contact'>napíšte mi</a> alebo si pozrite <a href='/sk/tvorba-webov-bratislava'>tvorbu webov v Bratislave</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Luke Chesser / Unsplash",
+          "url": "https://unsplash.com/@lukechesser?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "test-your-website-on-a-phone",
+      "cover": {
+        "icon": "Smartphone",
+        "label": "Test on a phone",
+        "photo": true
+      },
+      "en": {
+        "title": "How to test your website on a phone in 10 minutes",
+        "description": "A simple checklist for testing your website on a phone: readability, buttons, forms, menu, speed and layout. You only need a phone and ten minutes.",
+        "content": [
+          "<p>Many of your visitors will open your website on a phone, often while walking or in bright light. A site that looks fine on a laptop can still be awkward on a small screen. You can find most problems yourself in about ten minutes, with no special tools.</p>",
+          "<h2>Before you start</h2>",
+          "<ul><li>Use your own phone, and if you can, borrow a second one with a different screen size.</li><li>Switch off Wi-Fi and use mobile data, so you see what a visitor on the street sees.</li><li>Try the site upright and then turned sideways.</li></ul>",
+          "<h2>Reading</h2>",
+          "<ul><li>Can you read the text without zooming in?</li><li>Is there enough contrast between text and background, also in daylight?</li><li>Do images cut off anything important, such as a headline or a price?</li></ul>",
+          "<h2>Menu and buttons</h2>",
+          "<ul><li>Does the menu open and close, and can you reach every item?</li><li>Are the buttons big enough for a thumb, with space between them so you do not hit the wrong one?</li><li>Does tapping the phone number open the dialler, and does tapping the email address open your mail app?</li></ul>",
+          "<h2>Forms</h2>",
+          "<ul><li>Does the right keyboard appear, for example one with the @ sign for an email field?</li><li>Can you still see the field you are typing in when the keyboard is open?</li><li>Are error messages understandable?</li><li>Send a real test enquiry and check that you see a confirmation, and that the message arrives.</li></ul>",
+          "<h2>Speed and layout</h2>",
+          "<ul><li>Does the page appear within a few seconds on mobile data?</li><li>Does the content jump around while loading?</li><li>Is there any sideways scrolling, meaning something sticks out beyond the screen?</li><li>Can pop-ups be closed easily, and do they not cover the whole page?</li></ul>",
+          "<h2>Write down what you find</h2>",
+          "<p>Take a screenshot of each problem and note the page and the phone model. That makes it much easier to fix. If many pages feel slow, see <a href='/en/blog/website-speed-what-slows-it-down'>what slows a website down</a>, and for contrast and form labels, <a href='/en/blog/website-accessibility-basics'>website accessibility basics</a>.</p>",
+          "<p>If the test shows more than you want to fix yourself, <a href='/en/contact'>write to me</a> and I will tell you honestly what is a small fix and what needs more work. More on my work is on the <a href='/en/web-development-bratislava'>website development page</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Ako otestovať web na telefóne za 10 minút",
+        "description": "Jednoduchý zoznam kontrol pre web na telefóne: čitateľnosť, tlačidlá, formuláre, menu, rýchlosť a rozloženie. Stačí telefón a desať minút.",
+        "content": [
+          "<p>Mnohí vaši návštevníci otvoria web na telefóne, často za chôdze alebo na silnom svetle. Web, ktorý vyzerá dobre na notebooku, môže byť na malej obrazovke nepohodlný. Väčšinu problémov nájdete sami asi za desať minút a bez špeciálnych nástrojov.</p>",
+          "<h2>Než začnete</h2>",
+          "<ul><li>Použite vlastný telefón a ak sa dá, požičajte si druhý s inou veľkosťou obrazovky.</li><li>Vypnite Wi-Fi a použite mobilné dáta, aby ste videli to, čo návštevník na ulici.</li><li>Vyskúšajte web na výšku aj na šírku.</li></ul>",
+          "<h2>Čítanie</h2>",
+          "<ul><li>Dá sa text prečítať bez priblíženia?</li><li>Je dosť kontrastu medzi textom a pozadím, aj na dennom svetle?</li><li>Neorezávajú obrázky niečo dôležité, napríklad nadpis alebo cenu?</li></ul>",
+          "<h2>Menu a tlačidlá</h2>",
+          "<ul><li>Otvára sa a zatvára menu a dostanete sa na každú položku?</li><li>Sú tlačidlá dosť veľké pre palec a majú medzi sebou miesto, aby ste netrafili vedľa?</li><li>Otvorí ťuknutie na telefónne číslo vytáčanie a ťuknutie na e-mail poštovú aplikáciu?</li></ul>",
+          "<h2>Formuláre</h2>",
+          "<ul><li>Zobrazí sa správna klávesnica, napríklad so znakom @ pri políčku na e-mail?</li><li>Vidíte políčko, do ktorého píšete, aj keď je otvorená klávesnica?</li><li>Sú chybové hlásenia zrozumiteľné?</li><li>Odošlite skutočný skúšobný dopyt a skontrolujte, či sa zobrazí potvrdenie a správa dorazí.</li></ul>",
+          "<h2>Rýchlosť a rozloženie</h2>",
+          "<ul><li>Zobrazí sa stránka na mobilných dátach do pár sekúnd?</li><li>Neskáče obsah počas načítavania?</li><li>Nerolujete do strán, teda nič nepresahuje cez okraj obrazovky?</li><li>Dajú sa vyskakovacie okná jednoducho zatvoriť a neprekrývajú celú stránku?</li></ul>",
+          "<h2>Zapíšte si, čo nájdete</h2>",
+          "<p>Každý problém odfoťte snímkou obrazovky a poznačte si stránku a model telefónu. Oprava je potom oveľa jednoduchšia. Ak sa vám pomalé zdá viac stránok, pozrite si <a href='/sk/blog/website-speed-what-slows-it-down'>rýchlosť webu a čo ju spomaľuje</a>, a ku kontrastu a štítkom formulárov <a href='/sk/blog/website-accessibility-basics'>prístupnosť webu: základy</a>.</p>",
+          "<p>Ak test ukáže viac, než chcete opravovať sami, <a href='/sk/contact'>napíšte mi</a> a úprimne poviem, čo je drobná oprava a čo si vyžaduje viac práce. Viac o mojej práci je na stránke <a href='/sk/tvorba-webov-bratislava'>tvorba webov v Bratislave</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: NordWood Themes / Unsplash",
+          "url": "https://unsplash.com/@nordwood?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "redesign-or-rebuild-old-website",
+      "cover": {
+        "icon": "RefreshCw",
+        "label": "Redesign or rebuild",
+        "photo": true
+      },
+      "en": {
+        "title": "Redesign or rebuild: what to do with an old website",
+        "description": "When a fresh design is enough and when it is better to build the site again: platform, speed, editing, security and new features. And what to keep.",
+        "content": [
+          "<p>An old website does not always need to be thrown away. Sometimes a new look is enough. Sometimes the foundation is the problem, and a new design on top only hides it for a while. This is how I help owners tell the two apart.</p>",
+          "<h2>When a redesign is enough</h2>",
+          "<ul><li>The platform is current and still receives updates.</li><li>The site loads at a reasonable speed.</li><li>You can edit texts and images yourself without trouble.</li><li>The structure and the texts work, the site just looks dated.</li><li>You do not need functions the site cannot handle today.</li></ul>",
+          "<h2>When it is better to rebuild</h2>",
+          "<ul><li><strong>Outdated platform.</strong> The system or its plugins are no longer maintained, or cannot be updated without breaking the site.</li><li><strong>Slowness in the foundation.</strong> The cause is the way the site is built, not just a few large images.</li><li><strong>Hard to edit.</strong> Every small change needs a developer.</li><li><strong>Security.</strong> Old software that cannot be updated, or repeated break-ins.</li><li><strong>New functions.</strong> You want online booking, an e-shop or a link to a CRM, and the old system cannot take it.</li><li><strong>Patching costs.</strong> Repairs add up to about the price of a new site.</li></ul>",
+          "<h2>How to decide</h2>",
+          "<ol><li>Write down what bothers you and what visitors ask or complain about.</li><li>Find out what the site runs on and when it was last updated. Your developer or hosting provider can tell you.</li><li>Ask for an honest estimate of both options, and a reason why one beats the other.</li><li>Compare over two or three years, not only today’s price. A cheap redesign of a weak foundation can cost more in the end.</li></ol>",
+          "<p>Sometimes the answer is in between: keep what works and rebuild the rest.</p>",
+          "<h2>What to keep either way</h2>",
+          "<ul><li><strong>Page addresses.</strong> If they change, set up permanent redirects from the old to the new ones, so links and search results do not break.</li><li><strong>Texts that work</strong>, together with page titles and descriptions.</li><li><strong>Images</strong> and logos, in the original quality.</li><li><strong>Access to the domain and hosting.</strong> See <a href='/en/blog/who-owns-your-domain-hosting-and-code'>who owns your domain, hosting and code</a>.</li><li><strong>A list of all current pages</strong> before the work starts, so nothing is forgotten.</li></ul>",
+          "<p>If the old site is an e-shop, <a href='/en/blog/move-eshop-to-new-platform'>moving an e-shop to a new platform</a> covers the extra steps. To talk through your own site, <a href='/en/contact'>write to me</a> or see <a href='/en/web-development-bratislava'>website development in Bratislava</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Redizajn alebo nový web: čo urobiť so starým webom",
+        "description": "Kedy stačí nový dizajn a kedy je lepšie web postaviť odznova: platforma, rýchlosť, úpravy, bezpečnosť a nové funkcie. A čo zachovať v oboch prípadoch.",
+        "content": [
+          "<p>Starý web netreba vždy vyhodiť. Niekedy stačí nový vzhľad. Inokedy je problém v základoch a nový dizajn navrchu ho len na čas zakryje. Takto majiteľom pomáham rozlíšiť jedno od druhého.</p>",
+          "<h2>Kedy stačí redizajn</h2>",
+          "<ul><li>Platforma je aktuálna a stále dostáva aktualizácie.</li><li>Web sa načíta rozumne rýchlo.</li><li>Texty a obrázky viete bez problémov upravovať sami.</li><li>Štruktúra a texty fungujú, web len vyzerá zastarano.</li><li>Nepotrebujete funkcie, ktoré web dnes nezvláda.</li></ul>",
+          "<h2>Kedy je lepšie web postaviť odznova</h2>",
+          "<ul><li><strong>Zastaraná platforma.</strong> Systém alebo jeho doplnky sa už neudržiavajú alebo sa nedajú aktualizovať bez pokazenia webu.</li><li><strong>Pomalosť v základoch.</strong> Príčinou je spôsob, akým je web postavený, nie pár veľkých obrázkov.</li><li><strong>Ťažké úpravy.</strong> Každá malá zmena si vyžaduje vývojára.</li><li><strong>Bezpečnosť.</strong> Starý softvér, ktorý sa nedá aktualizovať, alebo opakované napadnutia.</li><li><strong>Nové funkcie.</strong> Chcete online rezervácie, e-shop alebo prepojenie s CRM a starý systém to neuniesol.</li><li><strong>Náklady na záplatovanie.</strong> Opravy sa vyšplhajú približne na cenu nového webu.</li></ul>",
+          "<h2>Ako sa rozhodnúť</h2>",
+          "<ol><li>Zapíšte si, čo vás trápi a na čo sa návštevníci pýtajú alebo čo kritizujú.</li><li>Zistite, na čom web beží a kedy bol naposledy aktualizovaný. Povie vám to vývojár alebo poskytovateľ hostingu.</li><li>Vypýtajte si úprimný odhad oboch možností aj s dôvodom, prečo je jedna lepšia.</li><li>Porovnávajte na dva či tri roky, nielen dnešnú cenu. Lacný redizajn slabého základu môže nakoniec vyjsť drahšie.</li></ol>",
+          "<p>Niekedy je odpoveď niekde uprostred: zachovať, čo funguje, a zvyšok postaviť odznova.</p>",
+          "<h2>Čo zachovať v každom prípade</h2>",
+          "<ul><li><strong>Adresy stránok.</strong> Ak sa zmenia, nastavte trvalé presmerovania zo starých na nové, aby sa nerozbili odkazy a výsledky vyhľadávania.</li><li><strong>Texty, ktoré fungujú</strong>, spolu s titulkami a popismi stránok.</li><li><strong>Obrázky</strong> a logá v pôvodnej kvalite.</li><li><strong>Prístup k doméne a hostingu.</strong> Pozrite si <a href='/sk/blog/who-owns-your-domain-hosting-and-code'>komu patrí doména, hosting a kód</a>.</li><li><strong>Zoznam všetkých súčasných stránok</strong> pred začiatkom prác, aby sa na nič nezabudlo.</li></ul>",
+          "<p>Ak je starý web e-shop, ďalšie kroky popisuje článok <a href='/sk/blog/move-eshop-to-new-platform'>presun e-shopu na novú platformu</a>. Ak chcete prebrať svoj web, <a href='/sk/contact'>napíšte mi</a> alebo si pozrite <a href='/sk/tvorba-webov-bratislava'>tvorbu webov v Bratislave</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Sven Mieke / Unsplash",
+          "url": "https://unsplash.com/@sxoxm?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    }
+  ]
+}
