@@ -60,6 +60,10 @@ export const pathnames = {
     en: "/website-maintenance",
     sk: "/sprava-a-udrzba-webu",
   },
+  "/launch-checklist": {
+    en: "/website-launch-checklist",
+    sk: "/kontrolny-zoznam-pred-spustenim-webu",
+  },
   "/blog/[slug]": {
     en: "/blog/[slug]",
     sk: "/blog/[slug]",

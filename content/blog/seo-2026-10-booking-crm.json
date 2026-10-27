@@ -1,0 +1,258 @@
+{
+  "date": "2026-10-27",
+  "author": "Omnicode",
+  "posts": [
+    {
+      "slug": "booking-system-checklist-for-service-business",
+      "cover": {
+        "icon": "CalendarCheck",
+        "label": "Booking checklist",
+        "photo": true
+      },
+      "en": {
+        "title": "Online booking for a service business: what it should be able to do",
+        "description": "A checklist for choosing or briefing online booking: free slots, service length, staff and rooms, reminders, cancellations, blocked time and client data.",
+        "content": [
+          "<p>If you run a salon, a clinic, a studio or any business where customers book a time, online booking only helps when it matches how your day really works. Before you compare options or ask for a quote, go through the points below. They also make a good brief for a developer.</p>",
+          "<h2>Free slots and service length</h2>",
+          "<ul><li>Each service has its own duration, and the calendar offers only slots where the whole service fits.</li><li>Opening hours can differ by day, with breaks and holidays.</li><li>A buffer between appointments for cleaning or notes, if you need it.</li><li>A limit on how far ahead a customer can book, and how late before the start.</li></ul>",
+          "<h2>Specialists and rooms</h2>",
+          "<p>If more than one person or room is involved, the system has to know what each service needs. Ask yourself:</p>",
+          "<ul><li>Can the customer choose a specialist, or pick “anyone available”?</li><li>Does a service need a person and a room at the same time?</li><li>Does each specialist have their own hours and days off?</li></ul>",
+          "<h2>Confirmation and reminders</h2>",
+          "<ul><li>The customer gets a confirmation straight after booking, with the date, time, place and service.</li><li>A reminder before the appointment, by email or text message, helps people not to forget.</li><li>You are notified about each new booking.</li><li>Messages in Slovak and, if you have foreign clients, in English.</li></ul>",
+          "<h2>Cancelling and rescheduling</h2>",
+          "<ul><li>The customer can cancel or move the appointment through a link in the email, without calling.</li><li>You set a deadline, for example the previous day, after which they have to contact you.</li><li>A freed slot becomes available again automatically.</li><li>If you take deposits, decide in advance what happens to the payment when someone cancels.</li></ul>",
+          "<h2>Blocking time and your own changes</h2>",
+          "<p>You need to block time yourself: a day off, training, sick leave, a lunch break. You also need to add a booking taken by phone, so the same slot is not sold twice. Check that this takes a few clicks and does not require calling a developer.</p>",
+          "<h2>Client data</h2>",
+          "<ul><li>Decide what is stored: name, contact, visit history, notes. Collect only what you need.</li><li>Decide who can see it. Staff access should depend on their role.</li><li>Client details are personal data, so your privacy policy applies. Talk to a lawyer about how long to keep them and about consent.</li><li>Check whether you can export the list of clients and bookings if you ever change system.</li></ul>",
+          "<p>If you are not sure whether a ready-made tool covers all this, read <a href='/en/blog/booking-system-ready-made-or-custom'>ready-made or custom booking system</a>. If your business needs rules a standard tool lacks, that is what I build: see <a href='/en/custom-booking-system'>custom booking system</a>, or <a href='/en/contact'>write to me</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Online rezervácie pre službu: čo by mal systém vedieť",
+        "description": "Zoznam kontrol pre výber alebo zadanie online rezervácií: voľné termíny, dĺžka služieb, špecialisti a miestnosti, pripomienky, zrušenie, blokovanie času a údaje klientov.",
+        "content": [
+          "<p>Ak prevádzkujete salón, ambulanciu, štúdio alebo iný podnik, kde si zákazníci rezervujú termín, online rezervácia pomôže len vtedy, keď zodpovedá tomu, ako váš deň naozaj funguje. Skôr než začnete porovnávať riešenia alebo žiadať ponuku, prejdite si body nižšie. Zároveň poslúžia ako dobré zadanie pre vývojára.</p>",
+          "<h2>Voľné termíny a dĺžka služby</h2>",
+          "<ul><li>Každá služba má vlastné trvanie a kalendár ponúka iba termíny, do ktorých sa celá služba zmestí.</li><li>Otváracie hodiny sa môžu líšiť podľa dňa, vrátane prestávok a sviatkov.</li><li>Rezerva medzi termínmi na upratanie alebo poznámky, ak ju potrebujete.</li><li>Obmedzenie, ako ďaleko dopredu si zákazník môže termín rezervovať a najneskôr koľko času pred začiatkom.</li></ul>",
+          "<h2>Špecialisti a miestnosti</h2>",
+          "<p>Ak sa na službe podieľa viac ľudí alebo miestností, systém musí vedieť, čo ktorá služba vyžaduje. Položte si otázky:</p>",
+          "<ul><li>Môže si zákazník vybrať špecialistu, alebo zvoliť „ktokoľvek voľný“?</li><li>Vyžaduje služba osobu aj miestnosť naraz?</li><li>Má každý špecialista vlastné pracovné hodiny a voľné dni?</li></ul>",
+          "<h2>Potvrdenie a pripomienky</h2>",
+          "<ul><li>Zákazník dostane potvrdenie hneď po rezervácii s dátumom, časom, miestom a službou.</li><li>Pripomienka pred termínom e-mailom alebo SMS pomáha, aby ľudia na termín nezabudli.</li><li>O každej novej rezervácii dostanete oznámenie.</li><li>Správy v slovenčine a, ak máte zahraničných klientov, aj v angličtine.</li></ul>",
+          "<h2>Zrušenie a presun termínu</h2>",
+          "<ul><li>Zákazník môže termín zrušiť alebo presunúť cez odkaz v e-maile, bez telefonátu.</li><li>Určíte lehotu, napríklad do predchádzajúceho dňa, po ktorej sa musí ozvať priamo vám.</li><li>Uvoľnený termín sa automaticky znova ponúkne.</li><li>Ak žiadate zálohu, vopred rozhodnite, čo sa stane s platbou pri zrušení.</li></ul>",
+          "<h2>Blokovanie času a vlastné zmeny</h2>",
+          "<p>Čas si musíte vedieť zablokovať sami: voľný deň, školenie, práceneschopnosť, obedovú prestávku. Rovnako musíte vedieť doplniť rezerváciu prijatú telefonicky, aby sa ten istý termín nepredal dvakrát. Overte si, že to zvládnete na pár kliknutí a nebudete na to potrebovať vývojára.</p>",
+          "<h2>Údaje klientov</h2>",
+          "<ul><li>Rozhodnite, čo sa ukladá: meno, kontakt, história návštev, poznámky. Zbierajte len to, čo potrebujete.</li><li>Rozhodnite, kto údaje vidí. Prístup zamestnancov má závisieť od ich roly.</li><li>Údaje klientov sú osobné údaje, takže sa na ne vzťahujú vaše zásady ochrany osobných údajov. O dobe uchovávania a súhlasoch sa poraďte s právnikom.</li><li>Skontrolujte, či viete exportovať zoznam klientov a rezervácií, ak by ste niekedy systém menili.</li></ul>",
+          "<p>Ak si nie ste istí, či hotový nástroj pokryje všetko spomenuté, prečítajte si <a href='/sk/blog/booking-system-ready-made-or-custom'>hotový alebo vlastný rezervačný systém</a>. Ak váš podnik potrebuje pravidlá, ktoré štandardný nástroj nemá, práve také systémy vyrábam: pozrite si <a href='/sk/rezervacny-system-na-mieru'>rezervačný systém na mieru</a> alebo mi <a href='/sk/contact'>napíšte</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Blake Wisz / Unsplash",
+          "url": "https://unsplash.com/@blakewisz?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "crm-or-spreadsheet-for-small-business",
+      "cover": {
+        "icon": "Users",
+        "label": "Spreadsheet or CRM",
+        "photo": true
+      },
+      "en": {
+        "title": "Spreadsheet or CRM: when is a table still enough?",
+        "description": "A spreadsheet is fine for a small client list. Signs that it is time for a CRM, what tables get wrong, and how to switch without losing data or order.",
+        "content": [
+          "<p>Many small businesses start with a spreadsheet, and that is a sensible start. A CRM is not automatically better. The question is when the table begins to cost you more than it saves. Here is how I would judge it, and how to move over calmly. If you want to know what a CRM does in general, see <a href='/en/blog/crm-for-small-business'>CRM for a small business</a>. This article is about the comparison and the switch.</p>",
+          "<h2>When a spreadsheet is enough</h2>",
+          "<ul><li>One or two people work with it.</li><li>The number of clients is small enough that you remember each of them. There is no exact limit, it differs from business to business.</li><li>You need contact details and a short note, not a full history.</li><li>You rarely forget to follow up.</li></ul>",
+          "<h2>Signs that a table is no longer enough</h2>",
+          "<ul><li>Several people edit it and nobody is sure which version is current.</li><li>The same client appears twice, with different phone numbers.</li><li>You cannot see who wrote to a client and when, because the history lives in inboxes and phones.</li><li>Follow-ups depend on memory or sticky notes.</li><li>Cells get overwritten or rows deleted, and there is no way to see what changed.</li><li>You want to see enquiries by stage or by source, and the table makes that awkward.</li><li>When a colleague leaves, the knowledge about clients leaves with them.</li></ul>",
+          "<h2>What a CRM adds</h2>",
+          "<p>A CRM keeps the communication history with each client, reminds you of follow-ups, controls who can see and change what, and records changes. It is not magic. It works only if people actually record things in it, so agree on that before you choose any tool.</p>",
+          "<h2>How to switch without chaos</h2>",
+          "<ol><li><strong>Decide what to track.</strong> Write down the five to ten fields you really use. Leave out the rest.</li><li><strong>Clean the table.</strong> Remove duplicates and empty rows, and use one format for phone numbers and names.</li><li><strong>Name one person responsible</strong> for the data and for the switch.</li><li><strong>Import a copy</strong> and check a sample of records by hand before you trust the result.</li><li><strong>Run both for a short time.</strong> A few weeks is usually enough. Then make the table read-only and keep it as a backup.</li><li><strong>Agree one rule:</strong> if it is not in the CRM, it does not exist.</li></ol>",
+          "<p>Sometimes a ready-made tool is enough, and sometimes your process is specific enough to justify a custom one. I will tell you honestly which I think fits. You can read about <a href='/en/custom-crm-system'>custom CRM systems</a> or <a href='/en/contact'>write to me</a> with a short description of how you work now.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Tabuľka alebo CRM: kedy ešte stačí tabuľka?",
+        "description": "Pre malý zoznam klientov tabuľka stačí. Znaky, že je čas na CRM, v čom tabuľky zlyhávajú a ako prejsť na nový systém bez straty údajov a bez chaosu.",
+        "content": [
+          "<p>Mnohé malé firmy začínajú s tabuľkou a je to rozumný začiatok. CRM nie je automaticky lepšie. Otázka je, kedy vás tabuľka začne stáť viac, než ušetrí. Takto by som to posudzoval a takto sa dá prejsť pokojne. Ak vás zaujíma, čo CRM robí vo všeobecnosti, pozrite si článok <a href='/sk/blog/crm-for-small-business'>CRM pre malú firmu</a>. Tento text je o porovnaní a o prechode.</p>",
+          "<h2>Kedy tabuľka stačí</h2>",
+          "<ul><li>Pracuje s ňou jeden alebo dvaja ľudia.</li><li>Klientov je dosť málo na to, aby ste si pamätali každého. Presná hranica neexistuje, líši sa podľa firmy.</li><li>Potrebujete kontakt a krátku poznámku, nie úplnú históriu.</li><li>Len zriedka zabudnete ozvať sa klientovi.</li></ul>",
+          "<h2>Znaky, že tabuľka už nestačí</h2>",
+          "<ul><li>Upravuje ju viac ľudí a nikto nevie, ktorá verzia je aktuálna.</li><li>Ten istý klient je v zozname dvakrát, s rôznymi telefónnymi číslami.</li><li>Nevidíte, kto klientovi písal a kedy, lebo história je roztrúsená po e-mailových schránkach a telefónoch.</li><li>Pripomenutie sa spolieha na pamäť alebo na lepiace papieriky.</li><li>Bunky sa prepisujú alebo sa mažú riadky a nedá sa zistiť, čo sa zmenilo.</li><li>Chcete vidieť dopyty podľa fázy alebo podľa zdroja a v tabuľke je to nepohodlné.</li><li>Keď kolega odíde, odíde s ním aj znalosť klientov.</li></ul>",
+          "<h2>Čo CRM pridáva</h2>",
+          "<p>CRM uchováva históriu komunikácie s každým klientom, pripomína, kedy sa treba ozvať, určuje, kto čo vidí a môže meniť, a zaznamenáva zmeny. Nie je to zázrak. Funguje len vtedy, keď do neho ľudia skutočne zapisujú, preto sa na tom dohodnite skôr, než si vyberiete nástroj.</p>",
+          "<h2>Ako prejsť bez chaosu</h2>",
+          "<ol><li><strong>Rozhodnite, čo sledovať.</strong> Zapíšte päť až desať polí, ktoré naozaj používate. Zvyšok vynechajte.</li><li><strong>Vyčistite tabuľku.</strong> Odstráňte duplicity a prázdne riadky a zjednoťte formát telefónnych čísel a mien.</li><li><strong>Určte jednu zodpovednú osobu</strong> za údaje aj za prechod.</li><li><strong>Importujte kópiu</strong> a vzorku záznamov skontrolujte ručne, než výsledku uveríte.</li><li><strong>Nechajte oba systémy krátko bežať spolu.</strong> Zvyčajne stačí pár týždňov. Potom tabuľku nastavte len na čítanie a uchovajte ju ako zálohu.</li><li><strong>Dohodnite jedno pravidlo:</strong> čo nie je v CRM, neexistuje.</li></ol>",
+          "<p>Niekedy stačí hotový nástroj a inokedy je váš postup natoľko špecifický, že sa oplatí riešenie na mieru. Úprimne poviem, čo podľa mňa sedí. Prečítajte si o <a href='/sk/crm-na-mieru'>CRM systémoch na mieru</a> alebo mi <a href='/sk/contact'>napíšte</a> stručný popis toho, ako dnes pracujete.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Carlos Muza / Unsplash",
+          "url": "https://unsplash.com/@kmuza?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "connect-website-with-accounting-and-delivery",
+      "cover": {
+        "icon": "Plug",
+        "label": "Accounting and delivery links",
+        "photo": true
+      },
+      "en": {
+        "title": "Connecting your website or e-shop with accounting and couriers",
+        "description": "What integration with accounting and delivery services means, what can pass between systems automatically, what to ask beforehand and how to plan for errors.",
+        "content": [
+          "<p>When an order comes in, someone often retypes it into the accounting program and again into the courier’s system. Integration means the systems pass this data to each other, so nobody has to. It saves time and mistakes, but only when it is planned well. This is what I would clarify first.</p>",
+          "<h2>What can pass automatically</h2>",
+          "<ul><li><strong>Orders</strong> from the shop to accounting or the warehouse.</li><li><strong>Payments:</strong> information that an order was paid, so it can be matched with an invoice.</li><li><strong>Invoices and delivery notes</strong> created from order data.</li><li><strong>Shipments:</strong> order details go to the carrier, and the label and tracking number come back to the shop.</li><li><strong>Statuses</strong> such as shipped, delivered or returned, shown to the customer and in your admin.</li></ul>",
+          "<p>What is possible depends on the interface (API) the other service offers. Not every service has one, and some offer only part of what you want.</p>",
+          "<h2>Questions to ask before you start</h2>",
+          "<ol><li>Does the accounting program or the carrier offer a documented interface, and is it included in your plan or paid separately?</li><li>Which data moves in which direction, and which system is the “master” for each item, for example products or stock?</li><li>Who issues the invoice, the shop or the accounting program? Ask your accountant what they need.</li><li>What happens with returns, cancellations, partial shipments and a changed address?</li><li>Whose account and access keys are used, and who keeps them?</li></ol>",
+          "<h2>What to watch for</h2>",
+          "<ul><li><strong>One data format.</strong> Names, VAT rates, country codes, currency and rounding must mean the same on both sides, otherwise totals will not match.</li><li><strong>Unique identifiers.</strong> The order number travels with the data, so nothing is created twice if it is sent twice.</li><li><strong>Error handling.</strong> If a service is down or rejects data, the system should try again later, write the problem to a log and tell a person, not lose the order silently.</li><li><strong>A manual fallback.</strong> You should be able to create a shipment or invoice by hand and resend an order, with a short written procedure.</li><li><strong>Testing</strong> on test accounts before real orders.</li><li><strong>Changes.</strong> The other service can change its interface, so someone has to keep an eye on it.</li></ul>",
+          "<p>I cannot promise that a particular service can be connected until I have checked what it offers, so that is always the first step. For related decisions, see <a href='/en/blog/eshop-delivery-options-for-customers'>delivery options for customers</a>. If you are planning a shop, read about <a href='/en/eshop-development'>e-shop development</a> or <a href='/en/contact'>write to me</a> with the systems you use.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Prepojenie webu alebo e-shopu s účtovníctvom a prepravcami",
+        "description": "Čo znamená prepojenie s účtovníctvom a prepravcami, aké údaje môžu putovať automaticky, na čo sa opýtať vopred a ako sa pripraviť na chyby.",
+        "content": [
+          "<p>Keď príde objednávka, často ju niekto prepisuje do účtovného programu a potom ešte raz do systému kuriéra. Prepojenie znamená, že si systémy tieto údaje posielajú samy a nikto ich nemusí prepisovať. Šetrí to čas aj chyby, ale len keď je dobre premyslené. Toto by som si ujasnil ako prvé.</p>",
+          "<h2>Čo sa dá odovzdávať automaticky</h2>",
+          "<ul><li><strong>Objednávky</strong> z obchodu do účtovníctva alebo skladu.</li><li><strong>Platby:</strong> informácia, že objednávka bola zaplatená, aby sa dala spárovať s faktúrou.</li><li><strong>Faktúry a dodacie listy</strong> vytvorené z údajov objednávky.</li><li><strong>Zásielky:</strong> údaje o objednávke odchádzajú prepravcovi a štítok s číslom zásielky sa vracia do obchodu.</li><li><strong>Stavy</strong> ako odoslané, doručené či vrátené, zobrazené zákazníkovi aj vo vašej administrácii.</li></ul>",
+          "<p>Čo je možné, závisí od rozhrania (API), ktoré druhá služba ponúka. Nie každá ho má a niektoré pokrývajú len časť toho, čo by ste chceli.</p>",
+          "<h2>Otázky, ktoré treba položiť na začiatku</h2>",
+          "<ol><li>Ponúka účtovný program alebo prepravca zdokumentované rozhranie a je súčasťou vášho tarifu, alebo sa platí zvlášť?</li><li>Ktoré údaje idú ktorým smerom a ktorý systém je pri každej položke „hlavný“, napríklad pri produktoch alebo sklade?</li><li>Kto vystavuje faktúru, obchod alebo účtovný program? Opýtajte sa svojho účtovníka, čo potrebuje.</li><li>Čo sa deje pri vrátení tovaru, zrušení objednávky, čiastočnej zásielke a zmene adresy?</li><li>Z akého účtu a s akými prístupovými kľúčmi sa pracuje a kto ich uchováva?</li></ol>",
+          "<h2>Na čo dať pozor</h2>",
+          "<ul><li><strong>Jednotný formát údajov.</strong> Názvy, sadzby DPH, kódy krajín, mena a zaokrúhľovanie musia znamenať na oboch stranách to isté, inak sa sumy nezhodnú.</li><li><strong>Jedinečné identifikátory.</strong> Číslo objednávky putuje s údajmi, aby sa nič nevytvorilo dvakrát, ak sa pošle dvakrát.</li><li><strong>Ošetrenie chýb.</strong> Ak služba nefunguje alebo údaje odmietne, systém to má skúsiť neskôr, zapísať problém do záznamu a upozorniť človeka, nie potichu stratiť objednávku.</li><li><strong>Ručná záložná cesta.</strong> Zásielku či faktúru musíte vedieť vytvoriť ručne a objednávku poslať znova, s krátkym písomným postupom.</li><li><strong>Testovanie</strong> na skúšobných účtoch pred skutočnými objednávkami.</li><li><strong>Zmeny.</strong> Druhá služba môže rozhranie zmeniť, takže to niekto musí sledovať.</li></ul>",
+          "<p>Nemôžem sľúbiť, že sa konkrétna služba dá pripojiť, kým neoverím, čo ponúka, preto je to vždy prvý krok. S rozhodnutiami okolo dopravy vám pomôže článok <a href='/sk/blog/eshop-delivery-options-for-customers'>spôsoby doručenia pre zákazníkov e-shopu</a>. Ak plánujete obchod, prečítajte si o <a href='/sk/tvorba-eshopu'>tvorbe e-shopu</a> alebo mi <a href='/sk/contact'>napíšte</a>, aké systémy používate.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Jakub Żerdzicki / Unsplash",
+          "url": "https://unsplash.com/@jakubzerdzicki?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "contact-form-that-works",
+      "cover": {
+        "icon": "Mail",
+        "label": "Contact form that works",
+        "photo": true
+      },
+      "en": {
+        "title": "A contact form that actually brings you enquiries",
+        "description": "How to build a contact form people complete: few fields, clear labels and errors, spam protection that does not block humans, and what to test before launch.",
+        "content": [
+          "<p>A contact form is often the main way a small business gets enquiries, and it is easy to get wrong. A visitor who gives up halfway, or a message that never reaches you, is a lost customer. These are the points I check when I build one.</p>",
+          "<h2>Ask for as little as possible</h2>",
+          "<ul><li>Name, email and the message are usually enough. Add other fields only if you cannot reply without them.</li><li>Every extra field gives people one more reason to stop.</li><li>If you need details such as the type of service or a date, offer a short choice or an optional field.</li><li>Ask for a phone number only if you really plan to call.</li></ul>",
+          "<h2>Clear labels and errors</h2>",
+          "<ul><li>Put a visible label on each field, not only placeholder text that disappears when typing starts.</li><li>Mark which fields are required.</li><li>Say what is wrong and where: “Enter an email like name@example.sk” is better than “Invalid input”.</li><li>Keep what the person has already typed after an error.</li><li>Make fields and the button easy to use on a phone. More in <a href='/en/blog/website-accessibility-basics'>website accessibility basics</a>.</li></ul>",
+          "<h2>Spam protection that does not punish people</h2>",
+          "<ul><li>A hidden field that people never see but simple bots fill in.</li><li>A limit on how many messages one address can send in a short time.</li><li>Checks on the server, not only in the browser.</li><li>Invisible checks are friendlier than puzzles with pictures, which annoy people and can shut out some users.</li></ul>",
+          "<p>No protection is perfect. Aim to stop most spam without blocking real people, and look in the spam folder now and then.</p>",
+          "<h2>After sending</h2>",
+          "<p>Show a clear confirmation on the page, for example that the message arrived and when the person can expect a reply. Do not just clear the form and say nothing.</p>",
+          "<h2>Where messages go and how fast you reply</h2>",
+          "<p>Decide which address receives the messages and make sure someone else sees them when you are away. Email sent from a website can end up in spam, so sending should be set up properly for your domain. It is also wise to keep a copy of each message in the site’s admin, so nothing is lost if email fails. Reply as soon as you can, ideally the same working day, and do not promise more than you can keep.</p>",
+          "<h2>Check before launch</h2>",
+          "<ol><li>Send a test message from a phone and from a computer.</li><li>Confirm it arrives at every address, and not in spam.</li><li>Try empty fields, a wrong email and Slovak letters such as ľ, š and č.</li><li>Check that the confirmation appears and that your own spam protection does not block your message.</li><li>Place a link to the privacy policy near the button.</li></ol>",
+          "<p>The form is one item on my <a href='/en/website-launch-checklist'>website launch checklist</a>. If you want a form built and tested properly, <a href='/en/contact'>write to me</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Kontaktný formulár, ktorý vám naozaj prináša dopyty",
+        "description": "Ako vytvoriť formulár, ktorý ľudia vyplnia: málo polí, jasné štítky a chyby, ochrana pred spamom bez prekážok pre ľudí a čo otestovať pred spustením.",
+        "content": [
+          "<p>Kontaktný formulár je pre malú firmu často hlavná cesta k dopytom a ľahko sa pokazí. Návštevník, ktorý to vzdá v polovici, alebo správa, ktorá k vám nedorazí, je stratený zákazník. Toto sú body, ktoré kontrolujem, keď formulár tvorím.</p>",
+          "<h2>Pýtajte sa na čo najmenej</h2>",
+          "<ul><li>Zvyčajne stačí meno, e-mail a správa. Ďalšie polia pridajte len vtedy, ak bez nich nemôžete odpovedať.</li><li>Každé pole navyše dáva ľuďom ďalší dôvod prestať.</li><li>Ak potrebujete podrobnosti, napríklad druh služby alebo dátum, ponúknite krátky výber alebo nepovinné pole.</li><li>Telefónne číslo žiadajte len vtedy, ak naozaj plánujete volať.</li></ul>",
+          "<h2>Jasné štítky a chybové hlásenia</h2>",
+          "<ul><li>Pri každom poli majte viditeľný štítok, nie iba vzorový text, ktorý po začatí písania zmizne.</li><li>Označte, ktoré polia sú povinné.</li><li>Napíšte, čo je zle a kde: „Zadajte e-mail v tvare meno@priklad.sk“ je lepšie než „Neplatný vstup“.</li><li>Po chybe nechajte to, čo človek už napísal.</li><li>Polia a tlačidlo majú byť pohodlné aj na telefóne. Viac v článku <a href='/sk/blog/website-accessibility-basics'>prístupnosť webu: základy</a>.</li></ul>",
+          "<h2>Ochrana pred spamom, ktorá netrestá ľudí</h2>",
+          "<ul><li>Skryté pole, ktoré ľudia nikdy nevidia, ale jednoduchí roboti ho vyplnia.</li><li>Obmedzenie, koľko správ môže jedna adresa poslať za krátky čas.</li><li>Kontroly na serveri, nielen v prehliadači.</li><li>Neviditeľné kontroly sú priateľskejšie než hádanky s obrázkami, ktoré ľudí otravujú a niektorých používateľov môžu vylúčiť.</li></ul>",
+          "<p>Žiadna ochrana nie je dokonalá. Cieľom je zastaviť väčšinu spamu bez blokovania skutočných ľudí a občas sa pozrieť aj do priečinka so spamom.</p>",
+          "<h2>Po odoslaní</h2>",
+          "<p>Zobrazte na stránke jasné potvrdenie, napríklad že správa dorazila a kedy môže človek čakať odpoveď. Nenechajte formulár po odoslaní len tak zmiznúť bez slova.</p>",
+          "<h2>Kam správy chodia a ako rýchlo odpovedáte</h2>",
+          "<p>Rozhodnite, na ktorú adresu správy chodia, a postarajte sa, aby ich videl aj niekto ďalší, keď ste preč. E-mail odoslaný z webu môže skončiť v spame, preto treba odosielanie pre vašu doménu správne nastaviť. Rozumné je tiež uchovávať kópiu každej správy v administrácii webu, aby sa nič nestratilo, ak e-mail zlyhá. Odpovedajte čo najskôr, ideálne v ten istý pracovný deň, a nesľubujte viac, než viete dodržať.</p>",
+          "<h2>Čo skontrolovať pred spustením</h2>",
+          "<ol><li>Odošlite skúšobnú správu z telefónu aj z počítača.</li><li>Overte, že dorazí na každú adresu a nie do spamu.</li><li>Vyskúšajte prázdne polia, nesprávny e-mail a slovenské písmená ako ľ, š a č.</li><li>Skontrolujte, že sa zobrazí potvrdenie a že vaša vlastná ochrana pred spamom neblokuje vašu správu.</li><li>Dajte odkaz na zásady ochrany osobných údajov blízko tlačidla.</li></ol>",
+          "<p>Formulár je jednou z položiek môjho <a href='/sk/kontrolny-zoznam-pred-spustenim-webu'>kontrolného zoznamu pred spustením webu</a>. Ak chcete formulár vytvoriť a poriadne otestovať, <a href='/sk/contact'>napíšte mi</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Stephen Phillips - Hostreviews.co.uk / Unsplash",
+          "url": "https://unsplash.com/@hostreviews?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "photos-and-images-for-your-website",
+      "cover": {
+        "icon": "Image",
+        "label": "Photos for your website",
+        "photo": true
+      },
+      "en": {
+        "title": "Photos for your website: what you need and how to prepare them",
+        "description": "Which photos a small business needs, own versus stock images, size and format for speed, descriptions for accessibility and the rights to use a picture.",
+        "content": [
+          "<p>Photos are often what slows a website down, and also what makes it feel real. To be clear about my role: I do not take photographs or write texts, the photos come from you. What I do is prepare them properly for the web. Here is what to think about before the work starts.</p>",
+          "<h2>Which photos are worth having</h2>",
+          "<ul><li><strong>People.</strong> You and your team. Visitors like to see who they will deal with.</li><li><strong>Premises.</strong> The entrance, so customers can find you, and the inside.</li><li><strong>Your work.</strong> Finished results, products and the way you work.</li><li><strong>Products</strong> on a plain background, if you run an e-shop.</li><li><strong>The logo</strong> in good quality, ideally as a vector file.</li></ul>",
+          "<h2>Your own or stock</h2>",
+          "<p>Your own photos show the real business and build trust. Stock images are generic, and the same picture may appear on a competitor’s site. Stock can be fine for an abstract background, but never for “our team” or “our workshop”. Photos from a phone in good daylight can work well. A professional photographer is worth it for the main pages, and finding one is your decision.</p>",
+          "<h2>Size and format for speed</h2>",
+          "<ul><li>Oversized images are one of the usual reasons pages load slowly. More in <a href='/en/blog/website-speed-what-slows-it-down'>what slows a website down</a>.</li><li>A photo straight from a camera or phone is far larger than a page needs. It should be resized to the size it is shown at.</li><li>Modern formats such as WebP are usually smaller than JPEG at similar quality. I handle the conversion and sizing, so bring the best originals you have.</li><li>Send the original files, not copies compressed by a messaging app.</li></ul>",
+          "<h2>Descriptions for accessibility</h2>",
+          "<p>Every meaningful image needs a short text alternative (alt text) for people who use a screen reader or have images switched off. Describe what the picture shows, for example “Hairdresser colouring a client’s hair in the salon”. Decorative images can have an empty description. Do not stuff keywords into it. Text written inside an image cannot be read by a screen reader either, so keep important information in real text.</p>",
+          "<h2>Rights to use</h2>",
+          "<ul><li>If a photographer took the pictures, check the agreement says you may use them on your website.</li><li>For stock images, read the licence. Some require a credit, and not all allow commercial use.</li><li>Do not copy images from search results or from other companies’ sites.</li><li>If people are recognisable, get their consent. This applies to staff and customers. If in doubt, ask a lawyer.</li></ul>",
+          "<p>What else to gather is listed in <a href='/en/blog/what-to-prepare-before-a-website'>what to prepare before a website</a>. If you are planning a new site, see <a href='/en/web-development-bratislava'>website development in Bratislava</a> or <a href='/en/contact'>write to me</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Fotografie na web: aké potrebujete a ako ich pripraviť",
+        "description": "Aké fotografie potrebuje malá firma, vlastné alebo z fotobanky, veľkosť a formát pre rýchlosť, popisy pre prístupnosť a práva na použitie obrázka.",
+        "content": [
+          "<p>Fotografie bývajú často to, čo web spomaľuje, ale aj to, vďaka čomu pôsobí skutočne. Aby bolo jasné, aká je moja úloha: fotografie nerobím ani nepíšem texty, fotografie dodávate vy. Ja ich správne pripravím pre web. Toto stojí za zváženie ešte pred začiatkom prác.</p>",
+          "<h2>Aké fotografie sa oplatí mať</h2>",
+          "<ul><li><strong>Ľudia.</strong> Vy a váš tím. Návštevníci radi vidia, s kým budú jednať.</li><li><strong>Prevádzka.</strong> Vchod, aby vás zákazníci našli, a interiér.</li><li><strong>Vaša práca.</strong> Hotové výsledky, produkty a spôsob, akým pracujete.</li><li><strong>Produkty</strong> na jednoduchom pozadí, ak máte e-shop.</li><li><strong>Logo</strong> v dobrej kvalite, ideálne ako vektorový súbor.</li></ul>",
+          "<h2>Vlastné alebo z fotobanky</h2>",
+          "<p>Vlastné fotografie ukazujú skutočnú firmu a budujú dôveru. Fotky z fotobanky sú všeobecné a ten istý obrázok sa môže objaviť aj na webe konkurencie. Na abstraktné pozadie môžu byť v poriadku, ale nikdy nie ako „náš tím“ alebo „naša dielňa“. Fotky z telefónu za dobrého denného svetla môžu fungovať dobre. Profesionálny fotograf sa oplatí na hlavné stránky a jeho výber je vaše rozhodnutie.</p>",
+          "<h2>Veľkosť a formát pre rýchlosť</h2>",
+          "<ul><li>Príliš veľké obrázky sú jednou z bežných príčin pomalého načítania. Viac v článku <a href='/sk/blog/website-speed-what-slows-it-down'>rýchlosť webu a čo ju spomaľuje</a>.</li><li>Fotka priamo z fotoaparátu či telefónu je oveľa väčšia, než stránka potrebuje. Treba ju zmenšiť na veľkosť, v akej sa zobrazuje.</li><li>Moderné formáty ako WebP sú pri podobnej kvalite zvyčajne menšie než JPEG. Konverziu a veľkosti riešim ja, preto prineste najlepšie originály, aké máte.</li><li>Posielajte pôvodné súbory, nie kópie stlačené v komunikačnej aplikácii.</li></ul>",
+          "<h2>Popisy pre prístupnosť</h2>",
+          "<p>Každý obrázok, ktorý niečo vyjadruje, potrebuje krátky textový popis (alt text) pre ľudí s čítačkou obrazovky alebo s vypnutými obrázkami. Opíšte, čo je na obrázku, napríklad „Kaderníčka farbí klientke vlasy v salóne“. Dekoratívne obrázky môžu mať prázdny popis. Nenapchávajte doň kľúčové slová. Text napísaný priamo v obrázku čítačka obrazovky tiež neprečíta, preto dôležité informácie dávajte do skutočného textu.</p>",
+          "<h2>Práva na použitie</h2>",
+          "<ul><li>Ak fotografie robil fotograf, skontrolujte, či zmluva dovoľuje ich použitie na webe.</li><li>Pri fotkách z fotobanky si prečítajte licenciu. Niektoré vyžadujú uvedenie autora a nie všetky dovoľujú komerčné použitie.</li><li>Nekopírujte obrázky z výsledkov vyhľadávania ani z webov iných firiem.</li><li>Ak sú na fotke rozpoznateľní ľudia, potrebujete ich súhlas. Týka sa to zamestnancov aj zákazníkov. Ak si nie ste istí, opýtajte sa právnika.</li></ul>",
+          "<p>Čo ešte pripraviť, nájdete v článku <a href='/sk/blog/what-to-prepare-before-a-website'>čo pripraviť pred tvorbou webu</a>. Ak plánujete nový web, pozrite si <a href='/sk/tvorba-webov-bratislava'>tvorbu webov v Bratislave</a> alebo mi <a href='/sk/contact'>napíšte</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: ShareGrid / Unsplash",
+          "url": "https://unsplash.com/@sharegrid?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    }
+  ]
+}

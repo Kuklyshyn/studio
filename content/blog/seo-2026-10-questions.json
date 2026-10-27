@@ -67,7 +67,8 @@
           "<ul><li>The domain and access to it, if one exists.</li><li>Access to the current site and e-mail.</li><li>Details for the legal pages: company name, ID number and address.</li></ul>",
           "<h2>What to clarify</h2>",
           "<p>Who will manage the site after launch, who approves the texts and by when they will be delivered. The most common delay is not in programming but in delivering materials.</p>",
-          "<p>If you are unsure, <a href='/en/contact'>write to me</a> and we will decide together what is needed. More about the process: <a href='/en/web-development-bratislava'>website development in Bratislava</a>.</p>"
+          "<p>If you are unsure, <a href='/en/contact'>write to me</a> and we will decide together what is needed. More about the process: <a href='/en/web-development-bratislava'>website development in Bratislava</a>.</p>",
+          "<p>When the site is ready to go live, use the free <a href='/en/website-launch-checklist'>website launch checklist</a> to check the final details.</p>"
         ]
       },
       "sk": {
@@ -83,7 +84,8 @@
           "<ul><li>Doména a prístup k nej, ak už existuje.</li><li>Prístup k existujúcemu webu a e-mailu.</li><li>Údaje pre právne stránky: obchodné meno, IČO a adresa.</li></ul>",
           "<h2>Čo si ujasniť</h2>",
           "<p>Kto bude web spravovať po spustení, kto schvaľuje texty a dokedy ich dodá. Najčastejšie zdržanie nie je v programovaní, ale v dodaní podkladov.</p>",
-          "<p>Ak si nie ste istý, <a href='/sk/contact'>napíšte mi</a> a spoločne určíme, čo je potrebné. Viac o procese: <a href='/sk/tvorba-webov-bratislava'>tvorba webov v Bratislave</a>.</p>"
+          "<p>Ak si nie ste istý, <a href='/sk/contact'>napíšte mi</a> a spoločne určíme, čo je potrebné. Viac o procese: <a href='/sk/tvorba-webov-bratislava'>tvorba webov v Bratislave</a>.</p>",
+          "<p>Keď je web pripravený na spustenie, prejdite si bezplatný <a href='/sk/kontrolny-zoznam-pred-spustenim-webu'>kontrolný zoznam pred spustením webu</a> a overte posledné detaily.</p>"
         ]
       },
       "date": "2026-10-09",

@@ -48,6 +48,16 @@ const QUERIES = {
   "website-analytics-what-to-measure": "charts graphs dashboard",
   "test-your-website-on-a-phone": "smartphone hand screen",
   "redesign-or-rebuild-old-website": "architect blueprint renovation",
+  "booking-system-checklist-for-service-business": "salon appointment calendar",
+  "crm-or-spreadsheet-for-small-business": "spreadsheet laptop desk",
+  "connect-website-with-accounting-and-delivery": "invoice accounting desk",
+  "contact-form-that-works": "email message laptop",
+  "photos-and-images-for-your-website": "photographer camera lens",
+  "domain-and-business-email-basics": "email inbox laptop",
+  "how-a-website-project-works-step-by-step": "planning sticky notes whiteboard",
+  "website-security-basics-for-small-business": "padlock security keyboard",
+  "faq-section-for-a-business-website": "customer support help desk",
+  "choosing-a-cms-for-a-small-website": "website design layout screen",
 };
 
 // ONLY=slug1,slug2 limits the run to those posts, so existing covers are left alone.

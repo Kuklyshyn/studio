@@ -1,0 +1,254 @@
+{
+  "date": "2026-10-27",
+  "author": "Omnicode",
+  "posts": [
+    {
+      "slug": "domain-and-business-email-basics",
+      "cover": {
+        "icon": "AtSign",
+        "label": "Domain and business email",
+        "photo": true
+      },
+      "en": {
+        "title": "Domain name and business email: the basics for a small business",
+        "description": "How to choose a domain name, .sk or .com, why a business mailbox beats a free one, what DNS records are and what SPF and DKIM do, in plain words.",
+        "content": [
+          "<p>Your domain is the address of your website, and it is also the part of your email address after the @ sign. You will live with this choice for years, so think before you register.</p>",
+          "<h2>Choosing a domain name</h2>",
+          "<ul><li><strong>Short and easy to say.</strong> If you must spell it out on the phone, it is too complicated.</li><li><strong>Close to your business name,</strong> so a customer who remembers the name can guess the address.</li><li><strong>No hyphens, numbers or unusual spelling.</strong> People mistype them.</li><li><strong>Check for look-alikes.</strong> It should not be too close to another firm in your field.</li></ul>",
+          "<h3>.sk or .com</h3>",
+          "<p>A .sk domain says clearly that you work in Slovakia, and it is the natural choice if your customers are local. A .com domain is familiar everywhere and makes sense if you also serve customers abroad. If your name is free in both, you can register both and let one redirect to the other. Check availability with a registrar.</p>",
+          "<h2>A business mailbox or a free one</h2>",
+          "<p>An address like info@yourcompany.sk looks more trustworthy than one from a free mailbox. It also stays with the business when a person leaves, and you can create several, for example info@ and orders@. A free mailbox is fine to start with. A business mailbox is usually a paid service, either part of your hosting or separate.</p>",
+          "<h2>DNS records in plain words</h2>",
+          "<p>DNS works like a phone book for the internet. It is a set of records attached to your domain that tell the world where your website lives and where your email should go. You edit them in the control panel of whoever manages the DNS for your domain, usually the registrar or the hosting provider. The main kinds:</p>",
+          "<ul><li><strong>A and CNAME</strong> point the domain to the server where the site runs.</li><li><strong>MX</strong> says which service receives your email.</li><li><strong>TXT</strong> holds verification data and email protection.</li></ul>",
+          "<p>A wrong change can take the site or the mail offline, so change one record at a time and note the old value first. Changes may take a while to spread.</p>",
+          "<h2>SPF and DKIM</h2>",
+          "<p>SPF is a list of servers allowed to send email in the name of your domain. DKIM adds a digital signature to outgoing messages so the recipient can check they were not forged. Together they protect against fake emails sent in your name and help your genuine messages stay out of the spam folder. Both are DNS records, and your email provider gives you the values.</p>",
+          "<h2>Who should own the domain</h2>",
+          "<p>The domain should be registered to you or your company, not to a supplier. Why this matters is explained in <a href='/en/blog/who-owns-your-domain-hosting-and-code'>who owns your domain, hosting and code</a>.</p>",
+          "<p>If you are planning a new site and are not sure what you already have and what needs setting up, <a href='/en/contact'>write to me</a>. See also <a href='/en/web-development-bratislava'>website development in Bratislava</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Doména a firemný e-mail: základy pre majiteľa malej firmy",
+        "description": "Ako vybrať názov domény, .sk alebo .com, prečo je firemná schránka lepšia ako bezplatná, čo sú DNS záznamy a načo slúžia SPF a DKIM. Jednoducho.",
+        "content": [
+          "<p>Doména je adresa vášho webu a zároveň časť e-mailovej adresy za znakom @. Je to malé rozhodnutie, s ktorým budete žiť roky, preto sa oplatí chvíľu popremýšľať ešte pred registráciou.</p>",
+          "<h2>Ako vybrať názov domény</h2>",
+          "<ul><li><strong>Krátky a ľahko vysloviteľný.</strong> Ak ho musíte po telefóne hláskovať, je príliš zložitý.</li><li><strong>Blízky názvu firmy,</strong> aby ho zákazník, ktorý si pamätá meno, vedel uhádnuť.</li><li><strong>Bez pomlčiek, čísel a nezvyčajného pravopisu.</strong> Ľudia v nich robia preklepy.</li><li><strong>Skontrolujte podobné názvy.</strong> Nemá sa príliš podobať názvu inej firmy vo vašom odbore.</li></ul>",
+          "<h3>.sk alebo .com</h3>",
+          "<p>Koncovka .sk jasne hovorí, že pôsobíte na Slovensku, a je prirodzenou voľbou, ak máte miestnych zákazníkov. Koncovka .com je známa všade a dáva zmysel, ak obsluhujete aj zahraničie. Ak je vaše meno voľné v oboch, môžete zaregistrovať obe a jednu presmerovať na druhú. Dostupnosť si overte u registrátora.</p>",
+          "<h2>Firemná schránka alebo bezplatná</h2>",
+          "<p>Adresa typu info@vasafirma.sk pôsobí dôveryhodnejšie než adresa z bezplatnej schránky. Zostáva firme, aj keď niekto odíde, a môžete si zriadiť viac adries, napríklad info@ a objednavky@. Bezplatná schránka je na začiatok v poriadku. Firemná schránka býva zvyčajne platená služba, buď súčasť hostingu, alebo samostatná.</p>",
+          "<h2>DNS záznamy jednoducho</h2>",
+          "<p>DNS je akýsi telefónny zoznam internetu. Je to sada záznamov pri vašej doméne, ktoré hovoria svetu, kde je váš web a kam má chodiť pošta. Upravujete ich v administrácii toho, kto spravuje DNS vašej domény, zvyčajne registrátora alebo poskytovateľa hostingu. Najčastejšie typy sú:</p>",
+          "<ul><li><strong>A a CNAME</strong> smerujú doménu na server, kde web beží.</li><li><strong>MX</strong> určuje, ktorá služba prijíma vašu poštu.</li><li><strong>TXT</strong> nesie overovacie údaje a ochranu e-mailu.</li></ul>",
+          "<p>Nesprávna zmena môže vyradiť web alebo poštu, preto meňte vždy jeden záznam a pôvodnú hodnotu si predtým zapíšte. Zmena sa nemusí prejaviť všade okamžite.</p>",
+          "<h2>SPF a DKIM</h2>",
+          "<p>SPF je zoznam serverov, ktoré smú posielať e-maily v mene vašej domény. DKIM pridáva k odchádzajúcim správam digitálny podpis, podľa ktorého príjemca overí, že nebola sfalšovaná. Spolu chránia pred podvrhnutými e-mailami v mene vašej firmy a pomáhajú, aby vaše skutočné správy nekončili v spame. Obe sa nastavujú ako DNS záznamy a presné hodnoty vám dá poskytovateľ pošty.</p>",
+          "<h2>Komu má doména patriť</h2>",
+          "<p>Doména má byť zaregistrovaná na vás alebo na vašu firmu, nie na dodávateľa. Prečo na tom záleží, popisuje článok <a href='/sk/blog/who-owns-your-domain-hosting-and-code'>komu patrí doména, hosting a kód</a>.</p>",
+          "<p>Ak plánujete nový web a nie ste si istí, čo už máte a čo treba nastaviť, <a href='/sk/contact'>napíšte mi</a>. Viac o mojej práci je na stránke <a href='/sk/tvorba-webov-bratislava'>tvorba webov v Bratislave</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Mariia Berezovsky / Unsplash",
+          "url": "https://unsplash.com/@mariiaberezovsky?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "how-a-website-project-works-step-by-step",
+      "cover": {
+        "icon": "Route",
+        "label": "How a project works",
+        "photo": true
+      },
+      "en": {
+        "title": "How a website project works, step by step",
+        "description": "The usual order of a website project, from the first conversation to launch and support: what happens at each step and what I need from you.",
+        "content": [
+          "<p>Most owners have never commissioned a website, and not knowing the process can be stressful. Below is the usual order of a project. The details change with the size of the site, but the steps are mostly the same.</p>",
+          "<h2>The usual order</h2>",
+          "<ol><li><strong>A conversation about the goal, scope and timing.</strong> What the site should achieve, who it is for, which pages or functions it needs and when you need it.</li><li><strong>Materials.</strong> You provide texts, photos, a logo and any access you already have. A list is in <a href='/en/blog/what-to-prepare-before-a-website'>what to prepare before a website</a>.</li><li><strong>Layout and structure.</strong> We agree on the pages, what is on each one and how they link together, and you approve it before I build. If you work with a designer, I build from their layout.</li><li><strong>Development.</strong> I build the site and, where it makes sense, show you a working version along the way rather than only at the end.</li><li><strong>Testing together.</strong> We go through the site on a computer and on a phone, check the forms and the texts, and I fix what we find.</li><li><strong>Launch.</strong> The site goes live on your domain. The steps are in the <a href='/en/website-launch-checklist'>website launch checklist</a>.</li><li><strong>Support.</strong> After launch you can ask for fixes and changes. What to expect is described in <a href='/en/blog/website-after-launch-what-to-expect'>website after launch</a>.</li></ol>",
+          "<h2>What I need from you</h2>",
+          "<ul><li>One contact person who can make decisions.</li><li>Texts and photos within the agreed time.</li><li>Feedback gathered into one message, not several people sending comments separately.</li><li>Access to your domain and hosting, or an account through which we can set them up.</li></ul>",
+          "<h2>Where projects usually slow down</h2>",
+          "<ul><li>Texts and photos arrive late.</li><li>The scope grows during the work (“while you are at it, add...”).</li><li>Feedback comes in pieces or contradicts itself.</li><li>Access to the domain is missing.</li></ul>",
+          "<p>None of this is a disaster, but each of them moves the date.</p>",
+          "<h2>How long it takes</h2>",
+          "<p>It depends on the scope. A presentation site with a few pages is a different job from an e-shop or a booking system. I can give a realistic timeline only once we agree what is included and when the materials will be ready. Be careful with a date that is promised before anyone has asked what you need.</p>",
+          "<p>If you have a project in mind, <a href='/en/contact'>write to me</a> and describe it in a few sentences, or see <a href='/en/web-development-bratislava'>website development in Bratislava</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Ako prebieha tvorba webu krok za krokom",
+        "description": "Bežné poradie krokov pri tvorbe webu, od prvého rozhovoru po spustenie a podporu: čo sa deje v každom kroku a čo budem potrebovať od vás.",
+        "content": [
+          "<p>Väčšina majiteľov firiem si web ešte nikdy neobjednávala a neznámy postup môže byť zdrojom stresu. Nižšie je bežné poradie projektu. Detaily sa menia podľa rozsahu webu, no kroky sú väčšinou rovnaké.</p>",
+          "<h2>Bežné poradie krokov</h2>",
+          "<ol><li><strong>Rozhovor o cieli, rozsahu a termíne.</strong> Čo má web dosiahnuť, pre koho je, aké stránky či funkcie potrebuje a dokedy ho potrebujete.</li><li><strong>Podklady.</strong> Dodáte texty, fotografie, logo a prístupy, ktoré už máte. Zoznam je v článku <a href='/sk/blog/what-to-prepare-before-a-website'>čo pripraviť pred tvorbou webu</a>.</li><li><strong>Návrh a štruktúra.</strong> Dohodneme stránky, čo je na ktorej a ako sú prepojené, a vy to pred vývojom odsúhlasíte. Ak spolupracujete s dizajnérom, stavím podľa jeho návrhu.</li><li><strong>Vývoj.</strong> Web postavím a tam, kde to dáva zmysel, ukážem vám funkčnú verziu už počas práce, nie až na konci.</li><li><strong>Spoločné testovanie.</strong> Prejdeme spolu web na počítači aj na telefóne, skontrolujeme formuláre a texty a nájdené chyby opravím.</li><li><strong>Spustenie.</strong> Web sa nasadí na vašu doménu. Postup nájdete v <a href='/sk/kontrolny-zoznam-pred-spustenim-webu'>kontrolnom zozname pred spustením webu</a>.</li><li><strong>Podpora.</strong> Po spustení môžete žiadať opravy a úpravy. Čo čakať, popisuje článok <a href='/sk/blog/website-after-launch-what-to-expect'>web po spustení</a>.</li></ol>",
+          "<h2>Čo budem od vás potrebovať</h2>",
+          "<ul><li>Jednu kontaktnú osobu, ktorá môže rozhodovať.</li><li>Texty a fotografie v dohodnutom čase.</li><li>Pripomienky zhromaždené v jednej správe, nie od viacerých ľudí zvlášť.</li><li>Prístup k doméne a hostingu alebo účet, cez ktorý ich spolu nastavíme.</li></ul>",
+          "<h2>Kde sa projekty zvyčajne zdržia</h2>",
+          "<ul><li>Texty a fotografie prídu neskoro.</li><li>Rozsah rastie počas práce („keď už to robíte, pridajte aj...“).</li><li>Pripomienky prichádzajú po častiach alebo si odporujú.</li><li>Chýba prístup k doméne.</li></ul>",
+          "<p>Nič z toho nie je katastrofa, ale každá z týchto vecí posúva termín.</p>",
+          "<h2>Ako dlho to trvá</h2>",
+          "<p>Závisí od rozsahu. Prezentačný web s niekoľkými stránkami je iná práca ako e-shop alebo rezervačný systém. Reálny termín viem určiť až vtedy, keď sa dohodneme, čo je v rozsahu a kedy budú hotové podklady. Buďte opatrní pri termíne, ktorý vám sľúbia skôr, než sa niekto spýta, čo potrebujete.</p>",
+          "<p>Ak máte projekt na mysli, <a href='/sk/contact'>napíšte mi</a> o ňom niekoľko viet alebo si pozrite <a href='/sk/tvorba-webov-bratislava'>tvorbu webov v Bratislave</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Alvaro Reyes / Unsplash",
+          "url": "https://unsplash.com/@alvarordesign?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "website-security-basics-for-small-business",
+      "cover": {
+        "icon": "ShieldCheck",
+        "label": "Website security basics",
+        "photo": true
+      },
+      "en": {
+        "title": "Website security basics for a small business",
+        "description": "Updates, strong unique passwords, two-factor login, fewer plugins, backups, HTTPS and access rights: simple habits that make a small website safer.",
+        "content": [
+          "<p>Small business websites are rarely attacked by someone who has chosen them personally. Most attacks are automated and look for sites with outdated software or weak passwords. That is good news, because the basics are not complicated. Here is what I would do, without any drama.</p>",
+          "<h2>Keep everything updated</h2>",
+          "<p>A website runs on software: a system, plugins, themes and libraries. Updates often fix security holes that are already publicly known, so a site that is never updated is an easy target. Someone should be responsible for updating it, either you or the person who maintains the site. An update can occasionally break something, which is why a backup comes first.</p>",
+          "<h2>Passwords and two-factor login</h2>",
+          "<ul><li>Every account gets its own long password, never reused.</li><li>A password manager remembers them for you, so you only remember one main password.</li><li>Turn on two-factor authentication (a code from an app, or a security key) for the site admin, hosting, domain registrar and email. Those accounts are the keys to everything. If a service offers an authenticator app, it is a better choice than SMS.</li></ul>",
+          "<h2>Fewer plugins, fewer problems</h2>",
+          "<p>Every plugin is extra code that has to be kept up to date. Install only what you really use, choose plugins with a good track record and recent updates, and delete what you no longer use rather than just switching it off.</p>",
+          "<h2>Backups</h2>",
+          "<ul><li>A regular copy of both the files and the database.</li><li>Stored somewhere other than the same server.</li><li>You know how to restore it, and you have had someone try it once.</li><li>A fresh one before any bigger change.</li></ul>",
+          "<h2>HTTPS and access rights</h2>",
+          "<ul><li>HTTPS encrypts the connection between the visitor and the site. Browsers show a padlock and warn visitors on sites without it. Make sure the certificate renews.</li><li>Each person has their own account, not a shared password.</li><li>Give only the rights people need: an editor does not have to be an administrator.</li><li>When someone leaves or a collaboration ends, remove their access. Keep a list of who has access to what.</li></ul>",
+          "<p>None of this guarantees that nothing will ever happen, but it removes the most common causes. What follows after a site goes live is in <a href='/en/blog/website-after-launch-what-to-expect'>website after launch</a>, and the question of who holds the accounts is in <a href='/en/blog/who-owns-your-domain-hosting-and-code'>who owns your domain, hosting and code</a>. If you would like to go through your own site, <a href='/en/contact'>write to me</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Základy bezpečnosti webu pre malú firmu",
+        "description": "Aktualizácie, silné a jedinečné heslá, dvojfaktorové overenie, menej doplnkov, zálohy, HTTPS a prístupové práva: jednoduché návyky pre bezpečnejší malý web.",
+        "content": [
+          "<p>Weby malých firiem len zriedka napadne niekto, kto si ich vybral osobne. Väčšina útokov je automatická a hľadá weby so zastaraným softvérom alebo slabými heslami. To je dobrá správa, pretože základy nie sú zložité. Takto by som postupoval, bez zbytočného strašenia.</p>",
+          "<h2>Všetko aktualizujte</h2>",
+          "<p>Web beží na softvéri: systéme, doplnkoch, šablónach a knižniciach. Aktualizácie často opravujú bezpečnostné chyby, ktoré sú už verejne známe, takže web, ktorý sa nikdy neaktualizuje, je ľahký cieľ. Za aktualizácie má niekto zodpovedať, buď vy, alebo ten, kto web spravuje. Aktualizácia môže občas niečo pokaziť, preto najprv príde záloha.</p>",
+          "<h2>Heslá a dvojfaktorové overenie</h2>",
+          "<ul><li>Každý účet má mať vlastné dlhé heslo, nikdy nie opakované.</li><li>Heslá si pamätá správca hesiel, vy si pamätáte len jedno hlavné.</li><li>Dvojfaktorové overenie (kód z aplikácie alebo bezpečnostný kľúč) zapnite pri správe webu, hostingu, registrátorovi domény a e-maile. Tieto účty sú kľúčom ku všetkému. Ak služba ponúka overovaciu aplikáciu, je to lepšia voľba než SMS.</li></ul>",
+          "<h2>Menej doplnkov, menej problémov</h2>",
+          "<p>Každý doplnok je ďalší kód, ktorý treba udržiavať aktuálny. Inštalujte len to, čo naozaj používate, vyberajte doplnky s dobrou históriou a nedávnymi aktualizáciami a to, čo už nepoužívate, radšej odstráňte, než len vypnite.</p>",
+          "<h2>Zálohy</h2>",
+          "<ul><li>Pravidelná kópia súborov aj databázy.</li><li>Uložená inde než na tom istom serveri.</li><li>Viete, ako ju obnoviť, a nechali ste si to raz vyskúšať.</li><li>Čerstvá záloha pred každou väčšou zmenou.</li></ul>",
+          "<h2>HTTPS a prístupové práva</h2>",
+          "<ul><li>HTTPS šifruje spojenie medzi návštevníkom a webom. Prehliadač ukáže zámok a na webe bez neho návštevníka varuje. Overte, že sa certifikát obnovuje.</li><li>Každý človek má vlastný účet, nie zdieľané heslo.</li><li>Dávajte len potrebné práva: redaktor nemusí byť administrátor.</li><li>Keď niekto odíde alebo spolupráca skončí, jeho prístup zrušte. Majte zoznam, kto má prístup kam.</li></ul>",
+          "<p>Nič z toho nezaručí, že sa nikdy nič nestane, ale odstráni to najčastejšie príčiny. Čo nasleduje po spustení webu, popisuje článok <a href='/sk/blog/website-after-launch-what-to-expect'>web po spustení</a> a otázku, komu patria účty, článok <a href='/sk/blog/who-owns-your-domain-hosting-and-code'>komu patrí doména, hosting a kód</a>. Ak chcete prejsť svoj web, <a href='/sk/contact'>napíšte mi</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: FlyD / Unsplash",
+          "url": "https://unsplash.com/@flyd2069?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "faq-section-for-a-business-website",
+      "cover": {
+        "icon": "CircleHelp",
+        "label": "FAQ section",
+        "photo": true
+      },
+      "en": {
+        "title": "How to write an FAQ section for a business website",
+        "description": "Where to find the questions, how to answer briefly and directly, how to group and update them, and why an FAQ helps customers and, indirectly, search.",
+        "content": [
+          "<p>A good FAQ section answers the questions that would otherwise reach you by phone or email, and it lets a hesitating visitor decide without having to ask. It is one of the easier parts of a website to get right, because the material already exists in your daily work.</p>",
+          "<h2>Where to get the questions</h2>",
+          "<ul><li>Your own inbox, messages and notes from phone calls. What do people ask again and again?</li><li>The people who talk to customers. Ask them for the three questions they answer most often.</li><li>The questions people have before they decide: how long it takes, what is included, how ordering or delivery works, what happens if something goes wrong.</li><li>Write each question in the customer’s words (“Do I have to pay a deposit?”), not in the company’s words.</li></ul>",
+          "<h2>How to answer</h2>",
+          "<ul><li>Put the answer in the first sentence, then add detail only if needed.</li><li>Keep it short, usually two to four sentences.</li><li>Be honest. If the answer is “it depends”, say what it depends on.</li><li>Do not turn answers into advertising.</li><li>If the topic is bigger, link to the page with details or to the contact form.</li></ul>",
+          "<h2>Group and order</h2>",
+          "<p>With up to about ten questions, a single list is enough. With more, group them under short headings such as ordering, delivery, returns and contact, and put the most common ones first. Check that the section reads well on a phone and works with a keyboard. If the answers are hidden in expandable items, see <a href='/en/blog/website-accessibility-basics'>website accessibility basics</a>.</p>",
+          "<h2>Keep it up to date</h2>",
+          "<p>Add a question when you notice it repeating, and remove answers that are no longer true. Whenever conditions or opening hours change, check the FAQ as well. A wrong answer is worse than no answer.</p>",
+          "<h2>What it gives you</h2>",
+          "<p>Customers get quick answers, and you get fewer repeated enquiries. People also type questions into search engines, so a page that answers them clearly and in plain language has a chance of matching. But write the FAQ for people, not for search engines, and remember that nobody can promise a position. The wider picture is in <a href='/en/blog/seo-basics-for-a-small-website'>SEO basics for a small website</a>.</p>",
+          "<p>I do not write copy for clients, because you know the questions best, but I can place an FAQ section on the site where visitors will find it. For the main page, see <a href='/en/blog/homepage-text-for-small-business'>what to write on the homepage</a>, or <a href='/en/contact'>write to me</a> about your site.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Ako napísať sekciu s častými otázkami na firemný web",
+        "description": "Odkiaľ vziať otázky, ako odpovedať stručne a priamo, ako ich zoskupiť a aktualizovať. A prečo FAQ pomáha zákazníkom a nepriamo aj vo vyhľadávaní.",
+        "content": [
+          "<p>Dobrá sekcia s častými otázkami odpovedá na to, čo by vám inak prišlo telefonátom alebo e-mailom, a váhajúcemu návštevníkovi umožní rozhodnúť sa bez toho, aby sa musel pýtať. Je to jedna z ľahších častí webu, ktorú sa dá napísať dobre, pretože materiál už máte v každodennej práci.</p>",
+          "<h2>Odkiaľ vziať otázky</h2>",
+          "<ul><li>Z vlastnej schránky, správ a poznámok z telefonátov. Na čo sa ľudia pýtajú stále dookola?</li><li>Od ľudí, ktorí komunikujú so zákazníkmi. Opýtajte sa ich na tri otázky, na ktoré odpovedajú najčastejšie.</li><li>Z otázok, ktoré ľudia majú, kým sa rozhodnú: ako dlho to trvá, čo je v cene, ako funguje objednávka či doručenie, čo ak sa niečo pokazí.</li><li>Každú otázku napíšte slovami zákazníka („Musím zaplatiť zálohu?“), nie slovami firmy.</li></ul>",
+          "<h2>Ako odpovedať</h2>",
+          "<ul><li>Odpoveď dajte do prvej vety a podrobnosti pridajte, len ak sú potrebné.</li><li>Buďte stručný, zvyčajne stačia dve až štyri vety.</li><li>Buďte úprimný. Ak je odpoveď „záleží“, napíšte, od čoho.</li><li>Z odpovedí nerobte reklamu.</li><li>Ak je téma širšia, odkážte na stránku s podrobnosťami alebo na kontaktný formulár.</li></ul>",
+          "<h2>Zoskupenie a poradie</h2>",
+          "<p>Do približne desiatich otázok stačí jeden zoznam. Pri väčšom počte ich zoskupte pod krátke nadpisy, napríklad objednávka, doručenie, vrátenie a kontakt, a najčastejšie dajte navrch. Skontrolujte, či sa sekcia dobre číta na telefóne a či sa dá ovládať klávesnicou. Ak sú odpovede skryté v rozbaľovacích položkách, pozrite si <a href='/sk/blog/website-accessibility-basics'>prístupnosť webu: základy</a>.</p>",
+          "<h2>Udržiavajte ju aktuálnu</h2>",
+          "<p>Pridajte otázku, keď si všimnete, že sa opakuje, a odstráňte odpovede, ktoré už neplatia. Keď sa zmenia podmienky alebo otváracie hodiny, skontrolujte aj FAQ. Nesprávna odpoveď je horšia než žiadna.</p>",
+          "<h2>Čo vám to dá</h2>",
+          "<p>Zákazníci dostanú rýchle odpovede a vy dostanete menej opakovaných dopytov. Ľudia zadávajú do vyhľadávača aj celé otázky, takže stránka, ktorá na ne odpovedá jasne a jednoduchou rečou, môže zodpovedať tomu, čo ľudia hľadajú. FAQ však píšte pre ľudí, nie pre vyhľadávače, a pamätajte, že pozíciu nikto sľúbiť nemôže. Širší obraz je v článku <a href='/sk/blog/seo-basics-for-a-small-website'>SEO základy pre malý web</a>.</p>",
+          "<p>Texty pre klientov nepíšem, pretože otázky poznáte najlepšie vy, ale sekciu s častými otázkami viem na web vložiť tak, aby ju návštevníci našli. K hlavnej stránke si pozrite <a href='/sk/blog/homepage-text-for-small-business'>čo napísať na úvodnú stránku</a> alebo mi o svojom webe <a href='/sk/contact'>napíšte</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Igor Shalyminov / Unsplash",
+          "url": "https://unsplash.com/@ishalyminov?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    },
+    {
+      "slug": "choosing-a-cms-for-a-small-website",
+      "cover": {
+        "icon": "LayoutDashboard",
+        "label": "Choosing a CMS",
+        "photo": true
+      },
+      "en": {
+        "title": "Choosing a CMS for a small website: ready-made, custom or builder",
+        "description": "What a CMS is, and how a ready-made system such as WordPress, a custom site and a website builder differ in control, speed, freedom and upkeep.",
+        "content": [
+          "<p>A CMS, short for content management system, is the part of a website that lets you change texts, images and pages yourself without editing code. When you plan a site, one of the first decisions is what it will run on. There is no single right answer, only the one that fits your situation.</p>",
+          "<h2>Three common options</h2>",
+          "<ul><li><strong>A ready-made system.</strong> WordPress is a well-known example. You get a ready admin area and many ready-made themes and plugins, so a lot can be done quickly. The price is that you carry the upkeep: updates, plugin compatibility and security.</li><li><strong>A custom site.</strong> Built for exactly what you need, with an admin area limited to what you actually edit. You do not carry features you never use, and you have more freedom for unusual functions such as booking or a link to a CRM. It usually takes longer to get going, and changes go through a developer unless an editing area is part of the project.</li><li><strong>A website builder.</strong> A hosted service where you put the site together from blocks. It is quick to start, and the provider looks after the technical side. In exchange you are limited to what the builder offers, you depend on its terms, and moving the site elsewhere can be difficult.</li></ul>",
+          "<h2>What to compare</h2>",
+          "<ul><li><strong>Control.</strong> Who owns the site, where it is hosted, and whether you can take it with you.</li><li><strong>Speed.</strong> How quickly you can launch, and how quickly later changes can be made.</li><li><strong>Freedom.</strong> Whether it allows what you will need in a year, not only today.</li><li><strong>Upkeep.</strong> Who does the updates, who is responsible when something breaks, and what that costs you in money or time.</li></ul>",
+          "<h2>Questions to ask before you decide</h2>",
+          "<ol><li>Who will edit the content day to day, and how comfortable are they with technology?</li><li>Which functions do we need now, and which within a year or two?</li><li>Who does updates and security, and how often?</li><li>Can I export my content and move to another provider?</li><li>What happens if the person who built the site is no longer available?</li><li>Whose name are the accounts, the domain and the code in? See <a href='/en/blog/who-owns-your-domain-hosting-and-code'>who owns your domain, hosting and code</a>.</li></ol>",
+          "<p>If you are unsure, describe what the site should do and who will edit it, and I will tell you which option I think fits and why. For an online shop the same question is covered in <a href='/en/blog/woocommerce-or-custom-eshop'>WooCommerce or a custom e-shop</a>, and for choosing who builds it in <a href='/en/blog/how-to-choose-a-web-developer'>how to choose a web developer</a>. You can also <a href='/en/contact'>write to me</a> or see <a href='/en/web-development-bratislava'>website development in Bratislava</a>.</p>"
+        ]
+      },
+      "sk": {
+        "title": "Výber CMS pre malý web: hotový systém, web na mieru alebo builder",
+        "description": "Čo je CMS a ako sa hotový systém ako WordPress, web na mieru a online nástroj na tvorbu webov líšia kontrolou, rýchlosťou, slobodou a údržbou.",
+        "content": [
+          "<p>CMS, po slovensky redakčný systém, je tá časť webu, vďaka ktorej si môžete sami meniť texty, obrázky a stránky bez zásahu do kódu. Pri plánovaní webu je jedným z prvých rozhodnutí, na čom bude bežať. Jedna správna odpoveď neexistuje, len taká, ktorá vyhovuje vašej situácii.</p>",
+          "<h2>Tri bežné možnosti</h2>",
+          "<ul><li><strong>Hotový systém.</strong> Známym príkladom je WordPress. Dostanete pripravenú administráciu a množstvo hotových šablón a doplnkov, takže sa dá veľa urobiť rýchlo. Cenou je, že údržbu nesiete vy: aktualizácie, kompatibilitu doplnkov a bezpečnosť.</li><li><strong>Web na mieru.</strong> Postavený presne na to, čo potrebujete, s administráciou obmedzenou na to, čo naozaj upravujete. Nemáte funkcie navyše, ktoré nepoužívate, a máte väčšiu slobodu pri netypických funkciách, ako sú rezervácie alebo prepojenie s CRM. Rozbeh zvyčajne trvá dlhšie a zmeny idú cez vývojára, ak úprava obsahu nie je súčasťou projektu.</li><li><strong>Online nástroj na tvorbu webov (builder).</strong> Hostovaná služba, v ktorej web skladáte z blokov. Začať sa dá rýchlo a o technickú stránku sa stará poskytovateľ. Na oplátku ste obmedzení tým, čo builder ponúka, závisíte od jeho podmienok a presun webu inam môže byť ťažký.</li></ul>",
+          "<h2>Čo porovnávať</h2>",
+          "<ul><li><strong>Kontrola.</strong> Komu web patrí, kde je hostovaný a či si ho môžete odniesť.</li><li><strong>Rýchlosť.</strong> Ako rýchlo sa dá web spustiť a ako rýchlo sa dajú robiť neskoršie zmeny.</li><li><strong>Sloboda.</strong> Či dovolí to, čo budete potrebovať o rok, nielen dnes.</li><li><strong>Údržba.</strong> Kto robí aktualizácie, kto zodpovedá, keď sa niečo pokazí, a čo vás to stojí v peniazoch či čase.</li></ul>",
+          "<h2>Otázky, ktoré si položte pred rozhodnutím</h2>",
+          "<ol><li>Kto bude obsah bežne upravovať a ako dobre si rozumie s technikou?</li><li>Aké funkcie potrebujeme teraz a aké o rok či dva?</li><li>Kto robí aktualizácie a bezpečnosť a ako často?</li><li>Viem si obsah exportovať a presunúť k inému poskytovateľovi?</li><li>Čo sa stane, ak ten, kto web postavil, už nebude k dispozícii?</li><li>Na čie meno sú účty, doména a kód? Pozrite si <a href='/sk/blog/who-owns-your-domain-hosting-and-code'>komu patrí doména, hosting a kód</a>.</li></ol>",
+          "<p>Ak si nie ste istí, opíšte, čo má web robiť a kto ho bude upravovať, a poviem vám, ktorá možnosť sa mi zdá vhodná a prečo. Pri internetovom obchode rovnakú otázku rozoberá článok <a href='/sk/blog/woocommerce-or-custom-eshop'>WooCommerce alebo e-shop na mieru</a> a výber toho, kto web postaví, článok <a href='/sk/blog/how-to-choose-a-web-developer'>ako vybrať dodávateľa webu</a>. Môžete mi aj <a href='/sk/contact'>napísať</a> alebo si pozrieť <a href='/sk/tvorba-webov-bratislava'>tvorbu webov v Bratislave</a>.</p>"
+        ]
+      },
+      "sources": [
+        {
+          "name": "Foto: Eftakher Alam / Unsplash",
+          "url": "https://unsplash.com/@easiblu?utm_source=omnicode&utm_medium=referral"
+        }
+      ]
+    }
+  ]
+}

@@ -236,3 +236,10 @@
 html[data-consent] .cookie-banner {
   display: none;
 }
+
+/* Printing a page such as the launch checklist: only the content, on a white page. */
+@media print {
+  header, footer, .cookie-banner { display: none !important; }
+  :root { --background: 0 0% 100%; --foreground: 0 0% 0%; --card: 0 0% 100%; --muted-foreground: 0 0% 25%; --border: 0 0% 75%; --input: 0 0% 40%; --primary: 160 80% 25%; }
+  .grid-bg { display: none; }
+}
