@@ -38,10 +38,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/70">
       <div className="container mx-auto flex h-[72px] items-center px-4">
-        <Link href="/" aria-label="Omnicode" className="mr-8 flex items-center">
+        <Link href="/" aria-label="Omnicode" className="mr-6 flex items-center xl:mr-8">
           <Logo />
         </Link>
-        <nav className="hidden md:flex items-center space-x-6 text-[15px] font-medium">
+        <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6 whitespace-nowrap text-[15px] font-medium">
           {navLinks.map(({ href, label }) => {
             const isActive =
               mounted &&
@@ -67,12 +67,12 @@ export function Header() {
         <div className="flex flex-1 items-center justify-end space-x-2">
           {!isBlogDetail && !isPortfolioDetail && <LanguageSwitcher />} {/* <-- тут ховаємо */}
           {/* <ThemeSwitcher /> */}
-          <Button asChild className="hidden md:inline-flex rounded-full">
+          <Button asChild className="hidden md:inline-flex whitespace-nowrap rounded-full">
             <TrackedLink location="header" href="/contact">{t("contact-us")}</TrackedLink>
           </Button>
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden">
+              <Button variant="ghost" size="icon" className="lg:hidden">
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Toggle Menu</span>
               </Button>
