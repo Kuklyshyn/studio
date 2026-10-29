@@ -373,6 +373,7 @@
           "<p>The Slovak rules also expect a shop to make its identification, security and payment functions accessible, to provide accessibility information about the products it sells where it has that information, and to make its support channels accessible.</p>",
           "<h2>Who may be exempt</h2>",
           "<p>Very small service providers can be exempt. Commentators point to a threshold of fewer than 10 employees and turnover under EUR 2 million, but the exact conditions depend on the wording of the law. Do not assume your client is exempt without checking. Even where an exemption applies, accessible design is far cheaper to build in from the start than to fix later.</p>",
+          "<p>If you are planning a new e-shop or rebuilding an old one, on the <a href='/en/eshop-development'>custom e-shop development</a> page I describe what a shop I build includes, what it costs and how long it takes.</p>",
           "<h2>A starting checklist for an online shop</h2>",
           "<ul><li><strong>Run an audit</strong> against WCAG 2.1 level AA, the baseline that the harmonised standard EN 301 549 builds on. Combine automated tools with manual keyboard and screen-reader tests.</li><li><strong>Fix the checkout first.</strong> Cart, delivery, payment and confirmation are the steps where people give up.</li><li><strong>Check colour, focus and text size</strong> across the whole theme, not only the home page.</li><li><strong>Publish an accessibility statement</strong> that describes the current state honestly and gives a contact for reporting problems.</li><li><strong>Keep the theme and plug-ins up to date.</strong> A new app or a theme update can break keyboard navigation overnight.</li></ul>",
           "<p>Overlay widgets that promise instant compliance rarely fix the underlying code. This article is general information, not legal advice; check the consolidated text of the law and consult a specialist for your case.</p>"
@@ -381,19 +382,20 @@
       },
       "sk": {
         "title": "Prístupnosť je už zákonom: čo musia slovenské e-shopy skontrolovať",
-        "description": "Od 28. júna 2025 platí európsky akt o prístupnosti aj pre online obchody. Čo znamenajú slovenské pravidlá v praxi a kontrolný zoznam na začiatok.",
+        "description": "Od 28. júna 2025 platí zákon o prístupnosti aj pre e-shopy na Slovensku. Čo vyžaduje v praxi, kto môže byť vyňatý a kontrolný zoznam na začiatok.",
         "content": [
-          "<p>Od 28. júna 2025 platí európsky akt o prístupnosti (European Accessibility Act, EAA) v celej EÚ. Na Slovensku ho uvádza do praxe zákon č. 351/2022 Z. z. o prístupnosti produktov a služieb pre osoby so zdravotným postihnutím a nariadenie vlády č. 283/2023 Z. z., ktoré stanovuje požiadavky na služby. Pod pravidlá spadajú e-shopy, webové stránky a aplikácie poskytujúce služby spotrebiteľom, takže online obchod je priamo v pôsobnosti zákona.</p>",
+          "<p>Od 28. júna 2025 platí európsky akt o prístupnosti (European Accessibility Act, EAA) v celej EÚ. Na Slovensku ho uvádza do praxe zákon č. 351/2022 Z. z. o prístupnosti výrobkov a služieb pre osoby so zdravotným postihnutím a nariadenie vlády č. 283/2023 Z. z., ktoré stanovuje požiadavky na služby. Pod pravidlá spadajú e-shopy, webové stránky a aplikácie poskytujúce služby spotrebiteľom, takže online obchod je priamo v pôsobnosti zákona.</p>",
           "<h2>Čo pravidlá v praxi vyžadujú</h2>",
           "<p>Cieľom je, aby ľudia mohli digitálne služby vnímať, ovládať, chápať a spoľahnúť sa na ne. Pre obchod to znamená konkrétne veci: textové alternatívy k fotkám produktov, dostatočný kontrast farieb, formuláre, ktoré jasne vysvetlia chybu, a pokladnicu, ktorá funguje s klávesnicou aj s čítačkou obrazovky.</p>",
           "<p>Slovenská úprava zároveň očakáva, že obchod sprístupní identifikačné, bezpečnostné a platobné funkcie, poskytne informácie o prístupnosti predávaných produktov, ak ich má k dispozícii, a sprístupní aj podporné kanály.</p>",
           "<h2>Kto môže byť vyňatý</h2>",
           "<p>Veľmi malí poskytovatelia služieb môžu byť vyňatí. Komentátori uvádzajú hranicu menej ako 10 zamestnancov a obrat nižší ako 2 milióny eur, presné podmienky však závisia od znenia zákona. Nepredpokladajte, že váš klient je vyňatý, bez kontroly. A aj keď výnimka platí, prístupný dizajn je oveľa lacnejší, keď sa zabuduje od začiatku, než keď sa dodatočne opravuje.</p>",
+          "<p>Ak plánujete nový e-shop alebo prerábku starého, na stránke <a href='/sk/tvorba-eshopu'>tvorba e-shopu na mieru</a> opisujem, čo e-shop, ktorý vytvorím, obsahuje, koľko stojí a ako dlho trvá vývoj.</p>",
           "<h2>Východiskový kontrolný zoznam pre e-shop</h2>",
           "<ul><li><strong>Urobte audit</strong> podľa WCAG 2.1 na úrovni AA, ktorá je základom harmonizovanej normy EN 301 549. Kombinujte automatizované nástroje s manuálnymi testami klávesnicou a čítačkou obrazovky.</li><li><strong>Opravte najprv pokladnicu.</strong> Košík, doručenie, platba a potvrdenie sú kroky, kde ľudia najčastejšie odchádzajú.</li><li><strong>Skontrolujte farby, zameranie a veľkosť textu</strong> v celej šablóne, nie len na úvodnej stránke.</li><li><strong>Zverejnite vyhlásenie o prístupnosti</strong>, ktoré úprimne opíše aktuálny stav a uvedie kontakt na nahlásenie problémov.</li><li><strong>Udržiavajte šablónu a doplnky aktuálne.</strong> Nová aplikácia alebo aktualizácia šablóny môže cez noc rozbiť ovládanie klávesnicou.</li></ul>",
           "<p>Prekrývacie nástroje, ktoré sľubujú okamžitú zhodu, zvyčajne neopravia kód. Tento článok je všeobecná informácia, nie právne poradenstvo. Skontrolujte konsolidované znenie zákona a pre svoj prípad sa poraďte s odborníkom.</p>"
         ],
-        "seoTitle": "Prístupnosť e-shopov: čo musia slovenské firmy"
+        "seoTitle": "E-shopy na Slovensku a prístupnosť: čo vyžaduje EAA"
       }
     },
     {

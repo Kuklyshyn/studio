@@ -31,7 +31,7 @@
 | Správa a údržba webu (`/sk/sprava-a-udrzba-webu`, `/en/website-maintenance`) | správa webu, údržba webu, údržba web stránky cena |
 | Články блогу | koľko stojí web, čo pripraviť pred tvorbou webu, rýchlosť webu, ako vybrať dodávateľa webu |
 
-Правило: тексти тільки про те, що ми справді робимо. Ціни й терміни збігаються з `content/pricing.ts`; місячні тарифи підтримки (25 € і 45 € без DPH) є картою «Správa webu» в `pricing.ts`; при зміні ціни онови всі місця: `pricing.ts`, сторінку `website-maintenance` і FAQ `web-development` у `content/landing.ts`, `content/faq.ts`, пост `website-after-launch-what-to-expect` у `content/blog/seo-2026-10-migration-ownership-care.json` (потім `npm run blog:build`). Не обіцяємо SEO-просування, рекламу й маркетинг.
+Правило: тексти тільки про те, що ми справді робимо. Ціни й терміни збігаються з `content/pricing.ts`; місячні тарифи підтримки (25 € і 45 € без DPH) є картою «Správa webu» в `pricing.ts`; при зміні ціни онови всі місця: `pricing.ts`, сторінку `website-maintenance` і в `web-development` (metaTitle, metaDescription, розділ про ціну та FAQ) у `content/landing.ts`, `content/faq.ts`, `Seo.home.description` у `messages/sk.json` і `messages/en.json` («od 990 €» / «from €990»), пост `website-after-launch-what-to-expect` у `content/blog/seo-2026-10-migration-ownership-care.json`, пост `how-much-does-a-website-cost` у `content/blog/seo-2026-10-questions.json` (там і ціни Start, Business, E-shop) (потім `npm run blog:build`). Не обіцяємо SEO-просування, рекламу й маркетинг.
 
 ## 3. Ритм контенту (далі)
 

@@ -20,13 +20,15 @@
           "<p>For my services, a website of up to 5 pages begins at €990 excl. VAT, a company website of up to 12 pages begins at €1,990 excl. VAT and an e-shop begins at €3,500 excl. VAT. These are starting prices; I set the exact amount after a conversation. You can see more on the <a href='/en/services'>services page</a>.</p>",
           "<h2>How to compare quotes</h2>",
           "<p>Ask what is included and what is not: design, copy, hosting, maintenance, the number of revision rounds. A cheap quote without these points often becomes expensive at the first change. Ask also who looks after the site after launch.</p>",
+          "<p>If you would rather not look after the site yourself, <a href='/en/website-maintenance'>website maintenance</a> costs €25 or €45 per month excl. VAT and covers hosting, an SSL certificate, updates, backups and small edits.</p>",
           "<h2>What to do next</h2>",
           "<p>If you know what kind of site you need, <a href='/en/contact'>write to me</a> and I will prepare a non-binding quote. If you are still deciding, see <a href='/en/web-development-bratislava'>website development in Bratislava</a> or <a href='/en/eshop-development'>custom e-shop development</a>.</p>"
         ]
       },
       "sk": {
         "title": "Koľko stojí tvorba webu: z čoho sa skladá cena",
-        "description": "Cena webu závisí od rozsahu, funkcií a podkladov. Čo ju ovplyvňuje a ako porovnať ponuky, aby ste nepreplatili ani nepodcenili.",
+        "seoTitle": "Koľko stojí tvorba webu: cena od 990 € bez DPH",
+        "description": "Cena tvorby webu: web do 5 stránok od 990 €, firemný web od 1 990 €, e-shop od 3 500 € bez DPH. Čo cenu ovplyvňuje, ako porovnať ponuky a koľko stojí správa.",
         "content": [
           "<p>Pýtať sa, koľko stojí web, je ako pýtať sa, koľko stojí auto. Odpoveď závisí od toho, čo potrebujete. Tu je, z čoho sa cena skladá a na čo si dať pozor pri porovnávaní ponúk.</p>",
           "<h2>Čo cenu ovplyvňuje</h2>",
@@ -35,6 +37,7 @@
           "<p>Pri mojich službách začína web do 5 stránok od 990 € bez DPH, firemný web do 12 stránok od 1 990 € bez DPH a e-shop od 3 500 € bez DPH. Sú to východiskové ceny, presnú sumu určím po rozhovore. Viac nájdete na <a href='/sk/services'>stránke služieb</a>.</p>",
           "<h2>Ako porovnať ponuky</h2>",
           "<p>Pýtajte sa, čo je v cene a čo nie: dizajn, texty, hosting, údržba, počet kôl úprav. Lacná ponuka bez týchto bodov sa často zdraží pri prvej zmene. Pýtajte sa aj, kto web po spustení udrží.</p>",
+          "<p>Starostlivosť po spustení môžete nechať na mňa: <a href='/sk/sprava-a-udrzba-webu'>správa a údržba webu</a> stojí 25 € alebo 45 € mesačne bez DPH a zahŕňa hosting, SSL certifikát, aktualizácie, zálohy a drobné úpravy.</p>",
           "<h2>Čo robiť ďalej</h2>",
           "<p>Ak viete, aký web potrebujete, <a href='/sk/contact'>napíšte mi</a> a pripravím nezáväznú ponuku. Ak ešte neviete, pozrite si <a href='/sk/tvorba-webov-bratislava'>tvorbu webov v Bratislave</a> alebo <a href='/sk/tvorba-eshopu'>tvorbu e-shopu</a>.</p>"
         ]

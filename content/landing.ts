@@ -22,8 +22,8 @@ export const landingPages: Record<LandingKey, Record<Lang, LandingContent>> = {
   "web-development": {
     sk: {
       navLabel: "Tvorba webov v Bratislave",
-      metaTitle: "Tvorba web stránok Bratislava",
-      metaDescription: "Tvorba webových stránok na mieru v Bratislave: rýchly web so systémom na správu obsahu a technickým SEO. Ceny od 990 € bez DPH.",
+      metaTitle: "Tvorba web stránok Bratislava: web na mieru od 990 €",
+      metaDescription: "Tvorba webových stránok na mieru v Bratislave od 990 € bez DPH, termín od 4 týždňov. Systém na správu obsahu, technické SEO, web prispôsobený mobilu.",
       h1: "Tvorba webových stránok v Bratislave",
       intro: "Web má firme prinášať dopyty, nie len existovať. Tvorím rýchle a prehľadné webové stránky na mieru pre firmy z Bratislavy a z celého Slovenska: od jednoduchej vizitky po viacjazyčný firemný web.",
       sections: [
@@ -68,8 +68,8 @@ export const landingPages: Record<LandingKey, Record<Lang, LandingContent>> = {
     },
     en: {
       navLabel: "Web development in Bratislava",
-      metaTitle: "Web Development in Bratislava",
-      metaDescription: "Custom website development in Bratislava: a fast site with a content system and technical SEO. Prices from €990 excl. VAT.",
+      metaTitle: "Web Development in Bratislava: Websites from €990",
+      metaDescription: "Custom website development in Bratislava from €990 excl. VAT, timeline from 4 weeks. A content system, technical SEO and a mobile-friendly site.",
       h1: "Website development in Bratislava",
       intro: "A website should bring enquiries, not just exist. I build fast, clear websites to measure for companies in Bratislava and across Slovakia: from a simple business card to a multilingual company site.",
       sections: [
@@ -212,8 +212,8 @@ export const landingPages: Record<LandingKey, Record<Lang, LandingContent>> = {
   "booking-system": {
     sk: {
       navLabel: "Rezervačný systém na mieru",
-      metaTitle: "Rezervačný systém na mieru",
-      metaDescription: "Rezervačný systém na mieru: kalendár voľných termínov, rezervácie cez web, potvrdenia e-mailom a správa rezervácií. Napíšte mi o projekte.",
+      metaTitle: "Rezervačný systém na mieru: rezervácie cez web",
+      metaDescription: "Rezervačný systém na mieru pre servisy, salóny, kliniky či prenájmy: voľné termíny, rezervácie cez web a potvrdenia e-mailom. Cenu určím v nezáväznej ponuke.",
       h1: "Rezervačný systém na mieru",
       intro: "Rezervácie cez telefón a správy v sociálnych sieťach stoja čas a vedú k chybám. Rezervačný systém na mieru zobrazí voľné termíny, zapíše objednávku a pošle potvrdenie, takže zákazník si vyberie čas sám.",
       sections: [
@@ -258,8 +258,8 @@ export const landingPages: Record<LandingKey, Record<Lang, LandingContent>> = {
     },
     en: {
       navLabel: "Custom booking system",
-      metaTitle: "Custom Booking System",
-      metaDescription: "A custom booking system: a calendar of free slots, bookings through your site, e-mail confirmations and booking management.",
+      metaTitle: "Custom Booking System for Online Appointments",
+      metaDescription: "A custom booking system for workshops, salons, clinics or rentals: free slots, online bookings and e-mail confirmations. Price in a non-binding quote.",
       h1: "Custom booking system",
       intro: "Bookings by phone and by social media messages cost time and lead to mistakes. A custom booking system shows free slots, records the booking and sends a confirmation, so the customer picks a time on their own.",
       sections: [

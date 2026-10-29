@@ -66,12 +66,13 @@
           "<h2>When to stay on a marketplace</h2>",
           "<p>If you are just starting and have little traffic, a marketplace brings the first customers quickly. A common path is to run your own shop as the main channel and keep a marketplace as an addition.</p>",
           "<h2>What a good e-shop needs</h2>",
-          "<p>A clear catalogue, fast loading on mobile, transparent delivery and payment terms, secure checkout and simple product management. With those in place, the remaining task is traffic, and that comes from useful content and good marketing.</p>"
+          "<p>A clear catalogue, fast loading on mobile, transparent delivery and payment terms, secure checkout and simple product management. With those in place, the remaining task is traffic, and that comes from useful content and good marketing. On the <a href='/en/eshop-development'>custom e-shop development</a> page I describe what a shop I build includes, what it costs and how long it takes.</p>"
         ]
       },
       "sk": {
         "title": "Vlastný e-shop alebo marketplace: prečo sa oplatí mať vlastný obchod",
-        "description": "Marketplace je rýchly štart. Vlastný obchod vám dáva väčšiu kontrolu nad zákazníkmi, cenami a maržou.",
+        "seoTitle": "Vlastný e-shop alebo marketplace: čo sa oplatí",
+        "description": "Vlastný e-shop alebo predaj cez marketplace? Porovnanie podľa zákazníkov, cien, marže a značky. Kedy stačí marketplace a čo potrebuje dobrý vlastný e-shop.",
         "content": [
           "<p>Predaj na marketplace je rýchly spôsob, ako začať. Obchod, ktorý patrí vám, dáva väčšiu kontrolu nad zákazníkmi, cenami a marketingom. Väčšina firiem najlepšie funguje s oboma, ale záleží na poradí.</p>",
           "<h2>Výhody vlastného e-shopu</h2>",
@@ -79,7 +80,7 @@
           "<h2>Kedy zostať na marketplace</h2>",
           "<p>Ak začínate a nemáte návštevnosť, marketplace vám prinesie prvých zákazníkov rýchlo. Častá cesta je mať vlastný obchod ako hlavný kanál a marketplace ako doplnok.</p>",
           "<h2>Čo potrebuje dobrý e-shop</h2>",
-          "<p>Prehľadný katalóg, rýchle načítanie na mobile, jasné podmienky doručenia a platby, bezpečný checkout a jednoduchú správu produktov. Keď ich máte, zostáva priviesť zákazníkov, a na to slúžia užitočný obsah a dobrý marketing.</p>"
+          "<p>Prehľadný katalóg, rýchle načítanie na mobile, jasné podmienky doručenia a platby, bezpečný checkout a jednoduchú správu produktov. Keď ich máte, zostáva priviesť zákazníkov, a na to slúžia užitočný obsah a dobrý marketing. Čo obsahuje e-shop, ktorý vytvorím, koľko stojí a ako dlho trvá vývoj, opisujem na stránke <a href='/sk/tvorba-eshopu'>tvorba e-shopu na mieru</a>.</p>"
         ]
       },
       "date": "2026-10-09"
