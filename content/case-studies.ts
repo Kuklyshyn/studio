@@ -16,12 +16,14 @@ export type PortfolioProject = {
   results: Localized | null; // [[ПОТРІБНО: výsledky v číslach s uvedeným zdrojom]]
   quote: { text: Localized; author: string; role: string } | null; // [[ПОТРІБНО: citát s menom, funkciou a súhlasom]]
   liveUrl: string | null; // [[ПОТРІБНО: súhlas klienta s uvedením živého webu]]
+  // Real screenshots of the finished site (desktop, and optionally phone). When absent, the generated cover image is shown.
+  screenshots?: { desktop: string; mobile?: string } | null;
   image: string;
   hint: string;
   tags: string[];
 };
 
-// Case studies are anonymized: no client, employer or brand names, and no screenshots of client work.
+// The owner confirmed (2026-10-30) that all eight sites may be shown. Screenshots live in public/portfolio/shots/.
 export const portfolioProjects: PortfolioProject[] = [
   {
     slug: "real-estate-website-developer",
@@ -65,6 +67,7 @@ export const portfolioProjects: PortfolioProject[] = [
     quote: null,
     liveUrl: null,
     image: "/portfolio/real-estate-website-developer.webp",
+    screenshots: { desktop: "/portfolio/shots/real-estate-website-developer-desktop.webp", mobile: "/portfolio/shots/real-estate-website-developer-mobile.webp" },
     hint: "real-estate website",
     tags: ["WordPress", "WooCommerce", "PHP", "JavaScript", "E-commerce"],
   },
@@ -211,6 +214,7 @@ export const portfolioProjects: PortfolioProject[] = [
     quote: null,
     liveUrl: null,
     image: "/portfolio/interactive-expert-map-platform.webp",
+    screenshots: { desktop: "/portfolio/shots/interactive-expert-map-platform-desktop.webp", mobile: "/portfolio/shots/interactive-expert-map-platform-mobile.webp" },
     hint: "interactive map platform",
     tags: ["Vue.js", "Nuxt", "Google Maps API", "JavaScript"],
   },
@@ -218,12 +222,12 @@ export const portfolioProjects: PortfolioProject[] = [
     slug: "fashion-eshop-woocommerce",
     category: "eshops",
     title: {
-      en: "Fashion online store on WordPress and WooCommerce",
-      sk: "Módny online obchod na WordPresse a WooCommerce",
+      en: "Cosmetics online store on WordPress and WooCommerce",
+      sk: "Online obchod s kozmetikou na WordPresse a WooCommerce",
     },
     description: {
-      en: "Full-cycle development of a fashion e-commerce store with a custom theme and advanced shop functionality.",
-      sk: "Kompletný vývoj módneho e-shopu s vlastnou šablónou a pokročilými funkciami obchodu.",
+      en: "Full-cycle development of a cosmetics e-commerce store with a custom theme and advanced shop functionality.",
+      sk: "Kompletný vývoj internetového obchodu s kozmetikou, s vlastnou šablónou a pokročilými funkciami obchodu.",
     },
     content: {
       en: `
@@ -247,13 +251,14 @@ export const portfolioProjects: PortfolioProject[] = [
       </ul>
     `,
     },
-    industry: { en: "Fashion e-commerce", sk: "Módny e-shop" },
+    industry: { en: "Cosmetics e-commerce", sk: "E-shop s kozmetikou" },
     problem: null,
     results: null,
     quote: null,
     liveUrl: null,
     image: "/portfolio/fashion-eshop-woocommerce.webp",
-    hint: "fashion boutique website",
+    screenshots: { desktop: "/portfolio/shots/fashion-eshop-woocommerce-desktop.webp", mobile: "/portfolio/shots/fashion-eshop-woocommerce-mobile.webp" },
+    hint: "cosmetics online store",
     tags: ["Wordpress", "WooCommerce", "PHP", "JavaScript", "E-commerce"],
   },
   {
@@ -360,5 +365,6 @@ export function localizeProject(project: PortfolioProject, locale: string) {
       ? { text: project.quote.text[lang], author: project.quote.author, role: project.quote.role }
       : null,
     liveUrl: project.liveUrl,
+    screenshots: project.screenshots ?? null,
   };
 }

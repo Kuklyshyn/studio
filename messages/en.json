@@ -218,7 +218,8 @@
         "solution": "Solution",
         "results": "Results",
         "technologies": "Technologies",
-        "liveSite": "View live site"
+        "liveSite": "View live site",
+        "screenshot": "Screenshot of the site"
     },
     "CustomProgrammingPage": {
         "heroTitle": "Custom Programming",

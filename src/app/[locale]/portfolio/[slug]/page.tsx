@@ -11,6 +11,7 @@ import { absoluteUrl, breadcrumbJsonLd, pageMetadata, type Locale } from '@/lib/
 import { LOCALES, isLocale } from '@/lib/site';
 import { JsonLd } from '@/components/json-ld';
 import { ProseStyles } from '@/components/prose-styles';
+import { ProjectScreenshots } from '@/components/project-screenshots';
 
 export const dynamicParams = false;
 
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     path: `/portfolio/${slug}`,
     title: localized.title,
     description: localized.description,
-    image: project.image,
+    image: project.screenshots?.desktop ?? project.image,
   });
 }
 
@@ -78,16 +79,20 @@ export default async function PortfolioProjectPage({
         <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">{t('industry')}: {project.industry}</p>
         <h1 className="font-headline text-4xl md:text-5xl font-extrabold mb-6 tracking-[-0.03em]">{project.title}</h1>
 
-        <div className="relative w-full h-96 mb-8 rounded-lg overflow-hidden shadow-xl">
-            <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                sizes="(min-width: 896px) 896px, 100vw"
-                className="object-cover"
-                data-ai-hint={project.hint}
-            />
-        </div>
+        {project.screenshots ? (
+          <ProjectScreenshots shots={project.screenshots} title={project.title} label={t('screenshot')} />
+        ) : (
+          <div className="relative w-full h-96 mb-8 rounded-lg overflow-hidden shadow-xl">
+              <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  sizes="(min-width: 896px) 896px, 100vw"
+                  className="object-cover"
+                  data-ai-hint={project.hint}
+              />
+          </div>
+        )}
 
         <div className="prose prose-invert lg:prose-xl max-w-none mx-auto text-foreground/90">
           <p className="lead text-xl text-muted-foreground mb-8">{project.description}</p>

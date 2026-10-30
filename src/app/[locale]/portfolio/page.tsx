@@ -37,6 +37,7 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
                 results={project.results}
                 tags={project.tags}
                 viewLabel={t('viewProject')}
+                screenshot={project.screenshots?.desktop ?? null}
               />
               </Reveal>
             ))}

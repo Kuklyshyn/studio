@@ -218,7 +218,8 @@
     "solution": "Riešenie",
     "results": "Výsledky",
     "technologies": "Technológie",
-    "liveSite": "Zobraziť živý web"
+    "liveSite": "Zobraziť živý web",
+        "screenshot": "Snímka obrazovky webu"
   },
   "CustomProgrammingPage": {
     "heroTitle": "Programovanie na Mieru",

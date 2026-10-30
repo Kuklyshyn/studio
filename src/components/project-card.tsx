@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n";
 import { Badge } from "@/components/ui/badge";
@@ -12,10 +13,11 @@ type ProjectCardProps = {
   results: string | null;
   tags: string[];
   viewLabel: string;
+  screenshot?: string | null;
 };
 
-// A project card without pictures: number, sector, title, stack and summary. Used where no approved screenshot exists.
-export function ProjectCard({ slug, index, industry, title, description, results, tags, viewLabel }: ProjectCardProps) {
+// A project card: number, sector, title, stack and summary, with a screenshot of the finished site on top when there is one.
+export function ProjectCard({ slug, index, industry, title, description, results, tags, viewLabel, screenshot }: ProjectCardProps) {
   return (
     <SpotlightCard className="h-full rounded-2xl">
     <Link
@@ -23,6 +25,17 @@ export function ProjectCard({ slug, index, industry, title, description, results
       prefetch={false}
       className="group flex h-full flex-col rounded-2xl border border-border/60 bg-secondary/40 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_0_40px_-16px_hsl(var(--primary)/0.6)]"
     >
+      {screenshot && (
+        <div className="relative mb-6 aspect-[16/10] w-full overflow-hidden rounded-lg border border-border/60">
+          <Image
+            src={screenshot}
+            alt={title}
+            fill
+            sizes="(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw"
+            className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+          />
+        </div>
+      )}
       <span className="font-headline text-5xl font-extrabold text-primary/25 transition-colors group-hover:text-primary/60 tracking-[-0.03em]">
         {String(index + 1).padStart(2, "0")}
       </span>
